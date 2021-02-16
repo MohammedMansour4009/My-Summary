@@ -40,4 +40,5 @@
     <dimen name="tv_pain">20sp</dimen>
     <dimen name="marginEnd_tv_paind">21dp</dimen>
     <dimen name="marginTop_rv">5dp</dimen>
+    <dimen name="nill">0dp</dimen>
 </resources>

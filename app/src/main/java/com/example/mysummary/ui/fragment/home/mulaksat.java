@@ -11,10 +11,10 @@ import com.example.mysummary.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link mula5sat#newInstance} factory method to
+ * Use the {@link mulaksat#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class mula5sat extends Fragment {
+public class mulaksat extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,7 +25,7 @@ public class mula5sat extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public mula5sat() {
+    public mulaksat() {
         // Required empty public constructor
     }
 
@@ -38,8 +38,8 @@ public class mula5sat extends Fragment {
      * @return A new instance of fragment mula5sat.
      */
     // TODO: Rename and change types and number of parameters
-    public static mula5sat newInstance(String param1, String param2) {
-        mula5sat fragment = new mula5sat();
+    public static mulaksat newInstance(String param1, String param2) {
+        mulaksat fragment = new mulaksat();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
