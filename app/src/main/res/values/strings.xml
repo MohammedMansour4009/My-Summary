@@ -2,4 +2,12 @@
     <string name="app_name">My Summary</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="collegeName">اسم الكلية</string>
+    <string name="arabic_tv">عربي 101</string>
+    <string name="Arabic99">عربي 99</string>
+    <string name="Askaria">عسكرية</string>
+    <string name="calculas1">calculus1</string>
+    <string name="english99">English99</string>
+    <string name="english101">English101</string>
+    <string name="namePart">اسم القسم</string>
 </resources>
