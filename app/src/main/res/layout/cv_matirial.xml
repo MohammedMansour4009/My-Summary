@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/widthCvMatirial"
+        android:layout_height="@dimen/heightCvMatirial"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/cornerCvMatirial"
+        app:cardElevation="@dimen/shadow">
+
+        <TextView
+            android:id="@+id/tv_matirial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ORG"
+            android:textSize="@dimen/tv_sizeText_matirial" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

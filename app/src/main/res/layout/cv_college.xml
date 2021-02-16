@@ -26,8 +26,7 @@
                 android:layout_height="@dimen/heigthCV"
                 android:layout_marginTop="@dimen/marginTopIv"
                 android:layout_marginBottom="@dimen/marginBottomiv"
-                android:layout_marginRight="@dimen/margenEndIv"
-                android:src="@drawable/ic_launcher_background" />
+                android:layout_marginRight="@dimen/margenEndIv" />
 
             <TextView
                 android:id="@+id/tv_colleges"

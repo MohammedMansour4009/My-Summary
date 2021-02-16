@@ -22,13 +22,16 @@
             android:background="@drawable/searchshape"
             android:elevation="@dimen/shadow"
             android:hint="@string/collegeName"
-            android:padding="@dimen/pading_et_search" />
+            android:drawableLeft="@drawable/ic_search"
+            android:padding="@dimen/pading_et_search"
+            android:paddingLeft="@dimen/marginLeft_ic_search" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <TextView
+                android:background="@drawable/hint_matirial"
                 android:id="@+id/tv_Arabic"
                 android:layout_width="@dimen/width_tv_hint"
                 android:layout_height="@dimen/heigth_tv_hint"
