@@ -1,4 +1,4 @@
-package com.example.mysummary.ui.fragment.home;
+package com.example.mysummary.ui.fragment.colleges;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -6,11 +6,9 @@ import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
-import androidx.databinding.BindingAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
@@ -58,12 +56,12 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.carVie
         if (index == position) {
             Drawable drawable=context.getDrawable(R.drawable.design_selected);
             holder.binding.vCategory.setImageDrawable(drawable);
-            holder.binding.tvNameCategory.setTextColor(context.getResources().getColor(R.color.colorW));
+            holder.binding.tvNameCategory.setTextColor(context.getResources().getColor(R.color.white));
 
         } else {
             Drawable drawable=context.getDrawable(R.drawable.design_corner);
             holder.binding.vCategory.setImageDrawable(drawable);
-            holder.binding.tvNameCategory.setTextColor(context.getResources().getColor(R.color.colorGray));
+            holder.binding.tvNameCategory.setTextColor(context.getResources().getColor(R.color.gray));
         }
     }
 

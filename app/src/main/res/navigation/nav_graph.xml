@@ -8,5 +8,18 @@
         android:id="@+id/homeFragment2"
         android:name="com.example.mysummary.ui.fragment.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment2_to_mulaksat"
+            app:destination="@id/mulaksat" />
+    </fragment>
+    <fragment
+        android:id="@+id/mulaksat"
+        android:name="com.example.mysummary.ui.fragment.mulakasat.mulaksat"
+        android:label="fragment_mula5sat"
+        tools:layout="@layout/fragment_mula5sat" />
+    <activity
+        android:id="@+id/baseBindingActivity"
+        android:name="com.example.mysummary.ui.main.BaseBindingActivity"
+        android:label="BaseBindingActivity" />
 </navigation>

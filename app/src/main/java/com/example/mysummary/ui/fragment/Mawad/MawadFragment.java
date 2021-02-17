@@ -1,4 +1,4 @@
-package com.example.mysummary.ui.fragment.home;
+package com.example.mysummary.ui.fragment.Mawad;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,10 +11,10 @@ import com.example.mysummary.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MatirialChoisesFragmint#newInstance} factory method to
+ * Use the {@link MawadFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class MatirialChoisesFragmint extends Fragment {
+public class MawadFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,7 +25,7 @@ public class MatirialChoisesFragmint extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public MatirialChoisesFragmint() {
+    public MawadFragment() {
         // Required empty public constructor
     }
 
@@ -35,11 +35,11 @@ public class MatirialChoisesFragmint extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment MatirialChoisesFragmint.
+     * @return A new instance of fragment MawadFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static MatirialChoisesFragmint newInstance(String param1, String param2) {
-        MatirialChoisesFragmint fragment = new MatirialChoisesFragmint();
+    public static MawadFragment newInstance(String param1, String param2) {
+        MawadFragment fragment = new MawadFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -60,6 +60,6 @@ public class MatirialChoisesFragmint extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_matirial_choises_fragmint, container, false);
+        return inflater.inflate(R.layout.fragment_mawad, container, false);
     }
 }

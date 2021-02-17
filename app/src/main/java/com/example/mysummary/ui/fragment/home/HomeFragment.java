@@ -2,20 +2,18 @@ package com.example.mysummary.ui.fragment.home;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.Fragment;
-
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentHomeBinding;
@@ -63,6 +61,7 @@ public class HomeFragment extends Fragment {
         categoryAdapter =new CategoryAdapter(categoryList);
         binding.rvCategory.setAdapter(categoryAdapter);
     }
+
     @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
         inflater.inflate(R.menu.options_menu, menu);
@@ -72,7 +71,9 @@ public class HomeFragment extends Fragment {
 
     @SuppressLint("WrongConstant")
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSele
+
+    cted(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.ic_my_summary:
                 navDrawer.openDrawer(GravityCompat.START);

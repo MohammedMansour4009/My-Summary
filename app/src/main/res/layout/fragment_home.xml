@@ -14,7 +14,11 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/marginTop_tv_choises"
+            android:orientation="horizontal"
+
+            >
 
         </androidx.recyclerview.widget.RecyclerView>
 

@@ -22,6 +22,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             tools:background="@drawable/design_selected"
+            tools:srcCompat="@tools:sample/backgrounds/scenic"
             />
 
         <androidx.appcompat.widget.AppCompatImageView

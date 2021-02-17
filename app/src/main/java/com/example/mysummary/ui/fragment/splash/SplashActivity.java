@@ -1,4 +1,4 @@
-package com.example.mysummary.ui.splash;
+package com.example.mysummary.ui.fragment.splash;
 
 import android.content.Intent;
 import android.os.Bundle;
