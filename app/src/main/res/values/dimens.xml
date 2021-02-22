@@ -60,4 +60,9 @@
     <dimen name="width_iv_choses">33dp</dimen>
     <dimen name="margintop_iv_choses">19dp</dimen>
     <dimen name="marginRight_iv_choises">16dp</dimen>
+    <dimen name="padingPartsColleges">30dp</dimen>
+    <dimen name="sizeTextPartsColleges">40sp</dimen>
+    <dimen name="corner_partsColleges">20dp</dimen>
+    <dimen name="widthCVparts">100dp</dimen>
+    <dimen name="HigthCVparts">100dp</dimen>
 </resources>

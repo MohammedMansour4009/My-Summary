@@ -1,46 +1,53 @@
-?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.fragment.chapter.chaptersFragment">
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
+    <data>
+
+    </data>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        tools:context=".ui.fragment.chapter.chaptersFragment">
 
-        <TextView
-            android:id="@+id/tv_chapters"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/marginStart_pain"
-            android:layout_marginTop="@dimen/marginTop_pain"
-            android:text="@string/chapters"
-            android:textSize="@dimen/tv_pain"
-            android:textStyle="bold" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_chapters"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/heigth_rv_chapter"
-            android:layout_marginTop="@dimen/margintop_rv" />
-
-        <TextView
-            android:id="@+id/tv_share7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginTop="@dimen/marginTop_pain"
-            android:layout_marginRight="@dimen/marginStart_pain"
-            android:text="@string/share7"
-            android:textSize="@dimen/tv_pain"
-            android:textStyle="bold" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_share7"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/margintop_rv" />
-    </LinearLayout>
-</FrameLayout>
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_chapters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginStart_pain"
+                android:layout_marginTop="@dimen/marginTop_pain"
+                android:text="@string/chapters"
+                android:textSize="@dimen/tv_pain"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_chapters"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heigth_rv_chapter"
+                android:layout_marginTop="@dimen/margintop_rv" />
+
+            <TextView
+                android:id="@+id/tv_share7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/marginTop_pain"
+                android:layout_marginRight="@dimen/marginStart_pain"
+                android:text="@string/share7"
+                android:textSize="@dimen/tv_pain"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_share7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margintop_rv" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -71,9 +71,7 @@ public class HomeFragment extends Fragment {
 
     @SuppressLint("WrongConstant")
     @Override
-    public boolean onOptionsItemSele
-
-    cted(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.ic_my_summary:
                 navDrawer.openDrawer(GravityCompat.START);

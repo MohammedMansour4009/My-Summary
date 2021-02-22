@@ -1,4 +1,4 @@
-package com.example.mysummary.ui.fragment.matirial;
+package com.example.mysummary.ui.fragment.Choisesmatirial;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
