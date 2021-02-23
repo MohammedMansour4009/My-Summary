@@ -9,14 +9,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mysummary.databinding.CvChoisesBinding;
+import com.example.mysummary.databinding.RowChoisesBinding;
+import com.example.mysummary.databinding.RowCategoryBinding;
+import com.example.mysummary.databinding.RowChoisesBinding;
 import com.example.mysummary.model.home.Choises;
 
 import java.util.ArrayList;
 
 public class ChoisesAdapter extends RecyclerView.Adapter<ChoisesAdapter.ChoisesHolder> {
     private ArrayList<Choises> choises;
-    private CvChoisesBinding binding;
+    private RowChoisesBinding binding;
     private Context context;
 
     public ChoisesAdapter(ArrayList<Choises> choises) {
@@ -27,7 +29,7 @@ public class ChoisesAdapter extends RecyclerView.Adapter<ChoisesAdapter.ChoisesH
     @Override
 
     public ChoisesHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        binding=CvChoisesBinding.inflate(LayoutInflater.from(parent.getContext()));
+        binding= RowChoisesBinding.inflate(LayoutInflater.from(parent.getContext()));
         ChoisesHolder holder=new ChoisesHolder(binding);
         return holder;
     }
@@ -48,7 +50,7 @@ public class ChoisesAdapter extends RecyclerView.Adapter<ChoisesAdapter.ChoisesH
     class ChoisesHolder extends RecyclerView.ViewHolder{
         TextView tv;
         ImageView iv;
-        public ChoisesHolder(@NonNull CvChoisesBinding binding) {
+        public ChoisesHolder(@NonNull RowChoisesBinding binding) {
             super(binding.getRoot());
             tv=binding.tvNameChoises;
             iv=binding.ivChoises;

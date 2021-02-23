@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
-import com.example.mysummary.databinding.CvMatirialBinding;
+import com.example.mysummary.databinding.RowMatirialBinding;
 import com.example.mysummary.model.home.Chapter;
 
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterH
     private ArrayList<Chapter> chapters;
     private Context context;
     private int index=0;
-    private CvMatirialBinding binding;
+    private RowMatirialBinding binding;
 
     public ChapterAdapter(ArrayList<Chapter> chapters) {
         this.chapters = chapters;
@@ -35,7 +35,7 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterH
     @Override
     public ChapterHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //inflate Layout and set her in holder and return Holder
-        binding=CvMatirialBinding.inflate(LayoutInflater.from(parent.getContext()));
+        binding= RowMatirialBinding.inflate(LayoutInflater.from(parent.getContext()));
         ChapterHolder holder=new ChapterHolder(binding.getRoot());
         return holder;
     }

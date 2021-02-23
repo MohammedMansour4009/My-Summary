@@ -17,9 +17,5 @@
         android:id="@+id/mulaksat"
         android:name="com.example.mysummary.ui.fragment.mulakasat.mulaksat"
         android:label="fragment_mula5sat"
-        tools:layout="@layout/fragment_mula5sat" />
-    <activity
-        android:id="@+id/baseBindingActivity"
-        android:name="com.example.mysummary.ui.main.BaseBindingActivity"
-        android:label="BaseBindingActivity" />
+        tools:layout="@layout/fragment_mula5sat" /><action android:id="@+id/action_global_mulaksat" app:destination="@id/mulaksat"/><action android:id="@+id/action_global_homeFragment2" app:destination="@id/homeFragment2"/>
 </navigation>

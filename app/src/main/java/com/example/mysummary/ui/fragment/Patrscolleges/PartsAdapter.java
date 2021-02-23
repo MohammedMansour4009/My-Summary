@@ -8,14 +8,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mysummary.databinding.CvPartsCollegesBinding;
+import com.example.mysummary.databinding.RowPartsCollegesBinding;
 import com.example.mysummary.model.home.Chapter;
 
 import java.util.ArrayList;
 
 public class PartsAdapter extends RecyclerView.Adapter<PartsAdapter.PartsHolder> {
     private ArrayList<Chapter> parts;
-    private CvPartsCollegesBinding binding;
+    private RowPartsCollegesBinding binding;
 
     public PartsAdapter(ArrayList<Chapter> parts) {
         this.parts = parts;
@@ -24,7 +24,7 @@ public class PartsAdapter extends RecyclerView.Adapter<PartsAdapter.PartsHolder>
     @NonNull
     @Override
     public PartsHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        binding=CvPartsCollegesBinding.inflate(LayoutInflater.from(parent.getContext()));
+        binding=RowPartsCollegesBinding.inflate(LayoutInflater.from(parent.getContext()));
         PartsHolder holder=new PartsHolder(binding);
         return holder;
     }
@@ -44,7 +44,7 @@ public class PartsAdapter extends RecyclerView.Adapter<PartsAdapter.PartsHolder>
 
     class PartsHolder extends RecyclerView.ViewHolder{
         private TextView tv;
-        public PartsHolder(@NonNull CvPartsCollegesBinding binding) {
+        public PartsHolder(@NonNull RowPartsCollegesBinding binding) {
             super(binding.getRoot());
             tv=binding.tvNamePatrs;
         }

@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mysummary.databinding.CvMatirialBinding;
+import com.example.mysummary.databinding.RowMatirialBinding;
 import com.example.mysummary.model.home.Chapter;
 
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class MawadAdapter extends RecyclerView.Adapter<MawadAdapter.MawadHolder> {
     private ArrayList<Chapter> mawads;
     private Context context;
-    private CvMatirialBinding binding;
+    private RowMatirialBinding binding;
 
     public MawadAdapter(ArrayList<Chapter> mawads) {
         this.mawads = mawads;
@@ -27,7 +27,7 @@ public class MawadAdapter extends RecyclerView.Adapter<MawadAdapter.MawadHolder>
     @Override
 
     public MawadHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        binding=CvMatirialBinding.inflate(LayoutInflater.from(parent.getContext()));
+        binding=RowMatirialBinding.inflate(LayoutInflater.from(parent.getContext()));
         MawadHolder holder=new MawadHolder(binding);
         return holder;
     }
@@ -51,7 +51,7 @@ public class MawadAdapter extends RecyclerView.Adapter<MawadAdapter.MawadHolder>
 
     class MawadHolder extends RecyclerView.ViewHolder{
     private TextView tv;
-    public MawadHolder(@NonNull CvMatirialBinding binding) {
+    public MawadHolder(@NonNull RowMatirialBinding binding) {
         super(binding.getRoot());
         tv=binding.tvMatirial;
     }

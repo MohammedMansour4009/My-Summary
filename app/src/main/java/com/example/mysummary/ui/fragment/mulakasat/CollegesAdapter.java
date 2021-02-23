@@ -9,13 +9,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mysummary.databinding.CvCollegeBinding;
+import com.example.mysummary.databinding.RowCollegeBinding;
 import com.example.mysummary.model.home.Colleges;
 
 import java.util.ArrayList;
 
 public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.CollegesHolder> {
-    private CvCollegeBinding binding;
+    private RowCollegeBinding binding;
     private ArrayList<Colleges> colleges;
     private Context context;
 
@@ -34,7 +34,7 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
     @NonNull
     @Override
     public CollegesHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        binding= CvCollegeBinding.inflate(LayoutInflater.from(parent.getContext()));
+        binding= RowCollegeBinding.inflate(LayoutInflater.from(parent.getContext()));
         CollegesHolder holder=new CollegesHolder(binding);
 
         return holder;
@@ -56,7 +56,7 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
     class CollegesHolder extends RecyclerView.ViewHolder{
         TextView tv;
         ImageView iv;
-        public CollegesHolder(@NonNull CvCollegeBinding binding) {
+        public CollegesHolder(@NonNull RowCollegeBinding binding) {
             super(binding.getRoot());
             tv=binding.tvColleges;
             iv=binding.ivColleges;
