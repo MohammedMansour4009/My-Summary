@@ -3,36 +3,35 @@ package com.example.mysummary.ui.fragment.Patrscolleges;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowPartsCollegesBinding;
-import com.example.mysummary.model.home.Chapter;
+import com.example.mysummary.model.home.Parts;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class PartsAdapter extends RecyclerView.Adapter<PartsAdapter.PartsHolder> {
-    private ArrayList<Chapter> parts;
+    private List<Parts> parts;
     private RowPartsCollegesBinding binding;
 
-    public PartsAdapter(ArrayList<Chapter> parts) {
+    public PartsAdapter(List<Parts> parts) {
         this.parts = parts;
     }
 
     @NonNull
     @Override
     public PartsHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        binding=RowPartsCollegesBinding.inflate(LayoutInflater.from(parent.getContext()));
-        PartsHolder holder=new PartsHolder(binding);
-        return holder;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_chapters, parent, false);
+        return new PartsAdapter.PartsHolder(RowPartsCollegesBinding.bind(view));
     }
 
     @Override
     public void onBindViewHolder(@NonNull PartsHolder holder, int position) {
-        Chapter part=parts.get(position);
-        holder.tv.setText(part.getNameCourse());
+        Parts part=parts.get(position);
+        holder.binding.setModel(part);
 
 
     }
@@ -43,10 +42,10 @@ public class PartsAdapter extends RecyclerView.Adapter<PartsAdapter.PartsHolder>
     }
 
     class PartsHolder extends RecyclerView.ViewHolder{
-        private TextView tv;
+        RowPartsCollegesBinding binding;
         public PartsHolder(@NonNull RowPartsCollegesBinding binding) {
             super(binding.getRoot());
-            tv=binding.tvNamePatrs;
+            this.binding = binding;
         }
     }
 }

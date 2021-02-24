@@ -15,7 +15,12 @@
     </fragment>
     <fragment
         android:id="@+id/mulaksat"
-        android:name="com.example.mysummary.ui.fragment.mulakasat.mulaksat"
+        android:name="com.example.mysummary.ui.fragment.mulakasat.MulaksatFragment"
         android:label="fragment_mula5sat"
-        tools:layout="@layout/fragment_mula5sat" /><action android:id="@+id/action_global_mulaksat" app:destination="@id/mulaksat"/><action android:id="@+id/action_global_homeFragment2" app:destination="@id/homeFragment2"/>
+        tools:layout="@layout/fragment_mula5sat" />
+    <fragment
+        android:id="@+id/matirialChoisesFragmint"
+        android:name="com.example.mysummary.ui.fragment.Choisesmatirial.MatirialChoisesFragmint"
+        android:label="fragment_matirial_choises_fragmint"
+        tools:layout="@layout/fragment_matirial_choises_fragmint" />
 </navigation>

@@ -2,6 +2,7 @@ package com.example.mysummary.ui.fragment.Choisesmatirial;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -9,19 +10,20 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowChoisesBinding;
 import com.example.mysummary.databinding.RowCategoryBinding;
 import com.example.mysummary.databinding.RowChoisesBinding;
 import com.example.mysummary.model.home.Choises;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ChoisesAdapter extends RecyclerView.Adapter<ChoisesAdapter.ChoisesHolder> {
-    private ArrayList<Choises> choises;
-    private RowChoisesBinding binding;
+    private List<Choises> choises;
     private Context context;
 
-    public ChoisesAdapter(ArrayList<Choises> choises) {
+    public ChoisesAdapter(List<Choises> choises) {
         this.choises = choises;
     }
 
@@ -29,17 +31,14 @@ public class ChoisesAdapter extends RecyclerView.Adapter<ChoisesAdapter.ChoisesH
     @Override
 
     public ChoisesHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        binding= RowChoisesBinding.inflate(LayoutInflater.from(parent.getContext()));
-        ChoisesHolder holder=new ChoisesHolder(binding);
-        return holder;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_choises, parent, false);
+        return new ChoisesAdapter.ChoisesHolder(RowChoisesBinding.bind(view));
     }
 
     @Override
     public void onBindViewHolder(@NonNull ChoisesHolder holder, int position) {
         Choises choise=choises.get(position);
-        holder.iv.setImageURI(choise.getUri());
-        holder.tv.setText(choise.getName());
-
+        holder.binding.setModel(choise);
     }
 
     @Override
@@ -48,12 +47,11 @@ public class ChoisesAdapter extends RecyclerView.Adapter<ChoisesAdapter.ChoisesH
     }
 
     class ChoisesHolder extends RecyclerView.ViewHolder{
-        TextView tv;
-        ImageView iv;
+        RowChoisesBinding binding;
         public ChoisesHolder(@NonNull RowChoisesBinding binding) {
             super(binding.getRoot());
-            tv=binding.tvNameChoises;
-            iv=binding.ivChoises;
+            this.binding = binding;
+
         }
     }
 }

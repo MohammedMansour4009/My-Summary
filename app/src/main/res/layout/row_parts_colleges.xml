@@ -1,29 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:elevation="@dimen/shadow">
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        app:cardElevation="@dimen/shadow"
-        android:background="@drawable/cv_parts_colleges"
-        android:layout_gravity="center">
-        <TextView
-            android:layout_width="@dimen/widthCVparts"
-            android:layout_height="@dimen/HigthCVparts"
-            android:id="@+id/tv_namePatrs"
-            android:textSize="@dimen/sizeTextPartsColleges"
-            android:text="CIS"
-            android:gravity="center"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.example.mysummary.model.home.Parts" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:elevation="@dimen/shadow">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:cardElevation="@dimen/shadow"
             android:background="@drawable/cv_parts_colleges"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="@dimen/widthCVparts"
+                android:layout_height="@dimen/HigthCVparts"
+                android:id="@+id/tv_namePatrs"
+                android:textSize="@dimen/sizeTextPartsColleges"
+                tools:text="CIS"
+                android:text="@{model.nameCourse}"
+                android:gravity="center"
+                android:background="@drawable/cv_parts_colleges"
 
 
-            />
-        
-    </androidx.cardview.widget.CardView>
+                />
 
-</LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

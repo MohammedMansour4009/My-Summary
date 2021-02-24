@@ -38,7 +38,7 @@
             android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_matirial"
+            android:id="@+id/rv_mawad"
             android:layout_width="match_parent"
             android:layout_height="@dimen/rv_matirial"
             android:layout_marginTop="@dimen/margintop_rv" />

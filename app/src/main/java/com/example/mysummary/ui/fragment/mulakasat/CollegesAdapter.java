@@ -2,6 +2,7 @@ package com.example.mysummary.ui.fragment.mulakasat;
 
 import android.content.Context;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -9,17 +10,21 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowCollegeBinding;
+import com.example.mysummary.databinding.RowMawadBinding;
 import com.example.mysummary.model.home.Colleges;
+import com.example.mysummary.ui.fragment.Mawad.MawadAdapter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.CollegesHolder> {
     private RowCollegeBinding binding;
-    private ArrayList<Colleges> colleges;
+    private List<Colleges> colleges;
     private Context context;
 
-    public CollegesAdapter(ArrayList<Colleges> colleges) {
+    public CollegesAdapter(List<Colleges> colleges) {
         this.colleges = colleges;
     }
 
@@ -34,17 +39,15 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
     @NonNull
     @Override
     public CollegesHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        binding= RowCollegeBinding.inflate(LayoutInflater.from(parent.getContext()));
-        CollegesHolder holder=new CollegesHolder(binding);
-
-        return holder;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_chapters, parent, false);
+        return new CollegesAdapter.CollegesHolder(RowCollegeBinding.bind(view));
     }
 
     @Override
     public void onBindViewHolder(@NonNull CollegesHolder holder, int position) {
         Colleges college=colleges.get(position);
-        holder.iv.setImageURI(college.getImg());
-        holder.tv.setText(college.getNameCollege());
+        holder.binding.ivColleges.setImageURI(college.getImg());
+        holder.binding.setModel(college);
     }
 
 
@@ -54,12 +57,11 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
     }
 
     class CollegesHolder extends RecyclerView.ViewHolder{
-        TextView tv;
-        ImageView iv;
+         RowCollegeBinding binding;
         public CollegesHolder(@NonNull RowCollegeBinding binding) {
             super(binding.getRoot());
-            tv=binding.tvColleges;
-            iv=binding.ivColleges;
+            this.binding = binding;
+
 
         }
     }

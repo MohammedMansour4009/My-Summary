@@ -4,22 +4,22 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mysummary.databinding.RowMatirialBinding;
-import com.example.mysummary.model.home.Chapter;
+import com.example.mysummary.R;
+import com.example.mysummary.databinding.RowMawadBinding;
+import com.example.mysummary.model.home.Mawad;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MawadAdapter extends RecyclerView.Adapter<MawadAdapter.MawadHolder> {
-    private ArrayList<Chapter> mawads;
+    private List<Mawad> mawads;
     private Context context;
-    private RowMatirialBinding binding;
 
-    public MawadAdapter(ArrayList<Chapter> mawads) {
+    public MawadAdapter(List<Mawad> mawads) {
         this.mawads = mawads;
     }
 
@@ -27,15 +27,15 @@ public class MawadAdapter extends RecyclerView.Adapter<MawadAdapter.MawadHolder>
     @Override
 
     public MawadHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        binding=RowMatirialBinding.inflate(LayoutInflater.from(parent.getContext()));
-        MawadHolder holder=new MawadHolder(binding);
-        return holder;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_chapters, parent, false);
+        return new MawadAdapter.MawadHolder(RowMawadBinding.bind(view));
     }
 
     @Override
     public void onBindViewHolder(@NonNull MawadHolder holder, int position) {
-        Chapter mawad=mawads.get(position);
-        holder.tv.setText(mawad.getNameCourse());
+        Mawad mawad=mawads.get(position);
+
+
     }
 
     @Override
@@ -50,10 +50,10 @@ public class MawadAdapter extends RecyclerView.Adapter<MawadAdapter.MawadHolder>
     }
 
     class MawadHolder extends RecyclerView.ViewHolder{
-    private TextView tv;
-    public MawadHolder(@NonNull RowMatirialBinding binding) {
+        RowMawadBinding binding;
+    public MawadHolder(@NonNull RowMawadBinding binding) {
         super(binding.getRoot());
-        tv=binding.tvMatirial;
+        this.binding = binding;
     }
 }
 }

@@ -9,7 +9,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.fragment.chapter.chaptersFragment">
+        tools:context=".ui.fragment.chapter.ChaptersFragment">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,7 +30,8 @@
                 android:id="@+id/rv_chapters"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/heigth_rv_chapter"
-                android:layout_marginTop="@dimen/margintop_rv" />
+                android:layout_marginTop="@dimen/margintop_rv"
+                tools:listitem="@layout/row_chapters"/>
 
             <TextView
                 android:id="@+id/tv_share7"

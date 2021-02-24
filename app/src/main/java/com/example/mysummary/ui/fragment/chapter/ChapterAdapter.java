@@ -4,24 +4,23 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
-import com.example.mysummary.databinding.RowMatirialBinding;
+import com.example.mysummary.databinding.RowChaptersBinding;
 import com.example.mysummary.model.home.Chapter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterHolder> {
-    private ArrayList<Chapter> chapters;
+    private List<Chapter> chapters;
     private Context context;
     private int index=0;
-    private RowMatirialBinding binding;
 
-    public ChapterAdapter(ArrayList<Chapter> chapters) {
+    public ChapterAdapter(List<Chapter> chapters) {
         this.chapters = chapters;
     }
 
@@ -35,15 +34,14 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterH
     @Override
     public ChapterHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //inflate Layout and set her in holder and return Holder
-        binding= RowMatirialBinding.inflate(LayoutInflater.from(parent.getContext()));
-        ChapterHolder holder=new ChapterHolder(binding.getRoot());
-        return holder;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_chapters, parent, false);
+        return new ChapterAdapter.ChapterHolder(RowChaptersBinding.bind(view));
     }
 
     @Override
     public void onBindViewHolder(@NonNull ChapterHolder holder, int position) {
         Chapter chapter=chapters.get(position);
-        holder.tv.setText(chapter.getNameCourse());
+        holder.binding.setModel(chapter);
 
     }
 
@@ -53,13 +51,11 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterH
     }
 
     class ChapterHolder extends RecyclerView.ViewHolder{
-        private TextView tv;
+        RowChaptersBinding binding;
 
-        public ChapterHolder(@NonNull View itemView) {
-            //set values in dataFiled
-            super(itemView);
-            tv=itemView.findViewById(binding.tvMatirial.getId());
-
+        public ChapterHolder(@NonNull RowChaptersBinding binding) {
+            super(binding.getRoot());
+            this.binding = binding;
 
         }
 
