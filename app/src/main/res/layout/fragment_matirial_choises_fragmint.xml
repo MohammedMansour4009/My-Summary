@@ -14,7 +14,8 @@
             android:id="@+id/rv_matirialChoises"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/marginTop_rv_choises" />
+            android:layout_marginTop="@dimen/marginTop_rv_choises"
+            tools:listitem="@layout/row_choises"/>
     </LinearLayout>
 
 </FrameLayout>

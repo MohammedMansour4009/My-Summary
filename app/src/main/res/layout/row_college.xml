@@ -4,56 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-<variable
-    name="model"
-    type="com.example.mysummary.model.home.Colleges" />
+
+        <variable
+            name="model"
+            type="com.example.mysummary.model.home.Colleges" />
     </data>
 
-    <LinearLayout
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/design_corner_gray"
+        android:padding="@dimen/_10sdp"
 
-        <androidx.cardview.widget.CardView
-            app:cardCornerRadius="@dimen/collegesStrokeSize"
-            app:cardElevation="@dimen/shadow"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/colleges_selector"
+        >
 
-            >
+        <ImageView
+            android:id="@+id/iv_colleges"
+            android:layout_width="@dimen/ImageWidth"
+            android:layout_height="@dimen/_50sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:background="@drawable/ic_mountain" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="6dp">
-
-                <ImageView
-                    android:id="@+id/iv_colleges"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_width="@dimen/ImageWidth"
-                    android:layout_height="@dimen/heigthCV"
-                    android:layout_marginTop="@dimen/marginTopIv"
-                    android:layout_marginBottom="@dimen/marginBottomiv"
-                    android:layout_marginRight="@dimen/margenEndIv"
-                    tools:background="@tools:sample/backgrounds/scenic"
-                    />
-
-                <TextView
-                    android:id="@+id/tv_colleges"
-                    app:layout_constraintEnd_toStartOf="@id/iv_colleges"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/marginTopTv"
-                    android:layout_marginRight="@dimen/marginEndTv"
-                    android:text="@{model.nameCollege}"
-                    android:textColor="@color/gray"
-                    android:textSize="@dimen/tv_size" />
+        <TextView
+            android:id="@+id/tv_colleges"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:text="@{model.nameCollege}"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/tv_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_colleges"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="الأمير الحسين بن عبد لله الثاني لتكنولوجيا المعلومات" />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </LinearLayout>
 </layout>

@@ -12,27 +12,23 @@
         android:orientation="vertical">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="280dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/marginTop_tv_choises"
+            android:layout_marginTop="@dimen/_40sdp"
             android:orientation="horizontal"
-
-            >
-
-        </androidx.recyclerview.widget.RecyclerView>
+            tools:listitem="@layout/row_image_in_main"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
 
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_category"
-            android:layout_marginTop="@dimen/_30sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:itemCount="3"
-            tools:listitem="@layout/row_category"
+            android:layout_marginTop="@dimen/_30sdp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            />
+            tools:itemCount="3"
+            tools:listitem="@layout/row_category" />
 
 
     </LinearLayout>

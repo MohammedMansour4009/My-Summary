@@ -154,7 +154,9 @@
             android:id="@+id/rv_college"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/marginTop_rv" />
+            android:layout_marginTop="@dimen/marginTop_rv"
+            tools:listitem="@layout/row_choises"/>
+
     </LinearLayout>
 
 

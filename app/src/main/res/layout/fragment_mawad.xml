@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragment.Mawad.MawadFragment">
 
     <LinearLayout
@@ -10,20 +11,19 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_search"
-            android:layout_width="@dimen/width_et_search"
-            android:layout_height="@dimen/heigth_et_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/marginTop_et_search"
             android:layout_marginBottom="@dimen/margin_bottom_et"
             android:background="@drawable/searchshape"
-            android:drawableLeft="@drawable/ic_search"
+            android:drawableRight="@drawable/ic_search"
+            android:paddingEnd="@dimen/_20sdp"
             android:elevation="@dimen/shadow"
-            android:hint="@string/collegeName"
-            android:padding="@dimen/pading_et_search"
-            android:paddingLeft="@dimen/marginLeft_ic_search" />
-
+            android:hint="@string/matirial"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,6 +40,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_mawad"
             android:layout_width="match_parent"
+            tools:listitem="@layout/row_chapters"
             android:layout_height="@dimen/rv_matirial"
             android:layout_marginTop="@dimen/margintop_rv" />
 
@@ -61,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/margintop_rv"
-
+            tools:listitem="@layout/row_image_in_main"
             />
     </LinearLayout>
 
