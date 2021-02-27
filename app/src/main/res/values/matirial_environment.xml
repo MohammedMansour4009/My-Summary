@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="water_enviroment">
+        <item name="1">استشعار عن بعد	
+        </item>
+        <item name="2">تلوث الهواء	
+</item>
+        <item name="3">ادارة تقييم المخاطر	
+</item>
+        <item name="4">ادارة وتخطيط الموارد المائية	
+</item>
+        <item name="5">السياسات البيئية	
+</item>
+        <item name="6">تقييم الاثر البيئي	
+</item>
+        <item name="7">معالجة مياه عادمة	
+</item>
+        <item name="8">المخلفات الصلبة والخطرة	
+</item>
+        <item name="9">الصحة والسلامة المهنية والبيئية	
+</item>
+        <item name="10">نظم الادارة البيئية	
+</item>
+        <item name="11">معالجة مياه الشرب	
+</item>
+        <item name="12">نوعية المياه	
+</item>
+        <item name="13">هيدرولوجيا المياه السطحية	
+</item>
+        <item name="14">هيدرولوجيا المياه الجوفية	
+</item>
+        <item name="15">مهارات اتصال	
+</item>
+        <item name="16">علم البيئة	
+</item>
+        <item name="17">ارصاد جويه	
+</item>
+        <item name="18">نظم المعلومات الجغرافية
+</item>
+        <item name="19">ميكروبيولوجيا المياه		
+</item>
+        <item name="20">كيمياء المياه	
+</item>
+        <item name="21">علم تربة بيئي	
+</item>
+    </string-array>
+    <string-array name="earth_and_water">
+        <item name="1">جيولوجيا عامة (1)	
+        </item>
+        <item name="2">علم البيئة	
+</item>
+        <item name="3">نظم المعلومات الجغرافية	
+</item>
+        <item name="4">مكافحة التصحر والجفاف	
+</item>
+        <item name="5">معالجة انظمة بيئية ملوثة	
+</item>
+        <item name="6">حفظ التربة والماء	
+</item>
+        <item name="7">خصوبة التربة والأسمدة	
+</item>
+        <item name="8">تغيرات مكانية وزمانية بيئية	
+</item>
+        <item name="9">علاقة التربة بالماء والنبات	
+</item>
+        <item name="10">استدامة المراعي والمناطق المحمية	
+</item>
+        <item name="11">علم الري	
+</item>
+        <item name="12">مسح تربة واستعمالات اراضي	
+</item>
+        <item name="13">كيميائية الملوثات البيئية	
+</item>
+        <item name="14">كيمياء تربة بيئية	
+</item>
+        <item name="15">فيزياء تربة بيئية	
+</item>
+        <item name="16">علم وانتاج النبات	
+</item>
+        <item name="17">علم تربة بيئي	
+</item>
+        <item name="18">كيمياء تربة حيوية	
+</item>
+        <item name="19">الهيدروبيدولوجيا	
+</item>
+        <item name="20">استشعار عن بعد	
+</item>
+       
+
+    </string-array>
+    <string-array name="earth_since">
+        <item name ="">جيولوجيا عامة (1)
+        </item>
+        <item name ="1">هيدرولوجيا المياه الجوفية
+</item>
+        <item name ="2">علم البيئة
+</item>
+        <item name ="3">نظم المعلومات الجغرافية
+</item>
+        <item name ="4">علم تربة بيئي
+</item>
+        <item name ="5">جيولوجيا ميدانية تطبيقية
+</item>
+        <item name ="6">جيولوجيا بترول
+</item>
+        <item name ="7">جيوكيمياء بيئية
+</item>
+        <item name ="8">جيولوجيا هندسية
+</item>
+        <item name ="9">جيولوجيا الاردن
+</item>
+        <item name ="10">جيولوجيا اقتصادية
+</item>
+        <item name ="11">تقنيات ميدانية وتحليلية
+</item>
+        <item name ="12">اساسيات جيوفيزياء
+</item>
+        <item name ="13">جيولوجيا تركيبية
+</item>
+        <item name ="14">علم صخور رسوبية
+</item>
+        <item name ="15">صخور نارية ومتحولة
+</item>
+        <item name ="16">استشعار عن بعد
+</item>
+        <item name ="17">كوارث طبيعية
+</item>
+        <item name ="18">علم معادن
+</item>
+        <item name ="19">علم مستحاثات
+</item>
+        <item name ="20">علم طبقات
+</item>
+        <item neme="21">جيولوجيا عامة (2)
+</item>
+    </string-array>
+</resources>

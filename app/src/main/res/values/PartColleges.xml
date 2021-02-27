@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languageParts">
+        <item name="1">قسم اللغة العربية و ادابها
+</item>
+        <item name="2">قسم المواد الانسانية المساندة
+</item>
+        <item>قسم العلوم الانسانية و الاجتماعية
+</item>
+        <item>قسم اللغة الانجليزية و ادابها
+</item>
+
+    </string-array>
+    <string-array name="childhoodParts">
+        <item name ="1">قسم تربية الطفل
+</item>
+        <item name ="">قسم التربية الخاصة</item>
+        
+
+
+    </string-array>
+    <string-array name="economieParts">
+        <item name="1">قسم الاقتصاد</item>
+        <item name="2">قسم المحاسبة </item>
+        <item name="3">قسم ادارة الاعمال</item>
+        <item name="4">قسم العلوم المالية والمصرفية</item>
+    </string-array>
+    <string-array name="itParts">
+        <item name="1">قسم علم الحاسوب و تطبيقاته</item>
+        <item name="2">قسم هندسة البرمجيات </item>
+        <item name="3">قسم انظمة المعلومات الحاسوبية</item>
+        <item name="4">قسم تكنولوجيا معلومات الاعمال</item>
+    </string-array>
+    <string-array name="sportParts">
+        <item name="1">قسم التأهيل الرياضي </item>
+        <item name="2">قسم التربية البدنية و علوم الرياضية</item>
+        <item name="3">قسم الادارة و التدريب الرياضي </item>
+
+    </string-array>
+    <string-array name="educationalsciencesParts">
+        <item name="1">قسم أصول التربية و الادارة
+</item>
+        <item name="2">قسم المناهج و التدريس
+</item>
+        <item name="3">قسم علم النفس التربوي و الارشاد النفسي
+</item>
+    </string-array>
+    <string-array name="appliedsciencesParts">
+        <item name="1">قسم العلاج الطبيعي و الوظيفي
+
+</item>
+        <item name="2">قسم العلوم المخبرية
+</item>
+        <item name="3">قسم التغذية السريرية والحميات
+</item>
+        <item name="4">قسم التصوير الطبي
+</item>
+    </string-array>
+
+
+</resources>

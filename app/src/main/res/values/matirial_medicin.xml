@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="matirial_medicine">
+        <item name="1">الكيمياء الحيوية العامة
+</item>
+        <item name="2">علم وظائف الاعضاء العام
+</item>
+        <item name="3">            اقتصاديات الصحة
+</item>
+
+        <item name="4">الجهاز العصبي (1)
+</item>
+        <item name="5">الجهاز الحركي و الجلد
+</item>
+        <item name="6">قدمة في الصحة العامة
+</item>
+        <item name="7">الجهاز الهضمي
+</item>
+        <item name="8">علم المناعة
+</item>
+        <item name="9">الجهاز الدوري
+</item>
+        <item name="10">الجهاز التنفسي
+</item>
+        <item name="11">علم الاحياء الدقيقة العامة
+</item>
+        <item name="12">علم الادوية العام
+</item>
+        <item name="13">علم الامراض العام (1)
+</item>
+        <item name="14">وراثة جزيئية
+</item>
+        <item name="15">الاسعافات الاولية
+</item>
+
+        <item name="16">الامراض النسائية والتوليد (1)
+</item>
+        <item name="17">طب الاطفال (2)
+</item>
+        <item name="18">طب الاطفال (1)
+</item>
+        <item name="19">الامراض الباطنية (2)
+</item>
+        <item name="20">الامراض الجلدية (1)
+</item>
+        <item name="21">الجراحة العامة (2)
+</item>
+        <item name="22">امراض العيون (1)
+</item>
+        <item name="23">امراض الانف والاذن والحنجرة (1)
+</item>
+        <item name="24">طب و جراحة العظام (1)
+</item>
+        <item name="25">جراحة الاعصاب
+</item>
+        <item name="26">علم النفس السريري
+</item>
+        <item name="27">اتخاذ القرار الطبي
+</item>
+        <item name="28">الجهاز العصبي (2)
+</item>
+
+        <item name="29">الأمراض العصبية
+</item>
+        <item name="30">الاشعة التشخيصية (1)
+</item>
+        <item name="31">الامراض الباطنية (1)
+</item>
+        <item name="32">جراحة المسالك البولية ( 1 )
+</item>
+        <item name="33">الجراحة العامة (1)
+</item>
+        <item name="34">الطب الشرعي والسموم (1)
+</item>
+        <item name="35">طب المجتمع (1)
+</item>
+        <item name="36">طب الطوارئ والتخدير
+</item>
+        <item name="37">مقدمة في التدريب السريري
+</item>
+        <item name="38">الامراض النسائية و التوليد (2)
+</item>
+
+
+        <item name="39">موضوعات طبية خاصة
+</item>
+        <item name="40">طب المجتمع (2)
+</item>
+        <item name="41">طب الطوارئ
+</item>
+        <item name="42">الجهاز البولي والتناسلي
+</item>
+        <item name="43">جهاز الغدد الصماء
+</item>
+        <item name="44">الجهاز الدموي واللمفاوي
+</item>
+        <item name="45">الأمراض النفسية (1)
+</item>
+        <item name="46">طب الاسرة
+</item>
+
+        <item name="47">السياسات الصحية	</item>
+        <item name="48">اخلاقيات العلوم والتقانة الطبية
+</item>
+        <item name="49">التشريح العام
+</item>
+        <item name="50">بيولوجيا خلوية و انسجة
+</item>
+        <item name="51">الامراض النسائية و التوليد (3)
+</item>
+        <item name="52">الاشعة التشخيصية (2)
+</item>
+        <item name="53">الامراض الجلدية (2)
+</item>
+        <item name="54">الامراض النفسية (2)
+</item>
+        <item name="55">طب الاسرة والرعاية الصحية الاولية
+</item>
+        <item name="56">الامراض الباطنية(3)
+</item>
+        <item name="57">طب الاطفال (3)	</item>
+
+        <item name="58">امراض العيون (2)
+</item>
+        <item name="59">امراض الانف و الاذن و الحنجرة (2)
+</item>
+        <item name="60">طب و جراحة العظام (2)
+</item>
+        <item name="61">الجراحة العامة (3)
+</item>
+        <item name="62">تخدير
+</item>
+        <item name="63">جراحة المسالك البولية (2)
+</item>
+        <item name="64">علم الامراض العام (2)
+</item>
+        <item name="65">الطب الشرعي و السموم (2)
+</item>
+    </string-array>
+</resources>

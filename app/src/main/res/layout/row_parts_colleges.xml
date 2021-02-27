@@ -19,16 +19,16 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="@dimen/heightCvMatirial"
             app:cardElevation="@dimen/shadow"
             android:background="@drawable/cv_parts_colleges"
             android:layout_gravity="center">
 
             <TextView
-                android:layout_width="@dimen/widthCVparts"
-                android:layout_height="@dimen/HigthCVparts"
+                android:layout_width="@dimen/widthCvMatirial"
+                android:layout_height="@dimen/heightCvMatirial"
                 android:id="@+id/tv_namePatrs"
-                android:textSize="@dimen/sizeTextPartsColleges"
+                android:textSize="@dimen/tv_sizeText_matirial"
                 tools:text="CIS"
                 android:text="@{model.nameCourse}"
                 android:gravity="center"

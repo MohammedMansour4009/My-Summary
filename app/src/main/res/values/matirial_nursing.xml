@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nurse">
+        <item name="1">البحث العلمي وطرق الاحصاء في التمريض
+</item>
+        <item name="2">تمريض صحة البالغين (1) / نظري
+</item>
+        <item name="3">تمريض صحة البالغين (1) / نظري
+</item>
+        <item name="4">اساسيات التمريض / نظري
+</item>
+        <item name="5">مقدمة في التمريض
+</item>
+        <item name="6">تمريض صحة الطفل /نظري
+</item>
+        <item name="7">النمو والتطور
+        </item>
+        <item name="8">تمريض صحة الأم والأسرة /نظري
+        </item>
+        <item name="9">العناية الحثيثة للتمريض
+        </item>
+        <item name="10">التدريب والتأقلم المهني
+        </item>
+        <item name="11">التقييم الصحي /نظري
+        </item>
+        <item name="12">القيادة والادارة في التمريض /نظري
+        </item>
+        <item name="13">تمريض صحة المجتمع /نظري
+        </item>
+        <item name="14">أخلاقيات العلوم والتقانة
+        </item>
+        <item name="15">تمريض الصحة النفسية /نظري
+        </item>
+        <item name="16">الوقاية والارتقاء بالصحة
+        </item>
+    </string-array>
+
+</resources>

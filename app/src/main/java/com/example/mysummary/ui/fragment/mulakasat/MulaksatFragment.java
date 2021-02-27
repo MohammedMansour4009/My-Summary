@@ -1,18 +1,24 @@
 package com.example.mysummary.ui.fragment.mulakasat;
 
+import android.content.res.Resources;
+import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentMula5satBinding;
 import com.example.mysummary.model.home.Colleges;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class MulaksatFragment extends Fragment {
@@ -43,7 +49,33 @@ public class MulaksatFragment extends Fragment {
     }
 
     private void getRemoteColleges() {
-
+     List<String> list = new ArrayList<>();
+     list.addAll(Arrays.asList(getResources().getStringArray(R.array.colleges)));
+        int[] icon = {
+                R.drawable.ic_nurse,
+                R.drawable.ic_mountain,
+                R.drawable.ic_lab,
+                R.drawable.ic_it,
+                R.drawable.ic_eng,
+                R.drawable.ic_baby,
+                R.drawable.ic_doctors,
+                R.drawable.ic_dollor,
+                R.drawable.ic_drags,
+                R.drawable.ic_sport,
+                R.drawable.ic_poetry,
+                R.drawable.ic_flask,
+                R.drawable.ic_earth,
+ };
+        Uri uri[]=new Uri[list.size()];
+        for(int i=0;i<icon.length;i++) {
+            uri[i] = Uri.parse(String.valueOf(icon[i]));
+        }
+        collegesList=new ArrayList<>();
+       for (int i=0;i<list.size();i++){
+           collegesList.add(new Colleges(uri[i], list.get(i)));
+       }
 
     }
+
+
 }
