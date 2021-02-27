@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="colleges" >
-        <item name="medicine">            كلية الطب البشري</item>
-        <item name="engineer">كلية الهندسة</item>
-        <item name="appliedsciences">كلية العلوم التطبيقية </item>
-        <item name="nursing">كلية التمريض
+        <item name="1"> كلية الطب البشري</item>
+        <item name="2">كلية الهندسة</item>
+        <item name="2">كلية العلوم التطبيقية </item>
+        <item name="3">كلية التمريض
 </item>
-        <item name="environment">كلية الامير الحسين بن طلال للموارد الطبيعية والبيئة
+        <item name="4">كلية الامير الحسين بن طلال للموارد الطبيعية والبيئة
 </item>
-        <item name="childhood">كلية الملكة رانيا للطفولة
+        <item name="5">كلية الملكة رانيا للطفولة
 </item>
-        <item name="pharmacy">كلية العلوم الصيدلانية
+        <item name="6">كلية العلوم الصيدلانية
 </item>
-        <item name="earth">كلية الامير الجسن بن طلال للاراضي الجافة
+        <item name="7">كلية الامير الجسن بن طلال للاراضي الجافة
 </item>
-        <item name="economie">كلية الاقتصاد و العلوم الادارية
+        <item name="8">كلية الاقتصاد و العلوم الادارية
 </item>
-        <item name="language">كلية الأداب
+        <item name="9">كلية الأداب
 </item>
-        <item name="sport">كلية التربية البدنية و علوم الرياضة
+        <item name="10">كلية التربية البدنية و علوم الرياضة
 </item>
-        <item name="it">كلية الامير الحسين بن عبدلله الثاني لتكنولوجيا المعلومات
+        <item name="11">كلية الامير الحسين بن عبدلله الثاني لتكنولوجيا المعلومات
 </item>
-        <item name="tourism">كلية الملكة رانيا للسياحة و التراث
+        <item name="12">كلية الملكة رانيا للسياحة و التراث
 </item>
-        <item name="educational sciences">كلية العلوم التربوية
+        <item name="13">كلية العلوم التربوية
 </item>
-        <item name="government">كلية الدراسات الاستراتيجيية و الحكومية
+        <item name="14">كلية الدراسات الاستراتيجيية و الحكومية
 </item>
 
 
-        <item name="science">كلية العلوم</item>
+        <item name="15">كلية العلوم</item>
     </string-array>
 
 </resources>
