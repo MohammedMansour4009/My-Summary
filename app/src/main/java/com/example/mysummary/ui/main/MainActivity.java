@@ -15,7 +15,8 @@ import com.example.mysummary.R;
 import com.example.mysummary.databinding.ActivityMainBinding;
 
 public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
-    NavController navController;
+    private NavController navController;
+
 
 
     @Override
@@ -24,6 +25,7 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
         navController = Navigation.findNavController(this, R.id.f_main);
         initNavController();
         initToolbar();
+
 
     }
 

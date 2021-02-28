@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+    </data>
+<navigation
+
+    android:id="@+id/bottom_bar_navigiation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mysummary.ui.fragment.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/mulaksatFragment"
+        android:name="com.example.mysummary.ui.fragment.mulakasat.MulaksatFragment"
+        android:label="fragment_mula5sat"
+        tools:layout="@layout/fragment_mula5sat" />
+    <fragment
+        android:id="@+id/chisesFragment"
+        android:name="com.example.mysummary.ui.fragment.Choisesmatirial.MatirialChoisesFragmint"
+       android:label="fragment_matirial_choises_fragment"
+        tools:layout="@layout/fragment_matirial_choises_fragmint"
+        />
+</navigation></layout>

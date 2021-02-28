@@ -17,6 +17,7 @@ public abstract class BaseBindingActivity<B extends ViewBinding> extends AppComp
         binding = getViewBinding();
         setContentView(binding.getRoot());
 
+
     }
 
 

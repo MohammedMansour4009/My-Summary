@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/homeFragment2"
-        android:title="Home"
+        android:id="@+id/homeFragment"
+        android:title="home"
         android:icon="@drawable/ic_home"
         />
     <item
-        android:id="@+id/mulaksat"
-        android:title="book"
+        android:id="@+id/mulaksatFragment"
+        android:title="mulaksat"
         android:icon="@drawable/ic_book"
         />
     <item
-        android:id="@+id/matirialChoisesFragmint"
-        android:title="sta"
+        android:id="@+id/chisesFragment"
+        android:title="star"
         android:icon="@drawable/ic_star"
         />
 
