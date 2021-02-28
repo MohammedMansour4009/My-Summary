@@ -12,7 +12,6 @@ import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowChaptersBinding;
 import com.example.mysummary.model.home.Chapter;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterHolder> {

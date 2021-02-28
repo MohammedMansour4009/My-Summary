@@ -155,8 +155,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="@dimen/marginTop_rv"
+<<<<<<< HEAD
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             />
+=======
+            tools:listitem="@layout/row_choises"/>
+
+>>>>>>> 5983c2071ab2099dabe3e910b8bd22dedff5e3e1
     </LinearLayout>
 
 

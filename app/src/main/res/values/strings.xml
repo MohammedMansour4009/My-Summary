@@ -13,8 +13,11 @@
     <string name="computer99">حاسوب99</string>
     <string name="college">الكليات</string>
     <string name="tv_part">الاقسام</string>
-    <string name="matirial">المواد</string>
+    <string name="matirial">         المواد    </string>
     <string name="treePlan">الخطط الشجرية</string>
     <string name="chapters">Chapters</string>
     <string name="share7">شرح</string>
+    esources>
+
+
 </resources>

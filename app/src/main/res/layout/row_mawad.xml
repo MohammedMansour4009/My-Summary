@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-<variable
-    name="model"
-    type="Mawad" />
+
+        <variable
+            name="model"
+            type="com.example.mysummary.model.home.Mawad" />
     </data>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        android:layout_width="@dimen/width_tv_major"
+        android:layout_height="@dimen/heigth_tv_major"
+        android:layout_gravity="center"
+        android:background="@drawable/design_corner_gray"
+        android:gravity="center"
+        app:cardCornerRadius="@dimen/cv_corner_major"
+        android:layout_margin="@dimen/_10sdp">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="@dimen/width_tv_major"
-            android:layout_height="@dimen/heigth_tv_major"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/colleges_selector"
-            app:cardCornerRadius="@dimen/cv_corner_major"
-            app:cardElevation="@dimen/shadow"
-
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textColor="@color/gray"
-                android:textSize="@dimen/textSizeMajor" />
-
-        </androidx.cardview.widget.CardView>
+            android:textColor="@color/gray"
+            android:textSize="@dimen/textSizeMajor"
+            tools:text="CS" />
 
     </LinearLayout>
+
 </layout>
