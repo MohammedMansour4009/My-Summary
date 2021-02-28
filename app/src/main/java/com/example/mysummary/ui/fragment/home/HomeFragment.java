@@ -25,8 +25,12 @@ import java.util.List;
 public class HomeFragment extends Fragment {
     private FragmentHomeBinding binding;
     private List<Category> categoryList;
-    CategoryAdapter categoryAdapter;
-    DrawerLayout navDrawer;
+    private CategoryAdapter categoryAdapter;
+
+    private DrawerLayout navDrawer;
+
+    private List<Integer> imageList;
+    private ImageAdapter imageAdapter;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -37,8 +41,8 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-         binding = FragmentHomeBinding.inflate(getLayoutInflater());
-          navDrawer = binding.getRoot().findViewById(R.id.drawer_layout);
+        binding = FragmentHomeBinding.inflate(getLayoutInflater());
+        navDrawer = binding.getRoot().findViewById(R.id.drawer_layout);
         return binding.getRoot();
     }
 
@@ -48,18 +52,32 @@ public class HomeFragment extends Fragment {
         setListCategory();
         initRecyclerViewHome();
 
+        setListImage();
+        initRecyclerViewImage();
     }
 
     private void setListCategory() {
-    categoryList=new ArrayList<>();
-    categoryList.add(new Category("حساب المعدل",R.drawable.abc_vector_test));
-    categoryList.add(new Category("مودل",R.drawable.abc_vector_test));
-    categoryList.add(new Category("بوبة الطالب",R.drawable.abc_vector_test));
+        categoryList = new ArrayList<>();
+        categoryList.add(new Category(1,"حساب المعدل", R.drawable.ic_calculator));
+        categoryList.add(new Category(2,"مودل", R.drawable.ic_earth));
+        categoryList.add(new Category(3,"بوبة الطالب", R.drawable.ic_nurse));
     }
 
     private void initRecyclerViewHome() {
-        categoryAdapter =new CategoryAdapter(categoryList);
+        categoryAdapter = new CategoryAdapter(categoryList);
         binding.rvCategory.setAdapter(categoryAdapter);
+    }
+
+    private void setListImage() {
+        imageList = new ArrayList<>();
+        imageList.add(R.drawable.ic_home);
+        imageList.add(R.drawable.ic_home);
+        imageList.add(R.drawable.ic_home);
+    }
+
+    private void initRecyclerViewImage() {
+        imageAdapter = new ImageAdapter(imageList);
+        binding.rvImage.setAdapter(imageAdapter);
     }
 
     @Override

@@ -39,14 +39,14 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
     @NonNull
     @Override
     public CollegesHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_chapters, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_college, parent, false);
         return new CollegesAdapter.CollegesHolder(RowCollegeBinding.bind(view));
     }
 
     @Override
     public void onBindViewHolder(@NonNull CollegesHolder holder, int position) {
         Colleges college=colleges.get(position);
-        holder.binding.ivColleges.setImageURI(college.getImg());
+       holder.binding.ivColleges.setBackgroundResource(college.getImg());
         holder.binding.setModel(college);
     }
 

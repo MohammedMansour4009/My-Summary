@@ -12,8 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowChoisesBinding;
-import com.example.mysummary.databinding.RowCategoryBinding;
-import com.example.mysummary.databinding.RowChoisesBinding;
 import com.example.mysummary.model.home.Choises;
 
 import java.util.ArrayList;

@@ -3,10 +3,10 @@ package com.example.mysummary.model.home;
 import android.net.Uri;
 
 public class Colleges {
-    private Uri img;
+    private int img;
     private String nameCollege;
 
-    public Colleges(Uri img, String nameCollege) {
+    public Colleges(int img, String nameCollege) {
         this.img = img;
         this.nameCollege = nameCollege;
     }
@@ -22,11 +22,11 @@ public class Colleges {
         this.nameCollege = nameCollege;
     }
 
-    public Uri getImg() {
+    public int getImg() {
         return img;
     }
 
-    public void setImg(Uri img) {
+    public void setImg(int img) {
         this.img = img;
     }
 }
