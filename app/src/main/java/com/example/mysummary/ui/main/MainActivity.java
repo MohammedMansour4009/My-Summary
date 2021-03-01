@@ -37,7 +37,8 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
 
     @Override
     protected ActivityMainBinding getViewBinding() {
-        return ActivityMainBinding.inflate(getLayoutInflater());
+        ActivityMainBinding binding=ActivityMainBinding.inflate(getLayoutInflater());
+        return binding;
     }
 
     private void initToolbar() {

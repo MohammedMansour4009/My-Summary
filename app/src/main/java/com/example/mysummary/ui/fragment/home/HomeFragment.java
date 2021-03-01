@@ -52,9 +52,9 @@ public class HomeFragment extends Fragment {
 
     private void setListCategory() {
     categoryList=new ArrayList<>();
-    categoryList.add(new Category("حساب المعدل",R.drawable.abc_vector_test));
-    categoryList.add(new Category("مودل",R.drawable.abc_vector_test));
-    categoryList.add(new Category("بوبة الطالب",R.drawable.abc_vector_test));
+    categoryList.add(new Category("حساب المعدل",R.drawable.ic_calculater));
+    categoryList.add(new Category("مودل",R.drawable.ic_person));
+    categoryList.add(new Category("بوبة الطالب",R.drawable.ic_web));
     }
 
     private void initRecyclerViewHome() {

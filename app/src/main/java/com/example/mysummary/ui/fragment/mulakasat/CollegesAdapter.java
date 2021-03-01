@@ -23,6 +23,7 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
     private RowCollegeBinding binding;
     private List<Colleges> colleges;
     private Context context;
+    private Listener Listener;
 
     public CollegesAdapter(List<Colleges> colleges) {
         this.colleges = colleges;
@@ -61,9 +62,24 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
         public CollegesHolder(@NonNull RowCollegeBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    getAdapterPosition();
+                }
+            });
 
 
         }
+    }
+    public interface Listener{
+        void onClick(int position);
+
+    }
+    public void setOnClickListener(View.OnClickListener onClickListener){
+        this.Listener= (CollegesAdapter.Listener) onClickListener;
+
+
     }
 
 }

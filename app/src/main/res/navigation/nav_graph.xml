@@ -8,11 +8,7 @@
         android:id="@+id/homeFragment2"
         android:name="com.example.mysummary.ui.fragment.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home">
-        <action
-            android:id="@+id/action_homeFragment2_to_mulaksat"
-            app:destination="@id/mulaksat" />
-    </fragment>
+        tools:layout="@layout/fragment_home"/>
     <fragment
         android:id="@+id/mulaksat"
         android:name="com.example.mysummary.ui.fragment.mulakasat.MulaksatFragment"

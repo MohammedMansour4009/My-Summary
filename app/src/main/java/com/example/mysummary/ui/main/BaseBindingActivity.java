@@ -15,6 +15,7 @@ public abstract class BaseBindingActivity<B extends ViewBinding> extends AppComp
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = getViewBinding();
+
         setContentView(binding.getRoot());
 
 

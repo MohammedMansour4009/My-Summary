@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
@@ -26,9 +27,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_30sdp"
             android:orientation="horizontal"
+            android:layout_gravity="center"
+
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             tools:itemCount="3"
-            tools:listitem="@layout/row_category" />
+            tools:listitem="@layout/row_category"/>
 
 
     </LinearLayout>
