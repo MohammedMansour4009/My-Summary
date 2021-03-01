@@ -1,7 +1,8 @@
 package com.example.mysummary.ui.fragment.home;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +13,7 @@ import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
-import com.example.mysummary.databinding.RowCategoryBinding;
+import com.example.mysummary.databinding.RowItemInHomeBinding;
 import com.example.mysummary.model.home.Category;
 
 import java.util.List;
@@ -35,8 +36,8 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.carVie
     @NonNull
     @Override
     public CategoryAdapter.carViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {//inflate of layout and Components
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_category, parent, false);
-        return new CategoryAdapter.carViewHolder(RowCategoryBinding.bind(view));
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_item_in_home, parent, false);
+        return new CategoryAdapter.carViewHolder(RowItemInHomeBinding.bind(view));
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -46,23 +47,29 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.carVie
         holder.binding.setModel(category);
         holder.binding.ivCategory.setBackgroundResource(category.getImage());
 
-        holder.binding.vCategory.setOnClickListener(new View.OnClickListener() {
+        holder.binding.lItemInHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                index = position;
-                notifyDataSetChanged();
-            }
-        });
-        if (index == position) {
-            Drawable drawable=context.getDrawable(R.drawable.design_selected);
-            holder.binding.vCategory.setImageDrawable(drawable);
-            holder.binding.tvNameCategory.setTextColor(context.getResources().getColor(R.color.white));
+                if(category.getId()==1)
+                {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mlms.hu.edu.jo/login/index.php"));
+                    context.startActivity(intent);
+                }
+             if(category.getId()==2)
+                {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mlms.hu.edu.jo/login/index.php"));
+                    context.startActivity(intent);
+                }
+             if(category.getId()==3)
+                {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://reg2.hu.edu.jo/"));
+                    context.startActivity(intent);
+                }
 
-        } else {
-            Drawable drawable=context.getDrawable(R.drawable.design_corner);
-            holder.binding.vCategory.setImageDrawable(drawable);
-            holder.binding.tvNameCategory.setTextColor(context.getResources().getColor(R.color.gray));
-        }
+            }
+
+        });
+
     }
 
 
@@ -72,9 +79,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.carVie
     }
 
     class carViewHolder extends RecyclerView.ViewHolder {//declare elements and but resources
-        RowCategoryBinding binding;
+        RowItemInHomeBinding binding;
 
-        public carViewHolder(@NonNull RowCategoryBinding binding) {
+        public carViewHolder(@NonNull RowItemInHomeBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
         }

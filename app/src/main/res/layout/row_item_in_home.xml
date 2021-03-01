@@ -12,25 +12,27 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+<<<<<<< HEAD:app/src/main/res/layout/row_category.xml
         android:layout_width="@dimen/_80sdp"
         android:layout_height="@dimen/_80sdp"
         android:layout_margin="@dimen/_15sdp"
         android:foregroundGravity="center"
         
         >
+=======
+        android:id="@+id/l_item_in_home"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:background="@drawable/design_selected"
+        android:layout_margin="@dimen/_15sdp"
+        android:foregroundGravity="center">
+>>>>>>> c99f281ab6b0301686e928c38094473eeffce0e9:app/src/main/res/layout/row_item_in_home.xml
 
-        <ImageView
-            android:id="@+id/v_category"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            tools:background="@drawable/design_selected"
-            tools:srcCompat="@tools:sample/backgrounds/scenic"
-            />
 
         <androidx.appcompat.widget.AppCompatImageView
+
             android:id="@+id/iv_category"
+<<<<<<< HEAD:app/src/main/res/layout/row_category.xml
             android:layout_width="@dimen/_50sdp"
             android:layout_height="@dimen/_50sdp"
            app:layout_constraintTop_toTopOf="parent"
@@ -40,6 +42,12 @@
             android:layout_marginBottom="@dimen/_32sdp"
             android:layout_marginTop="@dimen/_10sdp"
             tools:background="@drawable/abc_vector_test" />
+=======
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="@drawable/ic_earth" />
+>>>>>>> c99f281ab6b0301686e928c38094473eeffce0e9:app/src/main/res/layout/row_item_in_home.xml
         <TextView
             android:id="@+id/tv_name_category"
             android:layout_width="wrap_content"

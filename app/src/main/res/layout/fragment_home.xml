@@ -13,6 +13,7 @@
         android:layout_gravity="center">
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_40sdp"
@@ -31,7 +32,11 @@
 
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             tools:itemCount="3"
+<<<<<<< HEAD
             tools:listitem="@layout/row_category"/>
+=======
+            tools:listitem="@layout/row_item_in_home" />
+>>>>>>> c99f281ab6b0301686e928c38094473eeffce0e9
 
 
     </LinearLayout>

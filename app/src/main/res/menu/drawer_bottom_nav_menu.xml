@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/homeFragment2"
         android:title="home"
         android:icon="@drawable/ic_home"
         />
     <item
-        android:id="@+id/mulaksatFragment"
+        android:id="@+id/mulaksat"
         android:title="mulaksat"
         android:icon="@drawable/ic_book"
         />
     <item
-        android:id="@+id/chisesFragment"
+        android:id="@+id/matirialChoisesFragmint"
         android:title="star"
         android:icon="@drawable/ic_star"
         />

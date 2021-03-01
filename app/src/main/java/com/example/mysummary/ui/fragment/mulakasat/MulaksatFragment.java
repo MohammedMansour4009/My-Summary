@@ -26,9 +26,13 @@ public class MulaksatFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        initRecyclerViewColleges();
         getRemoteColleges();
+<<<<<<< HEAD
        click();
+=======
+        initRecyclerViewColleges();
+
+>>>>>>> c99f281ab6b0301686e928c38094473eeffce0e9
     }
 
     @Override
@@ -39,14 +43,16 @@ public class MulaksatFragment extends Fragment {
     }
 
     private void initRecyclerViewColleges() {
-        collegesList = new ArrayList<>();
         collegesAdapter = new CollegesAdapter(collegesList);
         binding.rvCollege.setAdapter(collegesAdapter);
     }
 
     private void getRemoteColleges() {
-     List<String> list = new ArrayList<>();
-     list.addAll(Arrays.asList(getResources().getStringArray(R.array.colleges)));
+        List<String> listName = new ArrayList<>();
+        collegesList = new ArrayList<>();
+
+        listName.addAll(Arrays.asList(getResources().getStringArray(R.array.colleges)));
+
         int[] icon = {
                 R.drawable.ic_doctors,
                 R.drawable.ic_eng,
@@ -64,17 +70,21 @@ public class MulaksatFragment extends Fragment {
                 R.drawable.ic_book,
                 R.drawable.ic_flask,
                 R.drawable.ic_flask,
+<<<<<<< HEAD
 
 
  };
         Uri uri[]=new Uri[list.size()];
         for(int i=0;i<icon.length;i++) {
             uri[i] = Uri.parse(String.valueOf(icon[i]));
+=======
+                R.drawable.ic_flask,
+                R.drawable.ic_earth,};
+
+        for (int i = 0; i < 14; i++) {
+            collegesList.add(new Colleges(icon[i], listName.get(i)));
+>>>>>>> c99f281ab6b0301686e928c38094473eeffce0e9
         }
-        collegesList=new ArrayList<>();
-       for (int i=0;i<list.size();i++){
-           collegesList.add(new Colleges(uri[i], list.get(i)));
-       }
 
     }
    private void click(){
