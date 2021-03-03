@@ -6,12 +6,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentMula5satBinding;
 import com.example.mysummary.model.home.Colleges;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -27,12 +30,8 @@ public class MulaksatFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         getRemoteColleges();
-<<<<<<< HEAD
-       click();
-=======
         initRecyclerViewColleges();
 
->>>>>>> c99f281ab6b0301686e928c38094473eeffce0e9
     }
 
     @Override
@@ -52,7 +51,6 @@ public class MulaksatFragment extends Fragment {
         collegesList = new ArrayList<>();
 
         listName.addAll(Arrays.asList(getResources().getStringArray(R.array.colleges)));
-
         int[] icon = {
                 R.drawable.ic_doctors,
                 R.drawable.ic_eng,
@@ -70,50 +68,14 @@ public class MulaksatFragment extends Fragment {
                 R.drawable.ic_book,
                 R.drawable.ic_flask,
                 R.drawable.ic_flask,
-<<<<<<< HEAD
+        };
 
-
- };
-        Uri uri[]=new Uri[list.size()];
-        for(int i=0;i<icon.length;i++) {
-            uri[i] = Uri.parse(String.valueOf(icon[i]));
-=======
-                R.drawable.ic_flask,
-                R.drawable.ic_earth,};
 
         for (int i = 0; i < 14; i++) {
             collegesList.add(new Colleges(icon[i], listName.get(i)));
->>>>>>> c99f281ab6b0301686e928c38094473eeffce0e9
         }
 
     }
-   private void click(){
-        collegesAdapter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int position=collegesAdapter.getItemCount();
-              switch(position){
-                    case 1:
-                        Uri uri=Uri.parse("https://etihadlibrary.azurewebsites.net/counting_gpa.aspx");
-                        Intent intent=new Intent(Intent.ACTION_VIEW,uri);
-                        startActivity(intent);
-                        break;
-                  case 2:
-                      Uri uri1=Uri.parse("https://reg1.hu.edu.jo/");
-                      Intent intent1=new Intent(Intent.ACTION_VIEW,uri1);
-                      startActivity(intent1);
-                      break;
-                  case 3:
-                      Uri uri2=Uri.parse("http://www.mlms.hu.edu.jo/");
-                      Intent intent2=new Intent(Intent.ACTION_VIEW,uri2);
-                      startActivity(intent2);
-                      break;
 
 
-
-
-                }
-            }
-        });
-    }
 }

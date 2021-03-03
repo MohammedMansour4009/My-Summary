@@ -1,6 +1,8 @@
 package com.example.mysummary.ui.fragment.home;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -57,21 +59,40 @@ public class HomeFragment extends Fragment {
     }
 
     private void setListCategory() {
-<<<<<<< HEAD
-    categoryList=new ArrayList<>();
-    categoryList.add(new Category("حساب المعدل",R.drawable.ic_calculater));
-    categoryList.add(new Category("مودل",R.drawable.ic_person));
-    categoryList.add(new Category("بوبة الطالب",R.drawable.ic_web));
-=======
-        categoryList = new ArrayList<>();
-        categoryList.add(new Category(1,"حساب المعدل", R.drawable.ic_calculator));
-        categoryList.add(new Category(2,"مودل", R.drawable.ic_earth));
-        categoryList.add(new Category(3,"بوبة الطالب", R.drawable.ic_nurse));
->>>>>>> c99f281ab6b0301686e928c38094473eeffce0e9
+     categoryList=new ArrayList<>();
+     categoryList.add(new Category(1,"حساب المعدل",R.drawable.ic_calculater));
+     categoryList.add(new Category(2,"مودل",R.drawable.ic_person));
+     categoryList.add(new Category(3,"بوبة الطالب",R.drawable.ic_web));
+
     }
 
     private void initRecyclerViewHome() {
-        categoryAdapter = new CategoryAdapter(categoryList);
+
+
+        categoryAdapter = new CategoryAdapter(categoryList, new OnHomeClickListener() {
+            @Override
+            public void onItemClick(Category category) {
+                int position = category.getId();
+                switch (position) {
+                    case 1:
+                        Uri uri = Uri.parse("https://etihadlibrary.azurewebsites.net/counting_gpa.aspx");
+                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        Uri uri1 = Uri.parse("https://reg1.hu.edu.jo/");
+                        Intent intent1 = new Intent(Intent.ACTION_VIEW, uri1);
+                        startActivity(intent1);
+                        break;
+                    case 3:
+                        Uri uri2 = Uri.parse("http://www.mlms.hu.edu.jo/");
+                        Intent intent2 = new Intent(Intent.ACTION_VIEW, uri2);
+                        startActivity(intent2);
+                        break;
+
+                }
+            }
+        });
         binding.rvCategory.setAdapter(categoryAdapter);
     }
 
@@ -105,4 +126,6 @@ public class HomeFragment extends Fragment {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

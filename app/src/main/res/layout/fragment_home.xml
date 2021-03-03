@@ -29,14 +29,9 @@
             android:layout_marginTop="@dimen/_30sdp"
             android:orientation="horizontal"
             android:layout_gravity="center"
-
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             tools:itemCount="3"
-<<<<<<< HEAD
-            tools:listitem="@layout/row_category"/>
-=======
             tools:listitem="@layout/row_item_in_home" />
->>>>>>> c99f281ab6b0301686e928c38094473eeffce0e9
 
 
     </LinearLayout>

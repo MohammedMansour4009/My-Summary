@@ -15,8 +15,8 @@
         android:label="fragment_mula5sat"
         tools:layout="@layout/fragment_mula5sat" />
     <fragment
-        android:id="@+id/matirialChoisesFragmint"
-        android:name="com.example.mysummary.ui.fragment.Choisesmatirial.MatirialChoisesFragmint"
-        android:label="fragment_matirial_choises_fragmint"
-        tools:layout="@layout/fragment_matirial_choises_fragmint" />
+        android:id="@+id/mawadFragment"
+        android:name="com.example.mysummary.ui.fragment.Mawad.MawadFragment"
+        android:label="fragment_mawad"
+        tools:layout="@layout/fragment_mawad" />
 </navigation>
