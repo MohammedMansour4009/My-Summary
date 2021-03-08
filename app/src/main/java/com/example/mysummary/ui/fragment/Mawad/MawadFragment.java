@@ -18,7 +18,7 @@ import java.util.List;
 
 public class MawadFragment extends Fragment {
 
-    FragmentMawadBinding binding;
+    private  FragmentMawadBinding binding;
     private List<Mawad> mawadList;
     private MawadAdapter mawadAdapter;
 
@@ -38,13 +38,20 @@ public class MawadFragment extends Fragment {
     }
 
     private void initRecyclerViewMawad() {
-        mawadList = new ArrayList<>();
         mawadAdapter = new MawadAdapter(mawadList);
         binding.rvMawad.setAdapter(mawadAdapter);
     }
 
     private void getRemoteMawad() {
+        mawadList = new ArrayList<>();
+        mawadList.add(new Mawad( "English101",1));
+        mawadList.add(new Mawad( "English101",1));
+        mawadList.add(new Mawad( "English101",1));
+        mawadList.add(new Mawad( "English101",1));
+        mawadList.add(new Mawad( "English101",1));
+        mawadList.add(new Mawad( "English101",1));
 
 
     }
+
 }

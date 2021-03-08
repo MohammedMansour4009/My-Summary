@@ -11,7 +11,7 @@
         android:icon="@drawable/ic_book"
         />
     <item
-        android:id="@+id/matirialChoisesFragmint"
+        android:id="@+id/matirialChoisesFragmint2"
         android:title="star"
         android:icon="@drawable/ic_star"
         />

@@ -8,6 +8,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
@@ -48,6 +50,14 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
         Colleges college=colleges.get(position);
         holder.binding.ivColleges.setBackgroundResource(college.getImg());
         holder.binding.setModel(college);
+        holder.binding.lCollege.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavDirections action =MulaksatFragmentDirections.actionMulaksatToMawadFragment2(college.getId());
+                Navigation.findNavController(holder.binding.getRoot()).navigate(action);
+            }
+        });
+
     }
 
 
@@ -72,6 +82,11 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
         }
     }
 
+
+    public void filterList(List<Colleges> filteredList) {
+        colleges = filteredList;
+        notifyDataSetChanged();
+    }
 
 
 }
