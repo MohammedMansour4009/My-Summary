@@ -10,6 +10,8 @@ public class Mawad {
     }
     public Mawad(){};
 
+
+
     public String getNameCourse() {
         return nameCourse;
     }
