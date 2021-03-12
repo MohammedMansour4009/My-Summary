@@ -15,10 +15,19 @@ import androidx.fragment.app.Fragment;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentMula5satBinding;
 import com.example.mysummary.model.home.Colleges;
+<<<<<<< HEAD
 import com.example.mysummary.model.home.Url;
 import com.example.mysummary.model.home.UrlList;
 import com.example.mysummary.model.home.listenr;
 import com.example.mysummary.ui.fragment.chapter.ChaptersFragment;
+=======
+import com.example.mysummary.model.home.Mawad;
+import com.example.mysummary.ui.fragment.Mawad.MawadAdapter;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+>>>>>>> 08a7ae4836c7a8b3c2244043f276de34c7d43ebc
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -45,6 +54,7 @@ public MulaksatFragment(){};
         initRecyclerViewColleges();
         getRemoteMawad();
         initRecyclerViewMawad();
+        setAdMobBanner();
 
     }
 
@@ -56,9 +66,14 @@ public MulaksatFragment(){};
     }
 
     private void initRecyclerViewMawad() {
+<<<<<<< HEAD
         mawadList=new ArrayList<>();
         mawadAdapter = new Mawad5tearyAdapter(mawadList,this::OnItemClick);
         binding.reMawad.setAdapter(mawadAdapter);
+=======
+        mawadAdapter = new Mawad5tearyAdapter(mawadList);
+        binding.rvMawad.setAdapter(mawadAdapter);
+>>>>>>> 08a7ae4836c7a8b3c2244043f276de34c7d43ebc
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -136,6 +151,7 @@ public MulaksatFragment(){};
         collegesAdapter.filterList(filteredList);
     }
 
+<<<<<<< HEAD
 
     @Override
     public void OnItemClick(int index) {
@@ -172,4 +188,19 @@ public MulaksatFragment(){};
     }
 
 
+=======
+    private void setAdMobBanner() {
+        MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+            }
+        });
+        // Banner
+        AdRequest adRequest = new AdRequest.Builder().build();
+        binding.adView.loadAd(adRequest);
+
+    }
+
+>>>>>>> 08a7ae4836c7a8b3c2244043f276de34c7d43ebc
 }

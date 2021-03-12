@@ -7,10 +7,9 @@
     tools:context=".ui.fragment.mulakasat.MulaksatFragment">
 
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <EditText
             android:id="@+id/et_search"
@@ -24,19 +23,22 @@
             android:elevation="@dimen/shadow"
             android:hint="@string/collegeName"
             android:padding="@dimen/pading_et_search"
-            android:paddingLeft="@dimen/marginLeft_ic_search" />
+            android:paddingLeft="@dimen/marginLeft_ic_search"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/re_mawad"
+            android:id="@+id/rv_mawad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
 
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/et_search"
             app:spanCount="4"
             tools:listitem="@layout/row_mawad_5teary" />
 
         <TextView
+            android:id="@+id/tv_colleges"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -45,19 +47,34 @@
             android:text="@string/college"
             android:textColor="@color/gray"
             android:textSize="@dimen/tv_pain"
-
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_mawad" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_college"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_marginTop="@dimen/marginTop_rv"
-            android:paddingBottom="@dimen/_50sdp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/adView"
+            app:layout_constraintTop_toTopOf="@+id/tv_colleges"
             tools:listitem="@layout/row_college" />
 
-    </LinearLayout>
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            >
+
+        </com.google.android.gms.ads.AdView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </FrameLayout>
