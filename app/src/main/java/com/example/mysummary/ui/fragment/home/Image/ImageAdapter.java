@@ -1,4 +1,4 @@
-package com.example.mysummary.ui.fragment.home;
+package com.example.mysummary.ui.fragment.home.Image;
 
 import android.content.Context;
 import android.os.Build;
@@ -12,8 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowImageInMainBinding;
-import com.example.mysummary.databinding.RowImageInMainBinding;
-import com.example.mysummary.model.home.Category;
 
 import java.util.List;
 

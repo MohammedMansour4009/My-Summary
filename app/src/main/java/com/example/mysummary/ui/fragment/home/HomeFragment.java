@@ -16,10 +16,20 @@ import androidx.annotation.Nullable;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentHomeBinding;
 import com.example.mysummary.model.home.Category;
+import com.example.mysummary.model.home.image.InfoImage;
+import com.example.mysummary.model.home.image.Tap;
+import com.example.mysummary.ui.fragment.home.Image.ImageAdapter;
+import com.example.mysummary.ui.fragment.home.Image.ImageFragment;
+import com.example.mysummary.ui.fragment.home.Image.ImagePagerAdapter;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,9 +41,9 @@ public class HomeFragment extends Fragment {
 
     private DrawerLayout navDrawer;
 
-    private List<Integer> imageList;
-    private ImageAdapter imageAdapter;
+    private List<InfoImage> imageList;
 
+    ImagePagerAdapter imagePagerAdapter;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +65,41 @@ public class HomeFragment extends Fragment {
         initRecyclerViewHome();
 
         setListImage();
-        initRecyclerViewImage();
+
+        initViewPager();
+        setAdMobBanner();
+
+    }
+
+    private void initViewPager() {
+        imagePagerAdapter = new ImagePagerAdapter(getActivity().getSupportFragmentManager());
+
+        imagePagerAdapter.addTab(new Tap("Image1", ImageFragment
+                .newInstance(imageList.get(0))));
+        imagePagerAdapter.addTab(new Tap("Image1", ImageFragment
+                .newInstance(imageList.get(1))));
+        imagePagerAdapter.addTab(new Tap("Image1", ImageFragment
+                .newInstance(imageList.get(2))));
+
+        binding.vpImage.setAdapter(imagePagerAdapter);
+        binding.vpImage.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
+
     }
 
     private void setListCategory() {
@@ -98,15 +142,13 @@ public class HomeFragment extends Fragment {
 
     private void setListImage() {
         imageList = new ArrayList<>();
-        imageList.add(R.drawable.ic_home);
-        imageList.add(R.drawable.ic_home);
-        imageList.add(R.drawable.ic_home);
+        imageList.add(new InfoImage(R.drawable.ic_home));
+        imageList.add(new InfoImage(R.drawable.ic_home));
+        imageList.add(new InfoImage(R.drawable.ic_home));
+
     }
 
-    private void initRecyclerViewImage() {
-        imageAdapter = new ImageAdapter(imageList);
-        binding.rvImage.setAdapter(imageAdapter);
-    }
+
 
     @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
@@ -125,6 +167,20 @@ public class HomeFragment extends Fragment {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    private void setAdMobBanner() {
+        MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+            }
+        });
+        // Banner
+        AdRequest adRequest = new AdRequest.Builder().build();
+        binding.adView.loadAd(adRequest);
+
     }
 
 

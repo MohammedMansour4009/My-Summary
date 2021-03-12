@@ -1,17 +1,20 @@
 package com.example.mysummary.ui.fragment.chapter;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import com.example.mysummary.R;
+
 import com.example.mysummary.databinding.FragmentChaptersBinding;
 import com.example.mysummary.model.home.Chapter;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +26,9 @@ public class ChaptersFragment extends Fragment {
     private List<Chapter> chapterList;
     private ChapterAdapter chapterAdapter;
 
+    private InterstitialAd mInterstitialAd;
+
+
     public ChaptersFragment() {
     }
 
@@ -31,6 +37,7 @@ public class ChaptersFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         initRecyclerViewChapter();
         getRemoteChapter();
+        setAdMobBanner();
     }
 
     @Override
@@ -45,7 +52,19 @@ public class ChaptersFragment extends Fragment {
         binding.rvChapters.setAdapter(chapterAdapter);
     }
     private void getRemoteChapter() {
-      
+
+    }
+
+    private void setAdMobBanner() {
+        MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+            }
+        });
+        // Banner
+        AdRequest adRequest = new AdRequest.Builder().build();
+        binding.adView.loadAd(adRequest);
 
     }
 

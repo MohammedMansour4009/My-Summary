@@ -16,6 +16,10 @@ import com.example.mysummary.databinding.FragmentMula5satBinding;
 import com.example.mysummary.model.home.Colleges;
 import com.example.mysummary.model.home.Mawad;
 import com.example.mysummary.ui.fragment.Mawad.MawadAdapter;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -37,6 +41,7 @@ public class MulaksatFragment extends Fragment {
         initRecyclerViewColleges();
         getRemoteMawad();
         initRecyclerViewMawad();
+        setAdMobBanner();
 
     }
 
@@ -56,7 +61,7 @@ public class MulaksatFragment extends Fragment {
 
     private void initRecyclerViewMawad() {
         mawadAdapter = new Mawad5tearyAdapter(mawadList);
-        binding.reMawad.setAdapter(mawadAdapter);
+        binding.rvMawad.setAdapter(mawadAdapter);
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -131,6 +136,19 @@ public class MulaksatFragment extends Fragment {
             }
         }
         collegesAdapter.filterList(filteredList);
+    }
+
+    private void setAdMobBanner() {
+        MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+            }
+        });
+        // Banner
+        AdRequest adRequest = new AdRequest.Builder().build();
+        binding.adView.loadAd(adRequest);
+
     }
 
 }
