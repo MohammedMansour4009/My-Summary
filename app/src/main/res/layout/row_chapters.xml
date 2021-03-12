@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="com.example.mysummary.model.home.Chapter" />
+            type="com.example.mysummary.model.home.Url" />
     </data>
 
 
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@{model.nameCourse}"
+            android:text="@{model.name}"
             android:textSize="@dimen/tv_sizeText_matirial"
             tools:text="Ch 1" />
 
