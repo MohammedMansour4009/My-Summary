@@ -11,6 +11,10 @@ import androidx.fragment.app.Fragment;
 
 import com.example.mysummary.databinding.FragmentMatirialChoisesFragmintBinding;
 import com.example.mysummary.model.home.Choises;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +28,7 @@ public class MatirialChoisesFragmint extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         initRecyclerViewChoises();
         getRemoteChoises();
+            setAdMobBanner();
     }
 
     @Override
@@ -39,6 +44,18 @@ public class MatirialChoisesFragmint extends Fragment {
     }
     private void getRemoteChoises() {
 
+
+    }
+    private void setAdMobBanner() {
+        MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+            }
+        });
+        // Banner
+        AdRequest adRequest = new AdRequest.Builder().build();
+        binding.adView.loadAd(adRequest);
 
     }
 

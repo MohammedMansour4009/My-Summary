@@ -61,7 +61,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginLeft="4dp"
                 app:defaultNavHost="true"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/bottom_nav"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/appbar"
@@ -78,13 +78,6 @@
                 app:itemIconTint="@color/color_of_selected"
                 app:itemTextColor="@color/color_of_selected"
                 />
-
-            <com.google.android.gms.ads.AdView
-                android:id="@+id/adView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:layout_editor_absoluteX="282dp"
-                tools:layout_editor_absoluteY="583dp" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
