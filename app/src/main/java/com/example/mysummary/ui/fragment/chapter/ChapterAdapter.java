@@ -11,16 +11,20 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowChaptersBinding;
 import com.example.mysummary.model.home.Chapter;
+import com.example.mysummary.model.home.Url;
+import com.example.mysummary.model.home.listenr;
 
 import java.util.List;
 
 public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterHolder> {
-    private List<Chapter> chapters;
+    private List<Url> chapters;
     private Context context;
     private int index=0;
+    private listenr lr;
 
-    public ChapterAdapter(List<Chapter> chapters) {
+    public ChapterAdapter(List<Url> chapters,listenr lr) {
         this.chapters = chapters;
+        this.lr=lr;
     }
 
     @Override
@@ -39,7 +43,7 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterH
 
     @Override
     public void onBindViewHolder(@NonNull ChapterHolder holder, int position) {
-        Chapter chapter=chapters.get(position);
+        Url chapter=chapters.get(position);
         holder.binding.setModel(chapter);
 
     }
@@ -55,8 +59,15 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterH
         public ChapterHolder(@NonNull RowChaptersBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    lr.OnItemClick(getAdapterPosition());
+                }
+            });
 
         }
 
     }
+
 }

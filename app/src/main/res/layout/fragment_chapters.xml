@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="Moodle"
+            type="com.example.mysummary.model.home.Url" />
     </data>
 
     <FrameLayout
@@ -29,27 +31,12 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_chapters"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/heigth_rv_chapter"
-                android:layout_marginTop="@dimen/margintop_rv"
-                tools:listitem="@layout/row_chapters"/>
-
-            <TextView
-                android:id="@+id/tv_share7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:layout_marginTop="@dimen/marginTop_pain"
-                android:layout_marginRight="@dimen/marginStart_pain"
-                android:text="@string/share7"
-                android:textSize="@dimen/tv_pain"
-                android:textStyle="bold" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_share7"
-                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/margintop_rv"
-                tools:listitem="@layout/row_chapters"/>
+                tools:listitem="@layout/row_chapters"
+
+                />
+
         </LinearLayout>
     </FrameLayout>
 </layout>

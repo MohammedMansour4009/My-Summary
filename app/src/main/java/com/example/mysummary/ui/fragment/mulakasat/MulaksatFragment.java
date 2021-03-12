@@ -1,5 +1,6 @@
 package com.example.mysummary.ui.fragment.mulakasat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -14,22 +15,29 @@ import androidx.fragment.app.Fragment;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentMula5satBinding;
 import com.example.mysummary.model.home.Colleges;
-import com.example.mysummary.model.home.Mawad;
-import com.example.mysummary.ui.fragment.Mawad.MawadAdapter;
+import com.example.mysummary.model.home.Url;
+import com.example.mysummary.model.home.UrlList;
+import com.example.mysummary.model.home.listenr;
+import com.example.mysummary.ui.fragment.chapter.ChaptersFragment;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MulaksatFragment extends Fragment {
+public class MulaksatFragment extends Fragment implements listenr {
 
     FragmentMula5satBinding binding;
     private List<Colleges> collegesList;
     private CollegesAdapter collegesAdapter;
-    private List<Mawad> mawadList;
+    private List<Url> mawadList;
     private Mawad5tearyAdapter  mawadAdapter;
+    private UrlList LinkList;
+    public static final String ARABIC101_KEY="Arabic101";
+    public static final String ENGLISH101_KEY="English101";
+    public static final String ASKARIA ="Askaria";
 
-
+public MulaksatFragment(){};
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -40,22 +48,16 @@ public class MulaksatFragment extends Fragment {
 
     }
 
-
-
     private void getRemoteMawad() {
         mawadList = new ArrayList<>();
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
+
 
 
     }
 
     private void initRecyclerViewMawad() {
-        mawadAdapter = new Mawad5tearyAdapter(mawadList);
+        mawadList=new ArrayList<>();
+        mawadAdapter = new Mawad5tearyAdapter(mawadList,this::OnItemClick);
         binding.reMawad.setAdapter(mawadAdapter);
     }
     @Override
@@ -73,6 +75,7 @@ public class MulaksatFragment extends Fragment {
     }
 
     private void getRemoteColleges() {
+        LinkList = new UrlList();
         List<String> listName = new ArrayList<>();
         collegesList = new ArrayList<>();
 
@@ -98,11 +101,10 @@ public class MulaksatFragment extends Fragment {
 
 
         for (int i = 0; i < 14; i++) {
-            collegesList.add(new Colleges(i+1,icon[i], listName.get(i)));
+            collegesList.add(new Colleges(i + 1, icon[i], listName.get(i)));
         }
 
     }
-
     private void searchOrder() {
         binding.etSearch.addTextChangedListener(new TextWatcher() {
             @Override
@@ -128,9 +130,46 @@ public class MulaksatFragment extends Fragment {
         for (Colleges item : collegesList){
             if (item.getNameCollege().toLowerCase().contains(idoOrder.toLowerCase()) ){
                 filteredList.add(item);
+
             }
         }
         collegesAdapter.filterList(filteredList);
     }
+
+
+    @Override
+    public void OnItemClick(int index) {
+        switch (index){
+            case 1: {
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(ARABIC101_KEY, LinkList.Arabic101(binding.getRoot().getContext()));
+                Intent intent = new Intent(getView().getContext(),ChaptersFragment.class);
+                intent.putExtras(bundle);
+                this.startActivityForResult(intent,1);
+            }
+                break;
+            case 2:
+            {
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(ENGLISH101_KEY, LinkList.English101(binding.getRoot().getContext()));
+                Intent intent = new Intent(getView().getContext(), ChaptersFragment.class);
+                intent.putExtras(bundle);
+                this.startActivityForResult(intent,2);
+            }
+                break;
+            case 3:
+            {
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(ASKARIA, LinkList.Askaria(binding.getRoot().getContext()));
+                Intent intent = new Intent(getView().getContext(), ChaptersFragment.class);
+                intent.putExtras(bundle);
+                this.startActivityForResult(intent,3);
+            }
+
+                break;
+        }
+
+    }
+
 
 }

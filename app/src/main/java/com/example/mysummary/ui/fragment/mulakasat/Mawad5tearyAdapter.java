@@ -13,15 +13,19 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowMawad5tearyBinding;
 import com.example.mysummary.model.home.Mawad;
+import com.example.mysummary.model.home.Url;
+import com.example.mysummary.model.home.listenr;
 
 import java.util.List;
 
 public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.MawadHolder> {
-    private List<Mawad> mawads;
+    private List<Url> mawads;
     private Context context;
+    private listenr lr;
 
-    public Mawad5tearyAdapter(List<Mawad> mawads) {
+    public Mawad5tearyAdapter(List<Url> mawads,listenr lr) {
         this.mawads = mawads;
+        this.lr=lr;
     }
 
     @NonNull
@@ -34,7 +38,7 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull MawadHolder holder, int position) {
-        Mawad mawad=mawads.get(position);
+       Url mawad=mawads.get(position);
         holder.binding.setModel(mawad);
         holder.binding.tvNameMawad.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +65,12 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
     public MawadHolder(@NonNull RowMawad5tearyBinding binding) {
         super(binding.getRoot());
         this.binding = binding;
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lr.OnItemClick(getAdapterPosition());
+            }
+        });
     }
 
 

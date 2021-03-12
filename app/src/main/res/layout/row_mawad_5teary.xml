@@ -5,7 +5,7 @@
     <data>
         <variable
             name="model"
-            type="com.example.mysummary.model.home.Mawad" />
+            type="com.example.mysummary.model.home.Url" />
     </data>
 
     <LinearLayout
@@ -15,13 +15,13 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_name_mawad"
-            android:text="@{model.nameCourse}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/design_corner_gray"
-            tools:text="English101"
             android:paddingHorizontal="@dimen/_10sdp"
-            android:paddingVertical="@dimen/_5sdp" />
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="@{model.name}"
+            tools:text="English101" />
 
     </LinearLayout>
 </layout>
