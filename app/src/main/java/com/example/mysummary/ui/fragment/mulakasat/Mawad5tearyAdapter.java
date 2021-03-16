@@ -7,13 +7,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.navigation.NavDirections;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowMawad5tearyBinding;
-import com.example.mysummary.model.home.Mawad;
+import com.example.mysummary.model.mawad.Mawad;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;

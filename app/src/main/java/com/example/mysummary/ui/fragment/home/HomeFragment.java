@@ -20,10 +20,9 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentHomeBinding;
-import com.example.mysummary.model.home.Category;
+import com.example.mysummary.model.category.Category;
 import com.example.mysummary.model.home.image.InfoImage;
 import com.example.mysummary.model.home.image.Tap;
-import com.example.mysummary.ui.fragment.home.Image.ImageAdapter;
 import com.example.mysummary.ui.fragment.home.Image.ImageFragment;
 import com.example.mysummary.ui.fragment.home.Image.ImagePagerAdapter;
 import com.google.android.gms.ads.AdRequest;
@@ -99,7 +98,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-
+        binding.indicator.setViewPager(binding.vpImage);
     }
 
     private void setListCategory() {

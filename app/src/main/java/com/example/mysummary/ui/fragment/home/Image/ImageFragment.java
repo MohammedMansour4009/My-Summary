@@ -12,8 +12,6 @@ import androidx.fragment.app.Fragment;
 import com.example.mysummary.databinding.FragmentImageBinding;
 import com.example.mysummary.model.home.image.InfoImage;
 
-import java.util.List;
-
 
 public class ImageFragment extends Fragment {
 

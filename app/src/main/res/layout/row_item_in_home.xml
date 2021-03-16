@@ -8,7 +8,7 @@
     <data>
         <variable
             name="model"
-            type="com.example.mysummary.model.home.Category" />
+            type="com.example.mysummary.model.category.Category" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

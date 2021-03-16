@@ -1,4 +1,4 @@
-package com.example.mysummary.model.home;
+package com.example.mysummary.model.colleges;
 
 public class Parts {
     private String nameCourse;

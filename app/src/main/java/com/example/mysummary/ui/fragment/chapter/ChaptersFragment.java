@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.mysummary.databinding.FragmentChaptersBinding;
-import com.example.mysummary.model.home.Chapter;
+import com.example.mysummary.model.chapter.Chapter;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;

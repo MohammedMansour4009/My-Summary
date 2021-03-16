@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowChaptersBinding;
-import com.example.mysummary.model.home.Chapter;
+import com.example.mysummary.model.chapter.Chapter;
 
 import java.util.List;
 

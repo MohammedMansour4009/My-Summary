@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowMawadBinding;
-import com.example.mysummary.model.home.Mawad;
+import com.example.mysummary.model.mawad.Mawad;
 
 import java.util.List;
 

@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="com.example.mysummary.model.home.Choises" />
+            type="com.example.mysummary.model.choises.Choises" />
     </data>
 
             <androidx.constraintlayout.widget.ConstraintLayout

@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowItemInHomeBinding;
-import com.example.mysummary.model.home.Category;
+import com.example.mysummary.model.category.Category;
 
 import java.util.List;
 

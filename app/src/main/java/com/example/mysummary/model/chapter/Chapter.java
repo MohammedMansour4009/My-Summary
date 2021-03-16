@@ -1,4 +1,4 @@
-package com.example.mysummary.model.home;
+package com.example.mysummary.model.chapter;
 
 public class Chapter {
     private String nameCourse;

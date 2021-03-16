@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="com.example.mysummary.model.home.Chapter" />
+            type="com.example.mysummary.model.chapter.Chapter" />
     </data>
 
 
