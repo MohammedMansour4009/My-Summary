@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="midc1">
+        <item ><![CDATA[https://drive.google.com/file/d/15YvGlKrYUepLzVG9c1wSUEqs7U7bmwZY/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjNjYjE4NTc3Njc1NjAyMWNlYzgzZDZiYTAyNmUzYjI4IiwidHMiOjE2MTU4MTY4ODEsImV4cCI6MTYxODIzNjA4MX0._LrV9rBap2IK3Gv6pxdXJ9YfaWAMSA1H7Jrq3hDwPVc]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1Y_Ht4Wj3gYld0_TyYnbKvy1YSU2new0W/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImJiNGFhMmE3ODQwN2NkMjhlZGE2N2E5YTZkM2NiNzIzIiwidHMiOjE2MTU4MTY4ODEsImV4cCI6MTYxODIzNjA4MX0.W7XcI6wk0G7zWt8bqju8znBFoKb_g-TA7nkunSjD4SE]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1JQNkcBabmTb-9t8J4OgcJ1nJntW8ZlBN/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjJiNWMzYjg2OTE0ZWUwOTc1ODNmYjVmYTgyMGRjZDQ4IiwidHMiOjE2MTU4MTY4ODksImV4cCI6MTYxODIzNjA4OX0.A4l4FUPyqpr6tZiQa7ZJhNQ3zgKt_ZvoM6KWTu08-WQ]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1OX1wBqTvfA8mMZxCZHuflBViD37MfcOm/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6Ijc1YTA0NWU2NWE4MTQzZTZiZTEyM2FjZWY3M2I2MTAwIiwidHMiOjE2MTU4MTY4OTksImV4cCI6MTYxODIzNjA5OX0.pKvFIYWVpcjaMxE_U4WEqMRngSZqVS54whow9sCgLls]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1PSd6KJ2M0s35b7B2RSxMleZBieQbJ11d/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImM5Y2E2YzIxODFmZmZhZDg2N2ZjMmJjZjc0YTZkNzlhIiwidHMiOjE2MTU4MTY5MDAsImV4cCI6MTYxODIzNjEwMH0.INzw4pS5MgFIwyHYn2JjijnDvfMafujwXjyV2Ozvchk]]></item>
+
+    </string-array>
+    <string-array name="midc1name">
+        <item>slide</item>
+        <item>biofluid slide</item>
+        <item>دوسية المادة</item>
+        <item>دفتر المادة</item>
+        <item>شرح</item>
+
+    </string-array>
+    <string-array name="midc2">
+        <item ><![CDATA[https://drive.google.com/drive/folders/1XHdu8p-9ksPldJDhOrdA-44nO-Iw-kCL?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImEyMDAzOGM1YTM1MzdhOTU3YmU0MDBiNzdlODU1NTIxIiwidHMiOjE2MTU4MTg5MjEsImV4cCI6MTYxODIzODEyMX0.YP3N0eIyAlvIh7z78BHFeEOevgUKKOzLkpoiXGn3gtY]]></item>
+
+    </string-array>
+    <string-array name="midc2name">
+        <item>slide</item>
+
+    </string-array>
+    <string-array name="midc3"><item ><![CDATA[https://drive.google.com/drive/folders/1qRc8qwLqm9OeB_e_Yk5J67HE0ctiTnrx?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjdmZTk0MjRkYTE5N2MxZTYwNTZkMmNiOTZhMDIxYmY0IiwidHMiOjE2MTU4MTg1MDAsImV4cCI6MTYxODIzNzcwMH0.GpmC1KurqtyULU27lJIfCUJ1r8lwPZTJ5C3Ua-skAOY]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/16sP5H7XJyDrSG3CI9pNHP8Bx-QYugp1j/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6Ijk5NzM3ZTk0OWRlYjIzYmJjYjJiZTRlMDA3ZmY3N2IxIiwidHMiOjE2MTU4MTg1MDAsImV4cCI6MTYxODIzNzcwMH0.-Q058-4fpswZBC3OP1BNiJulfeOzm_VxPGPyRFZGxWg]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1d5xx3pmUktZrmXESSe6LP-ZvcvTSqpwV/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6Ijk3ODA3MzE0Mzc1NzAxZDk4NjkwOWVmZTRhYmMwZGE1IiwidHMiOjE2MTU4MTg1MDAsImV4cCI6MTYxODIzNzcwMH0.8iTOVaAKY07fhTIM1iro5LQAIvWHF51URy99CxWKFGE]]></item>
+    </string-array>
+    <string-array name="midc3name"><item>slide</item>
+        <item>تلخيص</item>
+        <item>دفتر فيرست</item>
+    </string-array>
+    <string-array name="midc4"><item ><![CDATA[https://drive.google.com/file/d/1Rv85RDVEJuLA7_C90tTx5jk5lmfVON6b/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6Ijg3MDYwNjdmZTgyYjQzZGVmOGRmYjJlOTVjNWU4MDgzIiwidHMiOjE2MTU4MTg1NjksImV4cCI6MTYxODIzNzc2OX0.F1GNEbnprKZVYVO5TQioMtNc7pHiW7Sd3GdHEtX4_pA]]></item>
+    </string-array>
+    <string-array name="midc4name"><item>slide</item>
+    </string-array>
+    <string-array name="midc5">
+        <item ><![CDATA[https://drive.google.com/drive/folders/14-BgJoEaDAgx8ztZQjDjXacWrtRZTBcM?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6Ijk2ODcyNzkzMGUxYjEwMWI1M2I2NTIwMmFhZDY3NDVlIiwidHMiOjE2MTU4MTY3NTMsImV4cCI6MTYxODIzNTk1M30.OX-xorgU14-Umq0o1DAZWWFjTk9P5ugqVZSllvB_ygc]]></item>
+        <item ><![CDATA[https://www.youtube.com/playlist?list=PLzgRlsyv96JMfEVUT1xox-a6DbU1OQ_TW]]></item>
+
+    </string-array>
+    <string-array name="midc5name"><item>slide</item>
+        <item>youtube</item>
+    </string-array>
+    <string-array name="midc6"><item ><![CDATA[https://drive.google.com/file/d/1pm4ahKoYDRZ2flT8zKj2jqudyAlnzfqD/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImM2ZGI4OTY1YzZjNTlkMjk2ZWEwYzUxNjA5NmY4MjE0IiwidHMiOjE2MTU4MTg3OTYsImV4cCI6MTYxODIzNzk5Nn0.0W2baNeaO2m91dMUbpUd3rJhNuii6NTswTnwOOw569U]]></item>
+    </string-array>
+    <string-array name="midc6name"><item>slide</item>
+    </string-array>
+    <string-array name="midc7">
+        <item ><![CDATA[https://drive.google.com/file/d/1wW8GYvx4oi127aj7w2gPatEwN72ZWivs/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjZmMTI2MGI5NmM4OGQ5NTNlMTIxNzgwODQ1OTZlMDQwIiwidHMiOjE2MTU4MTgzMzEsImV4cCI6MTYxODIzNzUzMX0.wzgF0WPFEcrWOzLfmpLY8oTQl3MSxchOpD1eC1gqUFw]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1OA2cyPlr1zde6MoK0kLC3zbNncScUE-e/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjRhZDc5OTc5YmIyMTExZjgxMGJhMjYzZmM2MjU5NzE5IiwidHMiOjE2MTU4MTgzMzMsImV4cCI6MTYxODIzNzUzM30.WYuSbv2oG2of0Lg0wdVeX6XqBulQgCx7lQH9DRQzPS0]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1JiXFwG2mVEedLY-MMxMGX0vbJtru2iGt/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjY1MGE2ZjkzMWJkZTI2ZGRjODQzZjA1NTQ4YmE5N2YxIiwidHMiOjE2MTU4MTgzMzYsImV4cCI6MTYxODIzNzUzNn0.3ljgeOgCbsXb8FF9CzXbqnRG1isnzbIttgowIuET-90]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1jxe9DRibY5EmJ4R0sE_GJuY8csKI_lFS/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImU3ZTI3MDkxMTYzOThiNDRlNzczNDE1OTNkODI0NWIwIiwidHMiOjE2MTU4MTgzNDAsImV4cCI6MTYxODIzNzU0MH0.atrn8pyZNwUawllatc2xh02GsdJwFB1Ae-DS6TMaOU8]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/12cnVCeObuSfaw_qS1_oKa9m-l33eYfBD/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjEyYTU0Yzk3ZDBlMTA1M2Y1NmM0ZGQwYTYyMGY5YjVkIiwidHMiOjE2MTU4MTgzNDMsImV4cCI6MTYxODIzNzU0M30.AC6EL6zH7RPV_I-3Q4aVe3GWKKpVBfUMVSr-9whGG_g]]></item>
+    </string-array>
+    <string-array name="midc7name"><item>حلول أسئلة الكتاب</item>
+        <item>دفتر المادة</item>
+        <item>ch15</item>
+        <item>ch5</item>
+        <item>ch8</item>
+        <item>ch9</item>
+    </string-array>
+    <string-array name="midc8"><item ><![CDATA[https://drive.google.com/file/d/1y_WapbcKb1a-PMBSp60Q3s3KcNXqNX6e/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjFiM2YyYTZjNjhlNjEyZDkzMzJhODVhNjJkYzJmOWExIiwidHMiOjE2MTU4MTYzMjQsImV4cCI6MTYxODIzNTUyNH0.5NkFG4rpcrryt3LMn-zhO0-OzOlLapCccjyQ44qCyzQ]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1wMVZP1FkZGeZ9qPh4W3JvPUXw7OXgozU/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjYyZTFmYjBhMjI4ODNlYzczYzA5NWFjOTk0MzljNWY2IiwidHMiOjE2MTU4MTYzMjcsImV4cCI6MTYxODIzNTUyN30.4Quk58KACCGPi2tLFCwb3U70yGvToTXlY4_QpwwQN9E]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/18UBqt-KxMd5tmLZ_tLZrt-fs55kSbUXr/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImYyOThhZDI0ZTAxOTdmNDUwNWY0YWRkNmI3Njc3NjZkIiwidHMiOjE2MTU4MTYzMjksImV4cCI6MTYxODIzNTUyOX0.d34C8_sfcKeBFGUB8mqUZ3-g8TSBi3nQWKALcRFul48]]></item>
+    </string-array>
+    <string-array name="midc8name"><item>book</item>
+        <item>slide</item>
+        <item>شرح السلايد</item>
+    </string-array>
+    <string-array name="midc9"><item ><![CDATA[https://drive.google.com/drive/folders/1avjFp3voTrs_E9QaRDBNGpjMv40vmhPL?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImQyYTc5ZDk0ZThmOGExMTc4ZTAyZDJlNzkxMGJiOGMyIiwidHMiOjE2MTU4MTcwODUsImV4cCI6MTYxODIzNjI4NX0.g1s54AcLTlNsbkjGIlrF5-Zgm1fdjg8Pmru97Yt4fmw]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1HWm6BGNOPSpcwoiRKnfvUD3mCo16G6kD/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImU4NDk4YWYzNjk0NmNjZTZiMzk0NzIwODMxODkyNzk1IiwidHMiOjE2MTU4MTcwODYsImV4cCI6MTYxODIzNjI4Nn0.OFDKM3aQ5l0V9JXe5c7LQBZORZOTuxcecNSQR6sufg4]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/14CcmINVyxbPtZaXXNnNHzsNsI7ZBxFz1/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjNhMjdmNjYxOWZkMjBhYTY0MjJkYWE5ZjMwYjNhZDViIiwidHMiOjE2MTU4MTcxODAsImV4cCI6MTYxODIzNjM4MH0.bFQetya9_ny7GKhx1WLpeTmoEUqrOviA1eNGuA-b03U]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1DRJK7dSbHqzwjFC8CIDDx2upsX_2RSZ1/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjE0ZGFjYzJiNmI2ZDY5NzUyY2NjZWIxN2MwOGJlZTc2IiwidHMiOjE2MTU4MTcxODQsImV4cCI6MTYxODIzNjM4NH0.-ppN1Ns3oTDk9iuBleMUwVL9waaCVmoFBRk6Mx2EM90]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/14C0IP4HFvWqBxwEFTjc4ANrFiXWWJ8Iq/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImYxZWE4NGJjZmQ5ODlmMjI2N2QwNDcyMzI3YTAxYTE1IiwidHMiOjE2MTU4MTcxODcsImV4cCI6MTYxODIzNjM4N30.MYVNQ8E56-rWSIoWIqekdYINm5AXyiWyEUg-L3l6RVg]]></item>
+        <item ><![CDATA[https://www.youtube.com/playlist?list=PLzgRlsyv96JMgcrCSKrhhQwhRst9O7sys]]></item>
+    </string-array>
+    <string-array name="midc9name"><item>slide</item>
+        <item>book</item>
+        <item>first</item>
+        <item>second</item>
+        <item>final</item>
+        <item>youtube</item>
+    </string-array>
+    <string-array name="midc10"><item ><![CDATA[https://drive.google.com/file/d/17dByXUc9u5q6Fj5np8q1GdzeBCdtnCjy/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6Ijg2YjU0YzE4ODFkNWRmZmNlOTFmMjdiMzIwNzU3NzdmIiwidHMiOjE2MTU4MTgwOTksImV4cCI6MTYxODIzNzI5OX0.ElPr3q_ITcCWmZVOm6dXm6sk6k14Y1JT4pfeQy7WBaM]]></item>
+    </string-array>
+    <string-array name="midc10name">
+        <item>book</item>
+    </string-array>
+    <string-array name="midc11"><item ><![CDATA[https://drive.google.com/file/d/1S7wFjG5lzkLgzj78U_u43RxQUJic9alg/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImI2MTVmYWY4NmM3ZjliNDkyZGE3Y2FiYWNlYTFlNjNhIiwidHMiOjE2MTU4MTg4NDgsImV4cCI6MTYxODIzODA0OH0.6pwJtoAKP1RUHuRAISG5m711tfxGH7CP3IgVXcYsBYc]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1fUucUeAINhXadVdBBmr8lGj6tlMOQK3R/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImZhZDJmYjk4ZjVmZmQwZTQwYjViYzg2MGQ4MGI5NzQzIiwidHMiOjE2MTU4MTg4NTAsImV4cCI6MTYxODIzODA1MH0.i6-cMkrrBL1GP41Fj-XI5xzbX_u1cC3bEBI7SIwtD6k]]></item>
+    </string-array>
+    <string-array name="midc11name"><item>first</item>
+        <item>حلول first</item>
+    </string-array>
+    <string-array name="midc12"><item ><![CDATA[https://drive.google.com/drive/folders/13rzcL5GnADojY-A8dkQdxnyRxoV2g21o?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjkwNmZkNGYzOWUwOThmMDNjODAyODY5YzViMmFhNGUzIiwidHMiOjE2MTU4MTgyNDUsImV4cCI6MTYxODIzNzQ0NX0.EDWPjrn69aOo6Ngdp5wb197bYJK9mp113Kt88oJdl1I]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/10z9WdsPKkcyiF4FktLgonhxjOefJdx9c/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjdkY2I5MmQyMmZlNGY2MDNjNTQzYzA1YjE3MzJkMjNmIiwidHMiOjE2MTU4MTgyNTAsImV4cCI6MTYxODIzNzQ1MH0.S_F4X6_rVSj6d-i3I-Spb1pkv1wA5pJRAJGPUeKWeUo]]></item>
+    </string-array>
+    <string-array name="midc12name"><item>slide</item>
+        <item>mid</item>
+    </string-array>
+    <string-array name="midc13"><item ><![CDATA[https://drive.google.com/file/d/1604hk1uZWRHK1ORHtTwhk5AcmdAzPS5o/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImRlNDZmOGE2YjM2NGI3NTc1MjdjNTNiODY1NWEzMzBlIiwidHMiOjE2MTU4MTg3MzksImV4cCI6MTYxODIzNzkzOX0.FXNqs19cwPH5ix62Zt6Kv9Hz68zo1geQpoYUr_39DWQ]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1Q6k0n7JC5l-V1JTNnyPpQhnfQe36l5Y8/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjU0ODM5MTNjZWIwMjIzMDVjYzQwNzYyYjM5NjkwNDA4IiwidHMiOjE2MTU4MTg3MzgsImV4cCI6MTYxODIzNzkzOH0.OeamsMrcp58tIPnQ4hdBq4oXW1EuR5ZkSvfKE8ce8As]]></item>
+    </string-array>
+    <string-array name="midc13name"><item>slide</item>
+        <item>book</item>
+    </string-array>
+    <string-array name="midc14"><item ><![CDATA[https://drive.google.com/drive/folders/19TLB8K2rsPwbeKSloF09cM7XYEtuZ3z_?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjVjMDViZjYwMmVkMWFiZDE3NGUwYzY2YTg0OWMxMWE5IiwidHMiOjE2MTU4MTY2NzUsImV4cCI6MTYxODIzNTg3NX0.3zjI0i4i9zSrjvIHAxR7CPjIO5F0xts-nUuiOvMSa9Q]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1L3nLNA8zLyVAvm0PhitIyPsrhQXxVajS/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjNmNTM3ZTZmZmNiZjY2OTRlZTE2MThjODU2MWM5MTIwIiwidHMiOjE2MTU4MTY0MTAsImV4cCI6MTYxODIzNTYxMH0._3qUco14zyqwS38deIB7mUrwFRaEEJwuzSIqmiKgUHo]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1jT-26kPQHVE0jcEWsrvIGv_-mXLzyxkE/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImJjZjVjNWJkNGFhZGU1Y2E4YzU0NjhiMWRmNzRhZTg3IiwidHMiOjE2MTU4MTY0MTIsImV4cCI6MTYxODIzNTYxMn0.UrixcH8lxY09v4H-VnRrBEgA8ZcofJbgD2IlzXdtbIo]]></item>
+        <item ><![CDATA[https://www.youtube.com/playlist?list=PLzgRlsyv96JNZxgvC3ddYkGF9TfssfNx2]]></item>
+    </string-array>
+    <string-array name="midc14name"><item>slide</item>
+        <item>دفتر المادةmid</item>
+        <item>دفتر المادة final</item>
+        <item>youtube</item>
+    </string-array>
+    </resources>

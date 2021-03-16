@@ -1,5 +1,6 @@
 package com.example.mysummary.ui.fragment.mulakasat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -12,27 +13,44 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.mysummary.R;
+import com.example.mysummary.constant.AppConstant;
 import com.example.mysummary.databinding.FragmentMula5satBinding;
+ 
 import com.example.mysummary.model.colleges.Colleges;
 import com.example.mysummary.model.mawad.Mawad;
+ 
+import com.example.mysummary.model.home.Colleges;
+
+import com.example.mysummary.model.home.Url;
+import com.example.mysummary.model.home.UrlList;
+import com.example.mysummary.model.home.listenr;
+import com.example.mysummary.ui.fragment.chapter.ChaptersFragment;
+
+import com.example.mysummary.model.home.Mawad;
+import com.example.mysummary.ui.fragment.Mawad.MawadAdapter;
+ 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
-public class MulaksatFragment extends Fragment {
+public class MulaksatFragment extends Fragment implements listenr {
 
     FragmentMula5satBinding binding;
     private List<Colleges> collegesList;
     private CollegesAdapter collegesAdapter;
-    private List<Mawad> mawadList;
-    private Mawad5tearyAdapter  mawadAdapter;
+    private List<Url> mawadList;
+    private Mawad5tearyAdapter mawadAdapter;
+    private UrlList LinkList;
 
 
+public MulaksatFragment(){};
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -41,25 +59,16 @@ public class MulaksatFragment extends Fragment {
         getRemoteMawad();
         initRecyclerViewMawad();
         setAdMobBanner();
-
     }
 
-
-
     private void getRemoteMawad() {
-        mawadList = new ArrayList<>();
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-
-
+        mawadList=new ArrayList<>();
+        mawadList.addAll(LinkList);
+        mawadAdapter = new Mawad5tearyAdapter(mawadList,this::OnItemClick);
     }
 
     private void initRecyclerViewMawad() {
-        mawadAdapter = new Mawad5tearyAdapter(mawadList);
+
         binding.rvMawad.setAdapter(mawadAdapter);
     }
     @Override
@@ -75,8 +84,8 @@ public class MulaksatFragment extends Fragment {
         binding.rvCollege.setAdapter(collegesAdapter);
 
     }
-
     private void getRemoteColleges() {
+        LinkList = new UrlList();
         List<String> listName = new ArrayList<>();
         collegesList = new ArrayList<>();
 
@@ -102,11 +111,10 @@ public class MulaksatFragment extends Fragment {
 
 
         for (int i = 0; i < 14; i++) {
-            collegesList.add(new Colleges(i+1,icon[i], listName.get(i)));
+            collegesList.add(new Colleges(i + 1, icon[i], listName.get(i)));
         }
 
     }
-
     private void searchOrder() {
         binding.etSearch.addTextChangedListener(new TextWatcher() {
             @Override
@@ -132,10 +140,47 @@ public class MulaksatFragment extends Fragment {
         for (Colleges item : collegesList){
             if (item.getNameCollege().toLowerCase().contains(idoOrder.toLowerCase()) ){
                 filteredList.add(item);
+
             }
         }
         collegesAdapter.filterList(filteredList);
     }
+
+
+    @Override
+    public void OnItemClick(int index) {
+        switch (index){
+            case 1: {
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(AppConstant.ARABIC101_KEY, LinkList.Arabic101(binding.getRoot().getContext()));
+                Intent intent = new Intent(getView().getContext(),ChaptersFragment.class);
+                intent.putExtras(bundle);
+                this.startActivityForResult(intent,1);
+            }
+                break;
+            case 2:
+            {
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(AppConstant.ENGLISH101_KEY, LinkList.English101(binding.getRoot().getContext()));
+                Intent intent = new Intent(getView().getContext(), ChaptersFragment.class);
+                intent.putExtras(bundle);
+                this.startActivityForResult(intent,2);
+            }
+                break;
+            case 3:
+            {
+                Bundle bundle = new Bundle();
+                bundle.putSerializable(AppConstant.ASKARIA, LinkList.Askaria(binding.getRoot().getContext()));
+                Intent intent = new Intent(getView().getContext(), ChaptersFragment.class);
+                intent.putExtras(bundle);
+                this.startActivityForResult(intent,3);
+            }
+
+                break;
+        }
+
+    }
+
 
     private void setAdMobBanner() {
         MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {

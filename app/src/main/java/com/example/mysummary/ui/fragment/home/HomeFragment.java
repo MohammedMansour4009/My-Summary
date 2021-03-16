@@ -137,6 +137,7 @@ public class HomeFragment extends Fragment {
             }
         });
         binding.rvCategory.setAdapter(categoryAdapter);
+
     }
 
     private void setListImage() {

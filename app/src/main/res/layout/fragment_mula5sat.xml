@@ -12,18 +12,22 @@
         android:layout_height="match_parent">
 
         <EditText
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
             android:id="@+id/et_search"
             android:layout_width="@dimen/width_et_search"
+
             android:layout_height="@dimen/heigth_et_search"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/marginTop_et_search"
-            android:layout_marginBottom="@dimen/margin_bottom_et"
             android:background="@drawable/searchshape"
             android:drawableLeft="@drawable/ic_search"
             android:elevation="@dimen/shadow"
             android:hint="@string/collegeName"
             android:padding="@dimen/pading_et_search"
             android:paddingLeft="@dimen/marginLeft_ic_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -32,6 +36,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_search"
             app:spanCount="4"
             tools:listitem="@layout/row_mawad_5teary" />
@@ -54,9 +60,10 @@
             android:id="@+id/rv_college"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="@dimen/marginTop_rv"
+            android:layout_marginTop="@dimen/_20sdp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toTopOf="@+id/adView"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tv_colleges"
             tools:listitem="@layout/row_college" />
 

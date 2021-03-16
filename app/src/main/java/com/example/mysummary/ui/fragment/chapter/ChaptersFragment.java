@@ -1,29 +1,34 @@
 package com.example.mysummary.ui.fragment.chapter;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.mysummary.constant.AppConstant;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
 import com.example.mysummary.databinding.FragmentChaptersBinding;
+ 
 import com.example.mysummary.model.chapter.Chapter;
+ 
+ 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-
+import com.example.mysummary.model.home.Url;
+import com.example.mysummary.model.home.listenr;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
-
-public class ChaptersFragment extends Fragment {
+public class ChaptersFragment extends Fragment implements listenr {
 
     private FragmentChaptersBinding binding;
-
-    private List<Chapter> chapterList;
+    private List<Url> chapterList;
     private ChapterAdapter chapterAdapter;
 
     private InterstitialAd mInterstitialAd;
@@ -48,10 +53,25 @@ public class ChaptersFragment extends Fragment {
     }
     private void initRecyclerViewChapter() {
         chapterList = new ArrayList<>();
-        chapterAdapter = new ChapterAdapter(chapterList);
+        chapterAdapter = new ChapterAdapter(chapterList,this::OnItemClick);
         binding.rvChapters.setAdapter(chapterAdapter);
+
+
     }
     private void getRemoteChapter() {
+
+
+
+
+    }
+
+
+
+    @Override
+    public void OnItemClick(int index) {
+        Url url=chapterList.get(index);
+        Uri uri= Uri.parse(url.getUrl());
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
 
     }
 
@@ -67,5 +87,31 @@ public class ChaptersFragment extends Fragment {
         binding.adView.loadAd(adRequest);
 
     }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode){
+            case 1: {
+                Bundle bundle = data.getBundleExtra(AppConstant.ARABIC101_KEY);
+                chapterList.addAll((Collection<? extends Url>) bundle.get(AppConstant.ARABIC101_KEY));
+            }break;
+            case 2:{
+                Bundle bundle = data.getBundleExtra(AppConstant.ENGLISH101_KEY);
+                chapterList.addAll((Collection<? extends Url>) bundle.get(AppConstant.ENGLISH101_KEY));
+            }
+                break;
+            case 3:
+                {
+                Bundle bundle = data.getBundleExtra(AppConstant.ASKARIA);
+                chapterList.addAll((Collection<? extends Url>) bundle.get(AppConstant.ASKARIA));
+            }
+
+                break;
+
+        }
+
+}
+
 
 }

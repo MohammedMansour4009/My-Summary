@@ -5,13 +5,16 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowMawad5tearyBinding;
+ 
 import com.example.mysummary.model.mawad.Mawad;
+ 
+import com.example.mysummary.model.home.Url;
+import com.example.mysummary.model.home.listenr;
+ 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -23,12 +26,14 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 import java.util.List;
 
 public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.MawadHolder> {
-    private List<Mawad> mawads;
+    private List<Url> mawads;
     private Context context;
+    private listenr lr;
     private InterstitialAd mInterstitialAd;
 
-    public Mawad5tearyAdapter(List<Mawad> mawads) {
+    public Mawad5tearyAdapter(List<Url> mawads,listenr lr) {
         this.mawads = mawads;
+        this.lr=lr;
     }
 
     @NonNull
@@ -41,12 +46,12 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull MawadHolder holder, int position) {
-        Mawad mawad = mawads.get(position);
+       Url mawad=mawads.get(position);
         holder.binding.setModel(mawad);
         holder.binding.tvNameMawad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                initAdMobInterstitial();
+                holder.initAdMobInterstitial();
 
             }
         });
@@ -65,11 +70,17 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
 
     class MawadHolder extends RecyclerView.ViewHolder {
         RowMawad5tearyBinding binding;
+    public MawadHolder(@NonNull RowMawad5tearyBinding binding) {
+        super(binding.getRoot());
+        this.binding = binding;
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lr.OnItemClick(getAdapterPosition());
+            }
+        });
 
-        public MawadHolder(@NonNull RowMawad5tearyBinding binding) {
-            super(binding.getRoot());
-            this.binding = binding;
-        }
+
     }
 
     private void initAdMobInterstitial() {
@@ -133,4 +144,4 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
 
     }
 
-}
+}}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="computer1">
+        <item ><![CDATA[https://web.facebook.com/profile.php?id=100012349083511>]]></item>
+
+    </string-array>
+    <string-array name="computrer2">
+        <item><![CDATA[http://www.elcom-hu.com/mech.html#>]]></item>
+
+
+    </string-array>
+    <string-array name="computrer1name">
+        <item>Group</item>
+    </string-array>
+    <string-array name="computrer2name">
+        <item>website</item>
+
+    </string-array>
+</resources>
