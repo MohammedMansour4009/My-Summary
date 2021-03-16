@@ -17,40 +17,22 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.google.android.material.appbar.AppBarLayout
-                android:id="@+id/appbar"
-                style="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:animateLayoutChanges="true"
-                android:background="@color/white"
-                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-                app:layout_constraintTop_toTopOf="parent"
 
-                >
 
                 <androidx.appcompat.widget.Toolbar
+                    app:title="HU. ملخصاتي"
+                    app:titleMarginStart="@dimen/_115sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:menu="@menu/options_menu"
+                    tools:targetApi="lollipop"
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                    app:popupTheme="@style/Toolbar.title"
-                    tools:menu="@menu/options_menu"
-                    tools:targetApi="lollipop">
+                    android:orientation="vertical"
+                    app:popupTheme="@style/AppTheme"
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:gravity="center"
-                        android:text="HU. ملخصاتي"
-                        android:textColor="@android:color/background_dark"
-                        android:textSize="@dimen/_20sdp"
-                        android:textStyle="bold" />
-                </androidx.appcompat.widget.Toolbar>
-            </com.google.android.material.appbar.AppBarLayout>
+                  />
+
 
 
             <fragment
@@ -64,7 +46,7 @@
                 app:layout_constraintBottom_toTopOf="@id/bottom_nav"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/appbar"
+                app:layout_constraintTop_toBottomOf="@id/toolbar"
                 app:layout_constraintVertical_bias="0.0"
                 app:navGraph="@navigation/nav_graph" />
 

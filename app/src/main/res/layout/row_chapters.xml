@@ -8,6 +8,9 @@
 
         <variable
             name="model"
+
+            type="com.example.mysummary.model.chapter.Chapter" />
+
             type="com.example.mysummary.model.home.Url" />
     </data>
 

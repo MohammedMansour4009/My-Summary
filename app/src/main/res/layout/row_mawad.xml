@@ -8,7 +8,7 @@
 
         <variable
             name="model"
-            type="com.example.mysummary.model.home.Mawad" />
+            type="com.example.mysummary.model.mawad.Mawad" />
     </data>
 
     <LinearLayout
