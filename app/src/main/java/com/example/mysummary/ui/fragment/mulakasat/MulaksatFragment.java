@@ -11,33 +11,21 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
 import com.example.mysummary.R;
 import com.example.mysummary.constant.AppConstant;
 import com.example.mysummary.databinding.FragmentMula5satBinding;
- 
 import com.example.mysummary.model.colleges.Colleges;
-import com.example.mysummary.model.mawad.Mawad;
- 
-import com.example.mysummary.model.home.Colleges;
-
 import com.example.mysummary.model.home.Url;
 import com.example.mysummary.model.home.UrlList;
 import com.example.mysummary.model.home.listenr;
 import com.example.mysummary.ui.fragment.chapter.ChaptersFragment;
-
-import com.example.mysummary.model.home.Mawad;
-import com.example.mysummary.ui.fragment.Mawad.MawadAdapter;
- 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
 public class MulaksatFragment extends Fragment implements listenr {
