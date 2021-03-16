@@ -6,9 +6,6 @@
     <data>
         <variable
             name="model"
- 
-            type="com.example.mysummary.model.mawad.Mawad" />
- 
             type="com.example.mysummary.model.home.Url" />
  
     </data>
