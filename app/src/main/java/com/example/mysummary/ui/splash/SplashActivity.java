@@ -29,7 +29,7 @@ public class SplashActivity extends BaseBindingActivity<ActivitySplashBinding> {
             getSupportActionBar().hide();
         }
         binding.tvVersion.setText("V " + BuildConfig.VERSION_NAME);
-        setHandler(2);
+        setHandler(5);
     }
 
     @Override

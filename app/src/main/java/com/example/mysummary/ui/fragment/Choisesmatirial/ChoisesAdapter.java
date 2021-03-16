@@ -4,17 +4,14 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowChoisesBinding;
-import com.example.mysummary.model.home.Choises;
+import com.example.mysummary.model.choises.Choises;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ChoisesAdapter extends RecyclerView.Adapter<ChoisesAdapter.ChoisesHolder> {

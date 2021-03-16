@@ -1,4 +1,4 @@
-package com.example.mysummary.model.home;
+package com.example.mysummary.model.category;
 
 public class Category {
     private int id;

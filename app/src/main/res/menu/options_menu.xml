@@ -6,6 +6,5 @@
         android:id="@+id/ic_my_summary"
         android:icon="@drawable/logo2"
         android:title="ic_world"
-        android:iconTint="@android:color/black"
-        app:showAsAction="never" />
+        app:showAsAction="always" />
 </menu><!--    android:menuCategory="secondary" return last Activity-->

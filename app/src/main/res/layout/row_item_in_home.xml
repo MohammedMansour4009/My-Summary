@@ -9,7 +9,7 @@
     <data>
         <variable
             name="model"
-            type="com.example.mysummary.model.home.Category" />
+            type="com.example.mysummary.model.category.Category" />
     </data>
 <androidx.cardview.widget.CardView
     android:layout_width="wrap_content"

@@ -7,7 +7,7 @@
     <data>
         <variable
             name="model"
-            type="com.example.mysummary.model.home.Parts" />
+            type="com.example.mysummary.model.colleges.Parts" />
 
     </data>
 <androidx.cardview.widget.CardView

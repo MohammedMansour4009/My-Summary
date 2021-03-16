@@ -1,4 +1,4 @@
-package com.example.mysummary.model.home;
+package com.example.mysummary.model.mawad;
 
 public class Mawad {
     private String nameCourse;
