@@ -38,6 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_50sdp"
             android:layout_marginTop="36dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
@@ -45,6 +46,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/vp_image"
             tools:itemCount="3"
+            tools:listitem="@layout/row_item_in_home"
+            />
             tools:listitem="@layout/row_item_in_home" />
 
         <com.google.android.gms.ads.AdView

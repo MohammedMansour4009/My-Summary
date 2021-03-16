@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,6 +35,12 @@ public class MawadFragment extends Fragment {
         getRemoteMawad();
         setAdMobBanner();
 
+        Toast.makeText(binding.getRoot().getContext(), getid()+" ", Toast.LENGTH_SHORT).show();
+
+    }
+
+    private int getid() {
+    return MawadFragmentArgs.fromBundle(getArguments()).getId();
     }
 
     @Override
@@ -72,4 +79,34 @@ public class MawadFragment extends Fragment {
 
     }
 
+
+// switch (index){
+//            case 1: {
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable(AppConstant.ARABIC101_KEY, linkList.Arabic101(binding.getRoot().getContext()));
+//                Intent intent = new Intent(getView().getContext(), ChaptersFragment.class);
+//                intent.putExtras(bundle);
+//                this.startActivityForResult(intent,1);
+//            }
+//            break;
+//            case 2:
+//            {
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable(AppConstant.ENGLISH101_KEY, linkList.English101(binding.getRoot().getContext()));
+//                Intent intent = new Intent(getView().getContext(), ChaptersFragment.class);
+//                intent.putExtras(bundle);
+//                this.startActivityForResult(intent,2);
+//            }
+//            break;
+//            case 3:
+//            {
+//                Bundle bundle = new Bundle();
+//                bundle.putSerializable(AppConstant.ASKARIA, linkList.Askaria(binding.getRoot().getContext()));
+//                Intent intent = new Intent(getView().getContext(), ChaptersFragment.class);
+//                intent.putExtras(bundle);
+//                this.startActivityForResult(intent,3);
+//            }
+//
+//            break;
+//        }
 }

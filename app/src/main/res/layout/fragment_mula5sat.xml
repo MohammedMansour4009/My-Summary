@@ -34,13 +34,13 @@
             android:id="@+id/rv_mawad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_search"
-            app:spanCount="4"
-            tools:listitem="@layout/row_mawad_5teary" />
+            tools:listitem="@layout/row_mawad_5teary"
+            tools:itemCount="3"/>
 
         <TextView
             android:id="@+id/tv_colleges"

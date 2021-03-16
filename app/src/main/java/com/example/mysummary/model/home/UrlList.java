@@ -14,6 +14,7 @@ import java.util.Iterator;
 
 
 public  class UrlList implements Serializable, Collection<Url> {
+
     public static ArrayList<Url> Arabic101(Context context){
 
         ArrayList<String> Url=new ArrayList<>();
