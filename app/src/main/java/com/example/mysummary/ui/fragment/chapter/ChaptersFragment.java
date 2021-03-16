@@ -6,18 +6,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.mysummary.ui.fragment.mulakasat.MulaksatFragment;
+import com.example.mysummary.constant.AppConstant;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.example.mysummary.databinding.FragmentChaptersBinding;
-import com.example.mysummary.model.home.Chapter;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.example.mysummary.databinding.FragmentChaptersBinding;
 import com.example.mysummary.model.home.Url;
 import com.example.mysummary.model.home.listenr;
 import java.util.ArrayList;
@@ -91,18 +89,18 @@ public class ChaptersFragment extends Fragment implements listenr {
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode){
             case 1: {
-                Bundle bundle = data.getBundleExtra(MulaksatFragment.ARABIC101_KEY);
-                chapterList.addAll((Collection<? extends Url>) bundle.get(MulaksatFragment.ARABIC101_KEY));
+                Bundle bundle = data.getBundleExtra(AppConstant.ARABIC101_KEY);
+                chapterList.addAll((Collection<? extends Url>) bundle.get(AppConstant.ARABIC101_KEY));
             }break;
             case 2:{
-                Bundle bundle = data.getBundleExtra(MulaksatFragment.ENGLISH101_KEY);
-                chapterList.addAll((Collection<? extends Url>) bundle.get(MulaksatFragment.ENGLISH101_KEY));
+                Bundle bundle = data.getBundleExtra(AppConstant.ENGLISH101_KEY);
+                chapterList.addAll((Collection<? extends Url>) bundle.get(AppConstant.ENGLISH101_KEY));
             }
                 break;
             case 3:
                 {
-                Bundle bundle = data.getBundleExtra(MulaksatFragment.ASKARIA);
-                chapterList.addAll((Collection<? extends Url>) bundle.get(MulaksatFragment.ASKARIA));
+                Bundle bundle = data.getBundleExtra(AppConstant.ASKARIA);
+                chapterList.addAll((Collection<? extends Url>) bundle.get(AppConstant.ASKARIA));
             }
 
                 break;

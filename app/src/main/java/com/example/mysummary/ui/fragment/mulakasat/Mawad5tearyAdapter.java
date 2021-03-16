@@ -6,12 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
-import androidx.navigation.NavDirections;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowMawad5tearyBinding;
-import com.example.mysummary.model.home.Mawad;
 import com.example.mysummary.model.home.Url;
 import com.example.mysummary.model.home.listenr;
 import com.google.android.gms.ads.AdListener;
@@ -46,7 +43,6 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
     @Override
     public void onBindViewHolder(@NonNull MawadHolder holder, int position) {
        Url mawad=mawads.get(position);
-        Mawad mawad = mawads.get(position);
         holder.binding.setModel(mawad);
         holder.binding.tvNameMawad.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,10 +76,7 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
             }
         });
 
-        public MawadHolder(@NonNull RowMawad5tearyBinding binding) {
-            super(binding.getRoot());
-            this.binding = binding;
-        }
+
     }
 
     private void initAdMobInterstitial() {
@@ -147,4 +140,4 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
 
     }
 
-}
+}}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="baby1"><item ><![CDATA[https://drive.google.com/file/d/1FXjtsGUvvZgGbdNr9ClnZrIinmejizfH/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="baby1name"><item>test bank</item>
+    </string-array>
+    <string-array name="baby2">
+        <item ><![CDATA[https://www.dropbox.com/s/30355042vnmimff/%D8%A5%D8%B1%D8%B4%D8%A7%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84%20%D9%88%D8%A3%D8%B3%D8%B1%D9%87%D9%85%20%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%201.pdf?dl=0&fbclid=IwAR2x0VgqkdS6DZESsZdBwzGvb4xSFWzX_ZL9SoI0hSlCWrRahAgqrjThTTc]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/z1r5l3ddtshxpuw/%D8%A5%D8%B1%D8%B4%D8%A7%D8%AF%20%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84%20%D9%88%D8%A7%D8%B3%D8%B1%D9%87%D9%85%20%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%202.pdf?dl=0&fbclid=IwAR3kDaITC7veie9S8YfyNIUumMOZ_AJ851WwjbWC9P5kz9v-sPyUjcwFy6o]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/7ohbao8xs9g17eo/%D8%A5%D8%B1%D8%B4%D8%A7%D8%AF%20%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84%20%D9%88%D8%A7%D8%B3%D8%B1%D9%87%D9%85%203.pdf?dl=0&fbclid=IwAR0GLYYgTSOdPouET24qZDIyTJl__gWBmkeH0Ku0LN6SL0Bi93KZy8fHlx0]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/5o2cbgqcb5072qx/%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84%20%D9%88%D8%A7%D8%B3%D8%B1%D9%87%D9%85%204.pdf?dl=0&fbclid=IwAR3iK76c1eTY4tHWEGoy5PftLagBMTUWY-vodoHcgrNJwWORYra3Ej0BVh8]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/o7ysfbb6us977ad/%D8%A5%D8%B1%D8%B4%D8%A7%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84%20%D9%88%D8%A7%D8%B3%D8%B1%D9%87%D9%85%205.pdf?dl=0&fbclid=IwAR2hez1faVY9zvvgyjCV-Ytt0WioTAZRJt5lSd-VersQs4plDfN0AEeXOEU]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/odwl51v45ix9we7/%D8%A5%D8%B1%D8%B4%D8%A7%D8%AF%20%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84%20%D9%88%D8%A7%D8%B3%D8%B1%D9%87%D9%85%206.pdf?dl=0&fbclid=IwAR3XZ7w7j-R_N7SDCzWmZMw-KsIXxmsemDWsoI9Kw0EvoYMYH2DGqWzwW0w]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/qi5sr7j6hgxfrlq/%D8%A5%D8%B1%D8%B4%D8%A7%D8%AF%207.pdf?dl=0&fbclid=IwAR2Yvo_AP6-CgM9dudNe9JoxJnMywPjAimfVrhbSfpz30ceE6D1XhmWRugU]]></item>
+
+    </string-array>
+    <string-array name="baby2name"><item>محاضرة 1</item>
+        <item>محاضرة2</item>
+        <item>محاضرة 3</item>
+        <item>محاضرة4</item>
+        <item>محاضرة5</item>
+        <item>محاضرة6</item>
+        <item>محاضرة7</item>
+    </string-array>
+    <string-array name="baby3">
+        <item ><![CDATA[https://www.dropbox.com/s/v2ejvu52279um7m/%D8%A7%D8%B6%D8%B7%D8%B1%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%201.pdf?dl=0&fbclid=IwAR2CsnkTwqn5xqOBLotdzojSg0halAF7yHJeHGZqUVryY9kVNxFMF9QuCyk]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/khuf5zqqmr6pdx1/%D8%A7%D8%B6%D8%B7%D8%B1%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9.pdf?dl=0&fbclid=IwAR01OZMqbBvmUVFoR1QsgzU9W2KVf5oviFrtYjKQU4Zm5aVTs0yCA52p0-k]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/yqiujrv8t1x2x7d/%D8%A7%D8%B6%D8%B7%D8%B1%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%204.pdf?dl=0&fbclid=IwAR1wCBm9wq_t_e6kKrDn4q4hv-S4dgUz80tV1CwvDIVROyor0oHPasZSYsA]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/yfixdhir1z0jt66/%D8%A7%D8%B6%D8%B7%D8%B1%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%205.pdf?dl=0&fbclid=IwAR0_UBLU6JRC1jFhtsCCEejdyb0Oanw4wHskJ71vheGHl-X9QwX_K4Vd6Ho]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/dkmuvpzr5yvprka/%D8%A7%D8%B6%D8%B7%D8%B1%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%206.pdf?dl=0&fbclid=IwAR2jvdFdn6Gk7VGRcN6U3DxgDcKR5SRmJ0Gd19fBakpUM2KUsOiqbfgdbEk]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/566o8sg01p4ewi6/%D8%A7%D8%B6%D8%B7%D8%B1%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%207.pdf?dl=0&fbclid=IwAR0rFMm9KOlk2Lmf-EMmgcGdHzuoaAP5uwRQOF8rscxYiJ5syB3aSXBcZIQ]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/uqap1pycfdjld0j/%D8%A7%D8%B6%D8%B7%D8%B1%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%208.pdf?dl=0&fbclid=IwAR3b_DXqdUMptuvWuEPI8he265ZoaBQ5bS4tK4Cj-LtvMU3aGn4iZXXjp5s]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/8t5zzwhipkw1wld/%D8%A7%D8%B6%D8%B7%D8%B1%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%209.pdf?dl=0&fbclid=IwAR2qD5OChRKiRvDMJa1eoERbOSgfKOqSRO3c76PAe3kYrP2pgTLoW_8362s]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/3p9fbvfs79chwnh/%D8%A7%D8%B6%D8%B7%D8%B1%D8%A7%D8%A8%D8%A7%D8%AA%20%D8%AA%D9%88%D8%A7%D8%B5%D9%84%2010.pdf?dl=0&fbclid=IwAR14BsD_ewFW4lySN7WnLC5YlFLW3hKft4Y-m_B0Y-aEh2waRApynLcpf_4]]></item>
+
+
+    </string-array>
+    <string-array name="baby3name">
+        <item>محاضرة 1</item>
+        <item>محاضرة2</item>
+        <item>محاضرة4</item>
+        <item>محاضرة5</item>
+        <item>محاضرة6</item>
+        <item>محاضرة7</item>
+        <item>محاضرة8</item>
+        <item>محاضرة9</item>
+        <item>محاضرة 10</item>
+    </string-array>
+    <string-array name="baby4">
+        <item ><![CDATA[https://drive.google.com/file/d/1fMfNqcg1zrrtS5dbNdt9ozBBluaIaMRP/view?usp=sharing]]></item>
+
+    </string-array>
+    <string-array name="baby4name">
+        <item>book</item>
+
+    </string-array>
+    <string-array name="baby5">
+        <item ><![CDATA[https://drive.google.com/file/d/1SsISUifsn5IpRPH5bvCDn04uU9QlYHtS/view?usp=sharing]]></item>
+
+    </string-array>
+    <string-array name="baby5name">
+        <item>book</item>
+
+    </string-array>
+    <string-array name="baby6">
+        <item ><![CDATA[https://www.dropbox.com/s/f1hpxpglnd5tbiy/%D9%86%D9%85%D9%88%20%D9%84%D8%BA%D9%88%D9%8A%20%D9%88%D9%85%D8%B9%D8%B1%D9%81%D9%8A%20%D9%84%D9%84%D8%B7%D9%81%D9%84%20%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%201.pdf?dl=0&fbclid=IwAR3uYF-qPn_4EsDzckj4YdyhacBT5H_SVBVSCCyFg6VPU4iHTS8wOxm08e0]]></item>
+        <item ><![CDATA[https://www.dropbox.com/s/tnkzxc6rdlgtmyy/%D9%86%D9%85%D9%88%20%D9%85%D8%B9%D8%B1%D9%81%D9%8A%20%D9%88%D9%84%D8%BA%D9%88%D9%8A%20%D9%84%D9%84%D8%B7%D9%81%D9%84%20%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%202.pdf?dl=0&fbclid=IwAR2_xJJtds4I8esnRKeVyZf7lBdf0FCAwAN6pmMOZjc7aMjTcDtsCaC3Wlc]]></item>
+
+    </string-array>
+    <string-array name="baby6name">
+        <item>محاضرة 1</item>
+        <item>محاضرة2</item>
+    </string-array>
+</resources>

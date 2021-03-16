@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="eco1">
+        <item><![CDATA[https://drive.google.com/file/d/1UAKsjo_jHqdi9mNQJghHs5LbHuz-FUMN/view?fbclid=IwAR0hfUkyMYwPPo0smJpJ735YfkQSmztK4tuXgitBVaCX2OeVIe5ECi8AHFM]]></item>
+        <item><![CDATA[https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1W6-JD0xNFK5XKQzJC4CfFVS1HZyrk-LS%2Fview%3Fusp%3Ddrivesdk%26fbclid%3DIwAR1NqrytNWWiwYEIiSTKgVSQUf9Qxc-hjQhXGoaljtW3jZ3r3_BHFRAngjE&h=AT0IFn1SkE7C3wkEuS5CJKaZyc_Hx0X2nb6t5vEnAdx5HA9_gS_iIb8bLX54ufrQSoTLgN5Lpz2XczhgUaR3hA9lOdrRO3Ax4cuD4YfpD1d218WGOSru7y4TlAzt8tCt4Qyg&__tn__=-UK*F]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1U0EH_WGoOM2lpdRyuApzZSSu5ekYSbJa/view?fbclid=IwAR0mL8dTQBEJjUHzp8UUpDjNPoOgHUnqGAjY7k9n11g9io0C6commn6RkiQ]]></item>
+
+    </string-array>
+    <string-array name="eco1name"><item>فيرست</item>
+        <item>سكند</item>
+        <item>فاينال </item>
+    </string-array>
+    <string-array name="eco2">
+        <item><![CDATA[https://drive.google.com/file/d/1dfvSkE3HakL-VSky5_2nNVIAUzn6wCuY/view?fbclid=IwAR2Lvdx6d3HYa-rl_JltOGCAH9PfJkuMDW9_08nsqgcXi4Y5Cwm7fvje_-I]]></item>
+
+    </string-array>
+    <string-array name="eco2name">
+        <item>دفتر المادة</item>
+
+    </string-array>
+    <string-array name="eco3">
+        <item>https://drive.google.com/file/d/1eA23I0YOOjtj9gPdkd5Mnp8DNc5r0AhM/view?fbclid=IwAR38Y5klw8kb6emQOSZApMFGN61gWMfSkEeLRUuGcsjeqjYkMCEGVbZGRiA</item>
+
+    </string-array>
+    <string-array name="eco3name">
+        <item>شرح المادة</item>
+
+    </string-array>
+    <string-array name="eco4">
+        <item><![CDATA[https://drive.google.com/file/d/1eJ3195CkYyHJHKvfKZ5dsBlroGHIwMqO/view?fbclid=IwAR2kyMj-ZgFdcwcO5qKDplFmKCxc8tJLJiTv7i_rGYD2yVa68sWWJu--e48]]></item>
+
+    </string-array>
+    <string-array name="eco4name">
+        <item>شرح المادة</item>
+
+    </string-array>
+    <string-array name="eco5">
+        <item><![CDATA[https://drive.google.com/file/d/1deMNVJLEU59IUyRStFDUf5RenovR3luL/view?fbclid=IwAR0preycZFhzjJ-CbN35UuU4cRf6xYUobKB8u3HAgZ93sBaQjk3Jup6rxPY]]></item>
+
+    </string-array>
+    <string-array name="eco5name"><item>شرح</item>
+    </string-array>
+    <string-array name="eco6"><item><![CDATA[https://drive.google.com/file/d/1UO6wNoVm1ZWqvF6fIAXpzbn3SYkn1_oQ/view?fbclid=IwAR0COl45My199LDq0Nb2iTcSAVNIEYMCUHDXOzXJq1qaAjTkBhqT5lhAy4g]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1Y27LgLhD3htdWr2ojHeeA9c77O346_Lu/view?usp=drivesdk&fbclid=IwAR0gF18-zNMMBwzcESl3z2LWmUka7UTE6qg6WjmUQemuI3dqC5Iy8EtZynI]]></item>
+    </string-array>
+    <string-array name="eco6name"><item>فيرست</item>
+        <item>كامل</item>
+    </string-array>
+    <string-array name="eco7"><item>https://drive.google.com/file/d/1dguuKZlO_IVLLWJAyZ5BXxSXOkUlYZ_g/view?fbclid=IwAR1fsleha0QFHSb6jJtBVoPf6XlQG_-V3pblPViSgOyHJ4ShQa3xOXU8smk</item>
+    </string-array>
+    <string-array name="eco7name"><item>دفتر المادة </item>
+    </string-array>
+    <string-array name="eco8">
+        <item><![CDATA[https://drive.google.com/file/d/1UqW0CmyKDxhf--oxynNWOgaXo1uxoyNo/view?fbclid=IwAR1tEbRRoAlYgkA4-5ER2Bbp-qoYSBUAG91DAZ8YZoOXdq36qEfUnKWQx7c]]></item>
+
+    </string-array>
+    <string-array name="eco8name"><item>فيرست</item>
+    </string-array>
+    <string-array name="eco9"><item><![CDATA[https://drive.google.com/file/d/1EwarSYj__zklR0xGXs4vDNP72RlWGqHU/view?fbclid=IwAR1W9qx1vvpwy6c-VJzGxVcOxYVZx04X-bI3LtPR4F9llmLeArnVEvDIjxA]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1iby1F2KJWle9JKmMb6SCAFsQA5ghOtz4/view?fbclid=IwAR2jxDyw_Sk_rnscNd8HEZ-EdHbV764skjwNxK702V4uazvzRUJWK8A4kR4]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1UCr3T4B3f_iF0WR73JJctty5NiqTR4lG/view?usp=drivesdk&fbclid=IwAR3phSniFgx7PbPHjaZPduYJCYhYERtU6XdcYKKgRgiFvk9FVqxAK4ODkmo]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1TrQOdWLHQgiaHtvlcTca7PC6ThRpw0s1/view?usp=drivesdk&fbclid=IwAR30T1FnldiyzcD-epaOBPa6uTwWzwizJvGKND4GzVqo4eTeWp9wsWuARkw]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1Tu3NG1HqQNhz_DT_ojRDo_Sx1vkU2Bc2/view?usp=drivesdk&fbclid=IwAR0PzbazXeqBYk79Ji55_tsloxYdoyH-f6qaRfYcjS-pKIbbb8m1N4HODMs]]></item>
+    </string-array>
+    <string-array name="eco9name"><item>ch 1,2,3</item>
+        <item>تلخيص </item>
+        <item>ch4</item>
+        <item>ch5</item>
+        <item>ch6</item>
+    </string-array>
+    <string-array name="eco10"><item><![CDATA[https://drive.google.com/file/d/1M0B5tUwoLfr9CzmzRztAKq_nVrTQeavK/view?usp=drivesdk&fbclid=IwAR08R2KBxXCnXBi2HQYZkl9zyH8R-CB24pj7cClFsa993DtZaOOdvK7Nbg8]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1UiyKDGks-DeKO6WyqzLtC4GpEmJB73Ja/view?fbclid=IwAR3W2Eqc9MnZyTPOOXe2JmU0glgeMiwyxbVWh4vIyt8L9PGHSfOQuLgZggg]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1NFhue2vPfff49datLOZZQlKWHr-aq55I/view?fbclid=IwAR1-mHiW9v-CpNQW0NUyPyEERFSr914PI1E4Mbfm4aqFtSTmztVcRbE3UX8]]></item>
+    </string-array>
+    <string-array name="eco10name"><item>فيرست</item>
+        <item>سكند</item>
+        <item>فاينال</item>
+    </string-array>
+    <string-array name="eco11"><item><![CDATA[https://drive.google.com/file/d/1T233YfxIxgkdsmwIgp0gj6q5uK-Xq3Kh/view?usp=drivesdk&fbclid=IwAR1jeyi2Hpg3TCjGdpSZheCiN4jOihbFzmSaYWWDJ_Mzmg8v4FgWQpyaeVY]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1T6xeDU4zu6JTKm8uA9j2xMPQuFe4GwQf/view?usp=drivesdk&fbclid=IwAR3grupOj5MccaQoixt3JUO6TKaN6U880PyVuOPm_uVRPZgwPl7r2PTbqUE]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1TEtnUOUakfQIDoNMGS4aoyCY695wuz5J/view?usp=drivesdk&fbclid=IwAR3fEGEPpJswWyrHGu6QkDDugBcGt3eknJTJ5bx_P1ysr-uWVkTDyrTkrW0]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1TGLAysPH_VdSrvLWvy_F7ABtc49dpgKp/view?usp=drivesdk&fbclid=IwAR1spwIEFjwbYiipjEuhLMkv7IMkYuDVOGMxGGtOBSvlDT-HJUdzzBWapBw]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1TG_FOxk4hkD-5s_hVxT_9-GUwfp8fl3T/view?usp=drivesdk&fbclid=IwAR1ZdiHTbmdxZTfFKT0IGfqNWc1-egLWWUKvNuJkBpq4-rGCr-zDblYxAZU]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1TIVaEBOJJY6UBDg1JL8CDXaaZLLXDCSx/view?usp=drivesdk&fbclid=IwAR36p3MUBmGQoOqUbHF4y1pqpAgxDL04w25ViQgeDJrkp8jeDiRpMo0jv_E]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1TItN55uIZJUShEV2nLcp2zESMh1F4Qri/view?usp=drivesdk&fbclid=IwAR0A74TxuUQenLz3O9mUgcMrYmjZ-zrGUuGAoZN8NxnJ-DoGgzkoTd0NpQ4A]]></item>
+    </string-array>
+    <string-array name="eco11name"><item>ch5</item>
+        <item>ch6</item>
+        <item>ch7</item>
+        <item>ch8</item>
+        <item>ch9</item>
+        <item>ch10</item>
+        <item>ch11</item>
+    </string-array>
+    <string-array name="eco12"><item>https://web.facebook.com/PulseEconomicTeam/photos/oa.2616997705187374/3985790811481271/</item>
+    </string-array>
+    <string-array name="eco12name"><item>شرح كامل</item>
+    </string-array>
+    <string-array name="eco13"><item>https://drive.google.com/file/d/1UrXk2aBkop3phxIq4HA5ipSevjKfm_dp/view?fbclid=IwAR0nsxBGQQ3AEcWqkLDVdPJl4Se6zvbwU2bK5D356ba_27FcpFleel_U_q0</item>
+        <item>https://drive.google.com/file/d/1V-dl3qoXvkbL8XDSadyLvulbKgA7Hmtg/view?fbclid=IwAR3LB4DAl1V0gfCoAaLgRaM3dlRetF3fRhOi379RYreypVMTevpKLpX-YqQ</item>
+    </string-array>
+    <string-array name="eco13name"><item>slide first</item>
+        <item>second</item>
+    </string-array>
+    <string-array name="eco14">
+        <item><![CDATA[https://drive.google.com/file/d/1mqWlQ4iO-sBGHiorKjFrz9syZvivxXkZ/view?fbclid=IwAR0vm-dSv__q4hzDXbV-Y6dwCEqaQqw34Vz0fvY0cMeFGD9EkfE4qrXnVBg]]></item>
+
+    </string-array>
+    <string-array name="eco14name">
+        <item>دفتر المادة</item>
+
+    </string-array>
+    <string-array name="eco15">
+        <item>https://drive.google.com/file/d/1V8Zd6N7NnnuNA5bc-16zLIZdxtTmR7FV/view?fbclid=IwAR0syMGp8UwPluazRZRLRGsBwJQEd7OTSdEUS13EqDdb0fBC6PBaQGTmVn8</item>
+
+    </string-array>
+    <string-array name="eco15name"><item>شرح كامل</item>
+    </string-array>
+    <string-array name="eco16"><item>https://drive.google.com/file/d/1WENDUd0HfTN3go4A-VnfJOlj-FksaktT/view?fbclid=IwAR3Kqozeu0eOumMbZeAXvDGTnNCCT50wAfdGSl1F5IhYIUQt_tv1CFr7esk</item>
+    </string-array>
+    <string-array name="eco16name">
+        <item>CH7</item>
+
+    </string-array>
+    <string-array name="eco17"><item><![CDATA[https://drive.google.com/file/d/1UBikTu2ZMBNT2_Ayn1cGQJwInrWOz2Q2/view?fbclid=IwAR2PVqw4qyXQXBnEAFK0efGXUgm19F_qzxtmkf0TH_uCkxTn2SEL0o-y2aI]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1UBrnXsHKuRga70bw4lThl9D_G1MvQGxs/view?fbclid=IwAR08rGOKLsPfe2pZWjkatwDm4gN31gIGcqZtEKExQjU-5PpOb38IBN4vzew]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1UDxjxtUWdhDUVR0sEGGelNZEYITizkBq/view?fbclid=IwAR0zjKt0jOTT0RRFgBHpUb0ECNtpmvgtQok3rjqDoQSLU1NEfwnNPRoD-S4]]></item>
+    </string-array>
+    <string-array name="eco17name"><item>فيرست</item>
+        <item>سكند</item>
+        <item>فاينال</item>
+    </string-array>
+    <string-array name="eco18"><item><![CDATA[https://drive.google.com/file/d/1SwT9GeTrUIlT3wmHQteUx32-5KnVLp8B/view?fbclid=IwAR2CHetbVoFGh8NFwE8NbWlOyZp64vSujwwsi3h3M_iFTR3WXBC16b1eOms]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1UM5xbXfNA8qi54pu3DilyEhdjSjHKpiM/view?fbclid=IwAR1rGq0wwOlM_9tXNhrx56UmcH9grrOlVg_EIPGvMYffYW8pJhQMGpHd1zg]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1ThiFCE9VOBgFJSuz4bxFeHcIBxOwQlnx/view?fbclid=IwAR0Or80TNoEb926fkpnjm5HjJT1gtetdUnEONqGFHpqBg1HGWLUiIndO0MM]]></item>
+    </string-array>
+    <string-array name="eco18name"><item>فيرست</item>
+        <item>سكند</item>
+        <item>فاينال</item>
+    </string-array>
+    <string-array name="eco19"><item>https://drive.google.com/file/d/1VOmDSLucZF7R9GgLKslJ05PFGwg874zT/view?fbclid=IwAR2i3Y0fKpPwscmiz4rWqkPfKJYLdTlTadpCbdvahyStp5offfXyNYrAiPM</item>
+        <item>https://drive.google.com/file/d/1VQF7tNvO7YJ4JdtGTH-sXqxKg-yTaF_p/view?fbclid=IwAR3FL2lDDRyWNZcQERkAcgIFFxJEp_24iHsmvKsENnFEH2wKDRCMhigd9Hk</item>
+        <item>https://drive.google.com/file/d/1UM5xbXfNA8qi54pu3DilyEhdjSjHKpiM/view?fbclid=IwAR2It5jZbr6JosQ3Ru32Dl-W6T06w9qbFGb4IN2HPUJUi6RmhdGGbKWOtOE</item>
+        <item>https://drive.google.com/file/d/1VbdPauUMBsofC7fItJiYzNwzF4fLYPC5/view?fbclid=IwAR0t8lkOpiTj_vQlJpA-8YtdLdLzgJ6YcAd6guO1cSFmBIz6WsTJ9QHETqs</item>
+    </string-array>
+    <string-array name="eco19name"><item>slide</item>
+        <item>شرح فيرست</item>
+        <item>سكند</item>
+        <item>فاينال</item>
+    </string-array>
+    <string-array name="eco20"><item><![CDATA[https://drive.google.com/file/d/1qJbpCIjkF5b7OTK_Kko_fyAOGlePMIF8/view?usp=drivesdk&fbclid=IwAR0P5IctkLUu7OuL9jY66xFTSL9LBCBSP3EAAbYeAwmYJIab8kaM4R_LoI4]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1LbKriX00HQmtEsaBvF5tlRNjAsmCrP9D/view?usp=drivesdk&fbclid=IwAR2mCxBKwaqLe2DmaRzmLtyXsEV-HcOlhRTBDKy8upXsfwEwItRy7Fu-SIU]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1sMHbCMj9NCl_OUAseNIPihfKWN-QfyUC/view?usp=drivesdk&fbclid=IwAR1BFCAAPED2eLu7c1-zP9WUE2AS0SDFm8AllVYcDk8fegoF5ixfgabacVw]]></item>
+    </string-array>
+    <string-array name="eco20name"><item>فيرست</item>
+        <item>سكند</item>
+        <item>فاينال</item>
+    </string-array>
+    <string-array name="eco22"><item><![CDATA[https://drive.google.com/file/d/1dp2Xq3e8xprOVZkSgEVKZKzrdZg0Cfne/view?fbclid=IwAR2dapWuGWELj9ZgwCC3liCzuwbuOp1vtd9wdV3M59_HemM5ANRrWkn3wnI]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1dm3iwgmfr0D1by1gYMPgc6-gN37f2kF4/view?fbclid=IwAR1hWkh7psBXXMm66FmLGdSDOwAeaSHxw91XLEC1FcPImoIZtN7glqbF3nU]]></item>
+    </string-array>
+    <string-array name="eco22name"><item>slide</item>
+        <item>فيرست </item>
+    </string-array>
+    <string-array name="eco23"><item><![CDATA[https://drive.google.com/file/d/1o4VNYYCT22-bC9vye_5xfji_TUyc7pBa/view?usp=drivesdk&fbclid=IwAR3bn7molYWT9zpgQkU2pqsVEX22qlfQODeV4BeuLkf-h0gLXlil26wNEsY]]></item>
+    </string-array>
+    <string-array name="eco23name"><item>ch1</item>
+    </string-array>
+    <string-array name="eco24"><item><![CDATA[https://drive.google.com/file/d/1yi7IqdHB82FpH7RU_wdQfZYNCDPLjAzU/view?usp=drivesdk&fbclid=IwAR1sDk_5d0Slq8vKIdzVJJlrrO6W5eR19h5hxHpsxqZkFZYuA7XWEYXB-Wc]]></item>
+    </string-array>
+    <string-array name="eco24name"><item>ch2</item>
+    </string-array>
+    <string-array name="eco25">
+        <item><![CDATA[https://drive.google.com/file/d/1mihOV77SWiUlUgk5QI9ab4znxaYpxJtD/view?fbclid=IwAR0LJzMOMujz7u-_Ur3NTvx7YHTrIAniMIEcZFCKvwAMDUviVzzBpIqAUW8]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1lFnZuVrPZr73SS4BIFQsQ_Dlpm0d11FU/view?fbclid=IwAR1S3Pam2bP7e1rWh3oKi_Qq24CKgpgmq_nhkd1_rw8dNZD0HF5q_fPSJck]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/11Ci-02g5Pa6hv7afWw-3hoOhZipywr9e/view?fbclid=IwAR0QRmLzi7rk2w3oZK3QBZNe5B9cfBPEeb894FYuczQEWqv25PjqJ0HZkVM]]></item>
+
+    </string-array>
+    <string-array name="eco25name"><item>فيرست</item>
+        <item>سكند</item>
+        <item>فاينال</item>
+    </string-array>
+    <string-array name="eco26"><item><![CDATA[https://drive.google.com/file/d/1Dvi6UQGLmZdHqPDhaJFIJi5MDUX95RsL/view?usp=drivesdk&fbclid=IwAR0DMz3iNYWfzHTJ7GGsbpR62IdD5gON9klD2M4LLSWmhm8CEp00vc2ZNN8]]></item>
+    </string-array>
+    <string-array name="eco26name"><item>سكند</item>
+    </string-array>
+    <string-array name="eco27"><item><![CDATA[https://drive.google.com/file/d/1INGe439EjpMV8J-fGiJpUXkr-ha7bjqN/view?usp=drivesdk&fbclid=IwAR31q7uZWV4g5jHoKQAD8ghbDb2nA7DSJzkQvWwTdz-YPA3wwKSyyHn90IQ]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1KcXG5y_vMoqcvG613dfFUy7KRdEDyvw7/view?usp=drivesdk&fbclid=IwAR0y2ooy0Hwr8bVntcCCMrJfLna99EjbYYLlyNZKMYLffXl1da1GXa2soJk]]></item>
+    </string-array>
+    <string-array name="eco27name"><item>فيرست</item>
+        <item>سكند</item>
+    </string-array>
+    <string-array name="eco28"><item>https://drive.google.com/file/d/1VBt-FteXdczMwX5frTVgBR84zZ_EKu2K/view?fbclid=IwAR0KM2UXKzyko5tVlsee5moCUlzSoWjZx4iN5cfbWppu05EWQgaCY8zrxBM</item>
+    </string-array>
+    <string-array name="eco28name"><item>فيرست</item>
+    </string-array>
+    <string-array name="eco29"><item><![CDATA[https://drive.google.com/file/d/1lzpmeWCzatbw359-zpgD3Fed5KGuEGZO/view?usp=drivesdk&fbclid=IwAR2Mdzhi4ili5j2JVQeuqe6nZ4eK0q_GAy0Spmd_XQYLTzUyZkE61nIRbLY]]></item>
+        <item><![CDATA[https://web.facebook.com/photo/?fbid=2192796920797872&set=oa.1987861378101013]]></item>
+    </string-array>
+    <string-array name="eco29name"><item>سكند</item>
+        <item>فاينال</item>
+    </string-array>
+    <string-array name="eco30"><item><![CDATA[https://drive.google.com/file/d/1rUisEjKJAPqTaZCjmwk2PTUPrDbTGaHJ/view?usp=drivesdk&fbclid=IwAR3HOIPuQg9ksoF8Y3WjnUOpV6mOgEkl_33qZcKrolhC8B4xz4AbcI9-ZaA]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1r3Cxa22cjQVPqSp5tnhOV9xJg0wyZGps/view?usp=drivesdk&fbclid=IwAR2mz6sxDrJRj-sP2R1vOZSdYfBDCC3Y7waqRLdUiHzWo1a1d5M2pgShP1g]]></item></string-array>
+    <string-array name="eco30name"><item>سكند</item>
+        <item>فاينال</item></string-array>
+
+</resources>

@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="@dimen/_20sdp">
 
     <data>
         <variable
             name="model"
             type="com.example.mysummary.model.home.Url" />
     </data>
-
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/_5sdp">
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:elevation="@dimen/shadow">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_name_mawad"
@@ -24,4 +29,5 @@
             tools:text="English101" />
 
     </LinearLayout>
+</androidx.cardview.widget.CardView>
 </layout>

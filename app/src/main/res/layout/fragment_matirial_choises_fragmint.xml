@@ -18,6 +18,8 @@
             android:layout_marginTop="@dimen/marginTop_rv_choises"
             app:layout_constraintBottom_toTopOf="@id/adView"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp"
             tools:listitem="@layout/row_choises" />
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
