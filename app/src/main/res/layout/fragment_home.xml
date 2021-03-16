@@ -39,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginTop="36dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
@@ -47,6 +48,7 @@
             tools:itemCount="3"
             tools:listitem="@layout/row_item_in_home"
             />
+            tools:listitem="@layout/row_item_in_home" />
 
         <com.google.android.gms.ads.AdView
             xmlns:ads="http://schemas.android.com/apk/res-auto"
