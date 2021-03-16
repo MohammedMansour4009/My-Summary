@@ -1,16 +1,14 @@
-package com.example.mysummary.model.mawad;
+package com.example.mysummary.model.home;
 
-public class Mawad {
-    private String name;
+public class Url {
+    private  String name;
+    private String Url;
     private int id;
 
-    public Mawad(String name, int id) {
-        this.id=id;
+    public Url(String name, String url) {
         this.name = name;
+        Url = url;
     }
-    public Mawad(){};
-
-
 
     public String getName() {
         return name;
@@ -20,6 +18,13 @@ public class Mawad {
         this.name = name;
     }
 
+    public String getUrl() {
+        return Url;
+    }
+
+    public void setUrl(String url) {
+        Url = url;
+}
     public int getId() {
         return id;
     }

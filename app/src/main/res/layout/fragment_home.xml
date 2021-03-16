@@ -17,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_200sdp"
             android:layout_marginTop="@dimen/_40sdp"
+            android:elevation="@dimen/shadow"
             app:layout_constraintTop_toTopOf="parent"
             tools:background="@tools:sample/backgrounds/scenic" />
         <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
@@ -34,15 +35,18 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_category"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_50sdp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vp_image"
             tools:itemCount="3"
             tools:listitem="@layout/row_item_in_home"
-            app:layout_constraintTop_toBottomOf="@id/vp_image"/>
+            />
 
         <com.google.android.gms.ads.AdView
             xmlns:ads="http://schemas.android.com/apk/res-auto"

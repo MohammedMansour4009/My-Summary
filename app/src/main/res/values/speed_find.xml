@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Arabic101">
+        <item><![CDATA[https://drive.google.com/file/d/1sZBzG6azqb-64gut5EloImVr3dtX9jC2/view?usp=sharing]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1sZBzG6azqb-64gut5EloImVr3dtX9jC2/view?usp=sharing
+]]></item>
+        <item>https://drive.google.com/file/d/19LwIHkBVY4qzXQoyX1l0zCLoOHqVXb-W/view?usp=sharing
+</item>
+    </string-array>
+    <string-array name="Arabic101Name">
+        <item>Firs</item>
+        <item>Second</item>
+        <item>Final</item>
+
+    </string-array>
+    <string-array name="english101">
+        <item><![CDATA[https://drive.google.com/file/d/1UqsMOrT4CAl5c2r5sLsaIrZWZJwaPNmp/view?usp=sharing]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/17KfZegEroDkRhDSjyybqdpKjrmnom1u7/view?usp=sharing]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1jrGqo3Cf1-lt0UK0aWrzZ3jKBe08uOc5/view?usp=sharing]]></item>
+
+    </string-array>
+    <string-array name="english101Name">
+        <item>First</item>
+        <item>Second</item>
+        <item>Final</item>
+    </string-array>
+    <string-array name="askarih">
+        <item><![CDATA[https://drive.google.com/file/d/1n350PqgJybIndhAPI4zl6Vd5qPn5QsKz/view?fbclid=IwAR11sFcwgo-AG5PgZdF4oL_utTD0e0O2sMawzRDOeBzxvx388rNhFZyoZcA]]></item>
+    </string-array>
+    <string-array name="askarihName">
+        <item>المادة</item>
+    </string-array>
+</resources>

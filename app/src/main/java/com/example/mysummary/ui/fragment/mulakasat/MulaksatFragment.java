@@ -1,5 +1,6 @@
 package com.example.mysummary.ui.fragment.mulakasat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -10,11 +11,20 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 
 import com.example.mysummary.R;
+import com.example.mysummary.constant.AppConstant;
+
 import com.example.mysummary.databinding.FragmentMula5satBinding;
 import com.example.mysummary.model.colleges.Colleges;
+import com.example.mysummary.model.home.Url;
+import com.example.mysummary.model.home.UrlList;
+import com.example.mysummary.model.home.listenr;
 import com.example.mysummary.model.mawad.Mawad;
+import com.example.mysummary.ui.fragment.chapter.ChaptersFragment;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
@@ -24,14 +34,20 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MulaksatFragment extends Fragment {
+public class MulaksatFragment extends Fragment implements listenr {
 
     FragmentMula5satBinding binding;
     private List<Colleges> collegesList;
     private CollegesAdapter collegesAdapter;
     private List<Mawad> mawadList;
-    private Mawad5tearyAdapter  mawadAdapter;
+    private Mawad5tearyAdapter mawadAdapter;
+    private UrlList linkList;
 
+
+    public MulaksatFragment() {
+    }
+
+    ;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -41,27 +57,25 @@ public class MulaksatFragment extends Fragment {
         getRemoteMawad();
         initRecyclerViewMawad();
         setAdMobBanner();
-
     }
 
-
-
     private void getRemoteMawad() {
+        linkList = new UrlList();
         mawadList = new ArrayList<>();
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
+
+        mawadList.add(new Mawad("Arabic101", 1));
+        mawadList.add(new Mawad("Askaria", 2));
+        mawadList.add(new Mawad("English101", 3));
 
 
+        mawadAdapter = new Mawad5tearyAdapter(mawadList, this::OnItemClick);
     }
 
     private void initRecyclerViewMawad() {
-        mawadAdapter = new Mawad5tearyAdapter(mawadList);
+
         binding.rvMawad.setAdapter(mawadAdapter);
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -81,6 +95,7 @@ public class MulaksatFragment extends Fragment {
         collegesList = new ArrayList<>();
 
         listName.addAll(Arrays.asList(getResources().getStringArray(R.array.colleges)));
+
         int[] icon = {
                 R.drawable.ic_doctors,
                 R.drawable.ic_eng,
@@ -102,7 +117,7 @@ public class MulaksatFragment extends Fragment {
 
 
         for (int i = 0; i < 14; i++) {
-            collegesList.add(new Colleges(i+1,icon[i], listName.get(i)));
+            collegesList.add(new Colleges(i + 1, icon[i], listName.get(i)));
         }
 
     }
@@ -127,15 +142,25 @@ public class MulaksatFragment extends Fragment {
 
         });
     }
+
     private void filter(String idoOrder) {
-        List<Colleges> filteredList=new ArrayList<>();
-        for (Colleges item : collegesList){
-            if (item.getNameCollege().toLowerCase().contains(idoOrder.toLowerCase()) ){
+        List<Colleges> filteredList = new ArrayList<>();
+        for (Colleges item : collegesList) {
+            if (item.getNameCollege().toLowerCase().contains(idoOrder.toLowerCase())) {
                 filteredList.add(item);
+
             }
         }
         collegesAdapter.filterList(filteredList);
     }
+
+
+    @Override
+    public void OnItemClick(int index) {
+        NavDirections action = MulaksatFragmentDirections.actionMulaksatToChaptersFragment(index);
+        Navigation.findNavController(binding.getRoot()).navigate(action);
+    }
+
 
     private void setAdMobBanner() {
         MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {
