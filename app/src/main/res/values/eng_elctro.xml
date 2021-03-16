@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="elec1">
+        <item ><![CDATA[http://e4uhu.com/down/Analog/Book%203rd%20edition.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Analog/Solution%20Book%203rd%20edition.pdf]]></item>
+
+    </string-array>
+    <string-array name="elec1name">
+        <item>book</item>
+        <item>حلول الكتاب</item>
+
+    </string-array>
+    <string-array name="elec2">
+        <item ><![CDATA[http://e4uhu.com/down/Applied/9th%20edition%20applied.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Applied/9th%20edition%20applied%20solution.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Applied/Applied_Kittaneh-First..pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Applied/Second(Review)by%20hani.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Applied/Applied-final-hani.pdf]]></item>
+
+    </string-array>
+    <string-array name="elec2name">
+        <item>book</item>
+        <item>حلول الكتاب</item>
+        <item>تلخيص فيرست</item>
+        <item>تلخيص سكند</item>
+        <item>تلخيص فاينال</item>
+
+    </string-array>
+    <string-array name="elec3">
+        <item ><![CDATA[http://e4uhu.com/down/Assembly/Book%204th-Elec4You.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Assembly/Solution4th.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Assembly/Assembly-Slides.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/soon]]></item>
+
+    </string-array>
+    <string-array name="elec3name">
+        <item>book</item>
+        <item>حلول الكتاب</item>
+        <item>slide</item>
+        <item>youtube</item>
+
+    </string-array>
+    <string-array name="elec4">
+        <item ><![CDATA[http://e4uhu.com/down/AutoCad/Manual.pdf]]></item>
+        <item ><![CDATA[https://www.youtube.com/playlist?list=PL07bm9BrCH1PA_HumzWtWPFVxhDbO4Bhe]]></item>
+
+    </string-array>
+    <string-array name="elec4name">
+        <item>manual</item>
+        <item>youtube</item>
+
+    </string-array>
+    <string-array name="elec5">
+        <item ><![CDATA[http://e4uhu.com/down/Circuit1/8e%20txtbk.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Circuit1/Sol%208th%20e%20(2-5).pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Circuit1/Circuit1%20(Tal5ees)%20-%20E4U.pdf]]></item>
+
+    </string-array>
+    <string-array name="elec5name">
+        <item>book</item>
+        <item>حلول الكتاب </item>
+        <item>تلخيص المادة </item>
+
+
+    </string-array>
+    <string-array name="elec6">
+        <item ><![CDATA[http://e4uhu.com/down/Circuit1/7e%20txtbk.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Circuit1/7th%20sol%20txtbk.rar]]></item>
+
+    </string-array>
+    <string-array name="elec6name">
+        <item>book</item>
+        <item>حلول الكتاب</item>
+
+
+    </string-array>
+    <string-array name="elec7">
+        <item ><![CDATA[http://e4uhu.com/down/Coding/Digital%20Communications%20By%20Proakis.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Coding/Proakis%20Solution.rar]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Coding/e4u-coding-fall18.pdf]]></item>
+
+    </string-array>
+    <string-array name="elec7name">
+        <item>book</item>
+        <item>الحل</item>
+        <item>notebook</item>
+
+    </string-array>
+    <string-array name="elec8">
+        <item ><![CDATA[http://e4uhu.com/down/communication%20electronics/Book%203th.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/communication%20electronics/Slides.rar]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/communication%20electronics/Communication-Electronics-Full.pdf]]></item>
+
+    </string-array>
+    <string-array name="elec8name">
+        <item>book</item>
+        <item>slide</item>
+        <item>notebook</item>
+
+    </string-array>
+    <string-array name="elec9">
+        <item ><![CDATA[http://e4uhu.com/down/Control/12th.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Control/12th%20sol.pdf]]></item>
+
+    </string-array>
+    <string-array name="elec9name">
+        <item>book</item>
+        <item>solution manual</item>
+
+    </string-array>
+    <string-array name="elec10">
+        <item ><![CDATA[http://e4uhu.com/down/renewable%20energy%20conservation/Book%20renewable%20.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/renewable%20energy%20conservation/Conversion%20Slides.pdf]]></item>
+
+    </string-array>
+    <string-array name="elec10name">
+        <item>book</item>
+        <item>slide</item>
+
+    </string-array>
+    <string-array name="elec11">
+        <item ><![CDATA[http://e4uhu.com/down/Digital%20Electronics/Slides(Dr.Anas%20Tarabshah).rar]]></item>
+        <item ><![CDATA[http://down.e4uhu.com/Digital%20Electronics/Note%202020%20%20d.rula.pdf]]></item>
+        <item ><![CDATA[https://www.youtube.com/playlist?list=PL9fwy3NUQKwaZgUE02hmS5fI0wHk77Q86]]></item>
+
+
+    </string-array>
+    <string-array name="elec11name">
+        <item>book</item>
+        <item>الحل</item>
+        <item>youtube</item>
+
+    </string-array>
+    <string-array name="elec12">
+        <item ><![CDATA[http://e4uhu.com/down/DSP/4eproakis.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/DSP/Sol4e.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/DSP/DSP%20note(dr.Biati)2015.pdf]]></item>
+
+
+    </string-array>
+    <string-array name="elec12name">
+        <item>book</item>
+        <item>الحلول</item>
+        <item>notebook</item>
+
+    </string-array>
+    <string-array name="elec13">
+        <item ><![CDATA[http://e4uhu.com/down/Electronics1/4e.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Electronics1/Solution4e.pdf]]></item>
+
+    </string-array>
+    <string-array name="elec13name">
+        <item>book</item>
+        <item>حلول الكتاب</item>
+
+
+    </string-array>
+    <string-array name="elec14">
+        <item ><![CDATA[http://e4uhu.com/down/Electronics1/4e.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Electronics1/Solution4e.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Electronics2/Amp-Notebook.pdf]]></item>
+
+    </string-array>
+    <string-array name="elec14name">
+        <item>book</item>
+        <item>solution manual</item>
+        <item>Notebook</item>
+
+    </string-array>
+    <string-array name="elec15">
+        <item ><![CDATA[http://e4uhu.com/down/EM%201/EM1-Book-6th-Edition.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/EM%201/6th%20sol.rar]]></item>
+
+    </string-array>
+    <string-array name="elec15name">
+        <item>Book</item>
+        <item>حلول الكتاب</item>
+    </string-array>
+    <string-array name="elec16">
+        <item ><![CDATA[http://e4uhu.com/down/EM%202/6th%20ed.rar]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/EM%201/6th%20sol.rar]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/EM%202/em2-final.pdf]]></item>
+
+    </string-array>
+    <string-array name="elec16name">
+        <item>book</item>
+        <item>الحلول</item>
+        <item>notebook</item>
+
+    </string-array>
+    <string-array name="elec17">
+        <item ><![CDATA[http://e4uhu.com/down/Ethics/Book%20EngineeringEthics.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Ethics/ethics%20slides.rar]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Ethics/Final%20(Material).pdf]]></item>
+
+    </string-array>
+    <string-array name="elec17name">
+        <item>book</item>
+        <item>سلايد م.اسراء</item>
+        <item>تلخيص فاينال</item>
+
+    </string-array>
+    <string-array name="elec18">
+        <item ><![CDATA[http://e4uhu.com/down/Assembly/Book%204th-Elec4You.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Assembly/Solution4th.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Interface/Slides.rar]]></item>
+
+    </string-array>
+    <string-array name="elec18name">
+        <item>book</item>
+        <item>حلول الكتاب</item>
+        <item>slide</item>
+
+
+    </string-array>
+    <string-array name="elec19">
+        <item ><![CDATA[http://e4uhu.com/down/Logic/4e.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Logic/4e%20solution.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Logic/First(Review)%20elec4u.pdf]]></item>
+
+    </string-array>
+    <string-array name="elec19name">
+        <item>book</item>
+        <item>حلول الكتاب</item>
+        <item>تلخيص فيرست</item>
+
+    </string-array>
+    <string-array name="elec20">
+        <item ><![CDATA[http://e4uhu.com/down/Machine%201/Book4th.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Machine%201/Solutian4th.pdf]]></item>
+        <item ><![CDATA[https://www.youtube.com/playlist?list=PLJqRpPcJQ_g0tT_KH-oJsilnwVZDT_vRg]]></item>
+
+    </string-array>
+    <string-array name="elec20name">
+        <item>book</item>
+        <item>Solution Manual</item>
+        <item>youtube</item>
+
+    </string-array>
+    <string-array name="elec21">
+        <item ><![CDATA[http://e4uhu.com/down/Power%20Electronics/PEmohan(2nd).pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Power%20Electronics/PEmohan(2nd%20Solution).pdf ]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Power%20Electronics/Exams%20for%20Dr.Widyan.pdf]]></item>
+        <item ><![CDATA[https://www.youtube.com/playlist?list=PLJqRpPcJQ_g1NpCmJeihvSnwyES8MEhfd]]></item>
+
+    </string-array>
+    <string-array name="elec21name">
+        <item>book</item>
+        <item>الحلول</item>
+        <item>slide</item>
+        <item>youtube</item>
+
+    </string-array>
+    <string-array name="elec22">
+        <item ><![CDATA[http://e4uhu.com/down/Power%20Systems/Glover%20-%20Power%20System%20Analysis%20and%20Design%206th%20Edition%20c2017.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Power%20Systems/Solutions%20Manual%20Steveston.pdf]]></item>
+        <item ><![CDATA[http://down.e4uhu.com/Power%20Systems/Ch2~Osama%20Haikal.pdf]]></item>
+        <item ><![CDATA[http://down.e4uhu.com/Power%20Systems/Ch5~Osama%20Haikal.pdf]]></item>
+
+    </string-array>
+    <string-array name="elec22name"><item>book</item>
+        <item>حلول الكتاب</item>
+        <item>تلخيص ch2</item>
+        <item>تلخيص ch4</item>
+    </string-array>
+    <string-array name="elec23">
+        <item ><![CDATA[http://e4uhu.com/down/Prob/Probability%204e%20-%20Elec4You.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Prob/Solution4th.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Prob/Prob%20(Tal5ees)%20-%20E4U.pdf]]></item>
+
+    </string-array>
+    <string-array name="elec23name">
+        <item>book</item>
+        <item>حلول</item>
+        <item>تلخيص المادة</item>
+
+    </string-array>
+    <string-array name="elec24">
+        <item ><![CDATA[http://e4uhu.com/down/Signals/Book4th.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/Signals/Solution4th.rar]]></item>
+        <item ><![CDATA[https://www.youtube.com/playlist?list=PLC6210462711083C4]]></item>
+
+    </string-array>
+    <string-array name="elec24name">
+        <item>الكتاب</item>
+        <item>حلول الكتاب</item>
+        <item>youtube</item>
+
+
+    </string-array>
+    <string-array name="elec25">
+        <item ><![CDATA[http://e4uhu.com/down/wireless%20communication/Wireless%20Communications%20Principles%20and%20Practice%202nd%20Edition,%20T%20Rappaport,%20Prentice%20Hall-2001.pdf]]></item>
+        <item ><![CDATA[http://e4uhu.com/down/wireless%20communication/Slides.rar]]></item>
+        <item ><![CDATA[http://e4uhu.com/soon]]></item>
+
+    </string-array>
+    <string-array name="elec25name">
+        <item>book</item>
+        <item>slide</item>
+        <item>exam</item>
+
+    </string-array>
+    <string-array name="elec26">
+        <item ><![CDATA[http://e4uhu.com/down/ManualDrawing/Tal5ees.pdf]]></item>
+        <item ><![CDATA[https://www.youtube.com/playlist?list=PLTxtAgQEI9Jyf55fS_lx9HeJLRtuuCVPb]]></item>
+
+    </string-array>
+    <string-array name="elec26name">
+        <item>ملخص</item>
+        <item>youtube</item>
+
+    </string-array>
+</resources>
