@@ -23,6 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/marginStart_pain"
+                android:layout_marginRight="@dimen/marginStart_pain"
                 android:layout_marginTop="@dimen/marginTop_pain"
                 android:text="@string/chapters"
                 android:textSize="@dimen/tv_pain"

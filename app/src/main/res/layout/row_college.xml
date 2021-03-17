@@ -19,9 +19,9 @@
         android:id="@+id/l_college"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/_10sdp"
+        android:layout_margin="@dimen/_5sdp"
         android:background="@drawable/design_corner_gray"
-        android:padding="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
         android:elevation="@dimen/shadow"
 
         >

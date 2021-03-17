@@ -1,23 +1,23 @@
 package com.example.mysummary.model.mawad;
 
 public class Mawad {
-    private String name;
+    private String nameCourse;
     private int id;
 
-    public Mawad(String name, int id) {
+    public Mawad(String nameCourse, int id) {
         this.id=id;
-        this.name = name;
+        this.nameCourse = nameCourse;
     }
     public Mawad(){};
 
 
 
-    public String getName() {
-        return name;
+    public String getNameCourse() {
+        return nameCourse;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNameCourse(String nameCourse) {
+        this.nameCourse = nameCourse;
     }
 
     public int getId() {
