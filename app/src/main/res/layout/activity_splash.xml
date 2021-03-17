@@ -6,21 +6,20 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/splash"
+    android:background="@color/gray"
     tools:context=".ui.splash.SplashActivity">
-
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tv_version"
+    <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_14ssp"
-        android:layout_marginBottom="@dimen/_10sdp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:id="@+id/img_splah"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="v 1.0.0.0.1" />
+        android:src="@drawable/logo_splash1"
+        />
+
+
+
 
     <ProgressBar
         app:layout_constraintTop_toTopOf="parent"
@@ -28,8 +27,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/progress_bar"
-        android:layout_width="@dimen/_50sdp"
-        android:layout_height="@dimen/_50sdp"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
         android:indeterminateOnly="true"
         android:indeterminateDrawable="@drawable/progress_bar_circle"
         tools:progress="60"

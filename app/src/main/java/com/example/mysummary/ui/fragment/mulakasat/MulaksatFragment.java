@@ -7,45 +7,25 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.Toast;
+import com.example.mysummary.constant.AppConstant;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavDirections;
-import androidx.navigation.Navigation;
-
 import com.example.mysummary.R;
-import com.example.mysummary.constant.AppConstant;
-
 import com.example.mysummary.databinding.FragmentMula5satBinding;
- 
 import com.example.mysummary.model.colleges.Colleges;
 import com.example.mysummary.model.home.Url;
 import com.example.mysummary.model.home.UrlList;
 import com.example.mysummary.model.home.listenr;
-import com.example.mysummary.model.mawad.Mawad;
 import com.example.mysummary.ui.fragment.chapter.ChaptersFragment;
-
- 
-import com.example.mysummary.model.home.Colleges;
-
-import com.example.mysummary.model.home.Url;
-import com.example.mysummary.model.home.UrlList;
-import com.example.mysummary.model.home.listenr;
-import com.example.mysummary.ui.fragment.chapter.ChaptersFragment;
-
-import com.example.mysummary.model.home.Mawad;
-import com.example.mysummary.ui.fragment.Mawad.MawadAdapter;
- 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
 public class MulaksatFragment extends Fragment implements listenr {
@@ -53,18 +33,10 @@ public class MulaksatFragment extends Fragment implements listenr {
     FragmentMula5satBinding binding;
     private List<Colleges> collegesList;
     private CollegesAdapter collegesAdapter;
-    private List<Mawad> mawadList;
-    private Mawad5tearyAdapter mawadAdapter;
-    private UrlList linkList;
-
-
-    public MulaksatFragment() {
-    }
     private List<Url> mawadList;
     private Mawad5tearyAdapter mawadAdapter;
     private UrlList LinkList;
 
-    ;
 
 public MulaksatFragment(){};
     @Override
@@ -78,17 +50,10 @@ public MulaksatFragment(){};
     }
 
     private void getRemoteMawad() {
-        linkList = new UrlList();
-        mawadList = new ArrayList<>();
-
-        mawadList.add(new Mawad("Arabic101", 1));
-        mawadList.add(new Mawad("Askaria", 2));
-        mawadList.add(new Mawad("English101", 3));
-
-
-        mawadAdapter = new Mawad5tearyAdapter(mawadList, this::OnItemClick);
         mawadList=new ArrayList<>();
-        mawadList.addAll(LinkList);
+        mawadList.add(new Url("عربي 101",1));
+        mawadList.add(new Url("English",2));
+        mawadList.add(new Url("عسكرية",3));
         mawadAdapter = new Mawad5tearyAdapter(mawadList,this::OnItemClick);
     }
 
@@ -96,7 +61,6 @@ public MulaksatFragment(){};
 
         binding.rvMawad.setAdapter(mawadAdapter);
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -116,7 +80,6 @@ public MulaksatFragment(){};
         collegesList = new ArrayList<>();
 
         listName.addAll(Arrays.asList(getResources().getStringArray(R.array.colleges)));
-
         int[] icon = {
                 R.drawable.ic_doctors,
                 R.drawable.ic_eng,
@@ -124,7 +87,6 @@ public MulaksatFragment(){};
                 R.drawable.ic_earth,
                 R.drawable.ic_baby,
                 R.drawable.ic_drags,
-                R.drawable.ic_earth,
                 R.drawable.ic_dollor,
                 R.drawable.ic_poetry,
                 R.drawable.ic_sport,
@@ -132,12 +94,11 @@ public MulaksatFragment(){};
                 R.drawable.ic_mountain,
                 R.drawable.ic_baby,
                 R.drawable.ic_book,
-                R.drawable.ic_flask,
-                R.drawable.ic_flask,
+                R.drawable.ic_flask
         };
 
 
-        for (int i = 0; i < 14; i++) {
+        for (int i = 0; i < 13; i++) {
             collegesList.add(new Colleges(i + 1, icon[i], listName.get(i)));
         }
 
@@ -162,11 +123,10 @@ public MulaksatFragment(){};
 
         });
     }
-
     private void filter(String idoOrder) {
-        List<Colleges> filteredList = new ArrayList<>();
-        for (Colleges item : collegesList) {
-            if (item.getNameCollege().toLowerCase().contains(idoOrder.toLowerCase())) {
+        List<Colleges> filteredList=new ArrayList<>();
+        for (Colleges item : collegesList){
+            if (item.getNameCollege().toLowerCase().contains(idoOrder.toLowerCase()) ){
                 filteredList.add(item);
 
             }
@@ -177,36 +137,32 @@ public MulaksatFragment(){};
 
     @Override
     public void OnItemClick(int index) {
-        NavDirections action = MulaksatFragmentDirections.actionMulaksatToChaptersFragment(index);
-        Navigation.findNavController(binding.getRoot()).navigate(action);
         switch (index){
             case 1: {
-                Bundle bundle = new Bundle();
-                bundle.putSerializable(AppConstant.ARABIC101_KEY, LinkList.Arabic101(binding.getRoot().getContext()));
                 Intent intent = new Intent(getView().getContext(),ChaptersFragment.class);
-                intent.putExtras(bundle);
+                intent.putExtra(AppConstant.ARABIC101_KEY,1);
                 this.startActivityForResult(intent,1);
             }
                 break;
             case 2:
             {
-                Bundle bundle = new Bundle();
-                bundle.putSerializable(AppConstant.ENGLISH101_KEY, LinkList.English101(binding.getRoot().getContext()));
+
                 Intent intent = new Intent(getView().getContext(), ChaptersFragment.class);
-                intent.putExtras(bundle);
+                intent.putExtra(AppConstant.ENGLISH101_KEY,2);
                 this.startActivityForResult(intent,2);
             }
                 break;
             case 3:
             {
-                Bundle bundle = new Bundle();
-                bundle.putSerializable(AppConstant.ASKARIA, LinkList.Askaria(binding.getRoot().getContext()));
+
                 Intent intent = new Intent(getView().getContext(), ChaptersFragment.class);
-                intent.putExtras(bundle);
+                intent.putExtra(AppConstant.ASKARIA,3);
                 this.startActivityForResult(intent,3);
             }
 
                 break;
+            default:
+                Toast.makeText(this.binding.getRoot().getContext(), "Erorr", Toast.LENGTH_SHORT).show();
         }
 
     }
