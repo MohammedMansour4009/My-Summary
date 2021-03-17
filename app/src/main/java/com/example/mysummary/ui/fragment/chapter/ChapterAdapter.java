@@ -10,6 +10,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowChaptersBinding;
+
+import com.example.mysummary.model.chapter.Chapter;
+
 import com.example.mysummary.model.home.Url;
 import com.example.mysummary.model.home.listenr;
 
@@ -69,5 +72,6 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterH
         }
 
     }
+
 
 }
