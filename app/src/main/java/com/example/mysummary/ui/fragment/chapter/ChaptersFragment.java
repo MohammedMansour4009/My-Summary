@@ -5,14 +5,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.example.mysummary.constant.AppConstant;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.example.mysummary.databinding.FragmentChaptersBinding;
-import com.example.mysummary.ui.fragment.Mawad.MawadFragmentArgs;
+
+import com.example.mysummary.model.chapter.Chapter;
+
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
@@ -54,15 +56,16 @@ public class ChaptersFragment extends Fragment implements listenr {
         chapterAdapter = new ChapterAdapter(chapterList,this::OnItemClick);
         binding.rvChapters.setAdapter(chapterAdapter);
 
-        Toast.makeText(binding.getRoot().getContext(), getid()+" ", Toast.LENGTH_SHORT).show();
 
     }
     private void getRemoteChapter() {
+
+
+
+
     }
 
-    private int getid() {
-        return ChaptersFragmentArgs.fromBundle(getArguments()).getId();
-    }
+
 
     @Override
     public void OnItemClick(int index) {
