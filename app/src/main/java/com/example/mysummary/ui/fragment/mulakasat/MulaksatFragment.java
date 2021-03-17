@@ -7,12 +7,12 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.Toast;
+import com.example.mysummary.constant.AppConstant;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.example.mysummary.R;
-import com.example.mysummary.constant.AppConstant;
 import com.example.mysummary.databinding.FragmentMula5satBinding;
 import com.example.mysummary.model.colleges.Colleges;
 import com.example.mysummary.model.home.Url;
@@ -51,7 +51,9 @@ public MulaksatFragment(){};
 
     private void getRemoteMawad() {
         mawadList=new ArrayList<>();
-        mawadList.addAll(LinkList);
+        mawadList.add(new Url("عربي 101",1));
+        mawadList.add(new Url("English",2));
+        mawadList.add(new Url("عسكرية",3));
         mawadAdapter = new Mawad5tearyAdapter(mawadList,this::OnItemClick);
     }
 
@@ -85,7 +87,6 @@ public MulaksatFragment(){};
                 R.drawable.ic_earth,
                 R.drawable.ic_baby,
                 R.drawable.ic_drags,
-                R.drawable.ic_earth,
                 R.drawable.ic_dollor,
                 R.drawable.ic_poetry,
                 R.drawable.ic_sport,
@@ -93,12 +94,11 @@ public MulaksatFragment(){};
                 R.drawable.ic_mountain,
                 R.drawable.ic_baby,
                 R.drawable.ic_book,
-                R.drawable.ic_flask,
-                R.drawable.ic_flask,
+                R.drawable.ic_flask
         };
 
 
-        for (int i = 0; i < 14; i++) {
+        for (int i = 0; i < 13; i++) {
             collegesList.add(new Colleges(i + 1, icon[i], listName.get(i)));
         }
 
@@ -139,32 +139,30 @@ public MulaksatFragment(){};
     public void OnItemClick(int index) {
         switch (index){
             case 1: {
-                Bundle bundle = new Bundle();
-                bundle.putSerializable(AppConstant.ARABIC101_KEY, LinkList.Arabic101(binding.getRoot().getContext()));
                 Intent intent = new Intent(getView().getContext(),ChaptersFragment.class);
-                intent.putExtras(bundle);
+                intent.putExtra(AppConstant.ARABIC101_KEY,1);
                 this.startActivityForResult(intent,1);
             }
                 break;
             case 2:
             {
-                Bundle bundle = new Bundle();
-                bundle.putSerializable(AppConstant.ENGLISH101_KEY, LinkList.English101(binding.getRoot().getContext()));
+
                 Intent intent = new Intent(getView().getContext(), ChaptersFragment.class);
-                intent.putExtras(bundle);
+                intent.putExtra(AppConstant.ENGLISH101_KEY,2);
                 this.startActivityForResult(intent,2);
             }
                 break;
             case 3:
             {
-                Bundle bundle = new Bundle();
-                bundle.putSerializable(AppConstant.ASKARIA, LinkList.Askaria(binding.getRoot().getContext()));
+
                 Intent intent = new Intent(getView().getContext(), ChaptersFragment.class);
-                intent.putExtras(bundle);
+                intent.putExtra(AppConstant.ASKARIA,3);
                 this.startActivityForResult(intent,3);
             }
 
                 break;
+            default:
+                Toast.makeText(this.binding.getRoot().getContext(), "Erorr", Toast.LENGTH_SHORT).show();
         }
 
     }
