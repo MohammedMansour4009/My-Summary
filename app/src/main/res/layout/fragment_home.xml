@@ -20,7 +20,7 @@
             android:elevation="@dimen/shadow"
             app:layout_constraintTop_toTopOf="parent"
             tools:background="@tools:sample/backgrounds/scenic" />
-        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+            <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
             android:id="@+id/indicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,12 +33,13 @@
             app:selectedDotColor="@android:color/black"
             />
 
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="@dimen/_50sdp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
