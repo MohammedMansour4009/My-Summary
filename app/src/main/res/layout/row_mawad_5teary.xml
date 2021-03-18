@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="@dimen/_10sdp"
                 android:paddingVertical="@dimen/_5sdp"
-                android:text="@{model.name}"
+                android:text="@{model.nameCourse}"
                 android:background="@android:color/transparent"
 
                 tools:text="English101" />

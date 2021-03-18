@@ -2,6 +2,7 @@ package com.example.mysummary.ui.main;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
@@ -25,7 +26,7 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
         initNavController();
         initToolbar();
 
-
+        Toast.makeText(this, "asda", Toast.LENGTH_SHORT).show();
     }
 
     private void initNavController() {
@@ -43,7 +44,6 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
 
     private void initToolbar() {
         setSupportActionBar(binding.toolbar);
-        binding.toolbar.setTitle("");
     }
 
     @Override
