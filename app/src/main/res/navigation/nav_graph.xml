@@ -29,6 +29,9 @@
         <argument
             android:name="id"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_mawadFragment_to_chaptersFragment"
+            app:destination="@id/chaptersFragment" />
     </fragment>
     <fragment
         android:id="@+id/chaptersFragment"

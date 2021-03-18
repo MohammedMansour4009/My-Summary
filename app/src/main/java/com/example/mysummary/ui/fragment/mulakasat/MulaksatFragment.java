@@ -56,6 +56,7 @@ public MulaksatFragment(){};
         mawadList.add(new Mawad("English",2));
         mawadList.add(new Mawad("عسكرية",3));
         mawadAdapter = new Mawad5tearyAdapter(mawadList,this::OnItemClick);
+        binding.rvMawad.setAdapter(mawadAdapter);
     }
 
     private void initRecyclerViewMawad() {

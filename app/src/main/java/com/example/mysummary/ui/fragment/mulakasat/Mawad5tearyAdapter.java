@@ -48,6 +48,7 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
             public void onClick(View v) {
                 holder.initAdMobInterstitial();
 
+
             }
         });
     }
