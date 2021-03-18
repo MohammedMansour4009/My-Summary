@@ -43,6 +43,7 @@ public class ChaptersFragment extends Fragment implements listenr {
         initRecyclerViewChapter();
         getRemoteChapter();
         setAdMobBanner();
+
     }
 
     @Override

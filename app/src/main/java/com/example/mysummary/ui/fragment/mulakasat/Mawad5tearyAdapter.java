@@ -9,12 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowMawad5tearyBinding;
- 
-import com.example.mysummary.model.mawad.Mawad;
- 
 import com.example.mysummary.model.home.Url;
+import com.example.mysummary.model.mawad.Mawad;
 import com.example.mysummary.model.home.listenr;
- 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -22,16 +19,14 @@ import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-
 import java.util.List;
-
 public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.MawadHolder> {
-    private List<Url> mawads;
+    private List<Mawad> mawads;
     private Context context;
     private listenr lr;
     private InterstitialAd mInterstitialAd;
 
-    public Mawad5tearyAdapter(List<Url> mawads,listenr lr) {
+    public Mawad5tearyAdapter(List<Mawad> mawads,listenr lr) {
         this.mawads = mawads;
         this.lr=lr;
     }
@@ -46,7 +41,7 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull MawadHolder holder, int position) {
-       Url mawad=mawads.get(position);
+        Mawad mawad=mawads.get(position);
         holder.binding.setModel(mawad);
         holder.binding.tvNameMawad.setOnClickListener(new View.OnClickListener() {
             @Override

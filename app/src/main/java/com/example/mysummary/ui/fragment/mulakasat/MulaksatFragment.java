@@ -18,6 +18,7 @@ import com.example.mysummary.model.colleges.Colleges;
 import com.example.mysummary.model.home.Url;
 import com.example.mysummary.model.home.UrlList;
 import com.example.mysummary.model.home.listenr;
+import com.example.mysummary.model.mawad.Mawad;
 import com.example.mysummary.ui.fragment.chapter.ChaptersFragment;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
@@ -33,7 +34,7 @@ public class MulaksatFragment extends Fragment implements listenr {
     FragmentMula5satBinding binding;
     private List<Colleges> collegesList;
     private CollegesAdapter collegesAdapter;
-    private List<Url> mawadList;
+    private List<Mawad> mawadList;
     private Mawad5tearyAdapter mawadAdapter;
     private UrlList LinkList;
 
@@ -51,9 +52,9 @@ public MulaksatFragment(){};
 
     private void getRemoteMawad() {
         mawadList=new ArrayList<>();
-        mawadList.add(new Url("عربي 101",1));
-        mawadList.add(new Url("English",2));
-        mawadList.add(new Url("عسكرية",3));
+        mawadList.add(new Mawad("عربي 101",1));
+        mawadList.add(new Mawad("English",2));
+        mawadList.add(new Mawad("عسكرية",3));
         mawadAdapter = new Mawad5tearyAdapter(mawadList,this::OnItemClick);
     }
 
@@ -93,7 +94,6 @@ public MulaksatFragment(){};
                 R.drawable.ic_it,
                 R.drawable.ic_mountain,
                 R.drawable.ic_baby,
-                R.drawable.ic_book,
                 R.drawable.ic_flask
         };
 

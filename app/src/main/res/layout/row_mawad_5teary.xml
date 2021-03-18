@@ -6,7 +6,7 @@
     <data>
         <variable
             name="model"
-            type="com.example.mysummary.model.home.Url" />
+            type="com.example.mysummary.model.mawad.Mawad" />
  
     </data>
 <androidx.cardview.widget.CardView
@@ -26,7 +26,7 @@
             android:background="@drawable/design_corner_gray"
             android:paddingHorizontal="@dimen/_10sdp"
             android:paddingVertical="@dimen/_5sdp"
-            android:text="@{model.name}"
+            android:text="@{model.nameCourse}"
             tools:text="English101" />
 
     </LinearLayout>
