@@ -57,6 +57,8 @@ public class ChaptersFragment extends Fragment implements listenr {
     }
     private void getRemoteChapter() {
 
+    }
+
 
 
 
