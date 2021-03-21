@@ -1,6 +1,8 @@
 package com.example.mysummary.model.mawad;
 
-public class Mawad {
+import com.example.mysummary.model.home.Url;
+
+public class Mawad  {
     private String nameCourse;
     private int id;
 

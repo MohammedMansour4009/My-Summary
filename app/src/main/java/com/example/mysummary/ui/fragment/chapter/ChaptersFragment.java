@@ -6,16 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-
-import com.example.mysummary.constant.AppConstant;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.example.mysummary.databinding.FragmentChaptersBinding;
-
-import com.example.mysummary.model.chapter.Chapter;
-
-
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
@@ -44,6 +38,8 @@ public class ChaptersFragment extends Fragment implements listenr {
         initRecyclerViewChapter();
         getRemoteChapter();
         setAdMobBanner();
+
+
     }
 
     @Override
@@ -57,7 +53,6 @@ public class ChaptersFragment extends Fragment implements listenr {
         chapterAdapter = new ChapterAdapter(chapterList,this::OnItemClick);
         binding.rvChapters.setAdapter(chapterAdapter);
 
-        Toast.makeText(binding.getRoot().getContext(), getid()+" ", Toast.LENGTH_SHORT).show();
 
     }
     private void getRemoteChapter() {
@@ -67,9 +62,9 @@ public class ChaptersFragment extends Fragment implements listenr {
 
 
 
-    private int getid() {
-        return ChaptersFragmentArgs.fromBundle(getArguments()).getId();
     }
+
+
 
     @Override
     public void OnItemClick(int index) {
@@ -95,21 +90,20 @@ public class ChaptersFragment extends Fragment implements listenr {
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        switch (requestCode){
+        switch (resultCode){
             case 1: {
-                Bundle bundle = data.getBundleExtra(AppConstant.ARABIC101_KEY);
-                chapterList.addAll((Collection<? extends Url>) bundle.get(AppConstant.ARABIC101_KEY));
+                Toast.makeText(binding.getRoot().getContext(), "Arabic", Toast.LENGTH_SHORT).show();
             }break;
             case 2:{
-                Bundle bundle = data.getBundleExtra(AppConstant.ENGLISH101_KEY);
-                chapterList.addAll((Collection<? extends Url>) bundle.get(AppConstant.ENGLISH101_KEY));
+                Toast.makeText(binding.getRoot().getContext(), "English", Toast.LENGTH_SHORT).show();
+
             }
                 break;
             case 3:
                 {
-                Bundle bundle = data.getBundleExtra(AppConstant.ASKARIA);
-                chapterList.addAll((Collection<? extends Url>) bundle.get(AppConstant.ASKARIA));
-            }
+                    Toast.makeText(binding.getRoot().getContext(), "عسكرية", Toast.LENGTH_SHORT).show();
+
+                }
 
                 break;
 
