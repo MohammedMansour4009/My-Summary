@@ -58,7 +58,7 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
         holder.binding.lCollege.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setAdMobInterstitial();
+//                setAdMobInterstitial();
                 NavDirections action =MulaksatFragmentDirections.actionMulaksatToMawadFragment2(college.getId());
                 Navigation.findNavController(holder.binding.getRoot()).navigate(action);
             }
@@ -94,25 +94,25 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
         notifyDataSetChanged();
     }
 
-    private void setAdMobInterstitial() {
-        MobileAds.initialize(context, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
-
-
-        // Interstitial
-        mInterstitialAd = new InterstitialAd(context);
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());mInterstitialAd.loadAd(new AdRequest.Builder().build());
-        if (mInterstitialAd.isLoaded()) {
-            mInterstitialAd.show();
-        } else {
-            Log.d("TAG", "The interstitial wasn't loaded yet.");
-        }
+//    private void setAdMobInterstitial() {
+//        MobileAds.initialize(context, new OnInitializationCompleteListener() {
+//            @Override
+//            public void onInitializationComplete(InitializationStatus initializationStatus) {
+//            }
+//        });
+//
+//
+//        // Interstitial
+//        mInterstitialAd = new InterstitialAd(context);
+//        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+//        mInterstitialAd.loadAd(new AdRequest.Builder().build());mInterstitialAd.loadAd(new AdRequest.Builder().build());
+//        if (mInterstitialAd.isLoaded()) {
+//            mInterstitialAd.show();
+//        } else {
+//            Log.d("TAG", "The interstitial wasn't loaded yet.");
+//        }
         //مخير تحطها او لا
-        mInterstitialAd.setAdListener(new AdListener() {
+//        mInterstitialAd.setAdListener(new AdListener() {
             @Override
             public void onAdLoaded() {
                 // Code to be executed when an ad finishes loading.
@@ -155,4 +155,4 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
 
     }
 
-}
+

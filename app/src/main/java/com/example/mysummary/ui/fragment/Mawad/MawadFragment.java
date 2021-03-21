@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,12 +28,15 @@ public class MawadFragment extends Fragment {
     private MawadAdapter mawadAdapter;
 
 
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        initRecyclerViewMawad();
         getRemoteMawad();
+        initRecyclerViewMawad();
+
         setAdMobBanner();
+        Toast.makeText(getContext(), getID()+"", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -66,10 +70,20 @@ public class MawadFragment extends Fragment {
 
             }
         });
+
         // Banner
         AdRequest adRequest = new AdRequest.Builder().build();
         binding.adView.loadAd(adRequest);
 
     }
+    private int getID(){
 
+        return MawadFragmentArgs.fromBundle(getArguments()).getId();
+    }
+    private void setContent(int id){
+
+
+
+
+    }
 }

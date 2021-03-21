@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="@dimen/_20sdp">
+
+    <data>
+        <variable
+            name="model"
+            type="com.example.mysummary.model.colleges.Parts" />
+            </data>
+    <androidx.cardview.widget.CardView
+        android:layout_marginVertical="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_height="@dimen/heightCvMatirial"
+        android:layout_gravity="center"
+        android:background="@drawable/design_corner_gray"
+        android:gravity="center"
+        app:cardCornerRadius="@dimen/cornerCvMatirial"
+        app:cardElevation="@dimen/shadow"
+        >
+
+        <TextView
+            android:id="@+id/tv_name_parts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@{model.nameCourse}"
+            android:textSize="@dimen/tv_sizeText_matirial"
+            tools:text="eng" />
+
+    </androidx.cardview.widget.CardView>
+
+</layout>
