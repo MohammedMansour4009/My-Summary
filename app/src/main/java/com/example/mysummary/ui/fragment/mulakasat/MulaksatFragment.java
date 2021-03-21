@@ -1,6 +1,5 @@
 package com.example.mysummary.ui.fragment.mulakasat;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -15,11 +14,13 @@ import androidx.fragment.app.Fragment;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentMula5satBinding;
 import com.example.mysummary.model.colleges.Colleges;
-import com.example.mysummary.model.home.Url;
 import com.example.mysummary.model.home.UrlList;
 import com.example.mysummary.model.home.listenr;
 import com.example.mysummary.model.mawad.Mawad;
+<<<<<<< HEAD
 import com.example.mysummary.ui.fragment.chapter.ChaptersFragment;
+=======
+>>>>>>> 91bdd7a0a816c6ac95da49f8df382471680b5c45
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
@@ -95,7 +96,12 @@ public MulaksatFragment(){};
                 R.drawable.ic_it,
                 R.drawable.ic_mountain,
                 R.drawable.ic_baby,
+<<<<<<< HEAD
                 R.drawable.ic_flask
+=======
+                R.drawable.ic_book,
+                R.drawable.ic_flask,
+>>>>>>> 91bdd7a0a816c6ac95da49f8df382471680b5c45
         };
 
 
