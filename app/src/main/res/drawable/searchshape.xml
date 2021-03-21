@@ -3,6 +3,8 @@
     <corners android:radius="@dimen/cornerSearchSize" />
     <stroke
         android:width="@dimen/strockSize"
-        android:color="@color/gray" />
+        android:color="@color/gray"
+        />
+    <solid android:color="@color/white"/>
 
 </shape>

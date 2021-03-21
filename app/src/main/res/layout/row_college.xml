@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:elevation="@dimen/_20sdp">
+    >
 
     <data>
 
@@ -11,44 +11,47 @@
             type="com.example.mysummary.model.colleges.Colleges" />
     </data>
 
-<androidx.cardview.widget.CardView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:cardElevation="@dimen/shadow">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/l_college"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/_5sdp"
-        android:background="@drawable/design_corner_gray"
-        android:padding="@dimen/_5sdp"
-        android:elevation="@dimen/shadow"
-
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/shadow"
+        app:cardCornerRadius="@dimen/_15sdp"
+        android:layout_margin="@dimen/_10sdp"
         >
 
-        <ImageView
-            android:id="@+id/iv_colleges"
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_50sdp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:background="@drawable/ic_mountain" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/l_college"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/design_corner_gray"
+            android:elevation="@dimen/shadow"
+            android:padding="@dimen/_5sdp"
 
-        <TextView
-            android:id="@+id/tv_colleges"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_10sdp"
-            android:text="@{model.nameCollege}"
-            android:textColor="@color/gray"
-            android:textSize="@dimen/tv_size"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/iv_colleges"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="الأمير الحسين بن عبد لله الثاني لتكنولوجيا المعلومات" />
+            >
+
+            <ImageView
+                android:id="@+id/iv_colleges"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@drawable/ic_mountain" />
+
+            <TextView
+                android:id="@+id/tv_colleges"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="@{model.nameCollege}"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/tv_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/iv_colleges"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="الأمير الحسين بن عبد لله الثاني لتكنولوجيا المعلومات" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </layout>

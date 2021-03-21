@@ -26,7 +26,6 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
         initNavController();
         initToolbar();
 
-        Toast.makeText(this, "asda", Toast.LENGTH_SHORT).show();
     }
 
     private void initNavController() {

@@ -2,6 +2,7 @@ package com.example.mysummary.ui.fragment.chapter;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import com.example.mysummary.databinding.FragmentChaptersBinding;
+import com.example.mysummary.ui.fragment.Mawad.MawadFragmentArgs;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
@@ -22,6 +24,7 @@ import java.util.Collection;
 import java.util.List;
 public class ChaptersFragment extends Fragment implements listenr {
 
+    private static final String TAG = "ChaptersFragment";
     private FragmentChaptersBinding binding;
     private List<Url> chapterList;
     private ChapterAdapter chapterAdapter;
@@ -39,7 +42,7 @@ public class ChaptersFragment extends Fragment implements listenr {
         getRemoteChapter();
         setAdMobBanner();
 
-
+        Log.d(TAG, "onViewCreated: " +getID() );
     }
 
     @Override
@@ -52,19 +55,14 @@ public class ChaptersFragment extends Fragment implements listenr {
         chapterList = new ArrayList<>();
         chapterAdapter = new ChapterAdapter(chapterList,this::OnItemClick);
         binding.rvChapters.setAdapter(chapterAdapter);
-
-
     }
     private void getRemoteChapter() {
 
     }
 
-
-
-
+    private int getID(){
+        return ChaptersFragmentArgs.fromBundle(getArguments()).getId();
     }
-
-
 
     @Override
     public void OnItemClick(int index) {
