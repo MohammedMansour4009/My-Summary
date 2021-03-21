@@ -21,8 +21,8 @@
             android:id="@+id/action_mulaksat_to_chaptersFragment"
             app:destination="@id/chaptersFragment" />
         <action
-            android:id="@+id/action_mulaksat_to_partsFragment"
-            app:destination="@id/partsFragment" />
+            android:id="@+id/action_mulaksat_to_partsragment"
+            app:destination="@id/partsragment" />
     </fragment>
     <fragment
         android:id="@+id/mawadFragment"
@@ -50,17 +50,15 @@
         android:label="fragment_matirial_choises_fragmint"
         tools:layout="@layout/fragment_matirial_choises_fragmint" />
     <fragment
-        android:id="@+id/partsFragment"
-        android:name="com.example.mysummary.ui.fragment.parts.PatrsEngFragment"
-        android:label="fragment_parts"
-        >
+        android:id="@+id/partsragment"
+        android:name="com.example.mysummary.ui.fragment.parts.Partsragment"
+        android:label="fragment_partsragment"
+        tools:layout="@layout/fragment_partsragment" >
         <argument
             android:name="id"
-            app:argType="integer"
-            />
+            app:argType="integer" />
         <action
-            android:id="@+id/action_partsFragment_to_mawadFragment"
+            android:id="@+id/action_partsragment_to_mawadFragment"
             app:destination="@id/mawadFragment" />
-
     </fragment>
 </navigation>

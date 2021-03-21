@@ -1,6 +1,7 @@
 package com.example.mysummary.ui.fragment.Mawad;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +24,7 @@ import java.util.List;
 
 public class MawadFragment extends Fragment {
 
+    private static final String TAG = "MawadFragment";
     private  FragmentMawadBinding binding;
     private List<Mawad> mawadList;
     private MawadAdapter mawadAdapter;
@@ -38,6 +40,7 @@ public class MawadFragment extends Fragment {
         setAdMobBanner();
         Toast.makeText(getContext(), getID()+"", Toast.LENGTH_SHORT).show();
 
+        Log.d(TAG, "onViewCreated: " +getID());
     }
 
     @Override
@@ -77,13 +80,9 @@ public class MawadFragment extends Fragment {
 
     }
     private int getID(){
-
         return MawadFragmentArgs.fromBundle(getArguments()).getId();
     }
     private void setContent(int id){
-
-
-
 
     }
 }

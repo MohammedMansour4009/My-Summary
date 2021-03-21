@@ -1,5 +1,6 @@
 package com.example.mysummary.ui.fragment.mulakasat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -94,8 +95,6 @@ public MulaksatFragment(){};
                 R.drawable.ic_it,
                 R.drawable.ic_mountain,
                 R.drawable.ic_baby,
-
-                R.drawable.ic_flask
                 R.drawable.ic_book,
                 R.drawable.ic_flask,
 

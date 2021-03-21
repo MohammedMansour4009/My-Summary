@@ -2,15 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:elevation="@dimen/_20sdp">
+    >
 
     <data>
 
         <variable
             name="model"
-
-            type="com.example.mysummary.model.home.Url" />
-
             type="com.example.mysummary.model.home.Url" />
     </data>
 
