@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="itMawad">
+        <item>AI</item>
+        <item>Algo</item>
+        <item>Analisysis</item>
+        <item>ARCK</item>
+        <item>C++</item>
+        <item>Cloud</item>
+        <item>Data Mining</item>
+        <item>Data Structure</item>
+        <item>DataBase</item>
+        <item>Discrete</item>
+        <item>Doc</item>
+        <item>GUI</item>
+        <item>IP</item>
+        <item>ITS</item>
+        <item>Java1</item>
+        <item>Java2</item>
+        <item>Linear</item>
+        <item>MIS</item>
+        <item>Multimedia</item>
+        <item>Network Security</item>
+        <item>Network</item>
+        <item>Nuremical</item>
+        <item>ORG</item>
+        <item>OS</item>
+        <item>Requirement</item>
+        <item>Security</item>
+        <item>SPM</item>
+        <item>SWE</item>
+        <item>Testing</item>
+        <item>Theory</item>
+        <item>UML</item>
+        <item>VB</item>
+        <item>Web</item>
+        <item>Wireless</item>
+        <item>احصاء</item>
+
+    </string-array>
+    <string-array name="AppliedMawad">
+        <item>اجهزة تعويضية</item>
+        <item>اعصاب</item>
+        <item>العلاج اليدوي</item>
+        <item>امراض واصابات</item>
+        <item>تشريح عصبي</item>
+        <item>جوانب نفسية للعلاج</item>
+        <item>طرق الحث</item>
+        <item>علاج طبيعي لامراض القلب والرئتين</item>
+        <item>علاج طبيعي للاطفال</item>
+        <item>علاج طبيعي مسنين</item>
+        <item>علم الاعصاب</item>
+        <item>علم الامراض</item>
+        <item>مواد سنة رابعة</item>
+        <item>يدوي</item>
+
+    </string-array>
+    <string-array name="babyMawad">
+        <item>أدارة وتنظيم</item>
+        <item>إرشاد الأطفال وأسرهم</item>
+        <item>اضطرابات تواصل</item>
+        <item>التدخل المبكر للاطفال المعرضون للخطر</item>
+        <item>علم نفس اللعب</item>
+        <item>نمو معرفي ولغوي للطفل</item>
+    </string-array>
+    <string-array name="EconomiMawad">
+        <item>اخلاقيات اعمال</item>
+        <item>ادارة مالية</item>
+        <item>ادارة مالية2</item>
+        <item>ادارة محافظ استثمارية</item>
+        <item>ادارة مصارف</item>
+        <item>ادارة موارد بشرية</item>
+        <item>اسواق و مؤسسات</item>
+        <item>اعمال دولية</item>
+        <item>اقتصاد جزئي</item>
+        <item>اقتصاد رياضي</item>
+        <item>قتصاد كلي</item>
+        <item>بحوث عمليات</item>
+        <item>تجارة اللكترونية</item>
+        <item>تحليل مالي</item>
+        <item>تسويق خدمات</item>
+        <item>سلوك تنظيمي</item>
+        <item>مبادئ احصاء</item>
+        <item>مبادئ ادارة 2</item>
+        <item>مبادئ ادارة1</item>
+        <item>مبادئ رياضيات</item>
+        <item>مبادئ مالية</item>
+        <item>مبادئ محاسبة 1</item>
+        <item>مبادئ محاسبة 2</item>
+        <item>محاسبة شركات</item>
+        <item>محاسبة ضريبية</item>
+        <item>محاسبة منشات</item>
+        <item>مشتريات وتخزين</item>
+        <item>نظرية جزئي2</item>
+        <item>نظرية جزئية 1</item>
+
+    </string-array>
+    <string-array name="MathMawad">
+        <item>calculas 3</item>
+        <item>youtube</item>
+        <item>احصاء 1</item>
+        <item>احصاء رياضي</item>
+        <item>احصاء2</item>
+        <item>ادفانس</item>
+        <item>أسس رياضيات</item>
+        <item>تبولوجيا1</item>
+        <item>تحليل حقيقي1,2</item>
+        <item>تحليل مركب</item>
+        <item>جبر خطي1</item>
+        <item>جبر مجرد 1,2</item>
+        <item>حزم برمجية رياضية</item>
+        <item>معادلات تفاضلية جزئية</item>
+        <item>معادلات تفاضلية عادية 1</item>
+        <item>معادلات تفاضلية عادية2</item>
+        <item>نظرية الاحتمالات</item>
+        <item>نظرية الاعداد</item>
+        <item>نظرية البيان</item>
+        <item>هندسة اقليدية</item>
+
+    </string-array>
+    <string-array name="NurseMawad">
+        <item>أخلاقيات العلوم والتقانة</item>
+        <item>اساسيات التمريض</item>
+        <item>التقييم الصحي عملي</item>
+        <item>التقييم الصحي</item>
+        <item>الصحة النفسية</item>
+        <item>العناية الحثيثة في التمريض</item>
+        <item>العناية الحثيثية</item>
+        <item>النمو والتطور</item>
+        <item>الوقاية والارتقاء بالصحة</item>
+        <item>باثوفسيولوجي</item>
+        <item>تمريض الطوارئ</item>
+        <item>تمريض القبالة</item>
+        <item>تمريض صحة الأم نظري</item>
+        <item>تمريض صحة بالغين 1</item>
+        <item>تمريض صحة بالغين 2</item>
+        <item>تمريض صحة بالغين 2عملي</item>
+        <item>صحة الطفل نظري2</item>
+        <item>صحة الطفل نظري</item>
+        <item>مدخل الى تقانة المعلومات التمريضية</item>
+        <item>مقدمة في التمريض</item>
+        <item>مهارات الاتصال والتواصل</item>
+
+    </string-array>
+    <string-array name="Eng_industrial">
+        <item>اساسيات الدوائر الكهربائية</item>
+        <item>اقتصاد هندسي</item>
+        <item>بحوث عمليات 1</item>
+        <item>تحكم الي</item>
+        <item>تحليل احصائي</item>
+        <item>تحليل عددي</item>
+        <item>تخطيط وتصميم منشات صناعية</item>
+        <item>تخطيط وضبط الانتاج</item>
+        <item>ثيرمل-حراريات و موائع</item>
+        <item>خواص مواد</item>
+        <item>ديناميكا</item>
+        <item>ضبط جودة</item>
+        <item>علم قياس</item>
+        <item>مقدمة في الالكترونيات</item>
+
+    </string-array>
+    <string-array name="Eng_electricMawad">
+        <item>Analog</item>
+        <item>Applied</item>
+        <item>Assembly</item>
+        <item>Autocad</item>
+        <item>Circuit1</item>
+        <item>Circuit2</item>
+        <item>Coding</item>
+        <item>Communication Electronics</item>
+        <item>Control</item>
+        <item>Conversion</item>
+        <item>Diff</item>
+        <item>Digital Electronics</item>
+        <item>DSP</item>
+        <item>Electronics1</item>
+        <item>Electronics2</item>
+        <item>EM1</item>
+        <item>EM2</item>
+        <item>Ethics</item>
+        <item>Interface</item>
+        <item>Logic</item>
+        <item>Machine1</item>
+        <item>Power Electronics</item>
+        <item>Power System</item>
+        <item>Probability</item>
+        <item>Signals</item>
+        <item>Wireless</item>
+        <item>رسم هندسي</item>
+
+    </string-array>
+    <string-array name="Eng_CivilMawad">
+        <item>اخلاقيات ومهارات اتصال</item>
+        <item>ادارة عقود التشييد</item>
+        <item>ادارة مشاريع التشييد</item>
+        <item>الموقع</item>
+        <item>تحليل انشائي</item>
+        <item>تحليل عددي</item>
+        <item>تخطيط وهندسة المواصلات</item>
+        <item>تصميم ومواد الرصفات</item>
+        <item>تصميم وهندسة طرق</item>
+        <item>تفاضل و تكامل 3</item>
+        <item>خرسانة مسلحة 1</item>
+        <item>خرسانة مسلحة 2</item>
+        <item>رسم بإستخدام الحاسوب</item>
+        <item>رياضيات تطبيقية</item>
+        <item>ستاتيكا</item>
+        <item>فيزياء عامة 2</item>
+        <item>مساحة</item>
+        <item>مقاومة مواد</item>
+        <item>منشئات فولاذية</item>
+        <item>مواد بناء</item>
+        <item>ميكانيكا موائع</item>
+        <item>هندسة البيئة</item>
+        <item>هندسة المرور</item>
+        <item>هندسة مياه عادمة</item>
+        <item>هيدرولوجيا</item>
+        <item>هيدروليك</item>
+
+    </string-array>
+    <string-array name="Eng_MicMawad">
+        <item>Group</item>
+        <item>Website</item>
+    </string-array>
+    <string-array name="Eng_CompMawad">
+        <item>Group</item>
+        <item>Website</item>
+    </string-array>
+    <string-array name="Eng_midcinMawad">
+        <item>biofluid</item>
+        <item>Micro nano</item>
+        <item>أجهزة طبية حيوية (1)</item>
+        <item>أجهزة طبية حيوية (2)</item>
+        <item>احصاء حيوي</item>
+        <item>أساسيات هندسة الأنسجة</item>
+        <item>المجسات والقياس الطبي الحيوي عن بعد</item>
+        <item>بيوميكانيك</item>
+        <item>تحليل الإشارات والأنظمة للهندسة الطبية</item>
+        <item>تصوير طبي</item>
+        <item>كهرومغناطيسية حيوية</item>
+        <item>معالجة الصور الطبية الرقمية</item>
+        <item>ميكانيكا القلب والأوعية الدموية</item>
+        <item>ميكانيكا حيوية</item>
+
+    </string-array>
+
+
+</resources>
