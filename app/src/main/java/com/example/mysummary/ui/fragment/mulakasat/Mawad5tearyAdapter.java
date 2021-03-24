@@ -6,10 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowMawad5tearyBinding;
-import com.example.mysummary.model.home.Url;
 import com.example.mysummary.model.mawad.Mawad;
 import com.example.mysummary.model.home.listenr;
 import com.google.android.gms.ads.AdListener;
@@ -31,6 +32,10 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
         this.lr=lr;
     }
 
+    public Mawad5tearyAdapter(List<Mawad> mawadList) {
+        this.mawads=mawadList;
+    }
+
     @NonNull
     @Override
 
@@ -47,7 +52,13 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
             @Override
             public void onClick(View v) {
                 holder.initAdMobInterstitial();
-
+                holder.binding.cvE5teary.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        NavDirections action=MulaksatFragmentDirections.actionMulaksatToChaptersFragment(mawad.getId(),0);
+                        Navigation.findNavController(holder.binding.getRoot()).navigate(action);
+                    }
+                });
 
             }
         });

@@ -29,10 +29,12 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
     private List<Colleges> colleges;
     private Context context;
     private InterstitialAd mInterstitialAd;
+    private int IdColleg;
 
 
-    public CollegesAdapter(List<Colleges> colleges) {
+    public CollegesAdapter(List<Colleges> colleges,int id) {
         this.colleges = colleges;
+        this.IdColleg=id;
     }
 
     @Override
@@ -59,9 +61,14 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
             @Override
             public void onClick(View v) {
 //                setAdMobInterstitial();
-                NavDirections action =MulaksatFragmentDirections.actionMulaksatToMawadFragment2(college.getId());
+                if(college.getId()==2||college.getId()==12 ){
+                    NavDirections action =MulaksatFragmentDirections.actionMulaksatToPartsragment(college.getId());
+                    Navigation.findNavController(holder.binding.getRoot()).navigate(action);
+                }
+                else{
+                NavDirections action =MulaksatFragmentDirections.actionMulaksatToMawadFragment2(college.getId(),IdColleg);
                 Navigation.findNavController(holder.binding.getRoot()).navigate(action);
-            }
+            }}
         });
 
     }
@@ -94,6 +101,7 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
         notifyDataSetChanged();
     }
 
+
 //    private void setAdMobInterstitial() {
 //        MobileAds.initialize(context, new OnInitializationCompleteListener() {
 //            @Override
@@ -113,45 +121,45 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
 //        }
         //مخير تحطها او لا
 //        mInterstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                // Code to be executed when an ad finishes loading.
-            }
-
-            @Override
-            public void onAdFailedToLoad(LoadAdError adError) {
-                // Code to be executed when an ad request fails.
-            }
-
-            @Override
-            public void onAdOpened() {
-                // Code to be executed when the ad is displayed.
-            }
-
-            @Override
-            public void onAdClicked() {
-                // Code to be executed when the user clicks on an ad.
-            }
-
-            @Override
-            public void onAdLeftApplication() {
-                // Code to be executed when the user has left the app.
-            }
-
-            @Override
-            public void onAdClosed() {
-                // Code to be executed when the interstitial ad is closed.
-            }
-        });
-
-        mInterstitialAd.setAdListener(new AdListener() {
-            @Override
-            public void onAdClosed() {
-                // Load the next interstitial.
-                mInterstitialAd.loadAd(new AdRequest.Builder().build());
-            }
-
-        });
+//            @Override
+//            public void onAdLoaded() {
+//                // Code to be executed when an ad finishes loading.
+//            }
+//
+//            @Override
+//            public void onAdFailedToLoad(LoadAdError adError) {
+//                // Code to be executed when an ad request fails.
+//            }
+//
+//            @Override
+//            public void onAdOpened() {
+//                // Code to be executed when the ad is displayed.
+//            }
+//
+//            @Override
+//            public void onAdClicked() {
+//                // Code to be executed when the user clicks on an ad.
+//            }
+//
+//            @Override
+//            public void onAdLeftApplication() {
+//                // Code to be executed when the user has left the app.
+//            }
+//
+//            @Override
+//            public void onAdClosed() {
+//                // Code to be executed when the interstitial ad is closed.
+//            }
+//        });
+//
+//        mInterstitialAd.setAdListener(new AdListener() {
+//            @Override
+//            public void onAdClosed() {
+//                // Load the next interstitial.
+//                mInterstitialAd.loadAd(new AdRequest.Builder().build());
+//            }
+//
+//        });
 
     }
 

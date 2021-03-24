@@ -29,6 +29,7 @@
             android:layout_gravity="center">
 
             <TextView
+                style="@style/Font_Arabic"
                 android:layout_width="@dimen/widthCvMatirial"
                 android:layout_height="@dimen/heightCvMatirial"
                 android:id="@+id/tv_namePatrs"

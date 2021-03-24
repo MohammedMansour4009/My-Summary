@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="star_mawad">
+    <item>أخلافيات حاسوبية</item>
+        <item>أسرة و تربية طفل</item>
+        <item>اسلام وقضايا العصر</item>
+        <item>انجليزي تطبيفي</item>
+        <item>توعية بيئية</item>
+        <item>حل نزاعات</item>
+        <item>طالب و جامعة</item>
+        <item>عربي تطبيفي</item>
+        <item>قضية فلسطينية</item>
+        <item>مبادئ الفن و الجمال</item>
+    </string-array>
+</resources>

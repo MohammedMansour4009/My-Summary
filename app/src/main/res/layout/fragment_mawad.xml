@@ -22,12 +22,14 @@
             android:layout_marginRight="@dimen/_5sdp"
             android:background="@drawable/searchshape"
             android:drawableRight="@drawable/ic_search"
+            style="@style/Font_Arabic"
             android:paddingEnd="@dimen/_20sdp"
             android:elevation="@dimen/shadow"
             android:hint="@string/matirial"
             android:textSize="@dimen/_20sdp"
             android:paddingRight="@dimen/_20sdp" />
         <TextView
+            style="@style/Font_Arabic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -43,9 +45,10 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_mawad"
             android:layout_width="match_parent"
-            tools:listitem="@layout/row_chapters"
+            tools:listitem="@layout/row_mawad"
             android:layout_height="@dimen/_400sdp"
             android:layout_marginTop="@dimen/margintop_rv"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             />
 
         <com.google.android.gms.ads.AdView

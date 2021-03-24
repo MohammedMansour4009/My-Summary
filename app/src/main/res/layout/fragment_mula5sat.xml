@@ -15,6 +15,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/et_search"
+            style="@style/Font_Arabic"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
             android:layout_gravity="center"
@@ -31,28 +32,33 @@
             android:paddingRight="@dimen/_20sdp" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginStart="@dimen/_5sdp"
             android:id="@+id/rv_mawad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:maxHeight="@dimen/_50sdp"
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_search"
             app:spanCount="4"
-            tools:listitem="@layout/row_mawad_5teary"
-            android:maxHeight="@dimen/_50sdp"
-            />
+            tools:listitem="@layout/row_mawad_5teary" />
 
         <TextView
             android:id="@+id/tv_colleges"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_marginStart="@dimen/nill"
+            android:layout_marginStart="@dimen/_3sdp"
+            app:layout_goneMarginRight="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            app:layout_goneMarginLeft="@dimen/_3sdp"
             android:layout_marginLeft="@dimen/marginEnd_tv_paind"
             android:layout_marginRight="@dimen/marginEnd_tv_paind"
             android:text="@string/college"
+            style="@style/Font_Arabic"
             android:textColor="@color/gray"
             android:textSize="@dimen/tv_pain"
             android:textStyle="bold"
@@ -63,13 +69,12 @@
             android:id="@+id/rv_college"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="26dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toTopOf="@+id/adView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tv_colleges"
-            tools:listitem="@layout/row_college"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/rv_mawad"
+            tools:listitem="@layout/row_college" />
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adView"

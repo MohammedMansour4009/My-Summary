@@ -3,13 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:elevation="@dimen/_20sdp">
+    >
 
     <data>
         <variable
             name="model"
             type="com.example.mysummary.model.colleges.Parts" />
             </data>
+
+
+
     <androidx.cardview.widget.CardView
         android:layout_marginVertical="@dimen/_12sdp"
         android:layout_width="match_parent"
@@ -23,14 +26,17 @@
         >
 
         <TextView
-            android:id="@+id/tv_name_parts"
+            android:id="@+id/tv_name_chapter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@{model.nameCourse}"
+            style="@style/Font_Arabic"
             android:textSize="@dimen/tv_sizeText_matirial"
-            tools:text="eng" />
+            tools:text="Ch 1" />
 
     </androidx.cardview.widget.CardView>
+
+
 
 </layout>

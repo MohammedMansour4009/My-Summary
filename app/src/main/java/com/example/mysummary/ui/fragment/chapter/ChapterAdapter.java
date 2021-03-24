@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.NavDirections;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
@@ -19,7 +20,7 @@ import java.util.List;
 public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterHolder> {
     private List<Url> chapters;
     private Context context;
-    private int index=0;
+//    private int index=0;
     private listenr lr;
 
     public ChapterAdapter(List<Url> chapters,listenr lr) {
@@ -45,6 +46,11 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterH
     public void onBindViewHolder(@NonNull ChapterHolder holder, int position) {
         Url chapter=chapters.get(position);
         holder.binding.setModel(chapter);
+
+        
+
+
+
 
     }
 

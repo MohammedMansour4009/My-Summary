@@ -244,6 +244,16 @@
         <item>ميكانيكا حيوية</item>
 
     </string-array>
+    <string-array name="NameEng">
+        <item>هندسة الحاسوب</item>
+        <item>هندسة صناعية</item>
+        <item>هندسة الكهرباء</item>
+        <item>هندسة مدنية</item>
+        <item>هندسة الميكاترونيكس</item>
+        <item>هندسة طبية</item>
+
+
+    </string-array>
 
 
 </resources>
