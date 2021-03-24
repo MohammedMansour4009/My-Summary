@@ -29,14 +29,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MulaksatFragment extends Fragment implements listenr {
+public class MulaksatFragment extends Fragment  {
 
     FragmentMula5satBinding binding;
     private List<Colleges> collegesList;
     private CollegesAdapter collegesAdapter;
     private List<Mawad> mawadList;
     private Mawad5tearyAdapter mawadAdapter;
-    private UrlList LinkList;
 
 
 public MulaksatFragment(){};
@@ -55,7 +54,7 @@ public MulaksatFragment(){};
         mawadList.add(new Mawad("عربي 101",1));
         mawadList.add(new Mawad("English",2));
         mawadList.add(new Mawad("عسكرية",3));
-        mawadAdapter = new Mawad5tearyAdapter(mawadList,this::OnItemClick);
+        mawadAdapter = new Mawad5tearyAdapter(mawadList);
         binding.rvMawad.setAdapter(mawadAdapter);
     }
 
@@ -72,12 +71,12 @@ public MulaksatFragment(){};
     }
 
     private void initRecyclerViewColleges() {
-        collegesAdapter = new CollegesAdapter(collegesList);
+        collegesAdapter = new CollegesAdapter(collegesList,getID());
         binding.rvCollege.setAdapter(collegesAdapter);
 
     }
     private void getRemoteColleges() {
-        LinkList = new UrlList();
+
         List<String> listName = new ArrayList<>();
         collegesList = new ArrayList<>();
 
@@ -86,7 +85,7 @@ public MulaksatFragment(){};
                 R.drawable.ic_doctors,
                 R.drawable.ic_eng,
                 R.drawable.ic_nurse,
-                R.drawable.ic_earth,
+//              R.drawable.ic_earth,
                 R.drawable.ic_baby,
                 R.drawable.ic_drags,
                 R.drawable.ic_dollor,
@@ -95,13 +94,12 @@ public MulaksatFragment(){};
                 R.drawable.ic_it,
                 R.drawable.ic_mountain,
                 R.drawable.ic_baby,
-                R.drawable.ic_book,
                 R.drawable.ic_flask,
 
         };
 
 
-        for (int i = 0; i < 13; i++) {
+        for (int i = 0; i < 12; i++) {
             collegesList.add(new Colleges(i + 1, icon[i], listName.get(i)));
         }
 
@@ -138,37 +136,7 @@ public MulaksatFragment(){};
     }
 
 
-    @Override
-    public void OnItemClick(int index) {
-        switch (index){
-            case 1: {
-                Intent intent = new Intent(getView().getContext(),ChaptersFragment.class);
-                intent.putExtra(AppConstant.ARABIC101_KEY,1);
-                this.startActivityForResult(intent,1);
-            }
-                break;
-            case 2:
-            {
 
-                Intent intent = new Intent(getView().getContext(), ChaptersFragment.class);
-                intent.putExtra(AppConstant.ENGLISH101_KEY,2);
-                this.startActivityForResult(intent,2);
-            }
-                break;
-            case 3:
-            {
-
-                Intent intent = new Intent(getView().getContext(), ChaptersFragment.class);
-                intent.putExtra(AppConstant.ASKARIA,3);
-                this.startActivityForResult(intent,3);
-            }
-
-                break;
-            default:
-                Toast.makeText(this.binding.getRoot().getContext(), "Erorr", Toast.LENGTH_SHORT).show();
-        }
-
-    }
 
 
     private void setAdMobBanner() {
@@ -183,5 +151,14 @@ public MulaksatFragment(){};
         binding.adView.loadAd(adRequest);
 
     }
+private int getID()
+{
+    if(MulaksatFragmentArgs.fromBundle(getArguments()).getIdE5tyary()==0)
+        return 0;
+
+    return  MulaksatFragmentArgs.fromBundle(getArguments()).getIdE5tyary();
+}
+
+
 
 }

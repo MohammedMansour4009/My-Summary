@@ -3,19 +3,23 @@ package com.example.mysummary.model.choises;
 import android.net.Uri;
 
 public class Choises {
-private Uri uri;
+private int uri;
 private String name;
 
-    public Choises(Uri uri, String name) {
+    public Choises(int uri, String name) {
         this.uri = uri;
         this.name = name;
     }
 
-    public Uri getUri() {
+    public Choises(String name) {
+        this.name = name;
+    }
+
+    public int getUri() {
         return uri;
     }
 
-    public void setUri(Uri uri) {
+    public void setUri(int uri) {
         this.uri = uri;
     }
 

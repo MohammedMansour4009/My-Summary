@@ -10,7 +10,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentChaptersBinding;
+import com.example.mysummary.model.home.UrlList;
 import com.example.mysummary.ui.fragment.Mawad.MawadFragmentArgs;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -20,15 +23,23 @@ import com.google.android.gms.ads.initialization.OnInitializationCompleteListene
 import com.example.mysummary.model.home.Url;
 import com.example.mysummary.model.home.listenr;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
-public class ChaptersFragment extends Fragment implements listenr {
+public class ChaptersFragment extends Fragment {
 
     private static final String TAG = "ChaptersFragment";
     private FragmentChaptersBinding binding;
-    private List<Url> chapterList;
-    private ChapterAdapter chapterAdapter;
+    private List<Url> chapterListNurse;
+    private List<Url> chapterListMath;
+    private List<Url> chapterListIt;
+    private List<Url> chapterListApplied;
+    private List<Url> chapterListBaby;
+    private List<Url> chapterListEco;
+    private List<Url> chapterListE5teary;
 
+    private ChapterAdapter chapterAdapter;
+    private UrlList urlList;
     private InterstitialAd mInterstitialAd;
 
 
@@ -38,11 +49,9 @@ public class ChaptersFragment extends Fragment implements listenr {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        initRecyclerViewChapter();
-        getRemoteChapter();
-        setAdMobBanner();
+        getRemoteChapter(getID(),getIdColleges());
 
-        Log.d(TAG, "onViewCreated: " +getID() );
+        setAdMobBanner();
     }
 
     @Override
@@ -51,26 +60,20 @@ public class ChaptersFragment extends Fragment implements listenr {
         binding=FragmentChaptersBinding.inflate(getLayoutInflater());
         return binding.getRoot();
     }
-    private void initRecyclerViewChapter() {
-        chapterList = new ArrayList<>();
-        chapterAdapter = new ChapterAdapter(chapterList,this::OnItemClick);
+    private void initRecyclerViewChapter(List<Url> chapterList ) {
+        chapterAdapter = new ChapterAdapter(chapterList, new listenr() {
+            @Override
+            public void OnItemClick(int index) {
+                Url url=chapterList.get(index);
+                Uri uri= Uri.parse(url.getUrl());
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+        chapterAdapter.notifyDataSetChanged();
         binding.rvChapters.setAdapter(chapterAdapter);
     }
-    private void getRemoteChapter() {
 
-    }
-
-    private int getID(){
-        return ChaptersFragmentArgs.fromBundle(getArguments()).getId();
-    }
-
-    @Override
-    public void OnItemClick(int index) {
-        Url url=chapterList.get(index);
-        Uri uri= Uri.parse(url.getUrl());
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-
-    }
 
     private void setAdMobBanner() {
         MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {
@@ -84,30 +87,69 @@ public class ChaptersFragment extends Fragment implements listenr {
         binding.adView.loadAd(adRequest);
 
     }
+    private void getRemoteChapter(int id,int idCollege) {
+        urlList=new UrlList(getContext());
+            switch (idCollege){
+                case 0:
+                    chapterListE5teary=new ArrayList<>();
+                    chapterListE5teary.clear();
+                    chapterListE5teary.addAll(urlList.e5teary.get(id+1));
+                    chapterListE5teary.notify();
+                    initRecyclerViewChapter( chapterListE5teary);
 
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        switch (resultCode){
-            case 1: {
-                Toast.makeText(binding.getRoot().getContext(), "Arabic", Toast.LENGTH_SHORT).show();
-            }break;
-            case 2:{
-                Toast.makeText(binding.getRoot().getContext(), "English", Toast.LENGTH_SHORT).show();
+
+                    break;
+                case 2:
+                    chapterListNurse=new ArrayList<>();
+                    chapterListNurse.addAll(urlList.nurse.get(id+1));
+                    initRecyclerViewChapter(chapterListNurse);
+
+
+                    break;
+                case 4:
+                    chapterListBaby=new ArrayList<>();
+                   chapterListBaby.addAll(urlList.baby.get(id+1));
+                    initRecyclerViewChapter(chapterListBaby);
+
+                    break;
+                case 6:
+                    chapterListEco=new ArrayList<>();
+                    chapterListEco.addAll(urlList.eco.get(id+1));
+                    initRecyclerViewChapter(chapterListEco);
+
+                    break;
+                case 8:
+                    chapterListIt=new ArrayList<>();
+                    chapterListIt.clear();
+                    chapterListIt.addAll(urlList.it.get(id+1));
+                    initRecyclerViewChapter(chapterListIt);
+
+                case 10:
+                    chapterListApplied=new ArrayList<>();
+                    chapterListApplied.clear();
+                    chapterListApplied.addAll(urlList.aplied.get(id+1));
+                    initRecyclerViewChapter(chapterListApplied);
+
+
+                    break;
 
             }
-                break;
-            case 3:
-                {
-                    Toast.makeText(binding.getRoot().getContext(), "عسكرية", Toast.LENGTH_SHORT).show();
 
-                }
 
-                break;
+    }
 
-        }
+private int getIdColleges()
+{
+    if(ChaptersFragmentArgs.fromBundle(getArguments()).getIdCollege()==0)
+        return 0;
+    return  ChaptersFragmentArgs.fromBundle(getArguments()).getIdCollege();
+
+}
+    private int getID(){
+        return ChaptersFragmentArgs.fromBundle(getArguments()).getId();
+    }
+
 
 }
 
 
-}

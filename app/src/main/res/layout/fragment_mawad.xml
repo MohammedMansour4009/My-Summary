@@ -22,12 +22,14 @@
             android:layout_marginRight="@dimen/_5sdp"
             android:background="@drawable/searchshape"
             android:drawableRight="@drawable/ic_search"
+            style="@style/Font_Arabic"
             android:paddingEnd="@dimen/_20sdp"
             android:elevation="@dimen/shadow"
             android:hint="@string/matirial"
             android:textSize="@dimen/_20sdp"
             android:paddingRight="@dimen/_20sdp" />
         <TextView
+            style="@style/Font_Arabic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"

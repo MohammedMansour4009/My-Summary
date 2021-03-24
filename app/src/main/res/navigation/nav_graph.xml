@@ -14,6 +14,10 @@
         android:name="com.example.mysummary.ui.fragment.mulakasat.MulaksatFragment"
         android:label="fragment_mula5sat"
         tools:layout="@layout/fragment_mula5sat" >
+        <argument
+            android:name="idE5tyary"
+            app:argType="integer"
+            android:defaultValue="2" />
         <action
             android:id="@+id/action_mulaksat_to_mawadFragment2"
             app:destination="@id/mawadFragment" />
@@ -32,9 +36,13 @@
         <argument
             android:name="id"
             app:argType="integer" />
+
+
         <action
             android:id="@+id/action_mawadFragment_to_chaptersFragment"
             app:destination="@id/chaptersFragment" />
+        <argument android:name="collegID"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/chaptersFragment"
@@ -42,6 +50,9 @@
         android:label="ChaptersFragment" >
         <argument
             android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="idCollege"
             app:argType="integer" />
     </fragment>
     <fragment
@@ -51,7 +62,7 @@
         tools:layout="@layout/fragment_matirial_choises_fragmint" />
     <fragment
         android:id="@+id/partsragment"
-        android:name="com.example.mysummary.ui.fragment.parts.Partsragment"
+        android:name="com.example.mysummary.ui.fragment.parts.PartsFragment"
         android:label="fragment_partsragment"
         tools:layout="@layout/fragment_partsragment" >
         <argument

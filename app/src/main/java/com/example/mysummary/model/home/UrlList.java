@@ -1,19 +1,159 @@
 package com.example.mysummary.model.home;
 
 import android.content.Context;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.example.mysummary.R;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.List;
 
 
 public  class UrlList  {
+    public static List<ArrayList<Url>> nurse;
+    public static List<ArrayList<Url>> baby;
+    public static List<ArrayList<Url>> eco;
+    public static List<ArrayList<Url>> it;
+    public static List<ArrayList<Url>> aplied;
+    public static List<ArrayList<Url>> math;
+    public static List<ArrayList<Url>> e5teary;
+
+    public UrlList(Context context) {
+        nurse=new ArrayList<>();
+        baby=new ArrayList<>();
+        eco=new ArrayList<>();
+        it=new ArrayList<>();
+        e5teary=new ArrayList<>();
+        aplied=new ArrayList<>();
+        math=new ArrayList<>();
+        e5teary.add(Arabic101(context));
+        e5teary.add(English101(context));
+        e5teary.add(Askaria(context));
+            nurse.add(nurse1(context));
+            nurse.add(nurse2(context));
+            nurse.add(nurse3(context));
+            nurse.add(nurse4(context));
+            nurse.add(nurse5(context));
+            nurse.add(nurse6(context));
+            nurse.add(nurse7(context));
+            nurse.add(nurse8(context));
+            nurse.add(nurse9(context));
+            nurse.add(nurse10(context));
+            nurse.add(nurse11(context));
+            nurse.add(nurse12(context));
+            nurse.add(nurse13(context));
+            nurse.add(nurse14(context));
+            nurse.add(nurse15(context));
+            nurse.add(nurse16(context));
+            nurse.add(nurse17(context));
+            nurse.add(nurse18(context));
+            nurse.add(nurse19(context));
+            nurse.add(nurse20(context));
+            nurse.add(nurse21(context));
+            baby.add(baby1(context));
+            baby.add(baby2(context));
+            baby.add(baby3(context));
+            baby.add(baby4(context));
+            baby.add(baby5(context));
+            baby.add(baby6(context));
+            eco.add(eco1(context));
+            eco.add(eco2(context));
+            eco.add(eco3(context));
+            eco.add(eco4(context));
+            eco.add(eco5(context));
+            eco.add(eco6(context));
+            eco.add(eco7(context));
+            eco.add(eco8(context));
+            eco.add(eco9(context));
+            eco.add(eco10(context));
+            eco.add(eco11(context));
+            eco.add(eco12(context));
+            eco.add(eco13(context));
+            eco.add(eco14(context));
+            eco.add(eco15(context));
+            eco.add(eco16(context));
+            eco.add(eco17(context));
+            eco.add(eco18(context));
+            eco.add(eco19(context));
+            eco.add(eco20(context));
+            eco.add(eco21(context));
+            eco.add(eco22(context));
+            eco.add(eco23(context));
+            eco.add(eco24(context));
+            eco.add(eco25(context));
+            eco.add(eco26(context));
+            eco.add(eco27(context));
+            eco.add(eco28(context));
+            eco.add(eco29(context));
+            it.add(it1(context));
+            it.add(it2(context));
+            it.add(it3(context));
+            it.add(it4(context));
+            it.add(it5(context));
+            it.add(it6(context));
+            it.add(it7(context));
+            it.add(it8(context));
+            it.add(it9(context));
+            it.add(it10(context));
+            it.add(it11(context));
+            it.add(it12(context));
+            it.add(it13(context));
+            it.add(it14(context));
+            it.add(it15(context));
+            it.add(it16(context));
+            it.add(it17(context));
+            it.add(it18(context));
+            it.add(it19(context));
+            it.add(it20(context));
+            it.add(it21(context));
+            it.add(it22(context));
+            it.add(it23(context));
+            it.add(it24(context));
+            it.add(it25(context));
+            it.add(it26(context));
+            it.add(it27(context));
+            it.add(it28(context));
+            it.add(it29(context));
+            it.add(it30(context));
+            it.add(it31(context));
+            it.add(it32(context));
+            it.add(it33(context));
+            it.add(it34(context));
+            it.add(it35(context));
+            aplied.add(aplied1(context));
+            aplied.add(aplied2(context));
+            aplied.add(aplied3(context));
+            aplied.add(aplied4(context));
+            aplied.add(aplied5(context));
+            aplied.add(aplied6(context));
+            aplied.add(aplied7(context));
+            aplied.add(aplied8(context));
+            aplied.add(aplied9(context));
+            aplied.add(aplied10(context));
+            aplied.add(aplied11(context));
+            aplied.add(aplied12(context));
+            aplied.add(aplied13(context));
+            aplied.add(aplied14(context));
+            math.add(math1(context));
+            math.add(math2(context));
+            math.add(math3(context));
+            math.add(math4(context));
+            math.add(math5(context));
+            math.add(math6(context));
+            math.add(math7(context));
+            math.add(math8(context));
+            math.add(math9(context));
+            math.add(math10(context));
+            math.add(math11(context));
+            math.add(math12(context));
+            math.add(math13(context));
+            math.add(math14(context));
+            math.add(math15(context));
+            math.add(math16(context));
+            math.add(math17(context));
+            math.add(math18(context));
+            math.add(math19(context));
+            math.add(math20(context));
+    }
+
     public static ArrayList<Url> Arabic101(Context context){
 
         ArrayList<String> Url=new ArrayList<>();
@@ -2783,6 +2923,11 @@ public  class UrlList  {
 
         return urls;
     }//----------------------
+
+
+
+
+
 }
 
 

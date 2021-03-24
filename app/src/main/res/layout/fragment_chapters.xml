@@ -27,6 +27,7 @@
                 android:layout_marginRight="@dimen/marginStart_pain"
                 android:layout_marginTop="@dimen/marginTop_pain"
                 android:text="@string/chapters"
+                style="@style/Font_Arabic"
                 android:textSize="@dimen/tv_pain"
                 android:textStyle="bold" />
 

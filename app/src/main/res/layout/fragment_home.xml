@@ -17,7 +17,6 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/_200sdp"
             android:layout_marginTop="@dimen/_40sdp"
-            android:elevation="@dimen/shadow"
             app:layout_constraintTop_toTopOf="parent"
             tools:background="@tools:sample/backgrounds/scenic" />
             <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator

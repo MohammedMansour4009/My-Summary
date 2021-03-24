@@ -13,9 +13,10 @@
 
 
     <androidx.cardview.widget.CardView
-        android:layout_marginVertical="@dimen/_12sdp"
+        android:id="@+id/cv_chapter"
         android:layout_width="match_parent"
-        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
         android:layout_height="@dimen/heightCvMatirial"
         android:layout_gravity="center"
         android:background="@drawable/design_corner_gray"
@@ -30,6 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@{model.name}"
+            style="@style/Font_Arabic"
             android:textSize="@dimen/tv_sizeText_matirial"
             tools:text="Ch 1" />
 

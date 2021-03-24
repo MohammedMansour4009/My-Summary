@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentMawadBinding;
 import com.example.mysummary.model.mawad.Mawad;
 import com.google.android.gms.ads.AdRequest;
@@ -19,6 +20,7 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -30,17 +32,15 @@ public class MawadFragment extends Fragment {
     private MawadAdapter mawadAdapter;
 
 
-
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         getRemoteMawad();
+        setContent(getID());
         initRecyclerViewMawad();
-
+        Toast.makeText(getContext(), getIDColleg()+"", Toast.LENGTH_SHORT).show();
         setAdMobBanner();
-        Toast.makeText(getContext(), getID()+"", Toast.LENGTH_SHORT).show();
-
-        Log.d(TAG, "onViewCreated: " +getID());
+        Log.d(TAG, "onViewCreated: " +getIDColleg());
     }
 
     @Override
@@ -51,20 +51,12 @@ public class MawadFragment extends Fragment {
     }
 
     private void initRecyclerViewMawad() {
-        mawadAdapter = new MawadAdapter(mawadList);
+        mawadAdapter = new MawadAdapter(mawadList,getIDColleg());
         binding.rvMawad.setAdapter(mawadAdapter);
     }
 
     private void getRemoteMawad() {
-        mawadList = new ArrayList<>();
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-        mawadList.add(new Mawad( "English101",1));
-
-
+       mawadList=new ArrayList<>();
     }
     private void setAdMobBanner() {
         MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {
@@ -79,10 +71,69 @@ public class MawadFragment extends Fragment {
         binding.adView.loadAd(adRequest);
 
     }
+
     private int getID(){
         return MawadFragmentArgs.fromBundle(getArguments()).getId();
     }
-    private void setContent(int id){
+    private int  getIDColleg()
+        {
+            return MawadFragmentArgs.fromBundle(getArguments()).getCollegID();
+        }
 
+    private void setContent(int id){
+        getRemoteMawad();
+        switch (id){
+            case 1: {
+                Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
+            break;
+            }
+            case 2:
+                List<String> nameParts= Arrays.asList(getResources().getStringArray(R.array.NameEng));
+                for(int i=0;i<nameParts.size();i++)
+                    mawadList.add(new Mawad(nameParts.get(i),i));
+                break;
+            case 3:
+                List<String> nameNurse=Arrays.asList(getResources().getStringArray(R.array.NurseMawad));
+               for(int i=0;i<nameNurse.size();i++)
+                   mawadList.add(new Mawad(nameNurse.get(i),i));
+                break;
+            case 4:
+                List<String> namebaby=Arrays.asList(getResources().getStringArray(R.array.babyMawad));
+                for(int i=0;i<namebaby.size();i++)
+                    mawadList.add(new Mawad(namebaby.get(i),i));
+                break;
+
+            case 5:
+                Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
+                break;
+            case 6:
+                List<String> nameEco=Arrays.asList(getResources().getStringArray(R.array.EconomiMawad));
+                for(int i=0;i<nameEco.size();i++)
+                    mawadList.add(new Mawad(nameEco.get(i),i));
+                break;
+            case 7:
+                Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
+                break;
+            case 8:
+                Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
+                break;
+            case 9:
+                List<String> nameit=Arrays.asList(getResources().getStringArray(R.array.itMawad));
+                for(int i=0;i<nameit.size();i++)
+                    mawadList.add(new Mawad(nameit.get(i),i));
+                break;
+            case 10:
+                Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
+                break;
+            case 11:
+                List<String> nameAplide=Arrays.asList(getResources().getStringArray(R.array.AppliedMawad));
+                for(int i=0;i<nameAplide.size();i++)
+                    mawadList.add(new Mawad(nameAplide.get(i),i));
+                break;
+
+            case 12:
+                mawadList.add(new Mawad("قسم الرياضيات",1));
+        }
+
+        }
     }
-}

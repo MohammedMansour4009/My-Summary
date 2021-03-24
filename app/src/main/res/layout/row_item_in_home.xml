@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_gravity="center"
-    android:elevation="@dimen/_20sdp"
     >
 
     <data>
@@ -12,20 +11,17 @@
             type="com.example.mysummary.model.category.Category" />
     </data>
 <androidx.cardview.widget.CardView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="@dimen/_75sdp"
+    android:layout_height="@dimen/_75sdp"
+    android:layout_margin="@dimen/_6sdp"
     app:cardElevation="@dimen/shadow"
+    app:cardCornerRadius="@dimen/_9sdp"
     android:id="@+id/l_item_in_home"
+    android:background="@drawable/design_corner"
     android:foregroundGravity="center"
 
     >
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="@dimen/_75sdp"
-        android:layout_height="@dimen/_75sdp"
-        android:layout_margin="@dimen/_6sdp"
-        android:background="@drawable/design_selected"
-        android:elevation="@dimen/shadow"
-        >
+
 
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -52,12 +48,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginBottom="@dimen/_3sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            style="@style/Font_Arabic"
             android:text="@{model.name}"
             tools:text="sadassad"
 
             />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.cardview.widget.CardView>
 </layout>

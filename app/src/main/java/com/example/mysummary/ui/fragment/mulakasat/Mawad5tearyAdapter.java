@@ -32,6 +32,10 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
         this.lr=lr;
     }
 
+    public Mawad5tearyAdapter(List<Mawad> mawadList) {
+        this.mawads=mawadList;
+    }
+
     @NonNull
     @Override
 
@@ -48,8 +52,14 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
             @Override
             public void onClick(View v) {
                 holder.initAdMobInterstitial();
-                NavDirections action = MulaksatFragmentDirections.actionMulaksatToChaptersFragment(mawad.getId());
-                Navigation.findNavController(holder.binding.getRoot()).navigate(action);
+                holder.binding.cvE5teary.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        NavDirections action=MulaksatFragmentDirections.actionMulaksatToChaptersFragment(mawad.getId(),0);
+                        Navigation.findNavController(holder.binding.getRoot()).navigate(action);
+                    }
+                });
+
             }
         });
     }

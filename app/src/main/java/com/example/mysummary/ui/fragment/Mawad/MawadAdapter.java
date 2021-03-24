@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
@@ -17,10 +19,12 @@ import java.util.List;
 public class MawadAdapter extends RecyclerView.Adapter<MawadAdapter.MawadHolder> {
     private List<Mawad> mawads;
     private Context context;
-
-    public MawadAdapter(List<Mawad> mawads) {
+    private int idCollege;
+    public MawadAdapter(List<Mawad> mawads,int id) {
         this.mawads = mawads;
+        this.idCollege=id;
     }
+
 
     @NonNull
     @Override
@@ -34,6 +38,14 @@ public class MawadAdapter extends RecyclerView.Adapter<MawadAdapter.MawadHolder>
     public void onBindViewHolder(@NonNull MawadHolder holder, int position) {
         Mawad mawad=mawads.get(position);
         holder.binding.setModel(mawad);
+        holder.binding.cvMawad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavDirections action=MawadFragmentDirections.actionMawadFragmentToChaptersFragment(mawad.getId(),idCollege);
+                Navigation.findNavController(holder.binding.getRoot()).navigate(action);
+
+            }
+        });
     }
 
     @Override

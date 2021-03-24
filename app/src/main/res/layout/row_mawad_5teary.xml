@@ -15,15 +15,12 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="@dimen/_15sdp">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="@dimen/shadow">
-
-
+        app:cardCornerRadius="@dimen/_11sdp"
+        app:cardElevation="@dimen/shadow"
+        android:id="@+id/cv_e5teary"
+        >
             <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Font_Arabic"
                 android:id="@+id/tv_name_mawad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -32,8 +29,5 @@
                 android:paddingVertical="@dimen/_5sdp"
                 android:text="@{model.nameCourse}"
                 tools:text="English101" />
-
-
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>
 </layout>
