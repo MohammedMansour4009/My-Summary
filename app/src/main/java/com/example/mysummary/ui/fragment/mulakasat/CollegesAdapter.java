@@ -29,12 +29,10 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
     private List<Colleges> colleges;
     private Context context;
     private InterstitialAd mInterstitialAd;
-    private int IdColleg;
 
 
-    public CollegesAdapter(List<Colleges> colleges,int id) {
+    public CollegesAdapter(List<Colleges> colleges) {
         this.colleges = colleges;
-        this.IdColleg=id;
     }
 
     @Override
@@ -66,7 +64,7 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
                     Navigation.findNavController(holder.binding.getRoot()).navigate(action);
                 }
                 else{
-                NavDirections action =MulaksatFragmentDirections.actionMulaksatToMawadFragment2(college.getId(),IdColleg);
+                NavDirections action =MulaksatFragmentDirections.actionMulaksatToMawadFragment2(college.getId());
                 Navigation.findNavController(holder.binding.getRoot()).navigate(action);
             }}
         });

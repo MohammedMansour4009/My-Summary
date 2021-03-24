@@ -8,10 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
 import com.example.mysummary.constant.AppConstant;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentMula5satBinding;
 import com.example.mysummary.model.colleges.Colleges;
@@ -29,7 +32,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MulaksatFragment extends Fragment  {
+public class MulaksatFragment extends Fragment {
 
     FragmentMula5satBinding binding;
     private List<Colleges> collegesList;
@@ -38,7 +41,11 @@ public class MulaksatFragment extends Fragment  {
     private Mawad5tearyAdapter mawadAdapter;
 
 
-public MulaksatFragment(){};
+    public MulaksatFragment() {
+    }
+
+    ;
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -50,10 +57,10 @@ public MulaksatFragment(){};
     }
 
     private void getRemoteMawad() {
-        mawadList=new ArrayList<>();
-        mawadList.add(new Mawad("عربي 101",1));
-        mawadList.add(new Mawad("English",2));
-        mawadList.add(new Mawad("عسكرية",3));
+        mawadList = new ArrayList<>();
+        mawadList.add(new Mawad("عربي 101", 1));
+        mawadList.add(new Mawad("English", 2));
+        mawadList.add(new Mawad("عسكرية", 3));
         mawadAdapter = new Mawad5tearyAdapter(mawadList);
         binding.rvMawad.setAdapter(mawadAdapter);
     }
@@ -62,6 +69,7 @@ public MulaksatFragment(){};
 
         binding.rvMawad.setAdapter(mawadAdapter);
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -71,10 +79,11 @@ public MulaksatFragment(){};
     }
 
     private void initRecyclerViewColleges() {
-        collegesAdapter = new CollegesAdapter(collegesList,getID());
+        collegesAdapter = new CollegesAdapter(collegesList);
         binding.rvCollege.setAdapter(collegesAdapter);
 
     }
+
     private void getRemoteColleges() {
 
         List<String> listName = new ArrayList<>();
@@ -104,6 +113,7 @@ public MulaksatFragment(){};
         }
 
     }
+
     private void searchOrder() {
         binding.etSearch.addTextChangedListener(new TextWatcher() {
             @Override
@@ -124,19 +134,17 @@ public MulaksatFragment(){};
 
         });
     }
+
     private void filter(String idoOrder) {
-        List<Colleges> filteredList=new ArrayList<>();
-        for (Colleges item : collegesList){
-            if (item.getNameCollege().toLowerCase().contains(idoOrder.toLowerCase()) ){
+        List<Colleges> filteredList = new ArrayList<>();
+        for (Colleges item : collegesList) {
+            if (item.getNameCollege().toLowerCase().contains(idoOrder.toLowerCase())) {
                 filteredList.add(item);
 
             }
         }
         collegesAdapter.filterList(filteredList);
     }
-
-
-
 
 
     private void setAdMobBanner() {
@@ -151,14 +159,6 @@ public MulaksatFragment(){};
         binding.adView.loadAd(adRequest);
 
     }
-private int getID()
-{
-    if(MulaksatFragmentArgs.fromBundle(getArguments()).getIdE5tyary()==0)
-        return 0;
-
-    return  MulaksatFragmentArgs.fromBundle(getArguments()).getIdE5tyary();
-}
-
 
 
 }

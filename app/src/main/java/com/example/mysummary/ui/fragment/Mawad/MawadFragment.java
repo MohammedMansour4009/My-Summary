@@ -38,9 +38,7 @@ public class MawadFragment extends Fragment {
         getRemoteMawad();
         setContent(getID());
         initRecyclerViewMawad();
-        Toast.makeText(getContext(), getIDColleg()+"", Toast.LENGTH_SHORT).show();
         setAdMobBanner();
-        Log.d(TAG, "onViewCreated: " +getIDColleg());
     }
 
     @Override
@@ -51,7 +49,7 @@ public class MawadFragment extends Fragment {
     }
 
     private void initRecyclerViewMawad() {
-        mawadAdapter = new MawadAdapter(mawadList,getIDColleg());
+        mawadAdapter = new MawadAdapter(mawadList,getID());
         binding.rvMawad.setAdapter(mawadAdapter);
     }
 
@@ -75,10 +73,7 @@ public class MawadFragment extends Fragment {
     private int getID(){
         return MawadFragmentArgs.fromBundle(getArguments()).getId();
     }
-    private int  getIDColleg()
-        {
-            return MawadFragmentArgs.fromBundle(getArguments()).getCollegID();
-        }
+
 
     private void setContent(int id){
         getRemoteMawad();
