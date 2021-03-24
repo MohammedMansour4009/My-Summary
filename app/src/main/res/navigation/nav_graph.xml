@@ -14,10 +14,7 @@
         android:name="com.example.mysummary.ui.fragment.mulakasat.MulaksatFragment"
         android:label="fragment_mula5sat"
         tools:layout="@layout/fragment_mula5sat" >
-        <argument
-            android:name="idE5tyary"
-            app:argType="integer"
-            android:defaultValue="2" />
+
         <action
             android:id="@+id/action_mulaksat_to_mawadFragment2"
             app:destination="@id/mawadFragment" />
@@ -41,8 +38,7 @@
         <action
             android:id="@+id/action_mawadFragment_to_chaptersFragment"
             app:destination="@id/chaptersFragment" />
-        <argument android:name="collegID"
-            app:argType="integer" />
+
     </fragment>
     <fragment
         android:id="@+id/chaptersFragment"
