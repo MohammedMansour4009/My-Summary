@@ -1,5 +1,6 @@
 package com.example.mysummary.ui.fragment.chapter;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -17,13 +18,21 @@ import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentChaptersBinding;
 import com.example.mysummary.model.home.UrlList;
 import com.example.mysummary.ui.fragment.Mawad.MawadFragmentArgs;
+import com.example.mysummary.ui.main.MainActivity;
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.example.mysummary.model.home.Url;
 import com.example.mysummary.model.home.listenr;
+import com.google.android.gms.ads.rewarded.RewardItem;
+import com.google.android.gms.ads.rewarded.RewardedAd;
+import com.google.android.gms.ads.rewarded.RewardedAdCallback;
+import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -54,16 +63,14 @@ public class ChaptersFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         getRemoteChapter(getID(), getIdColleges());
-
         setAdMobBanner();
-        Toast.makeText(getContext(), "fuck ", Toast.LENGTH_SHORT).show();
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentChaptersBinding.inflate(getLayoutInflater());
+        setAdMobInterstitial();
         return binding.getRoot();
     }
 
@@ -71,14 +78,16 @@ public class ChaptersFragment extends Fragment {
         chapterAdapter = new ChapterAdapter(chapterList, new listenr() {
             @Override
             public void OnItemClick(int index) {
-                Url url = chapterList.get(index);
-                Uri uri = Uri.parse(url.getUrl());
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
+                playScreenAdMob(index, chapterList);
             }
         });
         chapterAdapter.notifyDataSetChanged();
         binding.rvChapters.setAdapter(chapterAdapter);
+    }
+
+    private void goToBrowser(int index, List<Url> chapterList) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(chapterList.get(index).getUrl()));
+        startActivity(intent);
     }
 
 
@@ -98,6 +107,8 @@ public class ChaptersFragment extends Fragment {
     private void getRemoteChapter(int id, int idCollege) {
         urlList = new UrlList(getContext());
         switch (idCollege) {
+            case 0:
+                Toast.makeText(getContext(), "Mawad 5hteary ", Toast.LENGTH_SHORT).show();
             case 1:
                 chapterListE5teary = new ArrayList<>();
                 chapterListE5teary.clear();
@@ -153,7 +164,77 @@ public class ChaptersFragment extends Fragment {
         return ChaptersFragmentArgs.fromBundle(getArguments()).getId();
     }
 
+    private void setAdMobInterstitial() {
+        MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+            }
+        });
 
+
+        // Interstitial
+        mInterstitialAd = new InterstitialAd(getContext());
+        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+
+        //مخير تحطها او لا
+
+
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                // Load the next interstitial.
+                mInterstitialAd.loadAd(new AdRequest.Builder().build());
+            }
+
+        });
+
+    }
+
+    private void playScreenAdMob(int index, List<Url> chapterList) {
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+
+        } else {
+            Log.d("TAG", "The interstitial wasn't loaded yet.");
+            goToBrowser(index, chapterList);
+        }
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                // Code to be executed when an ad finishes loading.
+            }
+
+            @Override
+            public void onAdFailedToLoad(LoadAdError adError) {
+                // Code to be executed when an ad request fails.
+            }
+
+            @Override
+            public void onAdOpened() {
+                // Code to be executed when the ad is displayed.
+            }
+
+            @Override
+            public void onAdClicked() {
+                // Code to be executed when the user clicks on an ad.
+            }
+
+            @Override
+            public void onAdLeftApplication() {
+                // Code to be executed when the user has left the app.
+            }
+
+            @Override
+            public void onAdClosed() {
+                // Code to be executed when the interstitial ad is closed.
+                goToBrowser(index, chapterList);
+            }
+        });
+    }
 }
+
+
 
 

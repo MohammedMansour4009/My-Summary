@@ -54,9 +54,11 @@
                 android:layout_height="50dp"
                 android:background="@color/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:menu="@menu/drawer_bottom_nav_menu"
+                app:menu="@menu/bottom_menu"
                 app:itemIconTint="@color/color_of_selected"
                 app:itemTextColor="@color/color_of_selected"
+                app:labelVisibilityMode="unlabeled"
+
                 />
 
 
@@ -68,7 +70,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:fitsSystemWindows="true"
-            app:menu="@menu/options_menu"
+            app:menu="@menu/drawer_menu"
             />
 
 

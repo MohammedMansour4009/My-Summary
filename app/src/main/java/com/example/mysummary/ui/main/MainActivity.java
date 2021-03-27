@@ -25,6 +25,7 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
         navController = Navigation.findNavController(this, R.id.f_main);
         initNavController();
         initToolbar();
+        setNavBottomAndDrawerNav();
 
     }
 
@@ -52,8 +53,11 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
                 binding.drawerLayout.openDrawer(GravityCompat.START);
                 return true;
         }
-
         return NavigationUI.onNavDestinationSelected(item, navController) || super.onOptionsItemSelected(item);
+    }
+    private void setNavBottomAndDrawerNav() {
+        NavigationUI.setupWithNavController(binding.bottomNav, navController);
+        NavigationUI.setupWithNavController(binding.navView, navController);
     }
 
  }

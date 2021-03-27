@@ -68,4 +68,9 @@
             android:id="@+id/action_partsragment_to_mawadFragment"
             app:destination="@id/mawadFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.example.mysummary.ui.fragment.email.EmailFragment"
+        android:label="fragment_email"
+        tools:layout="@layout/fragment_email" />
 </navigation>

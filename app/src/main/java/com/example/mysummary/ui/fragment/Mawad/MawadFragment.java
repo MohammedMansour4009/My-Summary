@@ -1,7 +1,7 @@
 package com.example.mysummary.ui.fragment.Mawad;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +39,16 @@ public class MawadFragment extends Fragment {
         setContent(getID());
         initRecyclerViewMawad();
         setAdMobBanner();
+        Listener();
+    }
+
+    private void Listener() {
+        binding.bAddMawad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendMail();
+            }
+        });
     }
 
     @Override
@@ -131,4 +141,17 @@ public class MawadFragment extends Fragment {
         }
 
         }
+
+    private void sendMail() {
+        String recipientList =  ">mysummary.je.mo@gmail.com";
+        String[] recipients = recipientList.split(",");
+        String subject = "ارسال مواد ";
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.putExtra(Intent.EXTRA_EMAIL, recipients);
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        intent.setType("message/rfc822");
+        startActivity(Intent.createChooser(intent, "Choose an email client"));
     }
+
+
+}

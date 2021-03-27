@@ -6,5 +6,6 @@
         android:id="@+id/ic_my_summary"
         android:icon="@drawable/logo_splash1"
         android:title="ملخصاتي HU"
-        app:showAsAction="always" />
+        app:showAsAction="always"
+        />
 </menu><!--    android:menuCategory="secondary" return last Activity-->

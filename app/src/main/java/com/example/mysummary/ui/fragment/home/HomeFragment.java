@@ -1,15 +1,18 @@
 package com.example.mysummary.ui.fragment.home;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,15 +28,22 @@ import com.example.mysummary.model.home.image.InfoImage;
 import com.example.mysummary.model.home.image.Tap;
 import com.example.mysummary.ui.fragment.home.Image.ImageFragment;
 import com.example.mysummary.ui.fragment.home.Image.ImagePagerAdapter;
+import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.gms.ads.rewarded.RewardItem;
+import com.google.android.gms.ads.rewarded.RewardedAd;
+import com.google.android.gms.ads.rewarded.RewardedAdCallback;
+import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HomeFragment extends Fragment {
+    private static final String TAG = "HomeFragment";
     private FragmentHomeBinding binding;
     private List<Category> categoryList;
     private CategoryAdapter categoryAdapter;
@@ -43,6 +53,9 @@ public class HomeFragment extends Fragment {
     private List<InfoImage> imageList;
 
     ImagePagerAdapter imagePagerAdapter;
+
+    private RewardedAd rewardedAd;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +67,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentHomeBinding.inflate(getLayoutInflater());
         navDrawer = binding.getRoot().findViewById(R.id.drawer_layout);
+        showVideoFromAdMob();
         return binding.getRoot();
     }
 
@@ -102,10 +116,10 @@ public class HomeFragment extends Fragment {
     }
 
     private void setListCategory() {
-     categoryList=new ArrayList<>();
-     categoryList.add(new Category(1,"حساب المعدل",R.drawable.ic_calculater));
-     categoryList.add(new Category(2,"مودل",R.drawable.ic_person));
-     categoryList.add(new Category(3,"بوبة الطالب",R.drawable.ic_web));
+        categoryList = new ArrayList<>();
+        categoryList.add(new Category(1, "حساب المعدل", R.drawable.ic_calculater));
+        categoryList.add(new Category(2, "مودل", R.drawable.ic_person));
+        categoryList.add(new Category(3, "بوبة الطالب", R.drawable.ic_web));
 
     }
 
@@ -116,28 +130,30 @@ public class HomeFragment extends Fragment {
             @Override
             public void onItemClick(Category category) {
                 int position = category.getId();
-                switch (position) {
-                    case 1:
-                        Uri uri = Uri.parse("https://etihadlibrary.azurewebsites.net/counting_gpa.aspx");
-                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                        startActivity(intent);
-                        break;
-                    case 2:
-                        Uri uri1 = Uri.parse("https://reg1.hu.edu.jo/");
-                        Intent intent1 = new Intent(Intent.ACTION_VIEW, uri1);
-                        startActivity(intent1);
-                        break;
-                    case 3:
-                        Uri uri2 = Uri.parse("http://www.mlms.hu.edu.jo/");
-                        Intent intent2 = new Intent(Intent.ACTION_VIEW, uri2);
-                        startActivity(intent2);
-                        break;
+                playVideo(position);
 
-                }
             }
         });
         binding.rvCategory.setAdapter(categoryAdapter);
 
+    }
+
+    private void goToBrowser(int position) {
+        switch (position) {
+            case 1:
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://etihadlibrary.azurewebsites.net/counting_gpa.aspx"));
+                startActivity(intent);
+                break;
+            case 2:
+                Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://reg1.hu.edu.jo/"));
+                startActivity(intent1);
+                break;
+            case 3:
+                Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mlms.hu.edu.jo/"));
+                startActivity(intent2);
+                break;
+
+        }
     }
 
     private void setListImage() {
@@ -147,7 +163,6 @@ public class HomeFragment extends Fragment {
         imageList.add(new InfoImage(R.drawable.ic_home));
 
     }
-
 
 
     @Override
@@ -181,6 +196,63 @@ public class HomeFragment extends Fragment {
         AdRequest adRequest = new AdRequest.Builder().build();
         binding.adView.loadAd(adRequest);
 
+    }
+
+    private void showVideoFromAdMob() {
+        rewardedAd = new RewardedAd(getContext(), "ca-app-pub-3940256099942544/5224354917");
+
+        RewardedAdLoadCallback adLoadCallback = new RewardedAdLoadCallback() {
+            @Override
+            public void onRewardedAdLoaded() {
+                // Ad successfully loaded.
+                Log.d(TAG, "onRewardedAdLoaded: ");
+            }
+
+            @Override
+            public void onRewardedAdFailedToLoad(LoadAdError adError) {
+                // Ad failed to load.
+                Log.d(TAG, "onRewardedAdFailedToLoad: ");
+            }
+        };
+        rewardedAd.loadAd(new AdRequest.Builder().build(), adLoadCallback);
+
+    }
+
+    private void playVideo(int position) {
+        if (rewardedAd.isLoaded()) {
+            Activity activityContext = getActivity();
+            RewardedAdCallback adCallback = new RewardedAdCallback() {
+                @Override
+                public void onRewardedAdOpened() {
+                    // Ad opened.
+                    Log.d(TAG, "onRewardedAdOpened: ");
+                }
+
+                @Override
+                public void onRewardedAdClosed() {
+                    // Ad closed.
+                    Log.d(TAG, "onRewardedAdClosed: ");
+                    goToBrowser(position);
+                }
+
+                @Override
+                public void onUserEarnedReward(@NonNull RewardItem reward) {
+                    // User earned reward.
+                    Log.d(TAG, "onUserEarnedReward: ");
+
+                }
+
+                @Override
+                public void onRewardedAdFailedToShow(AdError adError) {
+                    // Ad failed to display.
+                    Log.d(TAG, "onRewardedAdFailedToShow: ");
+                }
+            };
+            rewardedAd.show(activityContext, adCallback);
+        } else {
+            Log.d(TAG, "The rewarded ad wasn't loaded yet.");
+            goToBrowser(position);
+        }
     }
 
 
