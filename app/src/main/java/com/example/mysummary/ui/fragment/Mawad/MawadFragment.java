@@ -29,7 +29,7 @@ import java.util.List;
 public class MawadFragment extends Fragment {
 
     private static final String TAG = "MawadFragment";
-    private FragmentMawadBinding binding;
+    private  FragmentMawadBinding binding;
     private List<Mawad> mawadList;
     private MawadAdapter mawadAdapter;
 
@@ -94,7 +94,7 @@ public class MawadFragment extends Fragment {
         switch (id) {
             case 1: {
                 Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
-                break;
+            break;
             }
             case 2:
                 List<String> nameParts = Arrays.asList(getResources().getStringArray(R.array.NameEng));
@@ -135,62 +135,62 @@ public class MawadFragment extends Fragment {
                     mawadList.add(new Mawad(nametor.get(i), i));
                 break;
             case 11:
-                List<String> nameAplide = Arrays.asList(getResources().getStringArray(R.array.AppliedMawad));
-                for (int i = 0; i < nameAplide.size(); i++)
-                    mawadList.add(new Mawad(nameAplide.get(i), i));
+                List<String> nameAplide=Arrays.asList(getResources().getStringArray(R.array.AppliedMawad));
+                for(int i=0;i<nameAplide.size();i++)
+                    mawadList.add(new Mawad(nameAplide.get(i),i));
                 break;
 
             case 12:
-                mawadList.add(new Mawad("قسم الرياضيات", 1));
+                mawadList.add(new Mawad("قسم الرياضيات",1));
                 break;
             case 13:
-                mawadList.add(new Mawad("قسم الاحياء", 2));
+                mawadList.add(new Mawad("قسم الاحياء",2));
                 break;
             case 100:
-                List<String> nameComputer = Arrays.asList(getResources().getStringArray(R.array.Eng_CompMawad));
-                for (int i = 0; i < nameComputer.size(); i++)
-                    mawadList.add(new Mawad(nameComputer.get(i), i));
+                List<String> nameComputer=Arrays.asList(getResources().getStringArray(R.array.Eng_CompMawad));
+                for(int i=0;i<nameComputer.size();i++)
+                    mawadList.add(new Mawad(nameComputer.get(i),i));
                 break;
             case 101:
-                List<String> nameCivil = Arrays.asList(getResources().getStringArray(R.array.Eng_CivilMawad));
-                for (int i = 0; i < nameCivil.size(); i++)
-                    mawadList.add(new Mawad(nameCivil.get(i), i));
+                List<String> nameCivil=Arrays.asList(getResources().getStringArray(R.array.Eng_CivilMawad));
+                for(int i=0;i<nameCivil.size();i++)
+                    mawadList.add(new Mawad(nameCivil.get(i),i));
                 break;
 
             case 102:
-                List<String> nameElctro = Arrays.asList(getResources().getStringArray(R.array.Eng_electricMawad));
-                for (int i = 0; i < nameElctro.size(); i++)
-                    mawadList.add(new Mawad(nameElctro.get(i), i));
+                List<String> nameElctro=Arrays.asList(getResources().getStringArray(R.array.Eng_electricMawad));
+                for(int i=0;i<nameElctro.size();i++)
+                    mawadList.add(new Mawad(nameElctro.get(i),i));
                 break;
             case 103:
-                List<String> nameMicatro = Arrays.asList(getResources().getStringArray(R.array.Eng_MicMawad));
-                for (int i = 0; i < nameMicatro.size(); i++)
-                    mawadList.add(new Mawad(nameMicatro.get(i), i));
+                List<String> nameMicatro=Arrays.asList(getResources().getStringArray(R.array.Eng_MicMawad));
+                for(int i=0;i<nameMicatro.size();i++)
+                    mawadList.add(new Mawad(nameMicatro.get(i),i));
                 break;
             case 104:
-                List<String> nameIdents = Arrays.asList(getResources().getStringArray(R.array.Eng_industrial));
-                for (int i = 0; i < nameIdents.size(); i++)
-                    mawadList.add(new Mawad(nameIdents.get(i), i));
+                List<String> nameIdents=Arrays.asList(getResources().getStringArray(R.array.Eng_industrial));
+                for(int i=0;i<nameIdents.size();i++)
+                    mawadList.add(new Mawad(nameIdents.get(i),i));
                 break;
             case 106:
-                List<String> nameMath = Arrays.asList(getResources().getStringArray(R.array.MathMawad));
-                for (int i = 0; i < nameMath.size(); i++)
-                    mawadList.add(new Mawad(nameMath.get(i), i));
+                List<String> nameMath=Arrays.asList(getResources().getStringArray(R.array.MathMawad));
+                for(int i=0;i<nameMath.size();i++)
+                    mawadList.add(new Mawad(nameMath.get(i),i));
                 break;
             case 107:
-                List<String> nameEnglish = Arrays.asList(getResources().getStringArray(R.array.NameEnglish));
-                for (int i = 0; i < nameEnglish.size(); i++)
-                    mawadList.add(new Mawad(nameEnglish.get(i), i));
+                List<String> nameEnglish=Arrays.asList(getResources().getStringArray(R.array.NameEnglish));
+                for(int i=0;i<nameEnglish.size();i++)
+                    mawadList.add(new Mawad(nameEnglish.get(i),i));
                 break;
             case 108:
-                List<String> nameArabic = Arrays.asList(getResources().getStringArray(R.array.NameArabic));
-                for (int i = 0; i < nameArabic.size(); i++)
-                    mawadList.add(new Mawad(nameArabic.get(i), i));
+                List<String> nameArabic=Arrays.asList(getResources().getStringArray(R.array.NameArabic));
+                for(int i=0;i<nameArabic.size();i++)
+                    mawadList.add(new Mawad(nameArabic.get(i),i));
                 break;
             case 109:
-                List<String> nameBio = Arrays.asList(getResources().getStringArray(R.array.Eng_midcinMawad));
-                for (int i = 0; i < nameBio.size(); i++)
-                    mawadList.add(new Mawad(nameBio.get(i), i));
+                List<String> nameBio=Arrays.asList(getResources().getStringArray(R.array.Eng_midcinMawad));
+                for(int i=0;i<nameBio.size();i++)
+                    mawadList.add(new Mawad(nameBio.get(i),i));
                 break;
 
 
