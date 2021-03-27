@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="arabic1"><item ><![CDATA[https://drive.google.com/file/d/15VLqPBijnGM_y64ae2z2e6tQYSVoQUDm/view?usp=sharing]]></item>
+</string-array>
+<string-array name="arabic1name"><item>الكتاب</item>
+</string-array>
+<string-array name="arabic2"><item ><![CDATA[https://drive.google.com/file/d/1kG5FsKm905bqUkDZw18YkCK_czludbV0/view?usp=sharing]]></item>
+</string-array>
+<string-array name="arabic2name"><item>دوسية المادة</item>
+</string-array>
+<string-array name="arabic3"><item ><![CDATA[https://drive.google.com/file/d/1D-GvYifn8iuD128497A9SxAA_6ZNkgc9/view]]></item>
+</string-array>
+<string-array name="arabic3name"><item>المادة</item>
+</string-array>
+<string-array name="arabic4"><item ><![CDATA[https://drive.google.com/file/d/1lWVDo8UM1jFjmuvRdua5byjFbSzkGMqV/view?usp=sharing]]></item>
+</string-array>
+<string-array name="arabic4name"><item>المادة </item>
+</string-array>
+<string-array name="arabic5"><item ><![CDATA[https://drive.google.com/file/d/1gRN14G-eUWkJg_qmD_d-vPuwfJ0VvBLm/view?usp=sharing]]></item>
+</string-array>
+<string-array name="arabic5name"><item>الكتاب </item>
+</string-array>
+<string-array name="arabic6"><item ><![CDATA[https://drive.google.com/file/d/1EKj2ITZMd5SYoU7a9F_xBP4labX34pjh/view?usp=sharing]]></item>
+</string-array>
+<string-array name="arabic6name"><item>الكتاب </item>
+</string-array>
+<string-array name="arabic7"><item ><![CDATA[https://drive.google.com/file/d/1EKj2ITZMd5SYoU7a9F_xBP4labX34pjh/view?usp=sharing]]></item>
+</string-array>
+<string-array name="arabic7name"><item>الكتاب</item>
+</string-array>
+<string-array name="arabic8"><item ><![CDATA[https://drive.google.com/file/d/1kG5FsKm905bqUkDZw18YkCK_czludbV0/view?usp=sharing]]></item>
+</string-array>
+<string-array name="arabic8name"><item>الكتاب</item>
+</string-array>
+
+</resources>

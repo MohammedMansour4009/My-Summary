@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="tor1"><item ><![CDATA[https://drive.google.com/drive/folders/16TQdoOWzO63_OZxqes0WnrqLdVjOTgdu]]></item>
+</string-array>
+<string-array name="tor1name"><item>المادة</item>
+</string-array>
+    <string-array name="tor2"><item ><![CDATA[https://drive.google.com/file/d/1I3Jkjxs-m2C0STzNJ_mc4HVyPqOb6Lxr/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="tor2name"><item>المادة</item>
+    </string-array>
+    <string-array name="tor3"><item ><![CDATA[https://www.dropbox.com/s/78ld8vt0g42cy8q/1%20the%20book%20%281%29.pdf?dl=0]]></item>
+    </string-array>
+    <string-array name="tor3name"><item>المادة</item>
+    </string-array>
+    <string-array name="tor4"><item ><![CDATA[https://drive.google.com/drive/folders/16TQdoOWzO63_OZxqes0WnrqLdVjOTgdu]]></item>
+</string-array>
+    <string-array name="tor4name"><item>book</item>
+    </string-array>
+    <string-array name="tor5"><item ><![CDATA[https://www.dropbox.com/s/78ld8vt0g42cy8q/1%20the%20book%20%281%29.pdf?dl=0]]></item>
+    </string-array>
+    <string-array name="tor5name"><item>المادة</item>
+    </string-array>
+    <string-array name="tor6"><item ><![CDATA[https://drive.google.com/file/d/1I3Jkjxs-m2C0STzNJ_mc4HVyPqOb6Lxr/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="tor6name"><item>المادة</item>
+    </string-array>
+    <string-array name="tor7"><item ><![CDATA[https://drive.google.com/drive/folders/16TQdoOWzO63_OZxqes0WnrqLdVjOTgdu]]></item>
+    </string-array>
+    <string-array name="tor7name"><item>ch 1</item>
+    </string-array>
+
+</resources>

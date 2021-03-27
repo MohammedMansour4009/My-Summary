@@ -41,7 +41,17 @@ public class ChaptersFragment extends Fragment {
     private List<Url> chapterListBaby;
     private List<Url> chapterListEco;
     private List<Url> chapterListE5teary;
-
+    private List<Url> chapterListComputer;
+    private List<Url>chapterCivil;
+    private List<Url>chapterelctro;
+    private List<Url>chapterMico;
+    private List<Url>chapterident;
+    private List<Url>chapterArabic;
+    private List<Url>chapterEnglish;
+    private List<Url>chapterTorisem;
+    private List<Url>chapterBio;
+    private List<Url> chapterE5tyari;
+    private ArrayList<Url> chapterMath;
     private ChapterAdapter chapterAdapter;
     private UrlList urlList;
     private InterstitialAd mInterstitialAd;
@@ -54,9 +64,8 @@ public class ChaptersFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         getRemoteChapter(getID(), getIdColleges());
-
         setAdMobBanner();
-        Toast.makeText(getContext(), "fuck ", Toast.LENGTH_SHORT).show();
+
 
     }
 
@@ -98,18 +107,18 @@ public class ChaptersFragment extends Fragment {
     private void getRemoteChapter(int id, int idCollege) {
         urlList = new UrlList(getContext());
         switch (idCollege) {
-            case 1:
+            case 0:
                 chapterListE5teary = new ArrayList<>();
-                chapterListE5teary.clear();
+
                 chapterListE5teary.addAll(urlList.e5teary.get(id));
                 initRecyclerViewChapter(chapterListE5teary);
                 break;
+            case 1:
+                Toast.makeText(getContext(), "Error", Toast.LENGTH_SHORT).show();
             case 3:
                 chapterListNurse = new ArrayList<>();
                 chapterListNurse.addAll(urlList.nurse.get(id));
                 initRecyclerViewChapter(chapterListNurse);
-
-
                 break;
             case 4:
                 chapterListBaby = new ArrayList<>();
@@ -120,27 +129,76 @@ public class ChaptersFragment extends Fragment {
                 chapterListEco = new ArrayList<>();
                 chapterListEco.addAll(urlList.eco.get(id));
                 initRecyclerViewChapter(chapterListEco);
-
                 break;
-            case 8:
+            case 9:
                 chapterListIt = new ArrayList<>();
-                chapterListIt.clear();
                 chapterListIt.addAll(urlList.it.get(id));
                 initRecyclerViewChapter(chapterListIt);
-
+                break;
             case 10:
+                chapterTorisem=new ArrayList<>();
+                chapterTorisem.addAll(urlList.tor.get(id));
+                break;
+            case 11:
                 chapterListApplied = new ArrayList<>();
                 chapterListApplied.clear();
                 chapterListApplied.addAll(urlList.aplied.get(id));
                 initRecyclerViewChapter(chapterListApplied);
-
-
+                break;
+            case 100:
+                chapterListComputer =new ArrayList<>();
+                chapterListComputer.addAll(urlList.computrer.get(id));
+                initRecyclerViewChapter(chapterListComputer);
+                break;
+            case 101:
+                chapterCivil =new ArrayList<>();
+                chapterCivil.addAll(urlList.Civil.get(id));
+                initRecyclerViewChapter(chapterCivil);
                 break;
 
-        }
+            case 102:
+                chapterelctro=new ArrayList<>();
+                chapterelctro.addAll(urlList.elec.get(id));
+                initRecyclerViewChapter(chapterelctro);
+                break;
+            case 103:
+                chapterMico =new ArrayList<>();
+                chapterMico.addAll(urlList.mica.get(id));
+                initRecyclerViewChapter(chapterMico);
+                break;
+            case 104:
+                chapterident=new ArrayList<>();
+                chapterident.addAll(urlList.indes.get(id));
+                initRecyclerViewChapter(chapterident);
+                break;
 
 
-    }
+        case 106:
+            chapterMath=new ArrayList<>();
+            chapterMath.addAll(urlList.math.get(id));
+            initRecyclerViewChapter(chapterMath);
+            break;
+            case 107:
+                chapterEnglish=new ArrayList<>();
+                chapterEnglish.addAll(urlList.English.get(id));
+                initRecyclerViewChapter(chapterEnglish);
+                break;
+            case 108:
+                chapterArabic=new ArrayList<>();
+                chapterArabic.addAll(urlList.arabic.get(id));
+                initRecyclerViewChapter(chapterArabic);
+                break;
+            case 109:
+                chapterBio=new ArrayList<>();
+                chapterBio.addAll(urlList.midc.get(id));
+                initRecyclerViewChapter(chapterBio);
+                break;
+            case 200:
+                chapterE5tyari=new ArrayList<>();
+                chapterE5tyari.addAll(urlList.e5tyari.get(id));
+                initRecyclerViewChapter(chapterE5tyari);
+                break;
+    }}
 
     private int getIdColleges() {
         if (ChaptersFragmentArgs.fromBundle(getArguments()).getIdCollege() == 0)

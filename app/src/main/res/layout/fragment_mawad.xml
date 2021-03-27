@@ -14,7 +14,7 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_search"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/marginTop_et_search"
             android:layout_marginBottom="@dimen/margin_bottom_et"
@@ -26,7 +26,7 @@
             android:paddingEnd="@dimen/_20sdp"
             android:elevation="@dimen/shadow"
             android:hint="@string/matirial"
-            android:textSize="@dimen/_20sdp"
+            android:textSize="@dimen/_13sdp"
             android:paddingRight="@dimen/_20sdp" />
         <TextView
             style="@style/Font_Arabic"

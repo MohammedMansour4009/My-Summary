@@ -403,11 +403,13 @@
     <string-array name="it31name"><item>تلخيص</item>
         <item>test bank</item>
     </string-array>
-    <string-array name="it32"><item>https://drive.google.com/drive/u/0/folders/15ZZxsiwJAvhMPxOKbVUSvhndMJDLYsZp?fbclid=IwAR2diAp0dYAD3FsW2i0quDaMN9KNSXpb7-2P562Y7rYOk3nxGgYm4tjgRXo</item>
+    <string-array name="it32">
+        <item>https://drive.google.com/drive/u/0/folders/15ZZxsiwJAvhMPxOKbVUSvhndMJDLYsZp?fbclid=IwAR2diAp0dYAD3FsW2i0quDaMN9KNSXpb7-2P562Y7rYOk3nxGgYm4tjgRXo</item>
     </string-array>
     <string-array name="it32name"><item>test bank</item>
     </string-array>
-    <string-array name="it33"><item>https://drive.google.com/file/d/11P8nllrdFpJf6kBEsohFv3zkMMKR02Ur/view</item>
+    <string-array name="it33">
+        <item>https://drive.google.com/file/d/11P8nllrdFpJf6kBEsohFv3zkMMKR02Ur/view</item>
         <item>https://drive.google.com/file/d/1_-_ph-nz3sWpWwoZlXNVZ1W0MeSL6iWU/view?fbclid=IwAR3RRmXbQYQluaPAIq-yMqXeD22FaG-82tnrkSAg05n0At7v-Lb6OixiSCk</item>
         <item>https://drive.google.com/file/d/1Jr6bd0vgCLS7djk7KUlYXB_9TzcL6oyp/view?fbclid=IwAR0CFI4KsiJWELcvDJhbvdxhlfhpQynoaOUvh2TCi8uR-8IC0PMvj-D80MY</item>
         <item>https://drive.google.com/file/d/1M-6gV8q13Zzpg8mHzidtVHZSIl86-Ek1/view?fbclid=IwAR2X5KLW1PMXeCcT53MvEs3KjDheRd8_l4jltjDZjrnShACQThZsN6MaEio</item>

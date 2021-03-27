@@ -42,7 +42,7 @@ public class SplashActivity extends BaseBindingActivity<ActivitySplashBinding> {
             startActivity(new Intent(this, MainActivity.class));
             finish();
 
-        }, secondsDelayed * 500);
+        }, secondsDelayed * 200);
     }
 
 
