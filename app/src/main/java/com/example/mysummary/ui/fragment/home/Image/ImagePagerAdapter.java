@@ -7,27 +7,32 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.example.mysummary.model.home.image.Tap;
+import com.example.mysummary.ui.fragment.home.OnHomeClickListener;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ImagePagerAdapter extends FragmentStatePagerAdapter {
-    List<Tap> tapList = new ArrayList<>();
+    private List<Tap> tapList ;
 
-    public ImagePagerAdapter(FragmentManager fm) {
+    public ImagePagerAdapter(FragmentManager fm, List<Tap> list) {
         super(fm);
-    }
-
-    public  void addTab(Tap tab){
-        tapList.add(tab);
+        this.tapList = list;
     }
 
 
+    public List<Tap> getTapList() {
+        return tapList;
+    }
+
+    public void setTapList(List<Tap> tapList) {
+        this.tapList = tapList;
+    }
 
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        return  tapList.get(position).getFragment();
+        return tapList.get(position).getFragment();
     }
 
     @Nullable

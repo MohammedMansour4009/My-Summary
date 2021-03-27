@@ -13,7 +13,6 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cv_Mawad"
-
         android:layout_width="match_parent"
         android:layout_marginVertical="@dimen/_5sdp"
         android:layout_marginHorizontal="@dimen/_5sdp"
@@ -26,14 +25,17 @@
         >
 
     <TextView
+        android:background="@drawable/design_corner_gray"
         android:id="@+id/tv_name_chapter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:text="@{model.nameCourse}"
         style="@style/Font_Arabic"
         android:textSize="@dimen/tv_sizeText_matirial"
-        tools:text="Ch 1" />
+        tools:text="Ch 1"
+        android:gravity="center"
+        />
 
     </androidx.cardview.widget.CardView>
 

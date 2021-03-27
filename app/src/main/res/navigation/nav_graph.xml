@@ -55,12 +55,16 @@
         android:id="@+id/matirialChoisesFragmint2"
         android:name="com.example.mysummary.ui.fragment.Choisesmatirial.MatirialChoisesFragmint"
         android:label="fragment_matirial_choises_fragmint"
-        tools:layout="@layout/fragment_matirial_choises_fragmint" />
+        tools:layout="@layout/fragment_matirial_choises_fragmint" >
+        <action
+            android:id="@+id/action_matirialChoisesFragmint2_to_chaptersFragment"
+            app:destination="@id/chaptersFragment" />
+    </fragment>
     <fragment
         android:id="@+id/partsragment"
         android:name="com.example.mysummary.ui.fragment.parts.PartsFragment"
         android:label="fragment_partsragment"
-        tools:layout="@layout/fragment_partsragment" >
+        tools:layout="@layout/fragment_parts" >
         <argument
             android:name="id"
             app:argType="integer" />

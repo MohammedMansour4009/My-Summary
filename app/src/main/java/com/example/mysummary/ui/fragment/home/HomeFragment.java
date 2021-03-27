@@ -76,8 +76,15 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         setListCategory();
         initRecyclerViewHome();
-
         setListImage();
+        binding.vpImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri=Uri.parse("https://hu.edu.jo/");
+                Intent intent=new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(intent);
+            }
+        });
 
         initViewPager();
         setAdMobBanner();
@@ -85,16 +92,18 @@ public class HomeFragment extends Fragment {
     }
 
     private void initViewPager() {
-        imagePagerAdapter = new ImagePagerAdapter(getActivity().getSupportFragmentManager());
-
-        imagePagerAdapter.addTab(new Tap("Image1", ImageFragment
+        List<Tap> tapList = new ArrayList<>();
+        tapList.add(new Tap("Image1", ImageFragment
                 .newInstance(imageList.get(0))));
-        imagePagerAdapter.addTab(new Tap("Image1", ImageFragment
+        tapList.add(new Tap("Image2", ImageFragment
                 .newInstance(imageList.get(1))));
-        imagePagerAdapter.addTab(new Tap("Image1", ImageFragment
+        tapList.add(new Tap("Image3", ImageFragment
                 .newInstance(imageList.get(2))));
 
+        imagePagerAdapter = new ImagePagerAdapter(getActivity().getSupportFragmentManager(),tapList);
+
         binding.vpImage.setAdapter(imagePagerAdapter);
+
         binding.vpImage.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -116,10 +125,10 @@ public class HomeFragment extends Fragment {
     }
 
     private void setListCategory() {
-        categoryList = new ArrayList<>();
-        categoryList.add(new Category(1, "حساب المعدل", R.drawable.ic_calculater));
-        categoryList.add(new Category(2, "مودل", R.drawable.ic_person));
-        categoryList.add(new Category(3, "بوبة الطالب", R.drawable.ic_web));
+     categoryList=new ArrayList<>();
+     categoryList.add(new Category(1,"حساب المعدل",R.drawable.ic_calculater));
+     categoryList.add(new Category(2,"مودل",R.drawable.ic_person));
+     categoryList.add(new Category(3,"بوبة الطالب",R.drawable.ic_web));
 
     }
 
@@ -158,11 +167,12 @@ public class HomeFragment extends Fragment {
 
     private void setListImage() {
         imageList = new ArrayList<>();
-        imageList.add(new InfoImage(R.drawable.ic_home));
-        imageList.add(new InfoImage(R.drawable.ic_home));
-        imageList.add(new InfoImage(R.drawable.ic_home));
+        imageList.add(new InfoImage(R.drawable.hu1));
+        imageList.add(new InfoImage(R.drawable.hu22));
+        imageList.add(new InfoImage(R.drawable.hu3));
 
     }
+
 
 
     @Override

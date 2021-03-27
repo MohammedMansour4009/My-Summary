@@ -59,7 +59,7 @@ public class CollegesAdapter extends RecyclerView.Adapter<CollegesAdapter.Colleg
             @Override
             public void onClick(View v) {
 //                setAdMobInterstitial();
-                if(college.getId()==2||college.getId()==12 ){
+                if(college.getId()==2||college.getId()==12 ||college.getId()==7){
                     NavDirections action =MulaksatFragmentDirections.actionMulaksatToPartsragment(college.getId());
                     Navigation.findNavController(holder.binding.getRoot()).navigate(action);
                 }

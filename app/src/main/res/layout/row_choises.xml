@@ -11,13 +11,14 @@
             type="com.example.mysummary.model.choises.Choises" />
     </data>
 <androidx.cardview.widget.CardView
+    android:id="@+id/cv_e5teari"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardElevation="@dimen/shadow"
     app:cardCornerRadius="@dimen/_11sdp"
     android:background="@drawable/design_corner_gray"
-    android:layout_marginHorizontal="@dimen/_15sdp"
-    android:layout_marginVertical="@dimen/_15sdp"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
     >
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"

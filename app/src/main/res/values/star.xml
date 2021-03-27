@@ -1,15 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="star_mawad">
-    <item>أخلافيات حاسوبية</item>
-        <item>أسرة و تربية طفل</item>
-        <item>اسلام وقضايا العصر</item>
-        <item>انجليزي تطبيفي</item>
-        <item>توعية بيئية</item>
-        <item>حل نزاعات</item>
-        <item>طالب و جامعة</item>
-        <item>عربي تطبيفي</item>
-        <item>قضية فلسطينية</item>
-        <item>مبادئ الفن و الجمال</item>
+   <item>الصحة الانجابية</item>
+   <item>ثقافة صحية واسعافات اولية</item>
+   <item>اخلاقيات الحاسوب</item>
+   <item>فكر اسلامي</item>
+    <item>عربي تطبيقي</item>
+    <item>التوعية البيئية</item>
+    <item>رياضةو الصحة </item>
+    <item>تعزيز الصحة والتغذية</item>
+    <item>المواطنة وحقوق الانسان</item>
+    <item>طالب والجامعة</item>
+    <item>علم آثار وسياحة</item>
+    <item>للغة الاسبانية</item>
     </string-array>
+    <string-array name="e5tyari1">
+        <item><![CDATA[https://drive.google.com/drive/folders/1Mqh8CgxMKF_cCtKlNKN30IG5CKHvn4kQ?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjdlZGEwN2IxYThjYWYxZGFiMzUzNzFmMjBkZmE5YmVlIiwidHMiOjE2MTY4MzIyMDYsImV4cCI6MTYxOTI1MTQwNn0.i775DoD9J4x3NOhPsIHVjEkOv_JmLxodZDKNFQC5KBo]]></item>
+    </string-array>
+    <string-array name="e5tyari1name">
+        <item>المادة</item>
+    </string-array>
+    <string-array name="e5tyari2">
+        <item><![CDATA[https://drive.google.com/drive/folders/1BMenP4-3z6NXXEyBEKErHjzQHI0R7ez3?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjQ3OWEyNTM5YzljMjgyZDYwNDdkMWI3Y2JmNjg1ODAxIiwidHMiOjE2MTY4MzIyMjMsImV4cCI6MTYxOTI1MTQyM30.uChQLGMldbU5e_zDpmXgyX_mfv9d_z-qWYMyrfbgj58]]></item></string-array>
+<string-array name="e5tyari2name">
+        <item>دوسية المادة</item>
+    </string-array>
+    <string-array name="e5tyari3"><item><![CDATA[https://drive.google.com/drive/u/0/folders/1vGBI-AEKBBYKIBDHoklT5etRu5mYnA1K?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjkzMDJmNDczZDRjNTExMTYzZmQ2YjY5YTVmNTk4YmI1IiwidHMiOjE2MTY4MzIyNTksImV4cCI6MTYxOTI1MTQ1OX0.g28iV53GkpC1jOcoLKdSgcF7-uNQk5HvtUMh4Fl2QTU
+    ]]></item></string-array>
+    <string-array name="e5tyari3name"><item>المادة</item></string-array>
+    <string-array name="e5tyari4">
+        <item><![CDATA[https://drive.google.com/file/d/1u77WVZrr92ujZ25tuIS9lqSr68H3VVzi/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjBmN2JkYTE4ZWNhOWZmY2ZjZDQzOWM4OTU1YzBmMGNkIiwidHMiOjE2MTY4MzIzMDUsImV4cCI6MTYxOTI1MTUwNX0.PTdQA0oZzia8cLucswUaPFwvLVPdvDkQIat1q1PDrns
+]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1toSnCGKM29s5ePN28S0W5tbGhd9c8BYR/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImIyMTgxMThmNzgzY2U0OTdkNjA4ZTIwY2VlMmM1MGIyIiwidHMiOjE2MTY4MzIzMDcsImV4cCI6MTYxOTI1MTUwN30.JBqVc2r7mj-zHoFAnUqoN-oN6socJgnjP1fHT0asHjc
+]]></item>
+    </string-array>
+    <string-array name="e5tyari4name">
+
+        <item>دوسية ميد</item>
+        <item>دوسية فاينال</item>
+    </string-array>
+    <string-array name="e5tyari5">
+        <item>https://drive.google.com/file/d/1nscKGspf6Zq42A6o6tUXlJYxIX84Yie-/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjYxNWE0OTExMTJkYmNmZTljMTFiNzU5ZmRlYTdjZmJmIiwidHMiOjE2MTY4MzI0NTksImV4cCI6MTYxOTI1MTY1OX0.zTFBXW673OL8lzSWdSZ17K4ESLnAPnHPcOeb34RbsUI
+</item>
+        <item>https://drive.google.com/file/d/1mWAYH4dloRbYHe40IZIvjVnXazjBX8L8/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImRjN2E2Y2Q1ZWYwZjQ0YzE1YTg3ZTY0OTYyYjkzMThjIiwidHMiOjE2MTY4MzI0NjEsImV4cCI6MTYxOTI1MTY2MX0.Jz6rP-21FVRKSjWIlN5uNRxC5CiogFdLRrJU_5wpQYM
+</item>
+        <item>https://drive.google.com/file/d/1npWpEeHIjBJf2wNB8KkTHHXxuc3jetZ9/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjM1NDdlYTA3N2RkNDBkZGUyYmRjMTM3MDU1OGIwYmJmIiwidHMiOjE2MTY4MzI0NjIsImV4cCI6MTYxOTI1MTY2Mn0.YCrArWHfSVhZ3semuSy-xgok9U1gJfXY_Ssfpto3608
+</item>
+    </string-array>
+    <string-array name="e5tyari5name">
+        <item>دوسية فيرست</item>
+        <item>دوسية سكند</item>
+        <item>دوسية فاينال</item>
+    </string-array>
+    <string-array name="e5tyari6"><item>https://drive.google.com/file/d/13KOyNZE1jUY3RmNiDa_nG6Q9DjBvX0yj/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImIxMTdmNTQ0ZWQ4OGRlM2U3MGIzMDYwNTk4NTYzNmJhIiwidHMiOjE2MTY4MzI1MTUsImV4cCI6MTYxOTI1MTcxNX0.eiqldTvFwBXAwu1vtCavpX3XYSr1CrmQGUN3LfIUMa4
+</item></string-array>
+    <string-array name="e5tyari6name">
+        <item>دوسية</item>
+    </string-array>
+    <string-array name="e5tyari7">
+        <item>https://drive.google.com/file/d/17l34V3C4AgcEXqR1uIboEvB6AuKTH5vz/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImQ4ZGRkNDcwYWE2MDJkNzAzZGZjZjJlYjUyMWU5YTYxIiwidHMiOjE2MTY4MzMzMDQsImV4cCI6MTYxOTI1MjUwNH0.tEGJuudC0JXCWSnfihMBcB8Z4S4OJI5ABvmHpSe4c4E
+</item>
+        <item>https://drive.google.com/file/d/1igJ8GZ4BZZ2XQuwSWKenVWymVLaJWBmE/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjMyNmJkNzBlZTA0ZDJlYjJiODNhMDRlYTIxMTcwNmJiIiwidHMiOjE2MTY4MzMzMDQsImV4cCI6MTYxOTI1MjUwNH0.lmh7EHD8TAi3opUWpMQdXkpLp4OnZxskrQvsQlXDThs
+</item>
+        <item>https://drive.google.com/file/d/1fODgd3y2u6vHsuPfiv-8ReU9h1w-DqZN/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImJiOGFmOWZhZDMzOGI5ZmZiNzY2YTUwYzQxMTdmNTE5IiwidHMiOjE2MTY4MzMzMDcsImV4cCI6MTYxOTI1MjUwN30.OUggHJK54rqNpJTGkyPwxToFIdez3jE7FedI3AobRXI
+</item>
+    </string-array>
+    <string-array name="e5tyari7name">
+        <item>ميد</item>
+        <item>فاينال</item>
+        <item>تست بانك فاينال</item>
+    </string-array>
+    <string-array name="e5tyari8">
+        <item>https://drive.google.com/drive/u/0/folders/1oh7qvF_Y29qTkOfBVPIkd_dR4zYjcpGL?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImI0ODdmOGY5YzdlYzg5YzEzMjAxOTViYTdkMDMzYjRjIiwidHMiOjE2MTY4MzM0MDUsImV4cCI6MTYxOTI1MjYwNX0.0pZHP7snTxu5GGnAFxQNOq439RyZBZKk3AOB3aHjs_I
+</item>
+    </string-array>
+    <string-array name="e5tyari8name">
+        <item>سلايد</item>
+    </string-array>
+    <string-array name="e5tyari9">
+        <item>https://drive.google.com/file/d/1ixpoqbacd1CL7xZUHwokcyGGv5axWi_o/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImQ2NWM5ZDRiYjhiNjdiZTE4NWQ3NDZlODBkNmQ0ZTA4IiwidHMiOjE2MTY4MzM1NjAsImV4cCI6MTYxOTI1Mjc2MH0._erDUzzBCl7VYwtD9VDKaJuFhL_qjTCejUzKGSsa7z4
+</item>
+    </string-array>
+    <string-array name="e5tyari9name">
+        <item>دوسية </item>
+    </string-array>
+    <string-array name="e5tyari10">
+        <item>https://drive.google.com/file/d/16Ern7a8u6o0t3S1__Lt80OkcBoUlQWmZ/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImQ4YzQ1ZDg0OWEzYWM0YWMzYzA1N2YwMWIzZDA4YmRhIiwidHMiOjE2MTY4MzM2MDQsImV4cCI6MTYxOTI1MjgwNH0.9DChyaEyHNfWvz5LF4S3xgJPW4F3AxLR5ukAQSEKqTk
+</item>
+    </string-array>
+    <string-array name="e5tyari10name">
+        <item>دوسية المادة</item>
+
+    </string-array>
+    <string-array name="e5tyari11">
+        <item>https://drive.google.com/file/d/1sQQcbISLCTNLeuVrOo7IMVqsK323ZJ2F/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImIxZGI0NGY2Yjg4YjlkM2E2MDFlOWUxN2VmMmRhMTMxIiwidHMiOjE2MTY4MzM2NjEsImV4cCI6MTYxOTI1Mjg2MX0.SLAHmTB4U8mK_SkmGGmiz7PECxgFtGY2t3oAFWmv27Q
+</item>
+        <item>https://drive.google.com/file/d/1sOkzbC5nhGbFUa7HLxZMZ3aVyYSIszin/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjkxNDk1MDI3MWVmZTFiMWU1ZGYwMDVlYzEzOGEzMzhlIiwidHMiOjE2MTY4MzM2NjUsImV4cCI6MTYxOTI1Mjg2NX0.ZY9vH67gEgPe-CnSznO8DvgB66NniIDXZLiy-0-N_K4
+</item>
+        <item>https://drive.google.com/file/d/1sMyUInr548lv7p_xbbzf5CCHa9H-SqIF/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImNlYWY1MDQxNjMzM2Y5MDVmZWIwNDQ4NzdiZmExY2Q5IiwidHMiOjE2MTY4MzM2NjgsImV4cCI6MTYxOTI1Mjg2OH0.79cCi5aotqJS6JILnxBhwjFojrF3dI2gSUElwrMVqqA
+</item>
+    </string-array>
+    <string-array name="e5tyari11name">
+        <item>دوسية فيرست</item>
+        <item>دوسية سكند</item>
+        <item>دوسية فاينال</item>
+    </string-array>
+    <string-array name="e5tyari12">
+        <item><![CDATA[https://drive.google.com/file/d/1JA75d6OeZiJAEMY2bn-EVf0xXCjQzdyb/view?mcp_token=eyJwaWQiOjMwNDEzODIzOTU4Nzk3NjUsInNpZCI6MzcwNjYwNTUyMjc0NDE1OCwiYXgiOiI5ZDNiODI0NDMwNWRjYTA2NjMxNzFkZjZiNTIzOTdlYyIsInRzIjoxNjAwNDQ4Mjk0LCJleHAiOjE2MDI4Njc0OTR9.Nirs0e1ONQCaETEWh0f3_XDdg2vqmaxyC6lbRgHjvLA&mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImY0NWU5OWFiNWE2NWY3YjhmMjQ1MWI0MTM0MmEzN2YwIiwidHMiOjE2MTY4MzM4NDQsImV4cCI6MTYxOTI1MzA0NH0.U8R51hHSnrCRPZkvSZwlvt6jM_tNpfAx-EBmn53Xmrg
+]]></item>
+    </string-array>
+    <string-array name="e5tyari12name">
+        <item>المادة</item>>
+    </string-array>
+
+
 </resources>

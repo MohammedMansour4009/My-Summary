@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="engNameParts">
+        <item>هندسة الحاسوب</item>
+        <item>الهندسة المدنية</item>
+        <item>هندسة الكهرباء</item>
+        <item>هندسة الميكاترونيكس</item>
+        <item>الهندسة الصناعية</item>
+    </string-array>
+</resources>
