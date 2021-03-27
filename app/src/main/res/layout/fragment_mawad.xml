@@ -16,7 +16,7 @@
             android:id="@+id/et_search"
             style="@style/Font_Arabic"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="@dimen/_30sdp"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/_5sdp"
             android:layout_marginTop="@dimen/marginTop_et_search"
@@ -54,6 +54,9 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_mawad"
+            android:textSize="@dimen/_13sdp"
+            android:paddingRight="@dimen/_20sdp" />
+        <TextView
             style="@style/Font_Arabic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

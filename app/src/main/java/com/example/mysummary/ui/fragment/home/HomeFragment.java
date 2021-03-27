@@ -76,8 +76,15 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         setListCategory();
         initRecyclerViewHome();
-
         setListImage();
+        binding.vpImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri=Uri.parse("https://hu.edu.jo/");
+                Intent intent=new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(intent);
+            }
+        });
 
         initViewPager();
         setAdMobBanner();
@@ -89,11 +96,11 @@ public class HomeFragment extends Fragment {
 
         imagePagerAdapter.addTab(new Tap("Image1", ImageFragment
                 .newInstance(imageList.get(0))));
-        imagePagerAdapter.addTab(new Tap("Image1", ImageFragment
+        imagePagerAdapter.addTab(new Tap("Image2", ImageFragment
                 .newInstance(imageList.get(1))));
-        imagePagerAdapter.addTab(new Tap("Image1", ImageFragment
+        imagePagerAdapter.addTab(new Tap("Image3", ImageFragment
                 .newInstance(imageList.get(2))));
-
+        imagePagerAdapter.notifyDataSetChanged();
         binding.vpImage.setAdapter(imagePagerAdapter);
         binding.vpImage.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -131,6 +138,22 @@ public class HomeFragment extends Fragment {
             public void onItemClick(Category category) {
                 int position = category.getId();
                 playVideo(position);
+                switch (position) {
+                    case 1:
+                        Uri uri = Uri.parse("https://etihadlibrary.azurewebsites.net/counting_gpa.aspx");
+                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        Uri uri1 = Uri.parse("http://www.mlms.hu.edu.jo/");
+                        Intent intent1 = new Intent(Intent.ACTION_VIEW, uri1);
+                        startActivity(intent1);
+                        break;
+                    case 3:
+                        Uri uri2 = Uri.parse("https://reg1.hu.edu.jo/");
+                        Intent intent2 = new Intent(Intent.ACTION_VIEW, uri2);
+                        startActivity(intent2);
+                        break;
 
             }
         });
@@ -158,9 +181,9 @@ public class HomeFragment extends Fragment {
 
     private void setListImage() {
         imageList = new ArrayList<>();
-        imageList.add(new InfoImage(R.drawable.ic_home));
-        imageList.add(new InfoImage(R.drawable.ic_home));
-        imageList.add(new InfoImage(R.drawable.ic_home));
+        imageList.add(new InfoImage(R.drawable.hu1));
+        imageList.add(new InfoImage(R.drawable.hu22));
+        imageList.add(new InfoImage(R.drawable.hu3));
 
     }
 

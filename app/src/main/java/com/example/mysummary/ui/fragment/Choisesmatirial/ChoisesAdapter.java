@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
@@ -18,8 +20,10 @@ public class ChoisesAdapter extends RecyclerView.Adapter<ChoisesAdapter.ChoisesH
     private List<Choises> choises;
     private Context context;
 
+
     public ChoisesAdapter(List<Choises> choises) {
         this.choises = choises;
+
     }
 
     @NonNull
@@ -34,6 +38,13 @@ public class ChoisesAdapter extends RecyclerView.Adapter<ChoisesAdapter.ChoisesH
     public void onBindViewHolder(@NonNull ChoisesHolder holder, int position) {
         Choises choise=choises.get(position);
         holder.binding.setModel(choise);
+        holder.binding.cvE5teari.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavDirections action =MatirialChoisesFragmintDirections.actionMatirialChoisesFragmint2ToChaptersFragment(choise.getId(),200);
+                Navigation.findNavController(holder.binding.getRoot()).navigate(action);
+            }
+        });
     }
 
     @Override
@@ -49,4 +60,6 @@ public class ChoisesAdapter extends RecyclerView.Adapter<ChoisesAdapter.ChoisesH
 
         }
     }
+
+
 }

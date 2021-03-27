@@ -66,4 +66,8 @@ public class MawadAdapter extends RecyclerView.Adapter<MawadAdapter.MawadHolder>
         this.binding = binding;
     }
 }
+    public void filterList(List<Mawad> filteredList) {
+        mawads = filteredList;
+        notifyDataSetChanged();
+    }
 }

@@ -57,6 +57,15 @@ public class Mawad5tearyAdapter extends RecyclerView.Adapter<Mawad5tearyAdapter.
             public void onClick(View v) {
                 NavDirections action = MulaksatFragmentDirections.actionMulaksatToChaptersFragment(mawad.getId(), 0);//
                 Navigation.findNavController(holder.binding.getRoot()).navigate(action);
+                holder.initAdMobInterstitial();
+                holder.binding.cvE5teary.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        NavDirections action=MulaksatFragmentDirections.actionMulaksatToChaptersFragment(mawad.getId(),0);
+                        Navigation.findNavController(holder.binding.getRoot()).navigate(action);
+                    }
+                });
+
             }
         });
 

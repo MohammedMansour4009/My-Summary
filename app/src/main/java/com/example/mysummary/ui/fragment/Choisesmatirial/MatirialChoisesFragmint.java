@@ -51,7 +51,7 @@ public class MatirialChoisesFragmint extends Fragment {
         ArrayList<String> name=new ArrayList<String>();
         name.addAll(Arrays.asList(getResources().getStringArray(R.array.star_mawad)));
         for(int i=0;i<name.size();i++){
-            choisesList.add(new Choises(R.drawable.ic_star, name.get(i)));}
+            choisesList.add(new Choises(R.drawable.ic_star, name.get(i),i));}
 
         
 
