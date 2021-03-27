@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="civil1">
+        <item name="Book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Hydraulics/book4th.pdf]]></item>
+        <item name="دفتر المادة"><![CDATA[
+            دفتر المادة:http://www.civilittee-hu.com/uploads/1/Hydraulics/note_Osama.pdf]]></item>
+        <item name="sheet"><![CDATA[http://www.civilittee-hu.com/uploads/1/Hydraulics/SHEET.pdf]]></item>
+    </string-array>
+    <string-array name="civil2">
+        <item name="exam">http://www.civilittee-hu.com/uploads/1/Hydrolgoy/ExamSheet.pdf
+</item>
+        <item name="slide"><![CDATA[http://www.civilittee-hu.com/uploads/1/Hydrolgoy/2019.pdf]]></item>
+    </string-array>
+    <string-array name="civil3">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/West/book2nd.pdf
+]]></item>
+        <item name="slide"><![CDATA[http://www.civilittee-hu.com/uploads/1/West/dr.Tarawneh.pdf
+]]></item>
+        <item name="ملخص فاينال"><![CDATA[http://www.civilittee-hu.com/uploads/1/West/Ahmad-sum.pdf]]></item>
+    </string-array>
+    <string-array name="civil4">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Traffic/book5th.pdf
+]]></item>
+        <item name="solutions"><![CDATA[http://www.civilittee-hu.com/uploads/1/Traffic/book5th.pdf
+]]></item>
+        <item name="slide"><![CDATA[http://www.civilittee-hu.com/uploads/1/Traffic/New2020.pdf
+]]></item>
+        <item name="youtube"><![CDATA[https://www.youtube.com/watch?v=FOaU0M4x-DA&list=PLHx4n3UT-9K-PQ-t_iu6j0LyaLVdFpjjU]]></item>
+        <item name="دفتر المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Traffic/New2020.pdf
+]]></item>
+    </string-array>
+    <string-array name="civil5">
+    <item name=" 1-Intro_Physical water-quality parameters _ lect 1"><![CDATA[
+    http://www.civilittee-hu.com/uploads/1/Environment/dr.bdoor/Intro_Physical%20water-quality%20parameters%20_%20lect%201.pdf
+
+    ]]></item>
+    <item name="2-Biological Water Quality Parameters"><![CDATA[
+    http://www.civilittee-hu.com/uploads/1/Environment/dr.bdoor/Biological%20Water%20Quality%20Parameters.pdf
+
+    ]]></item>
+    <item name="3-Chemical water-quality parameters"><![CDATA[http://www.civilittee-hu.com/uploads/1/Environment/dr.bdoor/5_Solid_Waste_Management.pdf]]></item>
+    <item name="4-Solid_Waste_Management"><![CDATA[http://www.civilittee-hu.com/uploads/1/Environment/dr.bdoor/5_Solid_Waste_Management.pdf]]></item>
+    <item name=" mid"><![CDATA[http://www.civilittee-hu.com/uploads/1/Environment/mid.env.pdf
+       ]]></item>
+        <item name="final"><![CDATA[ http://www.civilittee-hu.com/uploads/1/Environment/final.env.pdf
+]]></item>
+    </string-array>
+    <string-array name="civil6">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Fluid/book9th.PDF
+]]></item>
+        <item name="solutions"><![CDATA[http://www.civilittee-hu.com/uploads/1/Fluid/book9th.PDF
+]]></item>
+        <item name="first"><![CDATA[http://www.civilittee-hu.com/uploads/1/Fluid/book9th.PDF
+]]></item>
+        <item name="second"><![CDATA[http://www.civilittee-hu.com/uploads/1/Fluid/ch4.5.6.pdf
+]]></item>
+        <item name="final"><![CDATA[http://www.civilittee-hu.com/uploads/1/Fluid/ch7.8.10.pdf
+]]></item>
+        <item name="youtube"><![CDATA[https://www.youtube.com/watch?v=gqHDvfQmaWQ&list=PLHx4n3UT-9K-539xrAmJLM8irRIU3JENj]]></item>
+    </string-array>
+    <string-array name="civil7">
+        <item name="دوسية المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Materials/eyascivilittee.pdf
+]]></item>
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Materials/book2nd.pdf
+]]></item>
+        <item name="تلخيص المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Materials/note2018.pdf
+]]></item>
+    </string-array>
+    <string-array name="civil8">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Steel/book5th.pdf
+]]></item>
+        <item name="solutions"><![CDATA[http://www.civilittee-hu.com/uploads/1/Steel/SSDS.pdf
+]]></item>
+        <item name="تلخيص المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Steel/wael.pdf]]></item>
+    </string-array>
+    <string-array name="civil9">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Strength/book8th.pdf
+]]></item>
+        <item name="solutions"><![CDATA[http://www.civilittee-hu.com/uploads/1/Strength/Sol.pdf
+]]></item>
+        <item name="first"><![CDATA[http://www.civilittee-hu.com/uploads/1/Strength/note.first.pdf
+]]></item>
+        <item name="second"><![CDATA[http://www.civilittee-hu.com/uploads/1/Strength/notesecond.pdf]]></item>
+        <item name="final"><![CDATA[http://www.civilittee-hu.com/uploads/1/Strength/final.pdf
+]]></item>
+    </string-array>
+    <string-array name="civil10">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Survaying/book.pdf
+]]></item>
+        <item name="Mid"><![CDATA[http://www.civilittee-hu.com/uploads/1/Survaying/sur11.pdf
+]]></item>
+        <item name="final"><![CDATA[http://www.civilittee-hu.com/uploads/1/Survaying/note.mid.pdf
+]]></item>
+        <item name="youtube"><![CDATA[https://www.youtube.com/watch?v=yb2OSXHXS84&list=PLHx4n3UT-9K-3BlPBMb-BVpek7Aa1bTLX&index=2
+]]></item>
+    </string-array>
+    <string-array name="civil11">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/2/Physics2/SOLUTION.pdf
+]]></item>
+        <item name="دفتر المادة"><![CDATA[http://www.civilittee-hu.com/uploads/2/Physics2/A.A.pdf]]></item>
+    </string-array>
+    <string-array name="civil12">
+        <item name="دوسية المادة"><![CDATA[http://civilittee-hu.com/uploads/1/Static/static.new.eyas.pdf
+]]></item>
+        <item name="book"><![CDATA[http://civilittee-hu.com/uploads/1/Static/book14th.pdf
+]]></item>
+        <item name="solutions"><![CDATA[http://civilittee-hu.com/uploads/1/Static/pro.pdf
+]]></item>
+    </string-array>
+    <string-array name="civil13">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Applied/book10th.pdf
+]]></item>
+        <item name="solutions"><![CDATA[http://www.civilittee-hu.com/uploads/1/Applied/solution.pdf
+]]></item>
+        <item name="دفتر المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Applied/R.pdf]]></item>
+    </string-array>
+    <string-array name="civil14">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/2/Autocad/smart_book.pdf
+]]></item>
+        <item name="تلخيص المادة"><![CDATA[http://www.civilittee-hu.com/uploads/2/Autocad/MI.pdf
+]]></item>
+    </string-array>
+    <string-array name="civil15">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/RC2/book3rd.pdf
+]]></item>
+        <item name="slide"><![CDATA[http://www.civilittee-hu.com/uploads/1/RC2/rc2.pdf
+]]></item>
+    </string-array>
+    <string-array name="civil16">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/RC1/book6th.pdf
+]]></item>
+        <item name="دوسية المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/RC1/1.pdf
+]]></item>
+        <item name="youtube"><![CDATA[https://www.youtube.com/watch?v=e1Aup1nfAZs&list=PLHx4n3UT-9K8MqKxb0FC42y95G-qp16x0]]></item>
+    </string-array>
+    <string-array name="civil17">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/2/Calculas3/Calculus.7E.pdf
+]]></item>
+        <item name="دفتر المادة"><![CDATA[http://www.civilittee-hu.com/uploads/2/Calculas3/RF.pdf
+]]></item>
+        <item name="first"><![CDATA[http://www.civilittee-hu.com/uploads/2/Calculas3/first.pdf
+]]></item>
+        <item name="second"><![CDATA[http://www.civilittee-hu.com/uploads/2/Calculas3/second.pdf
+]]></item>
+        <item name="final"><![CDATA[http://www.civilittee-hu.com/uploads/2/Calculas3/final.pdf]]></item>
+    </string-array>
+    <string-array name="civil18">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Highway/book3rd.pdf
+]]></item>
+        <item name="slide"><![CDATA[http://www.civilittee-hu.com/uploads/1/Highway/CE368.pdf
+]]></item>
+        <item name="project"><![CDATA[http://www.civilittee-hu.com/uploads/1/Highway/project.rar
+]]></item>
+        <item name="دفتر المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Highway/note.hani.pdf
+]]></item>
+    </string-array>
+    <string-array name="civil19">
+        <item name="slide"><![CDATA[http://www.civilittee-hu.com/uploads/1/Pavement/pavement.zip]]></item>
+        <item name="ملخص المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Pavement/farah.pdf
+]]></item>
+    </string-array>
+    <string-array name="civil20">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Transportation/book5th.pdf
+]]></item>
+        <item name="solutions"><![CDATA[http://www.civilittee-hu.com/uploads/1/Traffic/manual2008.pdf
+]]></item>
+        <item name="slide"><![CDATA[http://www.civilittee-hu.com/uploads/1/Transportation/Material%20Used.pdf
+]]></item>
+        <item name="دفتر المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Transportation/note.hani.pdf]]></item>
+    </string-array>
+    <string-array name="civil21">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/numerical/book9th.pdf]]></item>
+        <item name="دفتر المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/numerical/mn.pdf
+]]></item>
+    </string-array>
+    <string-array name="civil22">
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Structure/book8th.pdf
+]]></item>
+        <item name="solutions"><![CDATA[http://www.civilittee-hu.com/uploads/1/Structure/manual.pdf
+]]></item>
+        <item name="ملخص المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Structure/note.pdf
+
+]]></item>
+    </string-array>
+    <string-array name="civil23">
+        <item name="website"><![CDATA[http://civilittee-hu.com]]></item>
+    </string-array>
+    <string-array name="civil24">
+        <item name="1- Introduction to Planning"><![CDATA[http://www.civilittee-hu.com/uploads/1/Const.managment/1maha.pdf]]></item>
+        <item name="2- Construction Planning"><![CDATA[http://www.civilittee-hu.com/uploads/1/Const.managment/2maha.pdf
+]]></item>
+        <item name="3-Construction Scheduling"><![CDATA[http://www.civilittee-hu.com/uploads/1/Const.managment/3.pdf
+]]></item>
+        <item name="4- Network Calculations"><![CDATA[http://www.civilittee-hu.com/uploads/1/Const.management/4maha.pdf
+]]></item>
+        <item name="5-Managing Construction safety
+"><![CDATA[http://www.civilittee-hu.com/uploads/1/Const.managment/5.pdf
+]]></item>
+        <item name="6-Leadership"><![CDATA[http://www.civilittee-hu.com/uploads/1/Const.management/6.pdf
+]]></item>
+        <item name="7- ProjectQuality"><![CDATA[http://www.civilittee-hu.com/uploads/1/Const.managment/7.pdf
+]]></item>
+        <item name="note"><![CDATA[http://www.civilittee-hu.com/uploads/1/Const.managment/note.pdf]]></item>
+
+    </string-array>
+    <string-array name="civil25">
+        <item name="ملخص فيرست"><![CDATA[http://www.civilittee-hu.com/uploads/1/Const.Contract/F.pdf]]></item>
+    </string-array>
+    <string-array name="civil26">
+        <item name="slide"><![CDATA[http://www.civilittee-hu.com/uploads/2/Ethics/2019.pdf]]></item>
+        <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/2/Ethics/2019.pdf
+]]></item>
+    </string-array>
+
+</resources>

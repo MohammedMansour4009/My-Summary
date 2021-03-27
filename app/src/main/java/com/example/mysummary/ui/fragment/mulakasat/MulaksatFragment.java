@@ -27,12 +27,11 @@ public class MulaksatFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         getRemoteColleges();
-<<<<<<< HEAD
-       click();
-=======
+        click();
+
         initRecyclerViewColleges();
 
->>>>>>> c99f281ab6b0301686e928c38094473eeffce0e9
+
     }
 
     @Override
@@ -70,20 +69,19 @@ public class MulaksatFragment extends Fragment {
                 R.drawable.ic_book,
                 R.drawable.ic_flask,
                 R.drawable.ic_flask,
-<<<<<<< HEAD
+        };
 
 
- };
+
         Uri uri[]=new Uri[list.size()];
         for(int i=0;i<icon.length;i++) {
             uri[i] = Uri.parse(String.valueOf(icon[i]));
-=======
                 R.drawable.ic_flask,
-                R.drawable.ic_earth,};
+                R.drawable.ic_earth};
 
         for (int i = 0; i < 14; i++) {
             collegesList.add(new Colleges(icon[i], listName.get(i)));
->>>>>>> c99f281ab6b0301686e928c38094473eeffce0e9
+
         }
 
     }

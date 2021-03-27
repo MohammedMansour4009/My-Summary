@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="introduction_elctric">
+        <item name="شرح يوتيوب"><![CDATA[![CDATA[www.youtube.com/playlist?list=PLpsERNTNcD-5sEFTcrRGHb69XcexkAUgT&fbclid=IwAR3bV06WQ9_UsmG1xXxNhSeXigPSlpCBMM51XBCgtoP-ITs6KWkphhFg5k8]]]]></item>
+        <item name="دفتر فيرست"><![CDATA[drive.google.com/file/d/1XadQBxHPC--VRgR0GuBJnoZFyk3HEpmY/view?fbclid=IwAR0ukkQMviJCKstMCseXBQ0P0GY_E85WpxGfhCkKq0CJj5Sg8x2z5VcTeVY]]></item>
+        <item name="دفترسكند"><![CDATA[drive.google.com/file/d/1-bzbKIEQSUdBpvmG3uAUj8orluEQIhnl/view?usp=drive_open&fbclid=IwAR3yrj-gGzdRMDIml6z-KyZyMKzwe34Qo8yzElkntHWqqr1uQdQbbytQg7Q]]></item>
+    </string-array>
+    <string-array name="engineering_economics">
+    <item name="First">drive.google.com/file/d/1oOYK99FaBAd3-Opp0e2bN-htQRNQq9CC/view?fbclid=IwAR00Z-98zZURPNcxoWjFjJ7vF89PUA43OeSPlgyhEkh6XYGiWktz6oSvgv8</item>
+    <item name="Mid">drive.google.com/file/d/1oh1ho-aatk7rHA8Q5xrmf8Z8jiMENh3E/view?fbclid=IwAR00Z-98zZURPNcxoWjFjJ7vF89PUA43OeSPlgyhEkh6XYGiWktz6oSvgv8</item>
+    <item name ="Final">drive.google.com/file/d/1oWEXoG1oKR6G1KdBWDjdRU83LhcZtOnC/view?fbclid=IwAR00M0V7eTAhZGjJi4qQSsFaVOppme8hh_x-Z5DDuJIM48sSkq29xPpsWyg</item>
+    <item name="دفتر الطالبة وئام">drive.google.com/file/d/1BEML6yUO2ZvnejH4bPV7ZIYRphph39EL/view?fbclid=IwAR3zui-jHB5cu_3VoFs9pSvB9qyOuabveCM6QGYmpmAPZpA6dxJkM1S7LpE</item>
+
+</string-array>
+    <string-array name="op">
+        <item name="دفتر المادة">drive.google.com/file/d/1aBYug1kyckd73zUBx8STxQDgJKYKkJjB/view?fbclid=IwAR00M0V7eTAhZGjJi4qQSsFaVOppme8hh_x-Z5DDuJIM48sSkq29xPpsWyg
+</item>
+    </string-array>
+    <string-array name="automatic_control">
+        <item name ="كتاب المادة"><![CDATA[drive.google.com/file/d/1m8dM3yUIc8wBWu9rOXdfZK6dBLuVUZEP/view?usp=sharing&fbclid=IwAR3W_vhg5hsl3_RNQeEPdQhNkl71s1dWxzAb5xRmh-9hw2kbtpe-t3AD9wg]]></item>
+        <item name="حلول الكتاب"><![CDATA[drive.google.com/file/d/1mUp_JNXgcoSLI51lrIyT1LHvLNhboTB3/view?usp=sharing&fbclid=IwAR1GewKwgww1rlbsgdD1beFv-4YqdJK3Wtk6Hb4N60HniC6VK9JbENk10OU]]></item>
+        <item name="سلايدات م.فدوى"><![CDATA[drive.google.com/drive/folders/1Bif_pLv-zf9tM6KotGeXvq2KCJztK1Sp?usp=sharing&fbclid=IwAR2zo65EcSWCL38ejkLp3SIZlOkrnnuAUcvRTGQQ1otZm6ignSvuqOp6Fl8]]></item>
+        <item name="سلايدات م.ايات"><![CDATA[drive.google.com/drive/folders/1ZexDnSlpxriy_sd1giZUdsRL9uKKNpRs?usp=sharing&fbclid=IwAR2btqf0aJOmWnVxrIJ3OTZm6pxDkQ2ItFFY9-NJtZtl_SmN2hIBw_e5x_U]]></item>
+        <item name="اسئلة سنوات"><![CDATA[drive.google.com/drive/folders/1LqAXBwmCjG7OIQDtU49h4UamxNOe2pQS?usp=sharing&fbclid=IwAR3zui-jHB5cu_3VoFs9pSvB9qyOuabveCM6QGYmpmAPZpA6dxJkM1S7LpE]]></item>
+    </string-array>
+    <string-array name="Numerical">
+        <item name="دفتر المادة"><![CDATA[drive.google.com/file/d/1O_jhjGGhwv8rbLjuoRvRjOnbL2zbd1cY/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="disegn">
+        <item name="ملاحظات"><![CDATA[drive.google.com/drive/folders/1FH0x7GMIqU6-NSmfYRFGR7ndnTd8Wspv?fbclid=IwAR1m0X1x419u2W5LBGiQqp5L0EnVNIMZFWJGWglpOTFw1YZ85zJHqW7gWmg
+]]></item>
+    </string-array>
+    <string-array name="Qa">
+        <item name="فيرست"><![CDATA[drive.google.com/file/d/10NSnTpzsWWF3v9TitoTov8G5KCSIqxtE/view?fbclid=IwAR0gg3a9D2oJed-BM0fWyTqYg_LZYBoz1FUnaFsSgaF0r_ynF82bOnAi44c]]></item>
+        <item name="شرح يوتيوب"><![CDATA[www.youtube.com/watch?v=nPEUsnCQKZ4&list=PLpsERNTNcD-4jZ6tTkE-5hTTl9Jcw_OOI]]></item>
+    </string-array>
+    <string-array name="thermal">
+        <item name="الكتاب"><![CDATA[drive.google.com/file/d/1q2JaGIcItqLVTFhdtRyHYMG9hM9REBj3/view?usp=drivesdk&fbclid=IwAR3dM2D-M4LbsopnFibxM3EK0TnaagbedPOiMQtfZDUfIlyxA3afj1PWTjk]]></item>
+        <item name="شرح المادة على اليوتيوب"><![CDATA[www.youtube.com/watch?v=f7lv8Bx52pw&list=PLpsERNTNcD-7E7rVhb-IVGSHr5b7-dLWG]]></item>
+    </string-array>
+    <string-array name="material">
+        <item name="ch.2.3"><![CDATA[drive.google.com/file/d/1KitIjn-dawsBjoAg4P_f_-pmVYutQ9tW/view?fbclid=IwAR1GewKwgww1rlbsgdD1beFv-4YqdJK3Wtk6Hb4N60HniC6VK9JbENk10OU]]></item>
+        <item name="ch.4"><![CDATA[drive.google.com/file/d/1VmpKX_j5uH_IiAjsM2E5yHPa-3-vekra/view?fbclid=IwAR1GewKwgww1rlbsgdD1beFv-4YqdJK3Wtk6Hb4N60HniC6VK9JbENk10OU]]></item>
+        <item name="ch 6.7"><![CDATA[drive.google.com/file/d/1tamhywwMXLK0Si68mNhteFTks6_cuvUz/view?fbclid=IwAR3zui-jHB5cu_3VoFs9pSvB9qyOuabveCM6QGYmpmAPZpA6dxJkM1S7LpE]]></item>
+    </string-array>
+    <string-array name="dinamic">
+        <item name="ملخص للطالب علاء الفار"><![CDATA[drive.google.com/file/d/1Zpj5cPY7WT3lLzX0z3Dtw55rbfXmOhoR/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="quality">
+        <item name="شرح chapter6"><![CDATA[drive.google.com/file/d/1–79TCPOSaeZ2sKJjeTYufsqM2zKL4iUe/view?fbclid=IwAR033pmFsgYZFmmij9RuwutxaXqe2BnggYtX0WHuRLkmAOZGaQ7ducICf0g]]></item>
+        <item name="شرح youtube"><![CDATA[www.youtube.com/watch?v=kPS9FEtjOuQ&list=PLpsERNTNcD-4z7gLqvtQfgUzgeJXuX0F5]]></item>
+    </string-array>
+    <string-array name="metrology">
+        <item nam="first"><![CDATA[drive.google.com/file/d/1hJvLlrQdpceZrxvqvQctEiSYB_R-pu95/view?fbclid=IwAR1pidLHVYLSNrPrgVYI7Nb5PI2fYdbVd21FBAEfSqXMVZTZ98hQxenJS3c]]></item>
+    </string-array>
+    <string-array name="introduction_elctro">
+        <item name="youtube"><![CDATA[www.youtube.com/watch?v=D_nJFW4L-GY&list=PLpsERNTNcD-481OQc55ebHa41_XlwKoKn]]></item>
+        <item name="فيرست"><![CDATA[drive.google.com/file/d/1R9wZP3Kv_dZnPS_zAUGf_WX-4GP8uiPy/view?fbclid=IwAR0_JcTvBX_mH5Ogtk4FQf_UGElthrPnJOVsQuyeVGhsVRPv1vsrCKhutlY]]></item>
+        <item name="فيرست2"><![CDATA[drive.google.com/file/d/1SYJtJAYz10pB6_gERQ2svLMXmtk3-5El/view?fbclid=IwAR2GdLPokyC1_zuIyzQ5uqWkVL4-gdo5HiIM4qYStsGU8P8He3BY0aPnOPk]]></item>
+        <item name="سكند"><![CDATA[drive.google.com/file/d/1c7JPYsGZGCHWSM-Q3nqowcs9HoAB1SZP/view?fbclid=IwAR05Y8QJGvQzId7vUPtMQeP-pF87ZxwuGyHHQ3Ezh425zr6JHyZb2I2t8Bo]]></item>
+        <item name="فاينل">drive.google.com/file/d/1gjNB_5jEU7INyw3AS_ivZ6Ka-O1Dcbys/view?fbclid=IwAR1pidLHVYLSNrPrgVYI7Nb5PI2fYdbVd21FBAEfSqXMVZTZ98hQxenJS3c
+</item>
+    </string-array>
+
+
+
+</resources>
