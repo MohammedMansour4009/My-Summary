@@ -12,29 +12,29 @@
     </data>
 
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_chapter"
-        android:layout_width="match_parent"
-        android:layout_marginVertical="@dimen/_5sdp"
-        android:layout_marginHorizontal="@dimen/_5sdp"
-        android:layout_height="@dimen/heightCvMatirial"
-        android:layout_gravity="center"
-        android:background="@drawable/design_corner_gray"
-        android:gravity="center"
-        app:cardCornerRadius="@dimen/cornerCvMatirial"
-        app:cardElevation="@dimen/shadow"
-        >
 
-        <TextView
+
+        <com.google.android.material.button.MaterialButton
+            app:icon="@drawable/ic_chapter"
+            app:iconTint="@android:color/black"
+            app:iconGravity="textStart"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            app:strokeColor="@color/colorAccent"
+            app:strokeWidth="@dimen/_1sdp"
+            app:cornerRadius="@dimen/_10sdp"
+            android:backgroundTint="@color/design_corner2"
+            app:iconPadding="@dimen/_10sdp"
+
             android:id="@+id/tv_name_chapter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
             android:layout_gravity="center"
             android:text="@{model.name}"
-            style="@style/Font_Arabic"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="@dimen/_15sdp"
             android:textSize="@dimen/tv_sizeText_matirial"
+            android:gravity="center"
             tools:text="Ch 1" />
 
-    </androidx.cardview.widget.CardView>
 
 </layout>
