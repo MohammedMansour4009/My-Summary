@@ -54,7 +54,14 @@
         <item>علم الامراض</item>
         <item>مواد سنة رابعة</item>
         <item>يدوي</item>
-
+        <item>أحياء طبية</item>
+        <item>أساسيات كيمياء عامة</item>
+        <item>تشريح الانسان</item>
+        <item>فيسولوجيا الانسان</item>
+        <item>فيزياء طبية</item>
+        <item>لاب احياء طبية</item>
+        <item>لاب اساسيات الكيمياء</item>
+        <item>لاب تشريح الانسان</item>
     </string-array>
     <string-array name="babyMawad">
         <item>أدارة وتنظيم</item>
@@ -254,6 +261,34 @@
 
 
     </string-array>
-
+    <string-array name="NameArabic">
+        <item>الصوتيات</item>
+        <item>اللغة العربية 101</item>
+        <item>المصطلح و الدلالة</item>
+        <item>المكتبة العربية</item>
+        <item>عباسي</item>
+        <item>علم العروض و القافية</item>
+        <item>نشأة المعجم</item>
+        <item>نقد قديم</item>
+    </string-array>
+    <string-array name="NameEnglish">
+        <item>Essay Writing</item>
+        <item>Grammer</item>
+        <item>أدب 1</item>
+        <item>أدب أمريكي</item>
+        <item>الصوتيات </item>
+        <item>لغويات</item>
+        <item>مسرحية</item>
+    </string-array>
+    <string-array name="NameTorisem">
+        <item>ادارة موارد تراثية 2</item>
+        <item>الحضارات و الممالك في الاردن</item>
+        <item>جغرافية الوجهة السياحة</item>
+        <item>دراسات السياحية و الضيافة</item>
+        <item>فعاليات</item>
+        <item>مبادئ علم الاثار</item>
+        <item>
+مقدمة في السياحة و الاثار</item>
+    </string-array>
 
 </resources>

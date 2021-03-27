@@ -1,6 +1,8 @@
 package com.example.mysummary.ui.fragment.Mawad;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +15,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentMawadBinding;
+import com.example.mysummary.model.colleges.Colleges;
 import com.example.mysummary.model.mawad.Mawad;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
@@ -45,6 +48,7 @@ public class MawadFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentMawadBinding.inflate(getLayoutInflater());
+        searchOrder();
         return binding.getRoot();
     }
 
@@ -106,9 +110,7 @@ public class MawadFragment extends Fragment {
                 for(int i=0;i<nameEco.size();i++)
                     mawadList.add(new Mawad(nameEco.get(i),i));
                 break;
-            case 7:
-                Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
-                break;
+
             case 8:
                 Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
                 break;
@@ -118,7 +120,9 @@ public class MawadFragment extends Fragment {
                     mawadList.add(new Mawad(nameit.get(i),i));
                 break;
             case 10:
-                Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
+                List<String> nametor=Arrays.asList(getResources().getStringArray(R.array.NameTorisem));
+                for(int i=0;i<nametor.size();i++)
+                    mawadList.add(new Mawad(nametor.get(i),i));
                 break;
             case 11:
                 List<String> nameAplide=Arrays.asList(getResources().getStringArray(R.array.AppliedMawad));
@@ -128,7 +132,91 @@ public class MawadFragment extends Fragment {
 
             case 12:
                 mawadList.add(new Mawad("قسم الرياضيات",1));
+                break;
+            case 13:
+                mawadList.add(new Mawad("قسم الاحياء",2));
+                break;
+            case 100:
+                List<String> nameComputer=Arrays.asList(getResources().getStringArray(R.array.Eng_CompMawad));
+                for(int i=0;i<nameComputer.size();i++)
+                    mawadList.add(new Mawad(nameComputer.get(i),i));
+                break;
+            case 101:
+                List<String> nameCivil=Arrays.asList(getResources().getStringArray(R.array.Eng_CivilMawad));
+                for(int i=0;i<nameCivil.size();i++)
+                    mawadList.add(new Mawad(nameCivil.get(i),i));
+                break;
+
+            case 102:
+                List<String> nameElctro=Arrays.asList(getResources().getStringArray(R.array.Eng_electricMawad));
+                for(int i=0;i<nameElctro.size();i++)
+                    mawadList.add(new Mawad(nameElctro.get(i),i));
+                break;
+            case 103:
+                List<String> nameMicatro=Arrays.asList(getResources().getStringArray(R.array.Eng_MicMawad));
+                for(int i=0;i<nameMicatro.size();i++)
+                    mawadList.add(new Mawad(nameMicatro.get(i),i));
+                break;
+            case 104:
+                List<String> nameIdents=Arrays.asList(getResources().getStringArray(R.array.Eng_industrial));
+                for(int i=0;i<nameIdents.size();i++)
+                    mawadList.add(new Mawad(nameIdents.get(i),i));
+                break;
+            case 106:
+                List<String> nameMath=Arrays.asList(getResources().getStringArray(R.array.MathMawad));
+                for(int i=0;i<nameMath.size();i++)
+                    mawadList.add(new Mawad(nameMath.get(i),i));
+                break;
+            case 107:
+                List<String> nameEnglish=Arrays.asList(getResources().getStringArray(R.array.NameEnglish));
+                for(int i=0;i<nameEnglish.size();i++)
+                    mawadList.add(new Mawad(nameEnglish.get(i),i));
+                break;
+            case 108:
+                List<String> nameArabic=Arrays.asList(getResources().getStringArray(R.array.NameArabic));
+                for(int i=0;i<nameArabic.size();i++)
+                    mawadList.add(new Mawad(nameArabic.get(i),i));
+                break;
+            case 109:
+                List<String> nameBio=Arrays.asList(getResources().getStringArray(R.array.Eng_midcinMawad));
+                for(int i=0;i<nameBio.size();i++)
+                    mawadList.add(new Mawad(nameBio.get(i),i));
+                break;
+
+
         }
 
         }
+    private void searchOrder() {
+        binding.etSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable idoOrder) {
+                filter(idoOrder.toString());
+            }
+
+
+        });
+    }
+
+    private void filter(String idoOrder) {
+        List<Mawad> filteredList = new ArrayList<>();
+        for (Mawad item : mawadList) {
+            if (item.getNameCourse().toLowerCase().contains(idoOrder.toLowerCase())) {
+                filteredList.add(item);
+
+            }
+        }
+        mawadAdapter.filterList(filteredList);
+    }
+
     }
