@@ -68,6 +68,7 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(getLayoutInflater());
         navDrawer = binding.getRoot().findViewById(R.id.drawer_layout);
         showVideoFromAdMob();
+        Toast.makeText(TAG, "sdsa", Toast.LENGTH_SHORT).show();
         return binding.getRoot();
     }
 
