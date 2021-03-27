@@ -51,14 +51,14 @@ public class ChaptersFragment extends Fragment {
     private List<Url> chapterListEco;
     private List<Url> chapterListE5teary;
     private List<Url> chapterListComputer;
-    private List<Url>chapterCivil;
-    private List<Url>chapterelctro;
-    private List<Url>chapterMico;
-    private List<Url>chapterident;
-    private List<Url>chapterArabic;
-    private List<Url>chapterEnglish;
-    private List<Url>chapterTorisem;
-    private List<Url>chapterBio;
+    private List<Url> chapterCivil;
+    private List<Url> chapterelctro;
+    private List<Url> chapterMico;
+    private List<Url> chapterident;
+    private List<Url> chapterArabic;
+    private List<Url> chapterEnglish;
+    private List<Url> chapterTorisem;
+    private List<Url> chapterBio;
     private List<Url> chapterE5tyari;
     private ArrayList<Url> chapterMath;
     private ChapterAdapter chapterAdapter;
@@ -119,12 +119,10 @@ public class ChaptersFragment extends Fragment {
     private void getRemoteChapter(int id, int idCollege) {
         urlList = new UrlList(getContext());
         switch (idCollege) {
-            case 0:
-                Toast.makeText(getContext(), "Mawad 5hteary ", Toast.LENGTH_SHORT).show();
-            case 1:
- 
-                chapterListE5teary = new ArrayList<>();
 
+            case 1:
+                chapterListE5teary = new ArrayList<>();
+                chapterListE5teary.clear();
                 chapterListE5teary.addAll(urlList.e5teary.get(id));
                 initRecyclerViewChapter(chapterListE5teary);
                 break;

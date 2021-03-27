@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +15,6 @@ import androidx.fragment.app.Fragment;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentMawadBinding;
-import com.example.mysummary.model.colleges.Colleges;
 import com.example.mysummary.model.mawad.Mawad;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
@@ -64,13 +62,14 @@ public class MawadFragment extends Fragment {
     }
 
     private void initRecyclerViewMawad() {
-        mawadAdapter = new MawadAdapter(mawadList,getID());
+        mawadAdapter = new MawadAdapter(mawadList, getID());
         binding.rvMawad.setAdapter(mawadAdapter);
     }
 
     private void getRemoteMawad() {
-       mawadList=new ArrayList<>();
+        mawadList = new ArrayList<>();
     }
+
     private void setAdMobBanner() {
         MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {
             @Override
@@ -85,55 +84,55 @@ public class MawadFragment extends Fragment {
 
     }
 
-    private int getID(){
+    private int getID() {
         return MawadFragmentArgs.fromBundle(getArguments()).getId();
     }
 
 
-    private void setContent(int id){
+    private void setContent(int id) {
         getRemoteMawad();
-        switch (id){
+        switch (id) {
             case 1: {
                 Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
             break;
             }
             case 2:
-                List<String> nameParts= Arrays.asList(getResources().getStringArray(R.array.NameEng));
-                for(int i=0;i<nameParts.size();i++)
-                    mawadList.add(new Mawad(nameParts.get(i),i));
+                List<String> nameParts = Arrays.asList(getResources().getStringArray(R.array.NameEng));
+                for (int i = 0; i < nameParts.size(); i++)
+                    mawadList.add(new Mawad(nameParts.get(i), i));
                 break;
             case 3:
-                List<String> nameNurse=Arrays.asList(getResources().getStringArray(R.array.NurseMawad));
-               for(int i=0;i<nameNurse.size();i++)
-                   mawadList.add(new Mawad(nameNurse.get(i),i));
+                List<String> nameNurse = Arrays.asList(getResources().getStringArray(R.array.NurseMawad));
+                for (int i = 0; i < nameNurse.size(); i++)
+                    mawadList.add(new Mawad(nameNurse.get(i), i));
                 break;
             case 4:
-                List<String> namebaby=Arrays.asList(getResources().getStringArray(R.array.babyMawad));
-                for(int i=0;i<namebaby.size();i++)
-                    mawadList.add(new Mawad(namebaby.get(i),i));
+                List<String> namebaby = Arrays.asList(getResources().getStringArray(R.array.babyMawad));
+                for (int i = 0; i < namebaby.size(); i++)
+                    mawadList.add(new Mawad(namebaby.get(i), i));
                 break;
 
             case 5:
                 Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
                 break;
             case 6:
-                List<String> nameEco=Arrays.asList(getResources().getStringArray(R.array.EconomiMawad));
-                for(int i=0;i<nameEco.size();i++)
-                    mawadList.add(new Mawad(nameEco.get(i),i));
+                List<String> nameEco = Arrays.asList(getResources().getStringArray(R.array.EconomiMawad));
+                for (int i = 0; i < nameEco.size(); i++)
+                    mawadList.add(new Mawad(nameEco.get(i), i));
                 break;
 
             case 8:
                 Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
                 break;
             case 9:
-                List<String> nameit=Arrays.asList(getResources().getStringArray(R.array.itMawad));
-                for(int i=0;i<nameit.size();i++)
-                    mawadList.add(new Mawad(nameit.get(i),i));
+                List<String> nameit = Arrays.asList(getResources().getStringArray(R.array.itMawad));
+                for (int i = 0; i < nameit.size(); i++)
+                    mawadList.add(new Mawad(nameit.get(i), i));
                 break;
             case 10:
-                List<String> nametor=Arrays.asList(getResources().getStringArray(R.array.NameTorisem));
-                for(int i=0;i<nametor.size();i++)
-                    mawadList.add(new Mawad(nametor.get(i),i));
+                List<String> nametor = Arrays.asList(getResources().getStringArray(R.array.NameTorisem));
+                for (int i = 0; i < nametor.size(); i++)
+                    mawadList.add(new Mawad(nametor.get(i), i));
                 break;
             case 11:
                 List<String> nameAplide=Arrays.asList(getResources().getStringArray(R.array.AppliedMawad));
@@ -197,7 +196,8 @@ public class MawadFragment extends Fragment {
 
         }
 
-        }
+    }
+
     private void searchOrder() {
         binding.etSearch.addTextChangedListener(new TextWatcher() {
             @Override
@@ -227,9 +227,11 @@ public class MawadFragment extends Fragment {
 
             }
         }
+        mawadAdapter.filterList(filteredList);
+    }
 
     private void sendMail() {
-        String recipientList =  ">mysummary.je.mo@gmail.com";
+        String recipientList = ">mysummary.je.mo@gmail.com";
         String[] recipients = recipientList.split(",");
         String subject = "ارسال مواد ";
         Intent intent = new Intent(Intent.ACTION_SEND);
@@ -237,9 +239,6 @@ public class MawadFragment extends Fragment {
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         intent.setType("message/rfc822");
         startActivity(Intent.createChooser(intent, "Choose an email client"));
-        mawadAdapter.filterList(filteredList);
-    }
-
     }
 
 
