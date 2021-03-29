@@ -33,15 +33,38 @@
     <string-array name="English6"><item ><![CDATA[https://drive.google.com/file/d/1El_TFI5WnHouarVii4m4cV94XIGmDfUv/view?usp=sharing]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/1XBHn9dqyIHFSrofhP4RG-_5oUHeJQKew/view?usp=sharing]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/1lKzcberfaDWfayYSRUM_edKuRRbtr0az/view?usp=sharing]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1tmsrv7Hid4pvSQUAeWYTg41OXHBz_Wgu/view?fbclid=IwAR0WjhVi-TBOURqO_UZpsXdg0gWkQl1vrcaECh0hM-oaWi-BXK00xTc-Hls
+]]></item>
     </string-array>
     <string-array name="English6name"><item>Ch 1</item>
         <item>ch 3</item>
         <item>شرح</item>
+        <item>دوسية المادة</item>
     </string-array>
     <string-array name="English7"><item ><![CDATA[https://drive.google.com/file/d/18eaGs94XFmHdTnposhRJMad3ceGVBU3J/view?usp=sharing]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/14z-lY2s4PEd6zYXSXnN_e9BNUyfFe_Yh/view?usp=sharing]]></item>
     </string-array>
     <string-array name="English7name"><item>د.رجاء</item>
         <item>د.عماد</item>
+    </string-array>
+    <string-array name="English8">
+        <item><![CDATA[https://drive.google.com/file/d/1BIbVBlFVH2YuTRD3V5ANuDD-11Bm4W3j/view?fbclid=IwAR33ya6PwwRihJ6B1dCYME4GqixW1NdrGdmwbmeFh7CEDm5GiX27FcGD_5A
+]]></item>
+    </string-array>
+    <string-array name="English8name">
+        <item>دوسية المادة</item>
+    </string-array>
+    <string-array name="English9">
+        <item><![CDATA[https://drive.google.com/file/d/1f3GTeMrrcpicyiRYYX7sNed_DBo0EC1r/view?fbclid=IwAR3N54L9xNgMKs0Xf49JeBD3WcNO0StuBW5c4zHpiiYNnJDlRWuOIVWO2R4
+]]></item>
+    </string-array>
+    <string-array name="English9name">
+        <item>دوسية المادة</item>
+    </string-array>
+    <string-array name="English10">
+       <item><![CDATA[https://drive.google.com/file/d/1OrgDa_IitHz4uMFWpukF_h0Ze3h26LUJ/view?fbclid=IwAR1THBVBMyuk2myNoKXy3dS0xaYQucoJt3ydPpkbQHhr4BgHEdrRisq4BT0]]></item>
+    </string-array>
+    <string-array name="English10name">
+        <item>Book</item>
     </string-array>
 </resources>

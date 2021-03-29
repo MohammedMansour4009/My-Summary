@@ -49,18 +49,15 @@ public class HomeFragment extends Fragment {
     private FragmentHomeBinding binding;
     private List<Category> categoryList;
     private CategoryAdapter categoryAdapter;
-
     private DrawerLayout navDrawer;
-
     private List<InfoImage> imageList;
-
-    ImageAdapter imagePagerAdapter;
-
+    private ImageAdapter imagePagerAdapter;
     private RewardedAd rewardedAd;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);//of menu
     }
 
     @Override
@@ -132,6 +129,7 @@ public class HomeFragment extends Fragment {
 
     private void initRecyclerViewHome() {
 
+
         categoryAdapter = new CategoryAdapter(categoryList, new OnHomeClickListener() {
             @Override
             public void onItemClick(Category category) {
@@ -151,11 +149,11 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
                 break;
             case 2:
-                Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://reg1.hu.edu.jo/"));
+                Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mlms.hu.edu.jo/"));
                 startActivity(intent1);
                 break;
             case 3:
-                Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mlms.hu.edu.jo/"));
+                Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://reg1.hu.edu.jo/"));
                 startActivity(intent2);
                 break;
 
@@ -234,7 +232,7 @@ public class HomeFragment extends Fragment {
                     // Ad opened.
                     Log.d(TAG, "onRewardedAdOpened: ");
                 }
-
+                
                 @Override
                 public void onRewardedAdClosed() {
                     // Ad closed.

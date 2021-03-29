@@ -273,12 +273,15 @@
     </string-array>
     <string-array name="NameEnglish">
         <item>Essay Writing</item>
-        <item>Grammer</item>
+        <item>Grammar</item>
         <item>أدب 1</item>
         <item>أدب أمريكي</item>
         <item>الصوتيات </item>
         <item>لغويات</item>
         <item>مسرحية</item>
+        <item>Reading</item>
+        <item>Writing</item>
+        <item>Grammar 2</item>
     </string-array>
     <string-array name="NameTorisem">
         <item>ادارة موارد تراثية 2</item>
@@ -287,8 +290,27 @@
         <item>دراسات السياحية و الضيافة</item>
         <item>فعاليات</item>
         <item>مبادئ علم الاثار</item>
-        <item>
-مقدمة في السياحة و الاثار</item>
+        <item>مقدمة في السياحة و الاثار</item>
     </string-array>
-
+<string-array name="sportsMawad">
+    <item>اثقال</item>
+    <item>اصابات</item>
+    <item>الاعلام الرياضي</item>
+    <item>القانون الدولي للريشة الطائرة</item>
+    <item>القياس و التقويم</item>
+    <item>تسويق رياضي</item>
+    <item>طرق واساليب تدريس</item>
+    <item>علم اجتماع رياضي</item>
+    <item>علم الحركة</item>
+    <item>فسيولوجيا 1</item>
+    <item>مادة الحركة الاولمبية</item>
+</string-array>
+    <string-array name="doctorMawad">
+        <item>Bio</item>
+        <item>Clinical Skills</item>
+        <item> Health Policy</item>
+        <item>Heath Economy</item>
+        <item>Medical Ethics</item>
+        <item>Way to 100</item>
+    </string-array>
 </resources>

@@ -2,6 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
    >
 
     <data>
@@ -15,15 +16,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardElevation="@dimen/shadow"
-    app:cardCornerRadius="@dimen/_11sdp"
-    android:background="@drawable/design_corner_gray"
     android:layout_marginHorizontal="@dimen/_5sdp"
     android:layout_marginVertical="@dimen/_5sdp"
+    android:background="@drawable/design_corner_gray"
+    android:backgroundTint="@color/design_corner2"
+    app:cardCornerRadius="@dimen/_13sdp"
+
+
     >
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:padding="@dimen/_10sdp"
 
                 >

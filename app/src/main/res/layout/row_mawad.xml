@@ -21,11 +21,12 @@
         android:background="@drawable/design_corner_gray"
         android:gravity="center"
         app:cardElevation="@dimen/shadow"
-        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_13sdp"
+        android:backgroundTint="@color/design_corner2"
+
         >
 
     <TextView
-        android:background="@drawable/design_corner_gray"
         android:id="@+id/tv_name_chapter"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

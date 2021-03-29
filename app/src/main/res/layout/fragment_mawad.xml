@@ -61,22 +61,25 @@
             android:layout_gravity=""
             android:layout_marginStart="@dimen/nill"
             android:layout_marginLeft="@dimen/marginEnd_tv_paind"
+            android:layout_marginEnd="21dp"
             android:layout_marginTop="@dimen/_10sdp"
             android:text="@string/matirial"
             android:textColor="@color/gray"
             android:textSize="@dimen/tv_pain"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/et_search" />
+            app:layout_constraintTop_toBottomOf="@id/et_search"
+            android:layout_marginRight="21dp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_mawad"
             android:layout_width="match_parent"
             tools:listitem="@layout/row_mawad"
-            android:layout_height="@dimen/_400sdp"
+            android:layout_height="0dp"
             android:layout_marginTop="@dimen/margintop_rv"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintTop_toBottomOf="@id/tv_mawad"
+            app:layout_constraintBottom_toTopOf="@id/adView"
              />
 
         <com.google.android.gms.ads.AdView

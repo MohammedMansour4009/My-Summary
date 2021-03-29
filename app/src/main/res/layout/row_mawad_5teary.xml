@@ -14,7 +14,10 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_corner2"
+
+        >
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_name_mawad"

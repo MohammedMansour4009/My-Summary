@@ -28,7 +28,7 @@ public class SplashActivity extends BaseBindingActivity<ActivitySplashBinding> {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
-               setHandler(5);
+               setHandler(2);
     }
 
     @Override

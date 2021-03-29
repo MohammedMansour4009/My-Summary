@@ -93,8 +93,10 @@ public class MawadFragment extends Fragment {
         getRemoteMawad();
         switch (id) {
             case 1: {
-                Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
-            break;
+                List<String> nameParts = Arrays.asList(getResources().getStringArray(R.array.doctorMawad));
+                for (int i = 0; i < nameParts.size(); i++)
+                    mawadList.add(new Mawad(nameParts.get(i), i));
+                break;
             }
             case 2:
                 List<String> nameParts = Arrays.asList(getResources().getStringArray(R.array.NameEng));
@@ -122,7 +124,9 @@ public class MawadFragment extends Fragment {
                 break;
 
             case 8:
-                Toast.makeText(getContext(), "سيتم توفير مصادر قريباً", Toast.LENGTH_SHORT).show();
+                List<String> nameSport = Arrays.asList(getResources().getStringArray(R.array.sportsMawad));
+                for (int i = 0; i < nameSport.size(); i++)
+                    mawadList.add(new Mawad(nameSport.get(i), i));
                 break;
             case 9:
                 List<String> nameit = Arrays.asList(getResources().getStringArray(R.array.itMawad));

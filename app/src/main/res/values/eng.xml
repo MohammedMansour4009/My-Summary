@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="industrial">
+        <item >اساسيات الدوائر الكهربائي</item>
+        <item >اقتصاد هندسي</item>
+        <item >بحوث علمية 1</item>
+        <item >تحليل احصائي</item>
+        <item >تحليل عددي</item>
+        <item >تخطيط وتصميم منشات صناعية</item>
+        <item >تخطيط و ضبط الانتاج</item>
+        <item >ثيرمال</item>
+        <item >خواص المواد</item>
+        <item >ديناميكا</item>
+        <item >ضبط الجودة</item>
+        <item >علم القياس </item>
+        <item >مقدمة في الالكترونيات</item>
+
+
+    </string-array>
+    <string-array name="civil_eng">
+        <item>هيدروليكا</item>
+        <item>هيدرولوجيا</item>
+        <item>هندسة مياه عادمة</item>
+        <item>هندسة المرور</item>
+        <item>هندسة البيئة</item>
+        <item>ميكانيكا موائع</item>
+        <item>مواد بناء</item>
+        <item>منشئات فولاذية</item>
+        <item>مقاومة مواد</item>
+        <item>مساحة</item>
+        <item>فيزياء عامة 2</item>
+        <item>ستاتيكا</item>
+        <item>رياضيات تطبيقية</item>
+        <item>رسم بإستخدام الحاسوب</item>
+        <item>خرسانة مسلحة 2</item>
+        <item>خرسانة مسلحة 1</item>
+        <item>تفاضل و تكامل 3</item>
+        <item>تصميم وهندسة طرق</item>
+        <item>تصميم ومواد الرصفات</item>
+        <item>تخطيط وهندسة المواصلات</item>
+        <item>تحليل عددي</item>
+        <item>تحليل انشائي</item>
+        <item>الموقع</item>
+        <item>ادارة مشاريع التشييد</item>
+        <item>ادارة عقود التشييد</item>
+        <item>اخلاقيات ومهارات اتصال</item>
+    
+    </string-array>
+    <string-array name="electrical_engineering">
+    <item>Analog</item>
+    <item>Applied</item>
+    <item>Assembly</item>
+    <item>Autocad</item>
+    <item>Circuit1</item>
+    <item>Circuit2</item>
+    <item>Coding</item>
+    <item>Communication Electronics</item>
+    <item>Control</item>
+    <item>Conversion</item>
+    <item>Diff</item>
+    <item>Digital Electronics</item>
+    <item>DSP</item>
+    <item>Electronics1</item>
+    <item>Electronics2</item>
+    <item>EM1</item>
+    <item>EM2</item>
+    <item>Ethics</item>
+    <item>Interface</item>
+    <item>logic</item>
+    <item>Machine1</item>
+    <item>Power Electronics</item>
+    <item>Power System</item>
+    <item>Probability</item>
+    <item>Signals</item>
+    <item>Wireless</item>
+    <item>رسم هندسي</item>
+</string-array>
+    <string-array name="Mechatronics_engineering">
+    <item>group</item>
+    <item>website</item>
+</string-array>
+    <string-array name="Computer_Engineering">
+        <item>group</item>
+        <item>website</item>
+    </string-array>
+</resources>

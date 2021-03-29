@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_gravity="center"
+
     >
 
     <data>
@@ -15,10 +16,14 @@
     android:layout_height="@dimen/_75sdp"
     android:layout_margin="@dimen/_6sdp"
     app:cardElevation="@dimen/shadow"
-    app:cardCornerRadius="@dimen/_9sdp"
     android:id="@+id/l_item_in_home"
-    android:background="@drawable/design_corner"
+    android:background="@drawable/design_corner_gray"
+    android:backgroundTint="@color/design_corner2"
+    app:cardCornerRadius="@dimen/_13sdp"
     android:foregroundGravity="center"
+
+
+
 
     >
 

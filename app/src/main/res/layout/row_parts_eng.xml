@@ -20,10 +20,12 @@
         android:layout_marginHorizontal="@dimen/_20sdp"
         android:layout_height="@dimen/heightCvMatirial"
         android:layout_gravity="center"
-        android:background="@drawable/design_corner_gray"
         android:gravity="center"
-        app:cardCornerRadius="@dimen/cornerCvMatirial"
         app:cardElevation="@dimen/shadow"
+        android:background="@drawable/design_corner_gray"
+        android:backgroundTint="@color/design_corner2"
+        app:cardCornerRadius="@dimen/_13sdp"
+
         >
 
         <TextView

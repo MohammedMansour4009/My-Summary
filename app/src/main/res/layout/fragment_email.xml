@@ -13,12 +13,14 @@
         android:padding="16dp"
         tools:context="com.codinginflow.emailintentexample.MainActivity">
         <TextView
+            style="@style/Font_Arabic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="To:"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         <TextView
             android:id="@+id/edit_text_to"
+            style="@style/Font_Arabic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -30,6 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Subject:"
+            style="@style/Font_Arabic"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="@dimen/_15sdp"
             />
@@ -39,6 +42,7 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailSubject"
             android:hint="Problem ..."
+            style="@style/Font_Arabic"
             android:background="@android:color/transparent"
             android:layout_margin="@dimen/_10sdp"
             />
@@ -46,6 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Message:"
+            style="@style/Font_Arabic"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             />
         <EditText
@@ -54,6 +59,7 @@
             android:layout_height="wrap_content"
             android:gravity="start|top"
             android:lines="6"
+            style="@style/Font_Arabic"
             android:hint="Type ...."
             android:background="@android:color/transparent"
             android:layout_margin="@dimen/_10sdp"
@@ -63,6 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="send"
+            style="@style/Font_Arabic"
             android:textColor="@android:color/black"
             android:background="@android:color/transparent"
             />

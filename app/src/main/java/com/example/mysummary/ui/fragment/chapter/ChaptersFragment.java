@@ -13,7 +13,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentChaptersBinding;
 import com.example.mysummary.model.home.UrlList;
@@ -33,7 +32,6 @@ import com.google.android.gms.ads.rewarded.RewardItem;
 import com.google.android.gms.ads.rewarded.RewardedAd;
 import com.google.android.gms.ads.rewarded.RewardedAdCallback;
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -44,7 +42,6 @@ public class ChaptersFragment extends Fragment {
     private static final String TAG = "ChaptersFragment";
     private FragmentChaptersBinding binding;
     private List<Url> chapterListNurse;
-    private List<Url> chapterListMath;
     private List<Url> chapterListIt;
     private List<Url> chapterListApplied;
     private List<Url> chapterListBaby;
@@ -61,6 +58,8 @@ public class ChaptersFragment extends Fragment {
     private List<Url> chapterBio;
     private List<Url> chapterE5tyari;
     private ArrayList<Url> chapterMath;
+    private ArrayList<Url> chapterSport;
+    private ArrayList<Url> chapterDoctor;
     private ChapterAdapter chapterAdapter;
     private UrlList urlList;
     private InterstitialAd mInterstitialAd;
@@ -119,14 +118,16 @@ public class ChaptersFragment extends Fragment {
     private void getRemoteChapter(int id, int idCollege) {
         urlList = new UrlList(getContext());
         switch (idCollege) {
-
-            case 1:
+            case 0:
                 chapterListE5teary = new ArrayList<>();
-                chapterListE5teary.clear();
-                chapterListE5teary.addAll(urlList.e5teary.get(id));
+                chapterListE5teary.addAll(urlList.e5teary.get(id-1));
                 initRecyclerViewChapter(chapterListE5teary);
                 break;
-
+            case 1:
+                chapterDoctor=new ArrayList<>();
+                chapterDoctor.addAll(urlList.doctor.get(id));
+                initRecyclerViewChapter(chapterDoctor);
+                break;
             case 3:
                 chapterListNurse = new ArrayList<>();
                 chapterListNurse.addAll(urlList.nurse.get(id));
@@ -141,6 +142,11 @@ public class ChaptersFragment extends Fragment {
                 chapterListEco = new ArrayList<>();
                 chapterListEco.addAll(urlList.eco.get(id));
                 initRecyclerViewChapter(chapterListEco);
+                break;
+            case 8:
+                chapterSport=new ArrayList<>();
+                chapterSport.addAll(urlList.sport.get(id));
+                initRecyclerViewChapter(chapterSport);
                 break;
             case 9:
                 chapterListIt = new ArrayList<>();
@@ -213,8 +219,7 @@ public class ChaptersFragment extends Fragment {
     }}
 
     private int getIdColleges() {
-        if (ChaptersFragmentArgs.fromBundle(getArguments()).getIdCollege() == 0)
-            return 0;
+
         return ChaptersFragmentArgs.fromBundle(getArguments()).getIdCollege();
 
     }
