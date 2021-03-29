@@ -18,18 +18,15 @@
             android:layout_height="match_parent">
             
                 <androidx.appcompat.widget.Toolbar
-                    app:title="HU. ملخصاتي"
-                    app:titleMarginStart="@dimen/_115sdp"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:menu="@menu/options_menu"
-                    tools:targetApi="lollipop"
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     app:popupTheme="@style/AppTheme"
-
-                  />
+                    app:titleMarginStart="@dimen/_75sdp"
+                   android:background="@color/white"
+                    />
 
 
 
@@ -71,6 +68,8 @@
             android:layout_gravity="start"
             android:fitsSystemWindows="true"
             app:menu="@menu/drawer_menu"
+            android:paddingBottom="@dimen/_10sdp"
+            app:headerLayout="@layout/activity_for_drawer"
             />
 
 

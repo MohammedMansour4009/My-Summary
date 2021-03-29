@@ -13,7 +13,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentChaptersBinding;
 import com.example.mysummary.model.home.UrlList;
@@ -33,7 +32,6 @@ import com.google.android.gms.ads.rewarded.RewardItem;
 import com.google.android.gms.ads.rewarded.RewardedAd;
 import com.google.android.gms.ads.rewarded.RewardedAdCallback;
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;

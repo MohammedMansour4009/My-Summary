@@ -6,13 +6,13 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,14 +20,16 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
+import androidx.viewpager2.widget.CompositePageTransformer;
+import androidx.viewpager2.widget.MarginPageTransformer;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentHomeBinding;
 import com.example.mysummary.model.category.Category;
 import com.example.mysummary.model.home.image.InfoImage;
 import com.example.mysummary.model.home.image.Tap;
-import com.example.mysummary.ui.fragment.home.Image.ImageFragment;
-import com.example.mysummary.ui.fragment.home.Image.ImagePagerAdapter;
+import com.example.mysummary.ui.fragment.home.Image.ImageAdapter;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.LoadAdError;
@@ -49,7 +51,7 @@ public class HomeFragment extends Fragment {
     private CategoryAdapter categoryAdapter;
     private DrawerLayout navDrawer;
     private List<InfoImage> imageList;
-    private ImagePagerAdapter imagePagerAdapter;
+    private ImageAdapter imagePagerAdapter;
     private RewardedAd rewardedAd;
 
     @Override
@@ -59,10 +61,11 @@ public class HomeFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         binding = FragmentHomeBinding.inflate(getLayoutInflater());
         navDrawer = binding.getRoot().findViewById(R.id.drawer_layout);
-        showVideoFromAdMob();
+        videoFromAdMob();
         return binding.getRoot();
     }
 
@@ -87,35 +90,32 @@ public class HomeFragment extends Fragment {
     }
 
     private void initViewPager() {
-        List<Tap> tapList = new ArrayList<>();
-        tapList.add(new Tap("Image1", ImageFragment
-                .newInstance(imageList.get(0))));
-        tapList.add(new Tap("Image2", ImageFragment
-                .newInstance(imageList.get(1))));
-        tapList.add(new Tap("Image3", ImageFragment
-                .newInstance(imageList.get(2))));
+        imagePagerAdapter = new ImageAdapter(imageList);
 
-        imagePagerAdapter = new ImagePagerAdapter(getActivity().getSupportFragmentManager(),tapList);
+        //set clip Padding
+        binding.vpImage.setClipToPadding(false);
+        //set clip children
+        binding.vpImage.setClipChildren(false);
+        //set page limit
+        binding.vpImage.setOffscreenPageLimit(3);
+        //set default start position
+        binding.vpImage.getChildAt(0).setOverScrollMode(View.OVER_SCROLL_NEVER);
 
         binding.vpImage.setAdapter(imagePagerAdapter);
 
-        binding.vpImage.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        // Initialize composite page transformer
+        CompositePageTransformer transformer = new CompositePageTransformer();
+        // Add margin between page
+        transformer.addTransformer(new MarginPageTransformer(8));
+        //Increase selected page size
+        transformer.addTransformer(new ViewPager2.PageTransformer() {
             @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
+            public void transformPage(@NonNull View page, float position) {
+                float v = 1 - Math.abs(position);
+                page.setScaleY(0.8f+v*0.2f);
             }
         });
-
+        binding.vpImage.setPageTransformer(transformer);
         binding.indicator.setViewPager(binding.vpImage);
     }
 
@@ -203,7 +203,7 @@ public class HomeFragment extends Fragment {
 
     }
 
-    private void showVideoFromAdMob() {
+    private void videoFromAdMob() {
         rewardedAd = new RewardedAd(getContext(), "ca-app-pub-3940256099942544/5224354917");
 
         RewardedAdLoadCallback adLoadCallback = new RewardedAdLoadCallback() {
@@ -232,7 +232,7 @@ public class HomeFragment extends Fragment {
                     // Ad opened.
                     Log.d(TAG, "onRewardedAdOpened: ");
                 }
-
+                
                 @Override
                 public void onRewardedAdClosed() {
                     // Ad closed.
@@ -259,6 +259,9 @@ public class HomeFragment extends Fragment {
             goToBrowser(position);
         }
     }
+
+
+
 
 
 }

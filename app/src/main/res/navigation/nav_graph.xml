@@ -7,13 +7,13 @@
     <fragment
         android:id="@+id/homeFragment2"
         android:name="com.example.mysummary.ui.fragment.home.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home"/>
+        android:label="ملخصاتي HU"
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/mulaksat"
         android:name="com.example.mysummary.ui.fragment.mulakasat.MulaksatFragment"
-        android:label="fragment_mula5sat"
-        tools:layout="@layout/fragment_mula5sat" >
+        android:label="ملخصاتي HU"
+        tools:layout="@layout/fragment_mula5sat">
 
         <action
             android:id="@+id/action_mulaksat_to_mawadFragment2"
@@ -28,8 +28,8 @@
     <fragment
         android:id="@+id/mawadFragment"
         android:name="com.example.mysummary.ui.fragment.Mawad.MawadFragment"
-        android:label="fragment_mawad"
-        tools:layout="@layout/fragment_mawad" >
+        android:label="ملخصاتي HU"
+        tools:layout="@layout/fragment_mawad">
         <argument
             android:name="id"
             app:argType="integer" />
@@ -43,7 +43,7 @@
     <fragment
         android:id="@+id/chaptersFragment"
         android:name="com.example.mysummary.ui.fragment.chapter.ChaptersFragment"
-        android:label="ChaptersFragment" >
+        android:label="ملخصاتي HU">
         <argument
             android:name="id"
             app:argType="integer" />
@@ -54,8 +54,8 @@
     <fragment
         android:id="@+id/matirialChoisesFragmint2"
         android:name="com.example.mysummary.ui.fragment.Choisesmatirial.MatirialChoisesFragmint"
-        android:label="fragment_matirial_choises_fragmint"
-        tools:layout="@layout/fragment_matirial_choises_fragmint" >
+        android:label="ملخصاتي HU"
+        tools:layout="@layout/fragment_matirial_choises_fragmint">
         <action
             android:id="@+id/action_matirialChoisesFragmint2_to_chaptersFragment"
             app:destination="@id/chaptersFragment" />
@@ -63,8 +63,8 @@
     <fragment
         android:id="@+id/partsragment"
         android:name="com.example.mysummary.ui.fragment.parts.PartsFragment"
-        android:label="fragment_partsragment"
-        tools:layout="@layout/fragment_parts" >
+        android:label="ملخصاتي HU"
+        tools:layout="@layout/fragment_parts">
         <argument
             android:name="id"
             app:argType="integer" />
@@ -75,6 +75,6 @@
     <fragment
         android:id="@+id/emailFragment"
         android:name="com.example.mysummary.ui.fragment.email.EmailFragment"
-        android:label="fragment_email"
+        android:label="ملخصاتي HU"
         tools:layout="@layout/fragment_email" />
 </navigation>
