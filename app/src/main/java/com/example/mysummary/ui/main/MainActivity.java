@@ -2,6 +2,7 @@ package com.example.mysummary.ui.main;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
@@ -24,7 +25,7 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
         navController = Navigation.findNavController(this, R.id.f_main);
         initNavController();
         initToolbar();
-
+        setNavBottomAndDrawerNav();
 
     }
 
@@ -43,7 +44,6 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
 
     private void initToolbar() {
         setSupportActionBar(binding.toolbar);
-        binding.toolbar.setTitle("");
     }
 
     @Override
@@ -53,8 +53,11 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
                 binding.drawerLayout.openDrawer(GravityCompat.START);
                 return true;
         }
-
         return NavigationUI.onNavDestinationSelected(item, navController) || super.onOptionsItemSelected(item);
+    }
+    private void setNavBottomAndDrawerNav() {
+        NavigationUI.setupWithNavController(binding.bottomNav, navController);
+        NavigationUI.setupWithNavController(binding.navView, navController);
     }
 
  }

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="aplied1"><item ><![CDATA[https://drive.google.com/drive/folders/1-YFU3IYyem5_UWxJ3zasQ0Q-XTotyBv_?fbclid=IwAR0Yvk9uYMiMIlWnYnaQ72q-1zDn4SYW0udtJiiVCrO-T-9T7jsEj25HjRY]]></item>
+    </string-array>
+    <string-array name="aplied1name"><item>slide</item>
+    </string-array>
+    <string-array name="aplied2"><item ><![CDATA[https://drive.google.com/drive/folders/1-UpXFoXUdN2po9VLxU9usIqbJUYnZqUt?fbclid=IwAR0MpTQacd-dH0RQ7cYHSHa_ExxnVKtXep7VmkyVGKBkILDcPz1Ko2l09Yc]]></item>
+    </string-array>
+    <string-array name="aplied2name"><item>slide</item>
+    </string-array>
+    <string-array name="aplied3"><item ><![CDATA[https://drive.google.com/drive/u/0/folders/1-AmwWtXyBKdOO-OGillDJ_cwj-rcmbG_?fbclid=IwAR1lW-2zwZ7VeTODAN6H95AnMWe5fzZP8WblUJUEOTlgAg0Xboc3OCjXjDc]]></item>
+    </string-array>
+    <string-array name="aplied3name"><item>slide</item>
+    </string-array>
+    <string-array name="aplied4"><item ><![CDATA[https://drive.google.com/drive/folders/1-SMxKolc7ossWMJTgl1Xpoo6DeXyF153?fbclid=IwAR3YyUdsnRHB72WtDlohpktOy3zW9rmDcrBDJZ95-URSSEDcj8uLVYp8_Dc]]></item>
+    </string-array>
+    <string-array name="aplied4name"><item>slide</item>
+    </string-array>
+    <string-array name="aplied5"><item ><![CDATA[https://drive.google.com/file/d/1tAqzPIopTLTLihwOfNNsvQ2nN9sC-awI/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="aplied5name"><item>book</item>
+    </string-array>
+    <string-array name="aplied6"><item ><![CDATA[https://www.dropbox.com/sh/ddms7vvqmfojq7o/AAAk_pqEpveYU8xl6aoi8MaYa?dl=0&fbclid=IwAR2OUNrm_daDPVnsbW5fibi81qZpVjW1bXNlINEC4goDyl2IaNjinPuU0ZU]]></item>
+    </string-array>
+    <string-array name="aplied6name"><item>slide</item>
+    </string-array>
+    <string-array name="aplied7"><item ><![CDATA[https://drive.google.com/drive/u/0/folders/1KXb10Rw1t4-O4gHUxgQGbwfGx4pHCkBv?fbclid=IwAR0XbkZ2hawBSdSa6zdgmVKhINyWgOuRev2I6Mx_uYFOTEfdO5DOs_6k7Ak]]></item>
+    </string-array>
+    <string-array name="aplied7name"><item>slide</item>
+    </string-array>
+    <string-array name="aplied8"><item ><![CDATA[https://drive.google.com/file/d/1Hjrse6sHaptpL2WRwUAyxKAGobQX3mj3/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="aplied8name"><item>book</item>
+    </string-array>
+    <string-array name="aplied9"><item ><![CDATA[https://drive.google.com/file/d/1PR9rtvNxXb_sE0DugEas8S0RGYwk_938/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="aplied9name"><item>book</item>
+    </string-array>
+    <string-array name="aplied10"><item ><![CDATA[https://drive.google.com/open?id=1-oxh_OLlWlf2fEcFLfiMLF8II_tsdEPU&fbclid=IwAR1et01LCDH5iNluk6kVFUIy9OcGm1o3Gdw2aI-J_ZuwlfJ4flJ3HUeTIPQ]]></item>
+    </string-array>
+    <string-array name="aplied10name"><item>slide</item>
+    </string-array>
+    <string-array name="aplied11">
+        <item ><![CDATA[https://drive.google.com/drive/u/0/folders/0B5-456eLPajJSDRvYXk3VnFQNGc?fbclid=IwAR1QdPWqi-NobE8U80TMBrtgcS_sUvaF7rgJu3xfvtATFfNlaN2Pxs-kFII]]></item>
+    </string-array>
+    <string-array name="aplied11name"><item>slide</item>
+    </string-array>
+    <string-array name="aplied12"><item ><![CDATA[https://drive.google.com/drive/folders/1-KwuycvWKpuVGl3yTLN8woUfjgRDsOUr?fbclid=IwAR2DdFHQMM4qzGia6AGoXw1VnR2N1RTKv-pFx7nER6A-omDYf_N3i26T-U0]]></item>
+    </string-array>
+    <string-array name="aplied12name"><item>slide</item>
+    </string-array>
+    <string-array name="aplied13"><item ><![CDATA[https://drive.google.com/drive/u/0/folders/1MpCmRq7tStFleSCDZnnxMvNLAXgNKWfY?fbclid=IwAR1T04lGUaARDE0xUeUcIWd7bHbDDslywi5Rkh2A2Mnpk-lSiFrHyz9AS-E]]></item>
+    </string-array>
+    <string-array name="aplied13name"><item>link</item>
+    </string-array>
+    <string-array name="aplied14"><item ><![CDATA[https://drive.google.com/drive/folders/1-SMxKolc7ossWMJTgl1Xpoo6DeXyF153?fbclid=IwAR3YyUdsnRHB72WtDlohpktOy3zW9rmDcrBDJZ95-URSSEDcj8uLVYp8_Dc]]></item>
+    </string-array>
+    <string-array name="aplied14name">
+        <item>slide</item>
+        </string-array>
+    <string-array name="aplied15"><item ><![CDATA[https://drive.google.com/file/d/12ATjU6RBuRMWBPh2N94khLn0cc35-3-O/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1rpT5QBA2_bEyDeD0DeplLwC7caTsWeIA/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1lu5UlSMaz7d5L94h-8geyTIk_kD7Mmtm/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="aplied15name"><item>تلخيص المادة</item>
+        <item>تلخيص المادة</item>
+        <item>test bank</item>
+    </string-array>
+    <string-array name="aplied16"><item ><![CDATA[https://drive.google.com/file/d/19XtHK3_AMNLIIKbLRnw241zWs2vcCKg8/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1pt2NWPxAwgukdJoBKDdBffgpFVzDwUQj/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="aplied16name"><item>دفتر المادة</item>
+        <item>دوسية الامال</item>
+    </string-array>
+    <string-array name="aplied17"><item ><![CDATA[https://drive.google.com/file/d/1gIqG-fGgDj9yrLgAmPA3zqZ5zS9x8qgq/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1nAGjTHz3XSwGvYDVy3ziN-_V_fbkZkRs/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/drive/u/0/folders/1-eyK7FIqm-p1_I9_MScwWKaSnoQFoOvN?fbclid=IwAR2iju2NpjxKitHjqd_MIDpSfRTNF3xFBSiU0eoJ3ojiAPyjNn0BQLIS_Tw]]></item>
+    </string-array>
+    <string-array name="aplied17name"><item>مصطلحات مترجمة</item>
+        <item>test bank</item>
+        <item>slide</item>
+    </string-array>
+    <string-array name="aplied18"><item ><![CDATA[https://drive.google.com/file/d/11z_R2b3hDYumoZ9m1MZ1Oa1ONFUsErfU/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1s19SnLUKVe6bxusOokQEKnPw_M-H0cZc/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="aplied18name"><item>book</item>
+        <item>مادة فسيولوجيا </item>
+    </string-array>
+    <string-array name="aplied19"><item ><![CDATA[https://drive.google.com/file/d/1W5sEzrajNIGGDNAywgBdIeSVKRqRuP5r/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1fZFMoJtu-b3KlZ60jSSgSbiZYTprf-hn/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1vzovnlP37ikbMW7O14AFIa6dVGKhbT_f/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="aplied19name"><item>فيرست</item>
+        <item>سكند</item>
+        <item>فاينال</item>
+    </string-array>
+    <string-array name="aplied20"><item ><![CDATA[https://drive.google.com/file/d/1P6wFzeVJCdK2P24oazvBaqgQKRVEENn1/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/drive/u/0/folders/1RgM_Lc0Rf4kzsNTZsSg5DWguHcpY5v-v?fbclid=IwAR2iju2NpjxKitHjqd_MIDpSfRTNF3xFBSiU0eoJ3ojiAPyjNn0BQLIS_Tw]]></item>
+    </string-array>
+    <string-array name="aplied20name"><item>ميد </item>
+        <item>فاينال</item>
+    </string-array>
+    <string-array name="aplied21"><item ><![CDATA[https://drive.google.com/file/d/1keXLzejJkT6YOBFHQyXDzagDmMNRt_i1/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1Oe1Zp2vzQvDilLtstC3GBgssjOnVMgXp/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/drive/u/0/folders/1mFr_sQgZt-LY9sbnGoFldO1CBGWLFK5O?fbclid=IwAR2iju2NpjxKitHjqd_MIDpSfRTNF3xFBSiU0eoJ3ojiAPyjNn0BQLIS_Tw]]></item>
+    </string-array>
+    <string-array name="aplied21name"><item>ميد</item>
+        <item>فاينال</item>
+        <item>note</item>
+    </string-array>
+    <string-array name="aplied22"><item ><![CDATA[https://drive.google.com/drive/u/0/folders/1uXms4QuPlskJBOJ1NIclUNa_lr4M_qem?fbclid=IwAR2iju2NpjxKitHjqd_MIDpSfRTNF3xFBSiU0eoJ3ojiAPyjNn0BQLIS_Tw]]></item>
+    </string-array>
+    <string-array name="aplied22name"><item>شرح المادة</item>
+    </string-array>
+    </resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="English1"><item ><![CDATA[https://drive.google.com/file/d/1cRJ_c4JkZijzedjH0zUpHG3APGNd5AA-/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="English1name"><item>المادة</item>
+    </string-array>
+    <string-array name="English2"> <item ><![CDATA[https://drive.google.com/file/d/1nvYYoDXzgDbPxZ4JLNQVKNX5p78IcdNz/view?mcp_token=eyJwaWQiOjMwNDEzODIzOTU4Nzk3NjUsInNpZCI6MzI4NDgwNzQzMTU5OTc0OCwiYXgiOiI2NWEzZGY1Y2M1YmRhNTUzMDU0MGNkZWUxMmQ1YTExZSIsInRzIjoxNjE2Njk5NjkwLCJleHAiOjE2MTkxMTg4OTB9.B_AREGnHxtMYvwc7tjbSx7p_CZYtVlc7KfnJEzzd6qc]]></item>
+    </string-array>
+    <string-array name="English2name"><item>دوسية المادة</item>
+    </string-array>
+    <string-array name="English3"><item ><![CDATA[https://drive.google.com/file/d/1KqL9QnIFpz-EhUoLuu4u6xUf429Hndf4/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="English3name"><item>المادة</item>
+    </string-array>
+    <string-array name="English4"><item ><![CDATA[https://drive.google.com/file/d/1AQZvd_LyJUyxE7a6Nmy1JREUfDx8z7qa/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1Vfc4ws6_fbomKEbUnK1R-TefyfBuT9gg/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1XHsw01ujszsBYv9-yIYBr0g2pvWmAMXa/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1HA5Npym0Sv44NcmpGX6AP6nFZ1afQbFt/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1eC0huA5Vuc1MxB6HRoqH4cWqORWOTvW6/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="English4name"><item>شرح قصيدة ان برادستريت</item>
+        <item>ch2</item>
+        <item>شرح ch1</item>
+        <item>شرح ch 4</item>
+        <item>ch 5</item>
+    </string-array>
+    <string-array name="English5"><item ><![CDATA[https://drive.google.com/file/d/1sts_O3cGd6doaGfxc6CahiKiUz2GXPSB/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/10z6C8xPMfz-r26g0XhS6ZdtyWkClNW-I/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="English5name"><item>المادة</item>
+        <item>شرح </item>
+    </string-array>
+    <string-array name="English6"><item ><![CDATA[https://drive.google.com/file/d/1El_TFI5WnHouarVii4m4cV94XIGmDfUv/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1XBHn9dqyIHFSrofhP4RG-_5oUHeJQKew/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1lKzcberfaDWfayYSRUM_edKuRRbtr0az/view?usp=sharing]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1tmsrv7Hid4pvSQUAeWYTg41OXHBz_Wgu/view?fbclid=IwAR0WjhVi-TBOURqO_UZpsXdg0gWkQl1vrcaECh0hM-oaWi-BXK00xTc-Hls
+]]></item>
+    </string-array>
+    <string-array name="English6name"><item>Ch 1</item>
+        <item>ch 3</item>
+        <item>شرح</item>
+        <item>دوسية المادة</item>
+    </string-array>
+    <string-array name="English7"><item ><![CDATA[https://drive.google.com/file/d/18eaGs94XFmHdTnposhRJMad3ceGVBU3J/view?usp=sharing]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/14z-lY2s4PEd6zYXSXnN_e9BNUyfFe_Yh/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="English7name"><item>د.رجاء</item>
+        <item>د.عماد</item>
+    </string-array>
+    <string-array name="English8">
+        <item><![CDATA[https://drive.google.com/file/d/1BIbVBlFVH2YuTRD3V5ANuDD-11Bm4W3j/view?fbclid=IwAR33ya6PwwRihJ6B1dCYME4GqixW1NdrGdmwbmeFh7CEDm5GiX27FcGD_5A
+]]></item>
+    </string-array>
+    <string-array name="English8name">
+        <item>دوسية المادة</item>
+    </string-array>
+    <string-array name="English9">
+        <item><![CDATA[https://drive.google.com/file/d/1f3GTeMrrcpicyiRYYX7sNed_DBo0EC1r/view?fbclid=IwAR3N54L9xNgMKs0Xf49JeBD3WcNO0StuBW5c4zHpiiYNnJDlRWuOIVWO2R4
+]]></item>
+    </string-array>
+    <string-array name="English9name">
+        <item>دوسية المادة</item>
+    </string-array>
+    <string-array name="English10">
+       <item><![CDATA[https://drive.google.com/file/d/1OrgDa_IitHz4uMFWpukF_h0Ze3h26LUJ/view?fbclid=IwAR1THBVBMyuk2myNoKXy3dS0xaYQucoJt3ydPpkbQHhr4BgHEdrRisq4BT0]]></item>
+    </string-array>
+    <string-array name="English10name">
+        <item>Book</item>
+    </string-array>
+</resources>

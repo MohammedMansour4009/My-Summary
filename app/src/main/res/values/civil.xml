@@ -6,10 +6,20 @@
             دفتر المادة:http://www.civilittee-hu.com/uploads/1/Hydraulics/note_Osama.pdf]]></item>
         <item name="sheet"><![CDATA[http://www.civilittee-hu.com/uploads/1/Hydraulics/SHEET.pdf]]></item>
     </string-array>
+    <string-array name="civil1name">
+        <item name="">Book</item>
+        <item name="">دفتر المادة</item>
+        <item name="sheet">sheet</item>
+    </string-array>
     <string-array name="civil2">
-        <item name="exam">http://www.civilittee-hu.com/uploads/1/Hydrolgoy/ExamSheet.pdf
+        <item name="">http://www.civilittee-hu.com/uploads/1/Hydrolgoy/ExamSheet.pdf
 </item>
-        <item name="slide"><![CDATA[http://www.civilittee-hu.com/uploads/1/Hydrolgoy/2019.pdf]]></item>
+        <item name=""><![CDATA[http://www.civilittee-hu.com/uploads/1/Hydrolgoy/2019.pdf]]></item>
+    </string-array>
+    <string-array name="civil2name">
+        <item>exam</item>
+        <item>slide</item>
+
     </string-array>
     <string-array name="civil3">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/West/book2nd.pdf
@@ -17,6 +27,11 @@
         <item name="slide"><![CDATA[http://www.civilittee-hu.com/uploads/1/West/dr.Tarawneh.pdf
 ]]></item>
         <item name="ملخص فاينال"><![CDATA[http://www.civilittee-hu.com/uploads/1/West/Ahmad-sum.pdf]]></item>
+    </string-array>
+    <string-array name="civil3name">
+        <item name="">book</item>
+        <item name="">slide</item>
+        <item name="">ملخص فاينال</item>
     </string-array>
     <string-array name="civil4">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Traffic/book5th.pdf
@@ -28,6 +43,13 @@
         <item name="youtube"><![CDATA[https://www.youtube.com/watch?v=FOaU0M4x-DA&list=PLHx4n3UT-9K-PQ-t_iu6j0LyaLVdFpjjU]]></item>
         <item name="دفتر المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Traffic/New2020.pdf
 ]]></item>
+    </string-array>
+    <string-array name="civil4name">
+        <item name="">book</item>
+        <item name="">solutions</item>
+        <item name="">slide</item>
+        <item name="">youtube</item>
+        <item name="دفتر المادة">دفتر المادة</item>
     </string-array>
     <string-array name="civil5">
     <item name=" 1-Intro_Physical water-quality parameters _ lect 1"><![CDATA[
@@ -45,6 +67,14 @@
         <item name="final"><![CDATA[ http://www.civilittee-hu.com/uploads/1/Environment/final.env.pdf
 ]]></item>
     </string-array>
+    <string-array name="civil5name">
+    <item name=" ">1-Intro_Physical water-quality parameters _ lect 1</item>
+    <item name="">2-Biological Water Quality Parameters</item>
+    <item name="">3-Chemical water-quality parameters</item>
+    <item name="">4-Solid_Waste_Management</item>
+    <item name=" mid"> mid</item>
+        <item name="">final</item>
+    </string-array>
     <string-array name="civil6">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Fluid/book9th.PDF
 ]]></item>
@@ -58,6 +88,14 @@
 ]]></item>
         <item name="youtube"><![CDATA[https://www.youtube.com/watch?v=gqHDvfQmaWQ&list=PLHx4n3UT-9K-539xrAmJLM8irRIU3JENj]]></item>
     </string-array>
+    <string-array name="civil6name">
+        <item name="book">book</item>
+        <item name="solutions">solutions</item>
+        <item name="">first</item>
+        <item name="">second</item>
+        <item name="">final</item>
+        <item name="">youtube</item>
+    </string-array>
     <string-array name="civil7">
         <item name="دوسية المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Materials/eyascivilittee.pdf
 ]]></item>
@@ -66,12 +104,22 @@
         <item name="تلخيص المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Materials/note2018.pdf
 ]]></item>
     </string-array>
+    <string-array name="civil7name">
+        <item name="">دوسية المادة</item>
+        <item name="">book</item>
+        <item name="">تلخيص المادة</item>
+    </string-array>
     <string-array name="civil8">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Steel/book5th.pdf
 ]]></item>
         <item name="solutions"><![CDATA[http://www.civilittee-hu.com/uploads/1/Steel/SSDS.pdf
 ]]></item>
         <item name="تلخيص المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Steel/wael.pdf]]></item>
+    </string-array>
+    <string-array name="civil8name">
+        <item name="">book</item>
+        <item name="">solutions</item>
+        <item name="">تلخيص المادة</item>
     </string-array>
     <string-array name="civil9">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Strength/book8th.pdf
@@ -84,6 +132,13 @@
         <item name="final"><![CDATA[http://www.civilittee-hu.com/uploads/1/Strength/final.pdf
 ]]></item>
     </string-array>
+    <string-array name="civil9name">
+        <item name="">book</item>
+        <item name="">solutions</item>
+        <item name="">first</item>
+        <item name="">second</item>
+        <item name="">final</item>
+    </string-array>
     <string-array name="civil10">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Survaying/book.pdf
 ]]></item>
@@ -94,10 +149,20 @@
         <item name="youtube"><![CDATA[https://www.youtube.com/watch?v=yb2OSXHXS84&list=PLHx4n3UT-9K-3BlPBMb-BVpek7Aa1bTLX&index=2
 ]]></item>
     </string-array>
+    <string-array name="civil10name">
+        <item name="">book</item>
+        <item name="">Mid</item>
+        <item name="">final</item>
+        <item name="">youtube</item>
+    </string-array>
     <string-array name="civil11">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/2/Physics2/SOLUTION.pdf
 ]]></item>
         <item name="دفتر المادة"><![CDATA[http://www.civilittee-hu.com/uploads/2/Physics2/A.A.pdf]]></item>
+    </string-array>
+    <string-array name="civil11name">
+        <item name="">book</item>
+        <item name="">دفتر المادة</item>
     </string-array>
     <string-array name="civil12">
         <item name="دوسية المادة"><![CDATA[http://civilittee-hu.com/uploads/1/Static/static.new.eyas.pdf
@@ -107,6 +172,11 @@
         <item name="solutions"><![CDATA[http://civilittee-hu.com/uploads/1/Static/pro.pdf
 ]]></item>
     </string-array>
+    <string-array name="civil12name">
+        <item name="">دوسية المادة</item>
+        <item name="">book</item>
+        <item name="">solutions</item>
+    </string-array>
     <string-array name="civil13">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Applied/book10th.pdf
 ]]></item>
@@ -114,11 +184,20 @@
 ]]></item>
         <item name="دفتر المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Applied/R.pdf]]></item>
     </string-array>
+    <string-array name="civil13name">
+        <item name="">book</item>
+        <item name="">solutions</item>
+        <item name="">دفتر المادة</item>
+    </string-array>
     <string-array name="civil14">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/2/Autocad/smart_book.pdf
 ]]></item>
         <item name="تلخيص المادة"><![CDATA[http://www.civilittee-hu.com/uploads/2/Autocad/MI.pdf
 ]]></item>
+    </string-array>
+    <string-array name="civil14name">
+        <item name="">book</item>
+        <item name="">تلخيص المادة</item>
     </string-array>
     <string-array name="civil15">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/RC2/book3rd.pdf
@@ -126,12 +205,21 @@
         <item name="slide"><![CDATA[http://www.civilittee-hu.com/uploads/1/RC2/rc2.pdf
 ]]></item>
     </string-array>
+    <string-array name="civil15name">
+        <item name="">book</item>
+        <item name="">slide</item>
+    </string-array>
     <string-array name="civil16">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/RC1/book6th.pdf
 ]]></item>
         <item name="دوسية المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/RC1/1.pdf
 ]]></item>
         <item name="youtube"><![CDATA[https://www.youtube.com/watch?v=e1Aup1nfAZs&list=PLHx4n3UT-9K8MqKxb0FC42y95G-qp16x0]]></item>
+    </string-array>
+    <string-array name="civil16name">
+        <item name="">book</item>
+        <item name="">دوسية المادة</item>
+        <item name="">youtube</item>
     </string-array>
     <string-array name="civil17">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/2/Calculas3/Calculus.7E.pdf
@@ -144,6 +232,13 @@
 ]]></item>
         <item name="final"><![CDATA[http://www.civilittee-hu.com/uploads/2/Calculas3/final.pdf]]></item>
     </string-array>
+    <string-array name="civil17name">
+        <item name="">book</item>
+        <item name="">دفتر المادة</item>
+        <item name="">first</item>
+        <item name="">second</item>
+        <item name="final">second</item>
+    </string-array>
     <string-array name="civil18">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Highway/book3rd.pdf
 ]]></item>
@@ -154,10 +249,20 @@
         <item name="دفتر المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Highway/note.hani.pdf
 ]]></item>
     </string-array>
+    <string-array name="civil18name">
+        <item name="">book</item>
+        <item name="">slide</item>
+        <item name="">project</item>
+        <item name="">دفتر المادة</item>
+    </string-array>
     <string-array name="civil19">
         <item name="slide"><![CDATA[http://www.civilittee-hu.com/uploads/1/Pavement/pavement.zip]]></item>
         <item name="ملخص المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Pavement/farah.pdf
 ]]></item>
+    </string-array>
+    <string-array name="civil19name">
+        <item name="">slide</item>
+        <item name="">ملخص المادة</item>
     </string-array>
     <string-array name="civil20">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Transportation/book5th.pdf
@@ -168,10 +273,20 @@
 ]]></item>
         <item name="دفتر المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/Transportation/note.hani.pdf]]></item>
     </string-array>
+    <string-array name="civil20name">
+        <item name="">book</item>
+        <item name="">solutions</item>
+        <item name="">slide</item>
+        <item name="">دفتر المادة</item>
+    </string-array>
     <string-array name="civil21">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/numerical/book9th.pdf]]></item>
         <item name="دفتر المادة"><![CDATA[http://www.civilittee-hu.com/uploads/1/numerical/mn.pdf
 ]]></item>
+    </string-array>
+    <string-array name="civil21name">
+        <item name="">book</item>
+        <item name="">دفتر المادة</item>
     </string-array>
     <string-array name="civil22">
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Structure/book8th.pdf
@@ -182,8 +297,16 @@
 
 ]]></item>
     </string-array>
+    <string-array name="civil22name">
+        <item name="">book</item>
+        <item name="">solutions</item>
+        <item name="">ملخص المادة</item>
+    </string-array>
     <string-array name="civil23">
         <item name="website"><![CDATA[http://civilittee-hu.com]]></item>
+    </string-array>
+    <string-array name="civil23name">
+        <item name="">website</item>
     </string-array>
     <string-array name="civil24">
         <item name="1- Introduction to Planning"><![CDATA[http://www.civilittee-hu.com/uploads/1/Const.managment/1maha.pdf]]></item>
@@ -203,13 +326,31 @@
         <item name="note"><![CDATA[http://www.civilittee-hu.com/uploads/1/Const.managment/note.pdf]]></item>
 
     </string-array>
+    <string-array name="civil24name">
+        <item name="">1- Introduction to Planning</item>
+        <item name="">2- Construction Planning</item>
+        <item name="">3-Construction Scheduling</item>
+        <item name="">4- Network Calculations</item>
+        <item>5-Managing Construction safety</item>
+        <item name="">6-Leadership</item>
+        <item >7- ProjectQuality"</item>
+        <item name="">note</item>
+
+    </string-array>
     <string-array name="civil25">
         <item name="ملخص فيرست"><![CDATA[http://www.civilittee-hu.com/uploads/1/Const.Contract/F.pdf]]></item>
+    </string-array>
+    <string-array name="civil25name">
+        <item name="">ملخص فيرست</item>
     </string-array>
     <string-array name="civil26">
         <item name="slide"><![CDATA[http://www.civilittee-hu.com/uploads/2/Ethics/2019.pdf]]></item>
         <item name="book"><![CDATA[http://www.civilittee-hu.com/uploads/2/Ethics/2019.pdf
 ]]></item>
+    </string-array>
+    <string-array name="civil26name">
+        <item name="slide">slide</item>
+        <item name="">book</item>
     </string-array>
 
 </resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nurse1">
+        <item><![CDATA[https://drive.google.com/drive/u/0/folders/1jLGIwacdvC8z-FnHJftEDTkQHLad_VR1?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjI2ZTUzYmE5M2FmYmQ3MjMzZTdjMzVjNGZlOTFhMTVmIiwidHMiOjE2MTUyOTA4NDYsImV4cCI6MTYxNzcxMDA0Nn0.7MZnaLatl2-n2NH3vE7UZDZXree_6mdEaR5sPHQSpPE]]></item>
+
+    </string-array>
+    <string-array name="nurse1name"><item>slide</item>
+    </string-array>
+    <string-array name="nurse2">
+        <item><![CDATA[https://drive.google.com/drive/folders/1Z8Pr4I-7amxhQWeP-oxShqzYGUKgKhAY?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjMwODFjZDIyMDBkNmFhZWFmMzI4NGI0ODVjYzQ5N2Y5IiwidHMiOjE2MTUyMjc3MjYsImV4cCI6MTYxNzY0NjkyNn0.l_OzX-XqDvqDizNJfPhUpYLsmURHkRFlhyUDXB9zjBA]]></item>
+
+    </string-array>
+    <string-array name="nurse2name"><item>slide</item>
+    </string-array>
+    <string-array name="nurse3">
+        <item><![CDATA[https://www.dropbox.com/sh/dptoig8mfvkzn0j/AACEBgt3COwZ0FpgsN3hiwQ9a?dl=0&fbclid=IwAR0utrFCQ3KxxIl4rHwhj4kULwTyI9XQXbugnMS39atSYbpKQ-CoXRXs7HI&mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjQxYjM4MWZhZDFjOWNiMDUyYzA1ZTVhN2RlYjdkNDViIiwidHMiOjE2MTUyODgzODIsImV4cCI6MTYxNzcwNzU4Mn0.Zr3XN69yUFl90VJWJ1BQ5ats9nkn8rf_ydpr-5_DYkA]]></item>
+        <item><![CDATA[https://drive.google.com/file/d/1-tp5X4GHieoDW0GmvVV41HE1bHJzYSa3/view?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjQ1MGM2YTMwY2RhOWYyYmEzOWE3YjM3NzMyNDg5M2ExIiwidHMiOjE2MTUyODgzODUsImV4cCI6MTYxNzcwNzU4NX0.J1GfZ1OYhPpVzEJya7HRa7ZlJ8oCZsDj_MxCUijk3hs]]></item>
+
+    </string-array>
+    <string-array name="nurse3name"><item>تلخيص son</item>
+        <item>تلخيص راشد الكعابنة</item>
+    </string-array>
+    <string-array name="nurse4"><item><![CDATA[https://drive.google.com/drive/u/0/folders/1g-joAyvqUTvPkRgUOyK5163oPK8Yj2P5?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjMzZjhkMTBjYmMyZGQyOTU4OWU4OGZjMjM1NGUwY2E4IiwidHMiOjE2MTUyODgxMDgsImV4cCI6MTYxNzcwNzMwOH0.VAH1NgblTLs7ZC_y0cScT7gcHwaDeMgUCLIMa2Z_AJQ]]></item>
+        <item><![CDATA[https://t.me/joinchat/AAAAAFkYn3LwLwzWnd4IHQ?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjkxMDZiYmUyMGExZmJkOWMxYjYxZDc1NzI2NTM4Y2M5IiwidHMiOjE2MTUyODgxMTQsImV4cCI6MTYxNzcwNzMxNH0.YI_tf9SJ9D_u7NxRdy1SrV70haUs7Uf3yi5X4WX3iSA]]></item>
+    </string-array>
+    <string-array name="nurse4name"><item>slide</item>
+        <item>records</item>
+    </string-array>
+    <string-array name="nurse5"><item><![CDATA[https://www.dropbox.com/s/u1pf69345qrtsob/Essentials%20of%20Psychiatric%20Mental%20Health%20Nursing%2C%20Sixth%20Edition%20-%20Mary%20C.%20Townsend.pdf?dl=0&mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImY4MGM0N2JmMzU2MWM3N2RmNmI0ZWYwNzI3MDUyNzBlIiwidHMiOjE2MTUyOTA3MzcsImV4cCI6MTYxNzcwOTkzN30.jKlLeSnk-MoRN5YxH3eklemBKekskO0pgSTkLbx4G3c]]></item>
+        <item><![CDATA[https://www.dropbox.com/sh/rh8r24o03uai2t9/AADsI6FUW23L2a0kpMljMarEa?dl=0&mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6Ijg0ZTdkZDE1NzQyN2E4Nzk2ZTZhYzU0NDY4N2E2MmRkIiwidHMiOjE2MTUyOTA3MzcsImV4cCI6MTYxNzcwOTkzN30.i_eDbVm8KNLB_kmb4Jy6wd-W6PxZLTE6bFsDA7ldXcg]]></item>
+    </string-array>
+    <string-array name="nurse5name"><item>slide</item>
+        <item>records</item>
+    </string-array>
+    <string-array name="nurse6"><item><![CDATA[https://drive.google.com/drive/folders/1--Igbd1EHaVd5URG8I_t38Z2pdFgTEs0?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImM3NzIzNDZmMGRmMzg0NDJkNmYxOGE3Y2M5MmI2N2VmIiwidHMiOjE2MTUyODk3NDgsImV4cCI6MTYxNzcwODk0OH0.57XKZyPZGc-KmO598e6I8oxB27hKhb1kxdSR9u8i9OMhttps://drive.google.com/drive/folders/1--Igbd1EHaVd5URG8I_t38Z2pdFgTEs0?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImM3NzIzNDZmMGRmMzg0NDJkNmYxOGE3Y2M5MmI2N2VmIiwidHMiOjE2MTUyODk3NDgsImV4cCI6MTYxNzcwODk0OH0.57XKZyPZGc-KmO598e6I8oxB27hKhb1kxdSR9u8i9OM]]></item>
+    </string-array>
+    <string-array name="nurse6name"><item>slide</item>
+    </string-array>
+    <string-array name="nurse7"><item><![CDATA[https://drive.google.com/drive/folders/1--Igbd1EHaVd5URG8I_t38Z2pdFgTEs0?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImM3NzIzNDZmMGRmMzg0NDJkNmYxOGE3Y2M5MmI2N2VmIiwidHMiOjE2MTUyMjg3NDksImV4cCI6MTYxNzY0Nzk0OX0.WbmA52OxVqaJSQ33AlvQIp6l-O1-GQHSypKa3QKifMs]]></item>
+    </string-array>
+    <string-array name="nurse7name"><item>slide</item>
+    </string-array>
+    <string-array name="nurse8"><item>https://drive.google.com/drive/u/0/folders/1mU0UKQ9jPh2gMGlT9Wj1gVytbMplvxjV?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjdmN2JmZWI3NWQ3MzcwNDNjYWRkNjljOGQ1N2IyMGQ3IiwidHMiOjE2MTUyOTA0NTgsImV4cCI6MTYxNzcwOTY1OH0.wFv7QtQPWbRe2I7reTFwbYVkJTSPu5TL94B0PlUf9u8</item>
+    </string-array>
+    <string-array name="nurse8name"><item>slide</item>
+    </string-array>
+    <string-array name="nurse9"><item><![CDATA[https://drive.google.com/drive/folders/1T-ks_1B8U7j8ctAWfqHC_9ecFbj4Oy2X?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjE0MDEzOTVhZjY1MjE0NTVmNDVlMDU5MGE0MmUxOTBiIiwidHMiOjE2MTUyOTA5MzcsImV4cCI6MTYxNzcxMDEzN30.Vokq3prTdw4hy1XdEHseMe93Ji13hajvCOjlWh1Kxpk]]></item>
+    </string-array>
+    <string-array name="nurse9name"><item>slide</item>
+    </string-array>
+    <string-array name="nurse10"><item>https://drive.google.com/drive/folders/1YYrw7vhQOs_ilyqxdZDmT8qvNogYF3pF?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjJlZmE5MjIzZTc5MjNjMTk1ODg1OWRmNmZjMzE5MDNlIiwidHMiOjE2MTUyODk4NjgsImV4cCI6MTYxNzcwOTA2OH0.IVwaXsbPNFJ1grUplfKtL0PHYaZntfITmpJjRw5yVTM</item>
+        <item>https://t.me/joinchat/AAAAAFU9ysl6LPfyeKnvDA?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjJhNmI4ZTUyZDMxOWUwZWEzMDNkYzVkMTllNjc3NGM3IiwidHMiOjE2MTUyODk4NjksImV4cCI6MTYxNzcwOTA2OX0.WVDXJk_t3qU9EfRjjIVI8ghoQ_AfDwciFXV9RpUUnic</item>
+    </string-array>
+    <string-array name="nurse10name"><item>slide</item>
+        <item>records</item>
+    </string-array>
+    <string-array name="nurse11"><item><![CDATA[https://drive.google.com/drive/u/0/folders/1kD-vjl2gR3FYWIZ90qYqnbeXhMIxn_EM?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjU1NmFlMmMxNWFlZTU5ZWFhN2IzOWNiNTJiYTZmNDIxIiwidHMiOjE2MTUyODg1ODksImV4cCI6MTYxNzcwNzc4OX0.wiFJgpg_miAiDDgSZPiB0aj7mhctMxmm8rtw5zYFJPE]]></item>
+    </string-array>
+    <string-array name="nurse11name"><item>slide</item>
+    </string-array>
+    <string-array name="nurse12"><item>https://drive.google.com/drive/folders/1cj3UTaxFehZSRjmpNGHUetBraR7BdIYM?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImE5OGViMTc4YTZiM2EzYzg0YjZiZGFiZWVhOTBjNzg2IiwidHMiOjE2MTUyOTAzODAsImV4cCI6MTYxNzcwOTU4MH0.umkAsda_-ilIDFOQNexcoSLPLbgNNWy11xdA7Ij0yjs</item>
+    </string-array>
+    <string-array name="nurse12name"><item>slide</item>
+    </string-array>
+    <string-array name="nurse13"><item><![CDATA[https://drive.google.com/drive/folders/1dQbpGxxBjIezx5sNrLlXyKUc1yRp6LVt?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImNiOTA1M2M1NmZmMmZiODdjZmYxODRjY2FkYjc2N2VkIiwidHMiOjE2MTUyOTAyMzUsImV4cCI6MTYxNzcwOTQzNX0.fqT2pSc9_k9HxfPsOAvYPR5DlklLmnDqhIEU9ZhlDgA]]></item>
+        <item><![CDATA[https://t.me/joinchat/AAAAAEcB6CLUsE2DYULyWg?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjRhYTYwODU4NDFmODdmODg0ODJmNGU2NmMzNjQ1ZTBiIiwidHMiOjE2MTUyOTAyMzYsImV4cCI6MTYxNzcwOTQzNn0.9tGUrPLj042uqVT2nEv7PYEv0Y-_p9nzZQ_4WvX5_jI]]></item>
+    </string-array>
+    <string-array name="nurse13name"><item>slide</item>
+        <item>records</item>
+    </string-array>
+    <string-array name="nurse14"><item><![CDATA[https://l.facebook.com/l.php?u=https%3A%2F%2Fmanychat.com%2Fr%3Fact%3D26c6b2908cfa57ca3b53cb45c5d31b18%26u%3D5722510087775195%26p%3D104112038132530%26h%3D7fc9f926c3%26fbclid%3DIwAR0mdcUXLjxwSMqQprBznpYBgHB4Q_CcX4ni4uEvRQ_74yBsWta6JrctYJk&h=AT3xMoEpvtcp1j9akO6DrXh9Mwo3YWsffwg0w1a7RKHJrrsDpRPMFlctLdoJ3Z1SmgoxeLo7_IQYYNQIz3xKDxrFcjaDvF43lMH26vRJ4aWL1e95t9lRGvSkojAlG0MxKu9N5g]]></item>
+        <item><![CDATA[https://t.me/joinchat/AAAAAEkP7-j_r8Uz4Qia9w?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjQ4MTUyOWFlZjdjN2I0Njk2ODI0YjYwOThiYzIxODRlIiwidHMiOjE2MTUyMjg1ODQsImV4cCI6MTYxNzY0Nzc4NH0.O86eZT8cSz1-Q8ycByUdpGLskaA-vovlLLD0S1qNe-g]]></item>
+    </string-array>
+    <string-array name="nurse14name"><item>slide</item>
+        <item>records</item>
+    </string-array>
+    <string-array name="nurse15"><item><![CDATA[https://drive.google.com/drive/folders/1_PKZIHYrzIoUwQKWwD85SVKdfhIKjHw1?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6Ijg4NWRkMzJlYThjZGE2MzYzODMyYjJlNTM5YzFkYTVhIiwidHMiOjE2MTUyODg0NjAsImV4cCI6MTYxNzcwNzY2MH0._ox9gvOH7d7d_wxpfRTdv0rvsYn8763UcH5dmC9ilL8]]></item>
+        <item><![CDATA[https://t.me/joinchat/AAAAAEkP7-j_r8Uz4Qia9w?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjQyZDg1Y2JmZTFiZmNhNDNiYTM5ZGJkMjQ4MjRhODgxIiwidHMiOjE2MTUyODg0NjAsImV4cCI6MTYxNzcwNzY2MH0.KjipdPX_B03zHKuuRnco4vvkAcz7vjkOaYS4MD2-_pc]]></item>
+    </string-array>
+    <string-array name="nurse15name"><item>slide</item>
+        <item>records</item>
+    </string-array>
+    <string-array name="nurse16"><item>https://drive.google.com/drive/u/0/folders/1-va6CBLhCzpfAHgLkKwBW5nNLIMjM6KY?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjEyMDFkZmE2OGRjMWUzMmEzN2FhZmNjYjdjY2I0M2E0IiwidHMiOjE2MTUyODgxOTgsImV4cCI6MTYxNzcwNzM5OH0.MdfwQ7ALqERtyIsNanecCRr2l7V9oR-pWgYTWX9YkPs</item>
+    </string-array>
+    <string-array name="nurse16name"><item>book</item>
+    </string-array>
+    <string-array name="nurse17"><item><![CDATA[https://drive.google.com/drive/folders/1f2VHl-lNcBkr95559ISfNeneWa7lA-JV?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjA2NGRmZTI5NzgzMmVjYzQzZWQyYzczNTZkNzY2OTg2IiwidHMiOjE2MTUyOTA1MjQsImV4cCI6MTYxNzcwOTcyNH0.EMut89WjpS6G9zez0STgC64djS3TwXgVYyIGSNZmIu4]]></item>
+        <item><![CDATA[https://t.me/joinchat/AAAAAEcB6CLUsE2DYULyWg?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjEwODIyNDZlMmQyYWJlOWJmNmJiMjRlMzdkZGIyNjc3IiwidHMiOjE2MTUyOTA1MjUsImV4cCI6MTYxNzcwOTcyNX0.vMyABhPBJVvTlnh2j3TJXGwFQvK5ZWQh_IYWXOHWE0o]]></item>
+    </string-array>
+    <string-array name="nurse17name"><item>slide</item>
+        <item>records</item>
+    </string-array>
+    <string-array name="nurse18"><item>https://drive.google.com/drive/folders/1f2VHl-lNcBkr95559ISfNeneWa7lA-JV?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjA2NGRmZTI5NzgzMmVjYzQzZWQyYzczNTZkNzY2OTg2IiwidHMiOjE2MTUyOTAzOTEsImV4cCI6MTYxNzcwOTU5MX0.UJS_P13aaGzl8Uw0UIDoYgxpYZLyV0mMFw3sdgNvrOg</item>
+        <item>https://t.me/joinchat/AAAAAEcB6CLUsE2DYULyWg?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjEwODIyNDZlMmQyYWJlOWJmNmJiMjRlMzdkZGIyNjc3IiwidHMiOjE2MTUyOTAzOTIsImV4cCI6MTYxNzcwOTU5Mn0.up1tyKrI66CP2gVIROlZjLZpmVKsoG5YZXBIqeZabyk</item>
+    </string-array>
+    <string-array name="nurse18name"><item>slide</item>
+        <item>records</item>
+    </string-array>
+    <string-array name="nurse19"><item><![CDATA[https://drive.google.com/drive/u/0/folders/1i--1o_9VsfwVK4wmAkobaDm56xUQaaAq?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjE3NjRkZjUyNzZjODMxNmJlYmJjN2IwMjgwOTkxZTJhIiwidHMiOjE2MTUyOTA2OTQsImV4cCI6MTYxNzcwOTg5NH0.6bSB5tYGDOAhwLBoryvAc8wJI4wxbJpZAE-CXH87R8U]]></item>
+    </string-array>
+    <string-array name="nurse19name"><item>slides</item>
+    </string-array>
+    <string-array name="nurse20"><item>https://drive.google.com/file/d/1aX5IWgYQSlI0Pom-6G-ojtXCoM057FX_/view?usp=sharing</item>
+        <item>https://drive.google.com/file/d/10FjHgkVaLRLzqqRKVRXVmIkr3RtK9m7a/view?usp=sharing</item>
+    </string-array>
+    <string-array name="nurse20name"><item>syllabus</item>
+        <item>book</item>
+    </string-array>
+    <string-array name="nurse21"><item>https://drive.google.com/drive/folders/1Qof186H0SQ0Wm9PYFJx9EgQuFoTq_adk?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6ImYyNWIxZTFjZjk2ZjM0MzVjMmY1YjAzZmE3NDg2YWUzIiwidHMiOjE2MTUyOTA2NjksImV4cCI6MTYxNzcwOTg2OX0.KKvhFtHfXfksyXmcXyvhxgja7kW4XkCpYz2YrL72Vf8</item>
+    </string-array>
+    <string-array name="nurse21name"><item>slides</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sport1"><item><![CDATA[https://drive.google.com/file/d/16DvGU8PppkysyC1FkFgcm0d4uigEbMxl/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="sport1name"><item>المادة</item>
+    </string-array>
+    <string-array name="sport2"> <item><![CDATA[https://drive.google.com/file/d/10lSgVVhceyoPlhVeZt_juGp1H_iwL4ks/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="sport2name"><item>المادة</item>
+    </string-array>
+    <string-array name="sport3"><item><![CDATA[https://drive.google.com/file/d/1kBT9oHSRwHoUxISsLfbHcfWbxlTg7G0n/view?usp=sharing]]></item>
+
+    </string-array>
+    <string-array name="sport3name"><item>الكتاب</item></string-array>
+    <string-array name="sport4"><item><![CDATA[https://drive.google.com/drive/folders/1v6hGTTPSqsjTYmVbd0O63ZQw0zFpXAuJ]]></item>
+    </string-array>
+    <string-array name="sport4name"><item>المادة</item>
+    </string-array>
+    <string-array name="sport5"><item><![CDATA[https://drive.google.com/file/d/1Be8djxZOP5UGPFScXFpWVs1GjtCoDomU/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="sport5name"><item>المادة</item>
+    </string-array>
+    <string-array name="sport6"><item><![CDATA[https://drive.google.com/file/d/1vNagipI65v8XKBVCf8xKzxRQ2aj1CVbn/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="sport6name"><item>المادة</item>
+    </string-array>
+    <string-array name="sport7"><item><![CDATA[https://drive.google.com/file/d/1OA08aaB9SPGqd4UIpu22h_Q60ySa3JXv/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="sport7name"><item>المادة</item>
+    </string-array>
+    <string-array name="sport8"><item><![CDATA[https://drive.google.com/file/d/1MB1Xfx1g_rRLCCGZhfILBVL-02y9xkby/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="sport8name"><item>المادة</item>
+    </string-array>
+    <string-array name="sport9"><item><![CDATA[https://drive.google.com/file/d/1Lrq18A7j89dy6AFuaTV77HBmL-hvND9i/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="sport9name"><item>المادة</item>
+    </string-array>
+    <string-array name="sport10"><item><![CDATA[https://drive.google.com/file/d/1jWhbptbZbnRBpt9ypItgaiSi8_om_dM9/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="sport10name"><item>المادة</item>
+    </string-array>
+    <string-array name="sport11"><item><![CDATA[https://drive.google.com/file/d/1y3tlHBVrY6Mlz-Lg2mvnaeh4YoGgizKT/view?usp=sharing]]></item>
+    </string-array>
+    <string-array name="sport11name"><item>المادة</item>
+    </string-array>
+</resources>

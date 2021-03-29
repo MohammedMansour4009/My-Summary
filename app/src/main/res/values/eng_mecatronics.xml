@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mica1"><![CDATA[https://web.facebook.com/profile.php?id=100012349083511]]></string-array>
+    <string-array name="mica1name">
+        <item>Group</item>
+
+    </string-array>
+    <string-array name="mica2"><item><![CDATA[http://www.elcom-hu.com/mech.html]]></item>
+    </string-array>
+    <string-array name="mica2name">Website</string-array>
+
+
+</resources>

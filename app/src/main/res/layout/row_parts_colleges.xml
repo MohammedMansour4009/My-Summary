@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="@dimen/_20sdp">
 
     <data>
         <variable
             name="model"
-            type="com.example.mysummary.model.home.Parts" />
+            type="com.example.mysummary.model.colleges.Parts" />
 
     </data>
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/shadow"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    >    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
         android:elevation="@dimen/shadow">
@@ -25,6 +31,7 @@
             android:layout_gravity="center">
 
             <TextView
+                style="@style/Font_Arabic"
                 android:layout_width="@dimen/widthCvMatirial"
                 android:layout_height="@dimen/heightCvMatirial"
                 android:id="@+id/tv_namePatrs"
@@ -40,4 +47,5 @@
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
+</androidx.cardview.widget.CardView>
 </layout>

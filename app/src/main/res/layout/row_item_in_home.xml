@@ -8,45 +8,40 @@
     <data>
         <variable
             name="model"
-            type="com.example.mysummary.model.home.Category" />
+            type="com.example.mysummary.model.category.Category" />
     </data>
+<androidx.cardview.widget.CardView
+    android:layout_width="@dimen/_75sdp"
+    android:layout_height="@dimen/_75sdp"
+    android:layout_margin="@dimen/_6sdp"
+    app:cardElevation="@dimen/shadow"
+    app:cardCornerRadius="@dimen/_9sdp"
+    android:id="@+id/l_item_in_home"
+    android:background="@drawable/design_corner"
+    android:foregroundGravity="center"
+    android:backgroundTint="@color/design_corner2"
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-      app/src/main/res/layout/row_category.xml
-        android:layout_width="@dimen/_80sdp"
-        android:layout_height="@dimen/_80sdp"
-        android:layout_margin="@dimen/_15sdp"
-        android:foregroundGravity="center">
-        
 
+    >
 
-        android:id="@+id/l_item_in_home"
-        android:layout_width="@dimen/_75sdp"
-        android:layout_height="@dimen/_75sdp"
-        android:background="@drawable/design_selected"
-        android:layout_margin="@dimen/_15sdp"
-        android:foregroundGravity="center">
-    app/src/main/res/layout/row_item_in_home.xml
 
 
         <androidx.appcompat.widget.AppCompatImageView
 
             android:id="@+id/iv_category"
- /src/main/res/layout/row_category.xml
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_50sdp"
-           app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="@dimen/_32sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            tools:background="@drawable/abc_vector_test" />
-            android:layout_margin="@dimen/_15sdp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_marginBottom="20dp"
+            android:foregroundGravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
             tools:background="@drawable/ic_earth" />
-       app/src/main/res/layout/row_item_in_home.xml
+
         <TextView
             android:id="@+id/tv_name_category"
             android:layout_width="wrap_content"
@@ -54,10 +49,16 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginBottom="@dimen/_9sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            style="@style/Font_Arabic"
             android:text="@{model.name}"
+            tools:text="sadassad"
+
             />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
 </layout>

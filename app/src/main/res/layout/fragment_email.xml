@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.email.EmailFragment">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="com.codinginflow.emailintentexample.MainActivity">
+        <TextView
+            style="@style/Font_Arabic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        <TextView
+            android:id="@+id/edit_text_to"
+            style="@style/Font_Arabic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:text="@string/email"
+            android:textSize="@dimen/_15sdp"
+            android:layout_margin="@dimen/_10sdp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject:"
+            style="@style/Font_Arabic"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@dimen/_15sdp"
+            />
+        <EditText
+            android:id="@+id/edit_text_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailSubject"
+            android:hint="Problem ..."
+            style="@style/Font_Arabic"
+            android:background="@android:color/transparent"
+            android:layout_margin="@dimen/_10sdp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message:"
+            style="@style/Font_Arabic"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+        <EditText
+            android:id="@+id/edit_text_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|top"
+            android:lines="6"
+            style="@style/Font_Arabic"
+            android:hint="Type ...."
+            android:background="@android:color/transparent"
+            android:layout_margin="@dimen/_10sdp"
+            />
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="send"
+            style="@style/Font_Arabic"
+            android:textColor="@android:color/black"
+            android:background="@android:color/transparent"
+            />
+    </LinearLayout>
+</FrameLayout>

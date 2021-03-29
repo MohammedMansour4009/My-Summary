@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="doctor1"><item><![CDATA[https://drive.google.com/drive/folders/1G-sRsCorJxI0isTZBHtbS01yNFtW9ya6?usp=sharing]]></item>
+        <item><![CDATA[https://drive.google.com/drive/folders/1lWScVAehxRfGqHBZK9sk9T2Has_ZAz4A?usp=sharing]]></item>
+    </string-array>
+    <string-array name="doctor1name">
+        <item>Chapters</item>
+        <item>تفريغ د.نبيل</item>
+
+    </string-array>
+    <string-array name="doctor6"><item><![CDATA[https://drive.google.com/drive/folders/1ZVGjM5OC8OExTjCscfu0Kc4D_NB6OqMI?usp=sharing]]></item>
+    </string-array>
+    <string-array name="doctor6name"><item>المادة كاملة</item>
+    </string-array>
+    <string-array name="doctor3">
+        <item><![CDATA[https://drive.google.com/drive/folders/1sqRxHOgIyiB6tZmHNzZ5leURiudo3B2j?usp=sharing]]></item>
+
+    </string-array>
+    <string-array name="doctor3name"><item>المادة كاملة </item>
+    </string-array>
+    <string-array name="doctor4">
+        <item><![CDATA[https://drive.google.com/drive/folders/1CQVSzimXevcEm-VFHhZ7h7foEH7ZR_Nk?usp=sharing]]></item>
+
+    </string-array>
+    <string-array name="doctor4name"><item>المادة كاملة</item>
+    </string-array>
+    <string-array name="doctor5"><item><![CDATA[https://drive.google.com/drive/folders/1QlxJ_vH8an2roH_u2_8_3EysL84ArlqV?usp=sharing]]></item>
+        <item><![CDATA[https://drive.google.com/drive/folders/1CaEY9AF2cEqQd-NAKvfbxdFnO39bSAhB?usp=sharing]]></item>
+    </string-array>
+    <string-array name="doctor5name">
+        <item>Chapters</item>
+        <item>test bank</item>
+
+    </string-array>
+   <string-array name="doctor2">
+       <item><![CDATA[https://drive.google.com/drive/folders/1aBIvs4H4-sPeq8Zda-VO-w5LX95_THy2?usp=sharing]]></item>
+   </string-array>
+   <string-array name="doctor2name">
+       <item>Chapter</item>
+   </string-array>
+</resources>

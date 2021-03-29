@@ -11,13 +11,18 @@
     <string name="english101">English101</string>
     <string name="namePart">اسم القسم</string>
     <string name="computer99">حاسوب99</string>
-    <string name="college">الكليات</string>
-    <string name="tv_part">الاقسام</string>
+    <string name="college">  الكليات</string>
+    <string name="tv_part"> الاقسام</string>
     <string name="matirial">         المواد    </string>
     <string name="treePlan">الخطط الشجرية</string>
     <string name="chapters">Chapters</string>
     <string name="share7">شرح</string>
-
+    <string name="test">test</string>
+    <string name="appName">ملخصاتي HU</string>
+    <string name="mawad5hteary">مواد اختياري</string>
+    <string name="send_problem">الابلاغ عن مشكلة</string>
+    <string name="email">mysummary.je.mo@gmail.com</string>
+    <string name="parts">الأقسام</string>
 
 
 </resources>
