@@ -27,7 +27,6 @@
         >
 
     <TextView
-        android:background="@drawable/design_corner_gray"
         android:id="@+id/tv_name_chapter"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

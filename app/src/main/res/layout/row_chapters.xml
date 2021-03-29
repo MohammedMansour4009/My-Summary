@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-    <!--        android:id="@+id/tv_name_chapter"-->
+    <!--        -->
     <data>
 
         <variable
@@ -16,10 +16,10 @@
         android:layout_marginHorizontal="@dimen/_5sdp"
         android:layout_height="@dimen/heightCvMatirial"
         android:layout_gravity="center"
-        android:background="@drawable/design_corner_gray"
         android:gravity="center"
         app:cardElevation="@dimen/shadow"
         app:cardCornerRadius="@dimen/_13sdp"
+        android:background="@drawable/design_corner_gray"
         android:backgroundTint="@color/design_corner2"
 
         >
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:background="@drawable/design_corner_gray">
+           >
 
             <ImageView
                 app:layout_constraintTop_toTopOf="parent"
@@ -38,7 +38,8 @@
                 android:layout_height="@dimen/_50sdp"
                 android:layout_marginTop="4dp"
                 android:src="@drawable/ic_chapter"
-                tools:layout_editor_absoluteX="101dp" />
+                tools:layout_editor_absoluteX="101dp"
+                />
 
             <TextView
             app:layout_constraintStart_toStartOf="parent"

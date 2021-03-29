@@ -149,11 +149,11 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
                 break;
             case 2:
-                Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://reg1.hu.edu.jo/"));
+                Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mlms.hu.edu.jo/"));
                 startActivity(intent1);
                 break;
             case 3:
-                Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mlms.hu.edu.jo/"));
+                Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://reg1.hu.edu.jo/"));
                 startActivity(intent2);
                 break;
 

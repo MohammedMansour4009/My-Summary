@@ -2,6 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     >
 
     <data>
@@ -15,19 +16,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="@dimen/shadow"
-        app:cardCornerRadius="@dimen/_15sdp"
         android:layout_margin="@dimen/_5sdp"
-
+        android:background="@drawable/design_corner_gray"
+        android:backgroundTint="@color/design_corner2"
+        app:cardCornerRadius="@dimen/_13sdp"
         >
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/l_college"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/design_corner_gray"
-            android:elevation="@dimen/shadow"
             android:padding="@dimen/_5sdp"
-
             >
 
             <ImageView
