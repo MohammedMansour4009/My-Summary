@@ -23,6 +23,9 @@
     <string name="send_problem">الابلاغ عن مشكلة</string>
     <string name="email">mysummary.je.mo@gmail.com</string>
     <string name="parts">الأقسام</string>
+    <string name="add_mawad">اضافة مادة</string>
+    <string name="connect_with_us">تواصل معنا</string>
+    <string name="support_us">أدعمنا</string>
 
 
 </resources>

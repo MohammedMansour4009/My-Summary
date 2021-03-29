@@ -126,8 +126,7 @@ public class ChaptersFragment extends Fragment {
                 chapterListE5teary.addAll(urlList.e5teary.get(id));
                 initRecyclerViewChapter(chapterListE5teary);
                 break;
-            case 1:
-                Toast.makeText(getContext(), "Error", Toast.LENGTH_SHORT).show();
+
             case 3:
                 chapterListNurse = new ArrayList<>();
                 chapterListNurse.addAll(urlList.nurse.get(id));
