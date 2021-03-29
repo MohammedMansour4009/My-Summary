@@ -1,6 +1,7 @@
 package com.example.mysummary.ui.fragment.home.Image;
 
 import android.content.Context;
+import android.media.Image;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,15 +13,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowImageInMainBinding;
+import com.example.mysummary.model.home.image.InfoImage;
 
 import java.util.List;
 
 public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.carViewHolder> {
-    private List<Integer> imageList;
+    private List<InfoImage> imageList;
     private Context context;
     private int index = 0;
 
-    public ImageAdapter(List<Integer> categories) {//Because get data from out
+    public ImageAdapter(List<InfoImage> categories) {//Because get data from out
         this.imageList = categories;
     }
 
@@ -40,8 +42,8 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.carViewHolde
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onBindViewHolder(@NonNull ImageAdapter.carViewHolder holder, final int position) {// put new data ever time
-        int image = imageList.get(position);
-        holder.binding.ivLogo.setBackgroundResource(image);
+        InfoImage image = imageList.get(position);
+        holder.binding.ivLogo.setBackgroundResource(image.getSrcImage());
 
     }
 

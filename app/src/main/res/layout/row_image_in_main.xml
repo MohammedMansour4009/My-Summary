@@ -4,19 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:elevation="@dimen/_20sdp">
+    >
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="@dimen/_15sdp"
-        app:cardElevation="@dimen/shadow">
+        app:cardElevation="@dimen/shadow"
+        android:elevation="@dimen/shadow"
+        >
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:elevation="@dimen/shadow"
             android:id="@+id/iv_logo"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_200sdp"
-            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_height="@dimen/_250sdp"
             tools:background="@tools:sample/backgrounds/scenic" />
     </androidx.cardview.widget.CardView>
 
