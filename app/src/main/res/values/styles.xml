@@ -12,7 +12,6 @@
     </style>
     <style name="Font_Arabic">
         <item name="android:fontFamily">@font/jf</item>
-
     </style>
 
 

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="eco1">
+    <string-array name="eco30">
         <item><![CDATA[https://drive.google.com/file/d/1UAKsjo_jHqdi9mNQJghHs5LbHuz-FUMN/view?fbclid=IwAR0hfUkyMYwPPo0smJpJ735YfkQSmztK4tuXgitBVaCX2OeVIe5ECi8AHFM]]></item>
         <item><![CDATA[https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1W6-JD0xNFK5XKQzJC4CfFVS1HZyrk-LS%2Fview%3Fusp%3Ddrivesdk%26fbclid%3DIwAR1NqrytNWWiwYEIiSTKgVSQUf9Qxc-hjQhXGoaljtW3jZ3r3_BHFRAngjE&h=AT0IFn1SkE7C3wkEuS5CJKaZyc_Hx0X2nb6t5vEnAdx5HA9_gS_iIb8bLX54ufrQSoTLgN5Lpz2XczhgUaR3hA9lOdrRO3Ax4cuD4YfpD1d218WGOSru7y4TlAzt8tCt4Qyg&__tn__=-UK*F]]></item>
         <item><![CDATA[https://drive.google.com/file/d/1U0EH_WGoOM2lpdRyuApzZSSu5ekYSbJa/view?fbclid=IwAR0mL8dTQBEJjUHzp8UUpDjNPoOgHUnqGAjY7k9n11g9io0C6commn6RkiQ]]></item>
 
     </string-array>
-    <string-array name="eco1name"><item>فيرست</item>
+    <string-array name="eco30name"><item>فيرست</item>
         <item>سكند</item>
         <item>فاينال </item>
     </string-array>
-    <string-array name="eco2">
+    <string-array name="eco31">
         <item><![CDATA[https://drive.google.com/file/d/1dfvSkE3HakL-VSky5_2nNVIAUzn6wCuY/view?fbclid=IwAR2Lvdx6d3HYa-rl_JltOGCAH9PfJkuMDW9_08nsqgcXi4Y5Cwm7fvje_-I]]></item>
 
     </string-array>
-    <string-array name="eco2name">
+    <string-array name="eco31name">
         <item>دفتر المادة</item>
 
     </string-array>
@@ -204,5 +204,17 @@
         <item><![CDATA[https://drive.google.com/file/d/1r3Cxa22cjQVPqSp5tnhOV9xJg0wyZGps/view?usp=drivesdk&fbclid=IwAR2mz6sxDrJRj-sP2R1vOZSdYfBDCC3Y7waqRLdUiHzWo1a1d5M2pgShP1g]]></item></string-array>
     <string-array name="eco29name"><item>سكند</item>
         <item>فاينال</item></string-array>
-
+<string-array name="eco1">
+    <item><![CDATA[https://www.facebook.com/groups/pulse.economic.team]]></item>
+</string-array>
+<string-array name="eco1name">
+    <item>فريق الكلية</item>
+</string-array>
+    <string-array name="eco2">
+        <item><![CDATA[https://economypulseteam.blogspot.com/?fbclid=IwAR26Pa1ByBZMpZjjbCX4MXUEdCRbvEJUksgUjxqhtdvYd_qDZQT_59CqINQ
+]]></item>
+    </string-array>
+    <string-array name="eco2name">
+        <item>المكتبة الالكترونية</item>
+    </string-array>
 </resources>

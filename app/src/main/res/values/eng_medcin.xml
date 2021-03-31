@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="midc1">
+    <string-array name="midc15">
         <item ><![CDATA[https://drive.google.com/file/d/15YvGlKrYUepLzVG9c1wSUEqs7U7bmwZY/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjNjYjE4NTc3Njc1NjAyMWNlYzgzZDZiYTAyNmUzYjI4IiwidHMiOjE2MTU4MTY4ODEsImV4cCI6MTYxODIzNjA4MX0._LrV9rBap2IK3Gv6pxdXJ9YfaWAMSA1H7Jrq3hDwPVc]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/1Y_Ht4Wj3gYld0_TyYnbKvy1YSU2new0W/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImJiNGFhMmE3ODQwN2NkMjhlZGE2N2E5YTZkM2NiNzIzIiwidHMiOjE2MTU4MTY4ODEsImV4cCI6MTYxODIzNjA4MX0.W7XcI6wk0G7zWt8bqju8znBFoKb_g-TA7nkunSjD4SE]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/1JQNkcBabmTb-9t8J4OgcJ1nJntW8ZlBN/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6IjJiNWMzYjg2OTE0ZWUwOTc1ODNmYjVmYTgyMGRjZDQ4IiwidHMiOjE2MTU4MTY4ODksImV4cCI6MTYxODIzNjA4OX0.A4l4FUPyqpr6tZiQa7ZJhNQ3zgKt_ZvoM6KWTu08-WQ]]></item>
@@ -8,7 +8,7 @@
         <item ><![CDATA[https://drive.google.com/file/d/1PSd6KJ2M0s35b7B2RSxMleZBieQbJ11d/view?mcp_token=eyJwaWQiOjc5NjEzODY4NzI1MDE2NCwic2lkIjo1MzYxMTc5MDkzOTIyNDIyLCJheCI6ImM5Y2E2YzIxODFmZmZhZDg2N2ZjMmJjZjc0YTZkNzlhIiwidHMiOjE2MTU4MTY5MDAsImV4cCI6MTYxODIzNjEwMH0.INzw4pS5MgFIwyHYn2JjijnDvfMafujwXjyV2Ozvchk]]></item>
 
     </string-array>
-    <string-array name="midc1name">
+    <string-array name="midc15name">
         <item>slide</item>
         <item>biofluid slide</item>
         <item>دوسية المادة</item>
@@ -117,4 +117,8 @@
         <item>دفتر المادة final</item>
         <item>youtube</item>
     </string-array>
+    <string-array name="midc1">
+        <item><![CDATA[https://www.facebook.com/adrena.line.5095?__cft__[0]=AZUDSkOnoTG12UTgUVTlzYya0mLJGdqe0y-BtnsLnb5jRzAibICM14h3Ht8onjkxrI1Ta8pKsOQXGcTxLqF6FRB8LMtNDqdF0q6caBa3kvK5pnwo2cphnskDC-EF6fFJg9jBK_zDmNbt9QqBXCplpveh&__tn__=-UC%2CP-R]]></item></string-array>
+    <string-array name="midc1name">
+        <item>فريق ادرينالين</item></string-array>
     </resources>

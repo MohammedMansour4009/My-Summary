@@ -1,22 +1,24 @@
 package com.example.mysummary.ui.main;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.ActivityMainBinding;
+import com.example.mysummary.ui.fragment.email.EmailFragment;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.LoadAdError;
@@ -29,7 +31,7 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
     private static final String TAG = "MainActivity";
     private NavController navController;
-
+    private FragmentTransaction fragmentTransaction;
     private RewardedAd rewardedAd;
     AppBarConfiguration appBarConfiguration;
 
@@ -42,7 +44,7 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
         initToolbar();
         setNavBottomAndDrawerNav();
         initVideoFromAdMob();
-        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
+
     }
 
     private void initNavController() {
@@ -50,7 +52,6 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
                 .findFragmentById(R.id.f_main)).getNavController();
         NavigationUI.setupWithNavController(binding.bottomNav, navController);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).setDrawerLayout(binding.drawerLayout).build();
-
 
     }
 
@@ -76,18 +77,23 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
     }
+NavigationView.OnNavigationItemSelectedListener selectedListener=new NavigationView.OnNavigationItemSelectedListener() {
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.ic_support:
+                playVideo();
+                break;
 
-    NavigationView.OnNavigationItemSelectedListener selectedListener = new NavigationView.OnNavigationItemSelectedListener() {
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.ic_support:
-                    playVideo();
-                    break;
-            }
-            return true;
-        }
-    };
+            case R.id.ic_connect_with_us:
+                conectWithUs();
+            break;
+
+    }
+        return true;
+}};
+
+
 
 
     private void initVideoFromAdMob() {
@@ -157,4 +163,17 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
     public boolean onSupportNavigateUp() {
         return NavigationUI.navigateUp(navController, appBarConfiguration) || super.onSupportNavigateUp();
     }
+
+
+    private void conectWithUs(){
+        String Link="https://web.facebook.com/mulaksat.hu";
+        Uri uri=Uri.parse(Link);
+        Intent intent=new Intent(Intent.ACTION_VIEW,uri);
+        startActivity(intent);
+
+
+
+
+    }
+
 }

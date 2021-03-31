@@ -9,7 +9,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_6sdp"
         app:cardElevation="@dimen/shadow"
         android:elevation="@dimen/shadow"
         >
@@ -19,7 +19,9 @@
             android:id="@+id/iv_logo"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_250sdp"
-            tools:background="@tools:sample/backgrounds/scenic" />
+            tools:background="@drawable/hu1"
+            android:scaleType="fitStart"
+            />
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

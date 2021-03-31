@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="math1"><item ><![CDATA[https://drive.google.com/file/d/1gCR6cDANdDrqPXoYb0JR-8wmp2drp141/view?usp=sharing]]></item>
+    <string-array name="math21"><item ><![CDATA[https://drive.google.com/file/d/1gCR6cDANdDrqPXoYb0JR-8wmp2drp141/view?usp=sharing]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/1omOShgQLiCIO7N6-wTCm6qWJeTODhdo4/view?usp=sharing]]></item>
         <item ><![CDATA[https://drive.google.com/drive/folders/1EirA6o2PB16V7vRG-4tUODOwC4CCecBX?usp=sharing]]></item>
         <item ><![CDATA[https://drive.google.com/drive/folders/1EfnZsfh-fHxdVSswMKE3ShE5nSjAM6w2?usp=sharing]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/1K85C_qUfbHnYjtFMWY7gwl9xTnaAWKUo/view?usp=sharing]]></item>
     </string-array>
-    <string-array name="math1name"><item>syllabus</item>
+    <string-array name="math21name"><item>syllabus</item>
         <item>book</item>
         <item>test banks</item>
         <item>slide</item>
-        <item>فتر المادة</item>
+        <item>دفتر المادة</item>
     </string-array>
     <string-array name="math2"><item ><![CDATA[https://www.youtube.com/channel/UCG2VSPT84SzcWjk3hx_H0tQ?fbclid=IwAR2R-eAOzwDG5oR9noDUpWBXzvF47ELh9VQpRgRMhcFucuEyIOkSRPJlOvQ]]></item>
     </string-array>
@@ -245,4 +245,8 @@
         <item>test banks</item>
 
     </string-array>
+    <string-array name="math1">
+        <item><![CDATA[https://www.facebook.com/groups/1183463308703037/user/100041459823249/]]></item></string-array>
+    <string-array name="math1name">
+        <item>فريق أنفنتي</item></string-array>
 </resources>

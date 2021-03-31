@@ -31,7 +31,7 @@
         android:layout_height="@dimen/_40sdp"
         android:indeterminateOnly="true"
         android:indeterminateDrawable="@drawable/progress_bar_circle"
-        tools:progress="60"
+        tools:progress="100"
         android:indeterminateDuration="1000"
         android:indeterminateBehavior="repeat"
 
