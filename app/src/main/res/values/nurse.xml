@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="nurse1">
+    <string-array name="nurse22">
         <item><![CDATA[https://drive.google.com/drive/u/0/folders/1jLGIwacdvC8z-FnHJftEDTkQHLad_VR1?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjI2ZTUzYmE5M2FmYmQ3MjMzZTdjMzVjNGZlOTFhMTVmIiwidHMiOjE2MTUyOTA4NDYsImV4cCI6MTYxNzcxMDA0Nn0.7MZnaLatl2-n2NH3vE7UZDZXree_6mdEaR5sPHQSpPE]]></item>
 
     </string-array>
-    <string-array name="nurse1name"><item>slide</item>
+    <string-array name="nurse22name"><item>slide</item>
     </string-array>
-    <string-array name="nurse2">
+    <string-array name="nurse23">
         <item><![CDATA[https://drive.google.com/drive/folders/1Z8Pr4I-7amxhQWeP-oxShqzYGUKgKhAY?mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjMwODFjZDIyMDBkNmFhZWFmMzI4NGI0ODVjYzQ5N2Y5IiwidHMiOjE2MTUyMjc3MjYsImV4cCI6MTYxNzY0NjkyNn0.l_OzX-XqDvqDizNJfPhUpYLsmURHkRFlhyUDXB9zjBA]]></item>
 
     </string-array>
-    <string-array name="nurse2name"><item>slide</item>
+    <string-array name="nurse23name"><item>slide</item>
     </string-array>
     <string-array name="nurse3">
         <item><![CDATA[https://www.dropbox.com/sh/dptoig8mfvkzn0j/AACEBgt3COwZ0FpgsN3hiwQ9a?dl=0&fbclid=IwAR0utrFCQ3KxxIl4rHwhj4kULwTyI9XQXbugnMS39atSYbpKQ-CoXRXs7HI&mcp_token=eyJwaWQiOjEwNDExMjAzODEzMjUzMCwic2lkIjo1NzIyNTEwMDg3Nzc1MTk1LCJheCI6IjQxYjM4MWZhZDFjOWNiMDUyYzA1ZTVhN2RlYjdkNDViIiwidHMiOjE2MTUyODgzODIsImV4cCI6MTYxNzcwNzU4Mn0.Zr3XN69yUFl90VJWJ1BQ5ats9nkn8rf_ydpr-5_DYkA]]></item>
@@ -110,6 +110,17 @@
     </string-array>
     <string-array name="nurse21name"><item>slides</item>
     </string-array>
-
+    <string-array name="nurse1">
+        <item><![CDATA[https://web.facebook.com/waten2018]]></item>
+    </string-array>
+    <string-array name="nurse1name">
+        <item>فريق الكلية</item>
+    </string-array>
+    <string-array name="nurse2">
+        <item><![CDATA[https://play.google.com/store/apps/developer?id=NoorApp&fbclid=IwAR01D0rzmPKRTuDVBtscgH2wtObTh8eMj4_Rc-03OmKMx0FB3jgao3DOevQ]]></item>
+    </string-array>
+    <string-array name="nurse2name">
+        <item>التطبيق</item>
+    </string-array>
 
 </resources>

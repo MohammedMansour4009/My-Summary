@@ -42,6 +42,7 @@
             android:layout_marginVertical="@dimen/_5sdp"
             android:layout_marginHorizontal="@dimen/_10sdp"
             android:text="أضافة مادة"
+            android:fontFamily="@font/jf"
             android:textColor="@color/colorAccent"
             app:cornerRadius="@dimen/_3sdp"
             app:icon="@drawable/ic_add"

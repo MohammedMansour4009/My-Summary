@@ -2,8 +2,8 @@
 <resources>
 
     <string-array name="itMawad">
-        <item>AI</item>
-        <item>Algo</item>
+        <item>فريق الاتحاد</item>
+        <item>المكتبة الالكترونية</item>
         <item>Analisysis</item>
         <item>ARCK</item>
         <item>C++</item>
@@ -37,10 +37,11 @@
         <item>Web</item>
         <item>Wireless</item>
         <item>احصاء</item>
-
+        <item>AI</item>
+        <item>Algo</item>
     </string-array>
     <string-array name="AppliedMawad">
-        <item>اجهزة تعويضية</item>
+        <item>فريق الكلية</item>
         <item>اعصاب</item>
         <item>العلاج اليدوي</item>
         <item>امراض واصابات</item>
@@ -62,18 +63,21 @@
         <item>لاب احياء طبية</item>
         <item>لاب اساسيات الكيمياء</item>
         <item>لاب تشريح الانسان</item>
+        <item>اجهزة تعويضية</item>
     </string-array>
     <string-array name="babyMawad">
-        <item>أدارة وتنظيم</item>
+        <item>فريق ابشر</item>
+
         <item>إرشاد الأطفال وأسرهم</item>
         <item>اضطرابات تواصل</item>
         <item>التدخل المبكر للاطفال المعرضون للخطر</item>
         <item>علم نفس اللعب</item>
         <item>نمو معرفي ولغوي للطفل</item>
+        <item>أدارة وتنظيم</item>
     </string-array>
     <string-array name="EconomiMawad">
-        <item>اخلاقيات اعمال</item>
-        <item>ادارة مالية</item>
+        <item>فريق نبض الأقتصاد</item>
+        <item>المكتبة الالكترونية</item>
         <item>ادارة مالية2</item>
         <item>ادارة محافظ استثمارية</item>
         <item>ادارة مصارف</item>
@@ -101,11 +105,12 @@
         <item>مشتريات وتخزين</item>
         <item>نظرية جزئي2</item>
         <item>نظرية جزئية 1</item>
-
+        <item>اخلاقيات اعمال</item>
+        <item>ادارة مالية</item>
     </string-array>
     <string-array name="MathMawad">
-        <item>calculas 3</item>
-        <item>youtube</item>
+        <item>فريق أنفنيتي</item>
+       <item>youtube</item>
         <item>احصاء 1</item>
         <item>احصاء رياضي</item>
         <item>احصاء2</item>
@@ -124,11 +129,11 @@
         <item>نظرية الاعداد</item>
         <item>نظرية البيان</item>
         <item>هندسة اقليدية</item>
-
+        <item>calculas 3</item>
     </string-array>
     <string-array name="NurseMawad">
-        <item>أخلاقيات العلوم والتقانة</item>
-        <item>اساسيات التمريض</item>
+        <item>Waten</item>
+        <item>تطبيق الكلية</item>
         <item>التقييم الصحي عملي</item>
         <item>التقييم الصحي</item>
         <item>الصحة النفسية</item>
@@ -148,10 +153,11 @@
         <item>مدخل الى تقانة المعلومات التمريضية</item>
         <item>مقدمة في التمريض</item>
         <item>مهارات الاتصال والتواصل</item>
-
+        <item>أخلاقيات العلوم والتقانة</item>
+        <item>اساسيات التمريض</item>
     </string-array>
     <string-array name="Eng_industrial">
-        <item>اساسيات الدوائر الكهربائية</item>
+        <item>فريق الكلية</item>
         <item>اقتصاد هندسي</item>
         <item>بحوث عمليات 1</item>
         <item>تحكم الي</item>
@@ -163,11 +169,12 @@
         <item>خواص مواد</item>
         <item>ديناميكا</item>
         <item>ضبط جودة</item>
-        <item>علم قياس</item>
+        <item>علم القياس</item>
         <item>مقدمة في الالكترونيات</item>
-
+        <item>اساسيات الدوائر الكهربائية</item>
     </string-array>
     <string-array name="Eng_electricMawad">
+        <item>المكتبة الالكترونية</item>
         <item>Analog</item>
         <item>Applied</item>
         <item>Assembly</item>
@@ -198,8 +205,8 @@
 
     </string-array>
     <string-array name="Eng_CivilMawad">
-        <item>اخلاقيات ومهارات اتصال</item>
-        <item>ادارة عقود التشييد</item>
+        <item>فريق سيفيلتي</item>
+        <item>المكتبة الالكترونية</item>
         <item>ادارة مشاريع التشييد</item>
         <item>الموقع</item>
         <item>تحليل انشائي</item>
@@ -224,7 +231,8 @@
         <item>هندسة مياه عادمة</item>
         <item>هيدرولوجيا</item>
         <item>هيدروليك</item>
-
+        <item>اخلاقيات ومهارات اتصال</item>
+        <item>ادارة عقود التشييد</item>
     </string-array>
     <string-array name="Eng_MicMawad">
         <item>Group</item>
@@ -235,7 +243,7 @@
         <item>Website</item>
     </string-array>
     <string-array name="Eng_midcinMawad">
-        <item>biofluid</item>
+        <item>فريق أدرينالين</item>
         <item>Micro nano</item>
         <item>أجهزة طبية حيوية (1)</item>
         <item>أجهزة طبية حيوية (2)</item>
@@ -249,6 +257,7 @@
         <item>معالجة الصور الطبية الرقمية</item>
         <item>ميكانيكا القلب والأوعية الدموية</item>
         <item>ميكانيكا حيوية</item>
+        <item>biofluid</item>
 
     </string-array>
     <string-array name="NameEng">
@@ -284,13 +293,14 @@
         <item>Grammar 2</item>
     </string-array>
     <string-array name="NameTorisem">
-        <item>ادارة موارد تراثية 2</item>
+        <item>فريق الكلية</item>
         <item>الحضارات و الممالك في الاردن</item>
         <item>جغرافية الوجهة السياحة</item>
         <item>دراسات السياحية و الضيافة</item>
         <item>فعاليات</item>
         <item>مبادئ علم الاثار</item>
         <item>مقدمة في السياحة و الاثار</item>
+        <item>ادارة موارد تراثية 2</item>
     </string-array>
 <string-array name="sportsMawad">
     <item>اثقال</item>

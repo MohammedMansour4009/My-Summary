@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:id="@+id/mulaksat"
-        android:icon="@drawable/ic_book"
-        android:title="@string/college" />
-    <item
-        android:id="@+id/matirialChoisesFragmint2"
-        android:icon="@drawable/ic_star"
-        android:title="@string/mawad5hteary" />
-    <item
-        android:id="@+id/emailFragment"
-        android:icon="@drawable/ic_email"
-        android:title="@string/send_problem" />
-    <item
-        android:id="@+id/ic_add_mawad"
-        android:icon="@drawable/ic_add"
-        android:title="@string/add_mawad" />
+
+
     <item
         android:id="@+id/ic_connect_with_us"
         android:icon="@drawable/ic_neural"

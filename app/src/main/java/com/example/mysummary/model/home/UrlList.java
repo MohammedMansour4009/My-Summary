@@ -114,6 +114,7 @@ public  class UrlList  {
         midc.add(midc12(context));
         midc.add(midc13(context));
         midc.add(midc14(context));
+        midc.add(midc15(context));
         //--------------------
         mica.add(computrer1(context));
         mica.add(computrer2(context));
@@ -126,6 +127,7 @@ public  class UrlList  {
         tor.add(tor5(context));
         tor.add(tor6(context));
         tor.add(tor7(context));
+        tor.add(tor8(context));
         elec.add(elec1(context));
         elec.add(elec2(context));
         elec.add(elec3(context));
@@ -152,6 +154,8 @@ public  class UrlList  {
         elec.add(elec24(context));
         elec.add(elec25(context));
         elec.add(elec26(context));
+        elec.add(elec27(context));
+        elec.add(elec28(context));
 //--------------------
         indes.add(indes1(context));
         indes.add(indes2(context));
@@ -195,6 +199,8 @@ public  class UrlList  {
         Civil.add(Civil24(context));
         Civil.add(Civil25(context));
         Civil.add(Civil26(context));
+        Civil.add(Civil27(context));
+        Civil.add(Civil28(context));
         //--------------------
         e5teary.add(Arabic101(context));
         e5teary.add(English101(context));
@@ -220,12 +226,15 @@ public  class UrlList  {
             nurse.add(nurse19(context));
             nurse.add(nurse20(context));
             nurse.add(nurse21(context));
+            nurse.add(nurse22(context));
+            nurse.add(nurse23(context));
             baby.add(baby1(context));
             baby.add(baby2(context));
             baby.add(baby3(context));
             baby.add(baby4(context));
             baby.add(baby5(context));
             baby.add(baby6(context));
+            baby.add(baby7(context));
             eco.add(eco1(context));
             eco.add(eco2(context));
             eco.add(eco3(context));
@@ -255,6 +264,8 @@ public  class UrlList  {
             eco.add(eco27(context));
             eco.add(eco28(context));
             eco.add(eco29(context));
+            eco.add(eco30(context));
+            eco.add(eco31(context));
 
             it.add(it1(context));
             it.add(it2(context));
@@ -291,6 +302,8 @@ public  class UrlList  {
             it.add(it33(context));
             it.add(it34(context));
             it.add(it35(context));
+            it.add(it36(context));
+            it.add(it37(context));
             aplied.add(aplied1(context));
             aplied.add(aplied2(context));
             aplied.add(aplied3(context));
@@ -313,6 +326,7 @@ public  class UrlList  {
             aplied.add(aplied20(context));
             aplied.add(aplied21(context));
             aplied.add(aplied22(context));
+            aplied.add(aplied23(context));
             math.add(math1(context));
             math.add(math2(context));
             math.add(math3(context));
@@ -333,6 +347,7 @@ public  class UrlList  {
             math.add(math18(context));
             math.add(math19(context));
             math.add(math20(context));
+            math.add(math21(context));
     }
 
     public static ArrayList<Url> Arabic101(Context context){
@@ -711,6 +726,32 @@ public  class UrlList  {
 
         return urls;
     }//----------------------
+    public static  ArrayList<Url> Civil27(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.civil27)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.civil27name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
+    public static  ArrayList<Url> Civil28(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.civil28)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.civil28name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
     public static  ArrayList<Url> baby1(Context context){
         ArrayList<String> Url=new ArrayList<>();
         ArrayList<String> Name=new ArrayList<>();
@@ -781,6 +822,19 @@ public  class UrlList  {
         ArrayList<String> Name=new ArrayList<>();
         Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.baby6)));
         Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.baby6name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
+    public static  ArrayList<Url> baby7(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.baby7)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.baby7name)));
         ArrayList<Url> urls=new ArrayList<>();
         for(int i=0;i<Name.size();i++){
             urls.add(new Url(Name.get(i),Url.get(i)));
@@ -1067,6 +1121,19 @@ public  class UrlList  {
         ArrayList<String> Name=new ArrayList<>();
         Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.aplied22)));
         Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.aplied22name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
+    public static  ArrayList<Url> aplied23(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.aplied23)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.aplied23name)));
         ArrayList<Url> urls=new ArrayList<>();
         for(int i=0;i<Name.size();i++){
             urls.add(new Url(Name.get(i),Url.get(i)));
@@ -1454,6 +1521,32 @@ public  class UrlList  {
 
         return urls;
     }//----------------------
+    public static  ArrayList<Url> eco30(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.eco30)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.eco30name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
+    public static  ArrayList<Url> eco31(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.eco31)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.eco31name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
 
     public static  ArrayList<Url> computrer1(Context context){
         ArrayList<String> Url=new ArrayList<>();
@@ -1819,6 +1912,33 @@ public  class UrlList  {
 
         return urls;
     }//----------------------
+    public static  ArrayList<Url> elec27(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.elec27)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.elec27name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
+    public static  ArrayList<Url> elec28(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.elec28)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.elec28name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
+
     public static  ArrayList<Url> indes1(Context context){
         ArrayList<String> Url=new ArrayList<>();
         ArrayList<String> Name=new ArrayList<>();
@@ -2014,6 +2134,7 @@ public  class UrlList  {
 
         return urls;
     }//----------------------
+
 //    public static  ArrayList<Url> mica1(Context context){
 //        ArrayList<String> Url=new ArrayList<>();
 //        ArrayList<String> Name=new ArrayList<>();
@@ -2215,6 +2336,19 @@ public  class UrlList  {
         ArrayList<String> Name=new ArrayList<>();
         Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.midc14)));
         Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.midc14name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
+    public static  ArrayList<Url> midc15(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.midc15)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.midc15name)));
         ArrayList<Url> urls=new ArrayList<>();
         for(int i=0;i<Name.size();i++){
             urls.add(new Url(Name.get(i),Url.get(i)));
@@ -2678,6 +2812,32 @@ public  class UrlList  {
 
         return urls;
     }//----------------------
+    public static  ArrayList<Url> it36(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.it36)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.it36name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
+    public static  ArrayList<Url> it37(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.it37)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.it37name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
     public static  ArrayList<Url> math1(Context context){
         ArrayList<String> Url=new ArrayList<>();
         ArrayList<String> Name=new ArrayList<>();
@@ -2930,6 +3090,19 @@ public  class UrlList  {
         ArrayList<String> Name=new ArrayList<>();
         Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.math20)));
         Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.math20name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
+    public static  ArrayList<Url> math21(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.math21)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.math21name)));
         ArrayList<Url> urls=new ArrayList<>();
         for(int i=0;i<Name.size();i++){
             urls.add(new Url(Name.get(i),Url.get(i)));
@@ -3211,6 +3384,32 @@ public  class UrlList  {
 
         return urls;
     }//----------------------
+    public static  ArrayList<Url> nurse22(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.nurse22)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.nurse22name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
+    public static  ArrayList<Url> nurse23(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.nurse23)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.nurse23name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
     public static  ArrayList<Url> arabic1(Context context){
         ArrayList<String> Url=new ArrayList<>();
         ArrayList<String> Name=new ArrayList<>();
@@ -3400,6 +3599,19 @@ public  class UrlList  {
         ArrayList<String> Name=new ArrayList<>();
         Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.tor7)));
         Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.tor7name)));
+        ArrayList<Url> urls=new ArrayList<>();
+        for(int i=0;i<Name.size();i++){
+            urls.add(new Url(Name.get(i),Url.get(i)));
+
+        }
+
+        return urls;
+    }//----------------------
+    public static  ArrayList<Url> tor8(Context context){
+        ArrayList<String> Url=new ArrayList<>();
+        ArrayList<String> Name=new ArrayList<>();
+        Url.addAll(Arrays.asList(context.getResources().getStringArray(R.array.tor8)));
+        Name.addAll(Arrays.asList(context.getResources().getStringArray(R.array.tor8name)));
         ArrayList<Url> urls=new ArrayList<>();
         for(int i=0;i<Name.size();i++){
             urls.add(new Url(Name.get(i),Url.get(i)));

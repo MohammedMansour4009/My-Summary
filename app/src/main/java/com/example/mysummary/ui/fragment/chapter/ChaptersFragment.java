@@ -156,6 +156,7 @@ public class ChaptersFragment extends Fragment {
             case 10:
                 chapterTorisem=new ArrayList<>();
                 chapterTorisem.addAll(urlList.tor.get(id));
+                initRecyclerViewChapter(chapterTorisem);
                 break;
             case 11:
                 chapterListApplied = new ArrayList<>();
