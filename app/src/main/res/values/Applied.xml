@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="aplied1"><item ><![CDATA[https://drive.google.com/drive/folders/1-YFU3IYyem5_UWxJ3zasQ0Q-XTotyBv_?fbclid=IwAR0Yvk9uYMiMIlWnYnaQ72q-1zDn4SYW0udtJiiVCrO-T-9T7jsEj25HjRY]]></item>
+    <string-array name="aplied23">
+        <item ><![CDATA[https://drive.google.com/drive/folders/1-YFU3IYyem5_UWxJ3zasQ0Q-XTotyBv_?fbclid=IwAR0Yvk9uYMiMIlWnYnaQ72q-1zDn4SYW0udtJiiVCrO-T-9T7jsEj25HjRY]]></item>
     </string-array>
-    <string-array name="aplied1name"><item>slide</item>
+    <string-array name="aplied23name"><item>slide</item>
     </string-array>
     <string-array name="aplied2"><item ><![CDATA[https://drive.google.com/drive/folders/1-UpXFoXUdN2po9VLxU9usIqbJUYnZqUt?fbclid=IwAR0MpTQacd-dH0RQ7cYHSHa_ExxnVKtXep7VmkyVGKBkILDcPz1Ko2l09Yc]]></item>
     </string-array>
@@ -112,4 +113,8 @@
     </string-array>
     <string-array name="aplied22name"><item>شرح المادة</item>
     </string-array>
+    <string-array name="aplied1">
+        <item><![CDATA[https://www.facebook.com/groups/1183463308703037/user/100013872797980]]></item></string-array>
+    <string-array name="aplied1name">
+        <item>فريق ابشر</item></string-array>
     </resources>

@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="indes1">
-        <item ><![CDATA[https://www.youtube.com/playlist?list=PLpsERNTNcD-5sEFTcrRGHb69XcexkAUgT&fbclid=IwAR3bV06WQ9_UsmG1xXxNhSeXigPSlpCBMM51XBCgtoP-ITs6KWkphhFg5k8]]></item>
-        <item ><![CDATA[https://drive.google.com/file/d/1XadQBxHPC--VRgR0GuBJnoZFyk3HEpmY/view?fbclid=IwAR0ukkQMviJCKstMCseXBQ0P0GY_E85WpxGfhCkKq0CJj5Sg8x2z5VcTeVY]]></item>
-        <item ><![CDATA[https://drive.google.com/file/d/1-bzbKIEQSUdBpvmG3uAUj8orluEQIhnl/view?usp=drive_open&fbclid=IwAR3yrj-gGzdRMDIml6z-KyZyMKzwe34Qo8yzElkntHWqqr1uQdQbbytQg7Q]]></item>
 
-    </string-array>
-    <string-array name="indes1name">
-        <item>شرح يوتيوب</item>
-        <item>دفتر فيرست</item>
-        <item>سكند </item>
-    </string-array>
+<string-array name="indes1">
+    <item><![CDATA[https://www.facebook.com/groups/mechfamilyhu/?ref=share]]></item>
+</string-array>
+<string-array name="indes1name"><item>فريق الكلية</item></string-array>
     <string-array name="indes2">
         <item ><![CDATA[https://drive.google.com/file/d/1oOYK99FaBAd3-Opp0e2bN-htQRNQq9CC/view?fbclid=IwAR00Z-98zZURPNcxoWjFjJ7vF89PUA43OeSPlgyhEkh6XYGiWktz6oSvgv8]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/1oh1ho-aatk7rHA8Q5xrmf8Z8jiMENh3E/view?fbclid=IwAR00Z-98zZURPNcxoWjFjJ7vF89PUA43OeSPlgyhEkh6XYGiWktz6oSvgv8]]></item>
@@ -18,140 +12,110 @@
         <item ><![CDATA[https://drive.google.com/file/d/1BEML6yUO2ZvnejH4bPV7ZIYRphph39EL/view?fbclid=IwAR3zui-jHB5cu_3VoFs9pSvB9qyOuabveCM6QGYmpmAPZpA6dxJkM1S7LpE]]></item>
 
     </string-array>
-    <string-array name="indes2name">
-        <item>first</item>
+    <string-array name="indes2name"><item>first</item>
         <item>mid</item>
         <item>final</item>
         <item>دفتر الطالبة وئام</item>
+    </string-array>
+    <string-array name="indes3"><item ><![CDATA[https://drive.google.com/file/d/1aBYug1kyckd73zUBx8STxQDgJKYKkJjB/view?fbclid=IwAR00M0V7eTAhZGjJi4qQSsFaVOppme8hh_x-Z5DDuJIM48sSkq29xPpsWyg]]></item>
+    </string-array>
+    <string-array name="indes3name">
+        <item>دفتر المادة</item>
 
     </string-array>
-    <string-array name="indes3">
-        <item ><![CDATA[https://drive.google.com/file/d/1aBYug1kyckd73zUBx8STxQDgJKYKkJjB/view?fbclid=IwAR00M0V7eTAhZGjJi4qQSsFaVOppme8hh_x-Z5DDuJIM48sSkq29xPpsWyg]]></item>
-
-    </string-array>
-    <string-array name="indes3name"><item>دفتر المادة</item>
-    </string-array>
-    <string-array name="indes4">
-        <item ><![CDATA[https://drive.google.com/file/d/1m8dM3yUIc8wBWu9rOXdfZK6dBLuVUZEP/view?usp=sharing&fbclid=IwAR3W_vhg5hsl3_RNQeEPdQhNkl71s1dWxzAb5xRmh-9hw2kbtpe-t3AD9wg]]></item>
+    <string-array name="indes4"><item ><![CDATA[https://drive.google.com/file/d/1m8dM3yUIc8wBWu9rOXdfZK6dBLuVUZEP/view?usp=sharing&fbclid=IwAR3W_vhg5hsl3_RNQeEPdQhNkl71s1dWxzAb5xRmh-9hw2kbtpe-t3AD9wg]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/1mUp_JNXgcoSLI51lrIyT1LHvLNhboTB3/view?usp=sharing&fbclid=IwAR1GewKwgww1rlbsgdD1beFv-4YqdJK3Wtk6Hb4N60HniC6VK9JbENk10OU]]></item>
         <item ><![CDATA[https://drive.google.com/drive/folders/1Bif_pLv-zf9tM6KotGeXvq2KCJztK1Sp?usp=sharing&fbclid=IwAR2zo65EcSWCL38ejkLp3SIZlOkrnnuAUcvRTGQQ1otZm6ignSvuqOp6Fl8]]></item>
         <item ><![CDATA[https://drive.google.com/drive/folders/1ZexDnSlpxriy_sd1giZUdsRL9uKKNpRs?usp=sharing&fbclid=IwAR2btqf0aJOmWnVxrIJ3OTZm6pxDkQ2ItFFY9-NJtZtl_SmN2hIBw_e5x_U]]></item>
         <item ><![CDATA[https://drive.google.com/drive/folders/1LqAXBwmCjG7OIQDtU49h4UamxNOe2pQS?usp=sharing&fbclid=IwAR3zui-jHB5cu_3VoFs9pSvB9qyOuabveCM6QGYmpmAPZpA6dxJkM1S7LpE]]></item>
-
     </string-array>
-    <string-array name="indes4name">
-        <item>كتاب المادة</item>
+    <string-array name="indes4name"><item>كتاب المادة</item>
         <item>حلول الكتاب</item>
         <item>سلايدات فدوة</item>
         <item>سلايدات م.ايات</item>
         <item>اسئلة سنوات</item>
-
     </string-array>
-    <string-array name="indes5">
-        <item ><![CDATA[https://drive.google.com/file/d/17mRWkjcVsH6SAZ8bOtXG19ZEsPLC9aay/view?fbclid=IwAR1GewKwgww1rlbsgdD1beFv-4YqdJK3Wtk6Hb4N60HniC6VK9JbENk10OU]]></item>
+    <string-array name="indes5"><item ><![CDATA[https://drive.google.com/file/d/17mRWkjcVsH6SAZ8bOtXG19ZEsPLC9aay/view?fbclid=IwAR1GewKwgww1rlbsgdD1beFv-4YqdJK3Wtk6Hb4N60HniC6VK9JbENk10OU]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/147AxVb8vsv7wHPgp34AXg46gY9YNCwFV/view?fbclid=IwAR0-RVJptcsa3HT3Ql5MOIpouWEPCT3Qypu_HtX0odPVvzgH9DcMsYZW0cM]]></item>
-
     </string-array>
-    <string-array name="indes5name">
-        <item>تلخيص سكند</item>
+    <string-array name="indes5name"><item>تلخيص سكند</item>
         <item>اسئلة مقترحة</item>
-
     </string-array>
-    <string-array name="indes6">
-        <item ><![CDATA[https://drive.google.com/file/d/1O_jhjGGhwv8rbLjuoRvRjOnbL2zbd1cY/view?usp=sharing]]></item>
-
+    <string-array name="indes6"><item ><![CDATA[https://drive.google.com/file/d/1O_jhjGGhwv8rbLjuoRvRjOnbL2zbd1cY/view?usp=sharing]]></item>
     </string-array>
     <string-array name="indes6name">
         <item>دفتر</item>
 
     </string-array>
-    <string-array name="indes7">
-        <item ><![CDATA[https://drive.google.com/drive/folders/1FH0x7GMIqU6-NSmfYRFGR7ndnTd8Wspv?fbclid=IwAR1m0X1x419u2W5LBGiQqp5L0EnVNIMZFWJGWglpOTFw1YZ85zJHqW7gWmg]]></item>
-
+    <string-array name="indes7"><item ><![CDATA[https://drive.google.com/drive/folders/1FH0x7GMIqU6-NSmfYRFGR7ndnTd8Wspv?fbclid=IwAR1m0X1x419u2W5LBGiQqp5L0EnVNIMZFWJGWglpOTFw1YZ85zJHqW7gWmg]]></item>
     </string-array>
-    <string-array name="indes7name">
-        <item>دفتر</item>
-
+    <string-array name="indes7name"><item>ملاحظات</item>
     </string-array>
-    <string-array name="indes8">
-        <item ><![CDATA[https://drive.google.com/drive/folders/1FH0x7GMIqU6-NSmfYRFGR7ndnTd8Wspv?fbclid=IwAR1m0X1x419u2W5LBGiQqp5L0EnVNIMZFWJGWglpOTFw1YZ85zJHqW7gWmg]]></item>
-
-    </string-array>
-    <string-array name="indes8name">
-        <item>ملاحظات</item>
-
-    </string-array>
-    <string-array name="indes9">
-        <item ><![CDATA[https://drive.google.com/file/d/10NSnTpzsWWF3v9TitoTov8G5KCSIqxtE/view?fbclid=IwAR0gg3a9D2oJed-BM0fWyTqYg_LZYBoz1FUnaFsSgaF0r_ynF82bOnAi44c]]></item>
+    <string-array name="indes8"><item ><![CDATA[https://drive.google.com/file/d/10NSnTpzsWWF3v9TitoTov8G5KCSIqxtE/view?fbclid=IwAR0gg3a9D2oJed-BM0fWyTqYg_LZYBoz1FUnaFsSgaF0r_ynF82bOnAi44c]]></item>
         <item ><![CDATA[https://www.youtube.com/watch?v=nPEUsnCQKZ4&list=PLpsERNTNcD-4jZ6tTkE-5hTTl9Jcw_OOI]]></item>
-
     </string-array>
-    <string-array name="indes9name">
-        <item>فيرست</item>
+    <string-array name="indes8name"><item>فيرست</item>
         <item>شرح يوتيوب</item>
-
     </string-array>
-    <string-array name="indes10">
-        <item ><![CDATA[https://drive.google.com/file/d/1q2JaGIcItqLVTFhdtRyHYMG9hM9REBj3/view?usp=drivesdk&fbclid=IwAR3dM2D-M4LbsopnFibxM3EK0TnaagbedPOiMQtfZDUfIlyxA3afj1PWTjk]]></item>
+    <string-array name="indes9"><item ><![CDATA[https://drive.google.com/file/d/1q2JaGIcItqLVTFhdtRyHYMG9hM9REBj3/view?usp=drivesdk&fbclid=IwAR3dM2D-M4LbsopnFibxM3EK0TnaagbedPOiMQtfZDUfIlyxA3afj1PWTjk]]></item>
         <item ><![CDATA[https://www.youtube.com/watch?v=f7lv8Bx52pw&list=PLpsERNTNcD-7E7rVhb-IVGSHr5b7-dLWG]]></item>
-
     </string-array>
-    <string-array name="indes10name">
-        <item>الكتاب</item>
+    <string-array name="indes9name"><item>الكتاب</item>
         <item>شرح المادة على اليوتيوب</item>
-
     </string-array>
-    <string-array name="indes11">
-        <item ><![CDATA[https://drive.google.com/file/d/1KitIjn-dawsBjoAg4P_f_-pmVYutQ9tW/view?fbclid=IwAR1GewKwgww1rlbsgdD1beFv-4YqdJK3Wtk6Hb4N60HniC6VK9JbENk10OU]]></item>
+    <string-array name="indes10"><item ><![CDATA[https://drive.google.com/file/d/1KitIjn-dawsBjoAg4P_f_-pmVYutQ9tW/view?fbclid=IwAR1GewKwgww1rlbsgdD1beFv-4YqdJK3Wtk6Hb4N60HniC6VK9JbENk10OU]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/1VmpKX_j5uH_IiAjsM2E5yHPa-3-vekra/view?fbclid=IwAR1GewKwgww1rlbsgdD1beFv-4YqdJK3Wtk6Hb4N60HniC6VK9JbENk10OU]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/1tamhywwMXLK0Si68mNhteFTks6_cuvUz/view?fbclid=IwAR3zui-jHB5cu_3VoFs9pSvB9qyOuabveCM6QGYmpmAPZpA6dxJkM1S7LpE]]></item>
-
     </string-array>
-    <string-array name="indes11name">
-        <item>ch.2.3</item>
+    <string-array name="indes10name"><item>ch.2.3</item>
         <item>ch.4</item>
         <item>ch 6.7</item>
-
     </string-array>
-    <string-array name="indes12">
+    <string-array name="indes11">
         <item ><![CDATA[https://drive.google.com/file/d/1Zpj5cPY7WT3lLzX0z3Dtw55rbfXmOhoR/view?usp=sharing]]></item>
 
     </string-array>
-    <string-array name="indes12name">
-        <item>ملخص للطالب علاء الفار</item>
-
+    <string-array name="indes11name"><item>ملخص للطالب علاء الفار</item>
     </string-array>
-    <string-array name="indes13">
+    <string-array name="indes12">
         <item ><![CDATA[https://drive.google.com/file/d/1-79TCPOSaeZ2sKJjeTYufsqM2zKL4iUe/view?fbclid=IwAR033pmFsgYZFmmij9RuwutxaXqe2BnggYtX0WHuRLkmAOZGaQ7ducICf0g]]></item>
         <item ><![CDATA[https://www.youtube.com/watch?v=kPS9FEtjOuQ&list=PLpsERNTNcD-4z7gLqvtQfgUzgeJXuX0F5]]></item>
 
     </string-array>
-    <string-array name="indes13name">
+    <string-array name="indes12name">
         <item>شرح chapter6</item>
         <item>شرح youtube</item>
 
     </string-array>
+    <string-array name="indes13"><item ><![CDATA[https://drive.google.com/file/d/1hJvLlrQdpceZrxvqvQctEiSYB_R-pu95/view?fbclid=IwAR1pidLHVYLSNrPrgVYI7Nb5PI2fYdbVd21FBAEfSqXMVZTZ98hQxenJS3c]]></item>
+    </string-array>
+    <string-array name="indes13name"><item>first</item>
+    </string-array>
     <string-array name="indes14">
-        <item ><![CDATA[https://drive.google.com/file/d/1hJvLlrQdpceZrxvqvQctEiSYB_R-pu95/view?fbclid=IwAR1pidLHVYLSNrPrgVYI7Nb5PI2fYdbVd21FBAEfSqXMVZTZ98hQxenJS3c]]></item>
-
-    </string-array>
-    <string-array name="indes14name">
-        <item>first</item>
-
-    </string-array>
-    <string-array name="indes15">
         <item ><![CDATA[https://www.youtube.com/watch?v=D_nJFW4L-GY&list=PLpsERNTNcD-481OQc55ebHa41_XlwKoKn]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/1R9wZP3Kv_dZnPS_zAUGf_WX-4GP8uiPy/view?fbclid=IwAR0_JcTvBX_mH5Ogtk4FQf_UGElthrPnJOVsQuyeVGhsVRPv1vsrCKhutlY]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/1c7JPYsGZGCHWSM-Q3nqowcs9HoAB1SZP/view?fbclid=IwAR05Y8QJGvQzId7vUPtMQeP-pF87ZxwuGyHHQ3Ezh425zr6JHyZb2I2t8Bo]]></item>
         <item ><![CDATA[https://drive.google.com/file/d/1gjNB_5jEU7INyw3AS_ivZ6Ka-O1Dcbys/view?fbclid=IwAR1pidLHVYLSNrPrgVYI7Nb5PI2fYdbVd21FBAEfSqXMVZTZ98hQxenJS3c]]></item>
 
     </string-array>
-    <string-array name="indes15name">
+    <string-array name="indes14name">
         <item>شرح يوتيوب</item>
         <item>فيرست</item>
         <item>سكند</item>
         <item>فاينل</item>
 
+
+    </string-array>
+    <string-array name="indes15">
+        <item ><![CDATA[https://www.youtube.com/playlist?list=PLpsERNTNcD-5sEFTcrRGHb69XcexkAUgT&fbclid=IwAR3bV06WQ9_UsmG1xXxNhSeXigPSlpCBMM51XBCgtoP-ITs6KWkphhFg5k8]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1XadQBxHPC--VRgR0GuBJnoZFyk3HEpmY/view?fbclid=IwAR0ukkQMviJCKstMCseXBQ0P0GY_E85WpxGfhCkKq0CJj5Sg8x2z5VcTeVY]]></item>
+        <item ><![CDATA[https://drive.google.com/file/d/1-bzbKIEQSUdBpvmG3uAUj8orluEQIhnl/view?usp=drive_open&fbclid=IwAR3yrj-gGzdRMDIml6z-KyZyMKzwe34Qo8yzElkntHWqqr1uQdQbbytQg7Q]]></item>
+
+    </string-array>
+    <string-array name="indes15name">
+        <item>شرح يوتيوب</item>
+        <item>دفتر فيرست</item>
+        <item>سكند</item>
 
     </string-array>
 

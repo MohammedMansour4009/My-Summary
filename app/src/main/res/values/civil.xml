@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="civil1">
+    <string-array name="civil27">
         <item name="Book"><![CDATA[http://www.civilittee-hu.com/uploads/1/Hydraulics/book4th.pdf]]></item>
-        <item name="دفتر المادة"><![CDATA[
-            دفتر المادة:http://www.civilittee-hu.com/uploads/1/Hydraulics/note_Osama.pdf]]></item>
+        <item name="دفتر المادة"><![CDATA[ دفتر المادة:http://www.civilittee-hu.com/uploads/1/Hydraulics/note_Osama.pdf]]></item>
         <item name="sheet"><![CDATA[http://www.civilittee-hu.com/uploads/1/Hydraulics/SHEET.pdf]]></item>
     </string-array>
-    <string-array name="civil1name">
+    <string-array name="civil27name">
         <item name="">Book</item>
         <item name="">دفتر المادة</item>
         <item name="sheet">sheet</item>
     </string-array>
-    <string-array name="civil2">
-        <item name="">http://www.civilittee-hu.com/uploads/1/Hydrolgoy/ExamSheet.pdf
-</item>
+    <string-array name="civil28">
+        <item name=""><![CDATA[http://www.civilittee-hu.com/uploads/1/Hydrolgoy/ExamSheet.pdf
+]]></item>
         <item name=""><![CDATA[http://www.civilittee-hu.com/uploads/1/Hydrolgoy/2019.pdf]]></item>
     </string-array>
-    <string-array name="civil2name">
+    <string-array name="civil28name">
         <item>exam</item>
         <item>slide</item>
 
@@ -352,5 +351,12 @@
         <item name="slide">slide</item>
         <item name="">book</item>
     </string-array>
-
+    <string-array name="civil1">
+        <item><![CDATA[https://www.facebook.com/civilittee.hu.1]]></item>
+    </string-array>
+    <string-array name="civil1name">فريق الكلية</string-array>
+<string-array name="civil2">
+    <item><![CDATA[http://civilittee-hu.com/download]]></item>
+</string-array>
+<string-array name="civil2name">المكتبة الالكترونية</string-array>
 </resources>

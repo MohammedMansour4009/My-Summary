@@ -23,7 +23,6 @@
         app:cardElevation="@dimen/shadow"
         app:cardCornerRadius="@dimen/_13sdp"
         android:backgroundTint="@color/design_corner2"
-
         >
 
     <TextView
