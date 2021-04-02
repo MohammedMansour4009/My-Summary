@@ -1,5 +1,6 @@
 package com.example.mysummary.ui.fragment.webView;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,6 +11,7 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import com.example.mysummary.databinding.FragmentWebViewBinding;
 
@@ -37,7 +39,22 @@ private FragmentWebViewBinding binding;
 
     private void iniWebView(){
         binding.WV.getSettings().setJavaScriptEnabled(true);
-        binding.WV.setWebViewClient(new WebViewClient());
+        binding.WV.setWebViewClient(new WebViewClient(){
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                //when page Load
+                binding.progressBar.setVisibility(view.VISIBLE);
+            }
+
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                //when page finsed
+                binding.progressBar.setVisibility(view.GONE);
+
+            }
+        });
         binding.WV.loadUrl(getURL());
         binding.WV.setOnKeyListener(new View.OnKeyListener() {
             @Override

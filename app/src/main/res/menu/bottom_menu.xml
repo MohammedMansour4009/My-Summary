@@ -12,7 +12,7 @@
         />
     <item
         android:id="@+id/matirialChoisesFragmint2"
-        android:title="ااختياري"
+        android:title="الأختياري"
         android:icon="@drawable/ic_star"
         />
 
