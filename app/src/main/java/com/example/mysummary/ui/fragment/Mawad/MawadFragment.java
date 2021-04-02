@@ -48,6 +48,7 @@ public class MawadFragment extends Fragment {
         binding.bAddMawad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getContext(), "أرسلها عن طريق ال Email", Toast.LENGTH_LONG).show();
                 sendMail();
             }
         });

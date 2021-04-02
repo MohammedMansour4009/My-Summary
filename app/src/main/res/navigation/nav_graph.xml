@@ -73,8 +73,8 @@
             app:destination="@id/mawadFragment" />
     </fragment>
     <fragment
-        android:id="@+id/emailFragment"
+        android:id="@+id/emailFragment2"
         android:name="com.example.mysummary.ui.fragment.email.EmailFragment"
         android:label="ملخصاتي HU"
-        tools:layout="@layout/fragment_email" />
+        tools:layout="@layout/fragment_email" /><action android:id="@+id/action_global_emailFragment2" app:destination="@id/emailFragment2"/>
 </navigation>

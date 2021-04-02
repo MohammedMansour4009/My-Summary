@@ -9,13 +9,17 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
+import com.example.mysummary.NavGraphDirections;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.ActivityMainBinding;
 import com.example.mysummary.ui.fragment.email.EmailFragment;
@@ -39,7 +43,6 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        navController = Navigation.findNavController(this, R.id.f_main);
         initNavController();
         initToolbar();
         setNavBottomAndDrawerNav();
@@ -48,17 +51,16 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
     }
 
     private void initNavController() {
-        navController = ((NavHostFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.f_main)).getNavController();
-        NavigationUI.setupWithNavController(binding.bottomNav, navController);
+        navController =   Navigation.findNavController(this, R.id.f_main);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).setDrawerLayout(binding.drawerLayout).build();
+
 
     }
 
     @Override
     protected ActivityMainBinding getViewBinding() {
-        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
-        return binding;
+        return ActivityMainBinding.inflate(getLayoutInflater());
+
     }
 
     private void initToolbar() {
@@ -77,27 +79,30 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
     }
-NavigationView.OnNavigationItemSelectedListener selectedListener=new NavigationView.OnNavigationItemSelectedListener() {
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.ic_support:
-                playVideo();
-                break;
 
-            case R.id.ic_connect_with_us:
-                conectWithUs();
-            break;
+    NavigationView.OnNavigationItemSelectedListener selectedListener = new NavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.ic_support:
+                    playVideo();
+                    break;
+                case R.id.ic_connect_with_us:
+                    conectWithUs();
+                    break;
+                case R.id.ic_problem:
+                    NavDirections action = NavGraphDirections.actionGlobalEmailFragment2();
+                    navController.navigate(action);
+                    binding.drawerLayout.closeDrawers();
+                    break;
+            }
+            return true;
+        }
+    };
 
-    }
-        return true;
-}};
 
-
-
-
-    private void initVideoFromAdMob() {
-        rewardedAd = new RewardedAd(binding.getRoot().getContext(), "ca-app-pub-3940256099942544/5224354917");
+    private void initVideoFromAdMob()  {
+            rewardedAd = new RewardedAd(binding.getRoot().getContext(), "ca-app-pub-3940256099942544/5224354917");
 
         RewardedAdLoadCallback adLoadCallback = new RewardedAdLoadCallback() {
             @Override
@@ -123,21 +128,22 @@ NavigationView.OnNavigationItemSelectedListener selectedListener=new NavigationV
                 @Override
                 public void onRewardedAdOpened() {
                     // Ad opened.
-                    Log.d(TAG, "onRewardedAdOpened: "+"open");
+                    Log.d(TAG, "onRewardedAdOpened: " + "open");
+                    initVideoFromAdMob();
                 }
 
                 @Override
                 public void onRewardedAdClosed() {
                     // Ad closed.
                     Log.d(TAG, "onRewardedAdClosed: ");
-                    Toast.makeText(activityContext, "شكرا لك", Toast.LENGTH_SHORT).show();
+
                 }
 
                 @Override
                 public void onUserEarnedReward(@NonNull RewardItem reward) {
                     // User earned reward.
                     Log.d(TAG, "onUserEarnedReward: ");
-
+                    Toast.makeText(activityContext, "شكرا لك", Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
@@ -149,9 +155,11 @@ NavigationView.OnNavigationItemSelectedListener selectedListener=new NavigationV
             rewardedAd.show(activityContext, adCallback);
         } else {
             Log.d(TAG, "The rewarded ad wasn't loaded yet.");
-            Toast.makeText(this, "لا يتوفر فيديو", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "لا يتوفر فيديو اأنتظر قليلا", Toast.LENGTH_SHORT).show();
+            initVideoFromAdMob();
         }
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
@@ -165,15 +173,11 @@ NavigationView.OnNavigationItemSelectedListener selectedListener=new NavigationV
     }
 
 
-    private void conectWithUs(){
-        String Link="https://web.facebook.com/mulaksat.hu";
-        Uri uri=Uri.parse(Link);
-        Intent intent=new Intent(Intent.ACTION_VIEW,uri);
+    private void conectWithUs() {
+        String Link = "https://web.facebook.com/mulaksat.hu";
+        Uri uri = Uri.parse(Link);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
-
-
-
-
     }
 
 }

@@ -16,22 +16,25 @@
             style="@style/Font_Arabic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="To:"
+            android:text="الى"
+
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         <TextView
             android:id="@+id/edit_text_to"
             style="@style/Font_Arabic"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:text="@string/email"
+            android:textColor="@android:color/black"
             android:textSize="@dimen/_15sdp"
             android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="end"
             />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Subject:"
+            android:text="الموضوع :"
             style="@style/Font_Arabic"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="@dimen/_15sdp"
@@ -41,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailSubject"
-            android:hint="Problem ..."
+            android:hint="المشكلة  ..."
             style="@style/Font_Arabic"
             android:background="@android:color/transparent"
             android:layout_margin="@dimen/_10sdp"
@@ -49,7 +52,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Message:"
+            android:text="الرسالة :"
             style="@style/Font_Arabic"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             />
@@ -60,7 +63,7 @@
             android:gravity="start|top"
             android:lines="6"
             style="@style/Font_Arabic"
-            android:hint="Type ...."
+            android:hint="يكتب ...."
             android:background="@android:color/transparent"
             android:layout_margin="@dimen/_10sdp"
             />
@@ -68,7 +71,7 @@
             android:id="@+id/button_send"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="send"
+            android:text="ارسال"
             style="@style/Font_Arabic"
             android:textColor="@android:color/black"
             android:background="@android:color/transparent"

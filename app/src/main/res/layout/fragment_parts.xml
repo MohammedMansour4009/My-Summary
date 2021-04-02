@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="Moodle"
             type="com.example.mysummary.model.home.Url" />
@@ -15,44 +16,49 @@
         tools:context=".ui.fragment.parts.Partsragment">
 
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
-                style="@style/Font_Arabic"
                 android:id="@+id/tv_parts"
+                style="@style/Font_Arabic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/marginStart_pain"
-                android:layout_marginRight="@dimen/marginStart_pain"
                 android:layout_marginTop="@dimen/marginTop_pain"
+                android:layout_marginRight="@dimen/marginStart_pain"
                 android:text="@string/parts"
                 android:textSize="@dimen/tv_pain"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_parts"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_marginTop="@dimen/margintop_rv"
-                tools:listitem="@layout/row_parts_eng"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                android:layout_marginBottom="@dimen/_10sdp" />
-
-<!--            <com.google.android.gms.ads.AdView-->
-<!--                xmlns:ads="http://schemas.android.com/apk/res-auto"-->
-<!--                android:id="@+id/adView"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_alignParentBottom="true"-->
-<!--                android:layout_centerHorizontal="true"-->
-<!--                ads:adSize="BANNER"-->
-<!--                ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>-->
+                app:layout_constraintTop_toBottomOf="@id/tv_parts"
+                tools:listitem="@layout/row_parts_eng" />
 
 
 
-        </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-8143854392517680/1492490935"
+                ads:layout_constraintBottom_toBottomOf="parent">
+
+            </com.google.android.gms.ads.AdView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
 </layout>

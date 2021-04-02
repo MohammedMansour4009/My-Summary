@@ -14,5 +14,8 @@
         android:iconTint="@color/colorAccent"
         android:title="@string/support_us" />
 
-
+    <item
+        android:id="@+id/ic_problem"
+        android:icon="@drawable/ic_email"
+        android:title="@string/send_problem" />
 </menu>

@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     >
 
     <data>
@@ -25,14 +26,14 @@
         android:background="@drawable/design_corner_gray"
         android:backgroundTint="@color/design_corner2"
         app:cardCornerRadius="@dimen/_13sdp"
-
         >
 
         <TextView
             android:id="@+id/tv_name_chapter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/design_corner_gray"
+            android:gravity="center"
             android:text="@{model.nameCourse}"
             style="@style/Font_Arabic"
             android:textSize="@dimen/tv_sizeText_matirial"

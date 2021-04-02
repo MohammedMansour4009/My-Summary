@@ -14,7 +14,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_50sdp"
         app:cardElevation="@dimen/shadow"
         android:layout_margin="@dimen/_5sdp"
         android:background="@drawable/design_corner_gray"
@@ -26,15 +26,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="@dimen/_5sdp"
+            android:background="@drawable/design_corner_gray"
             >
 
             <ImageView
                 android:id="@+id/iv_colleges"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginHorizontal="@dimen/_5sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:background="@drawable/ic_mountain" />
+                tools:background="@drawable/ic_mountain"
+                />
 
             <TextView
                 style="@style/Font_Arabic"

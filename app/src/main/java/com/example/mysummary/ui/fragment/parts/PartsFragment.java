@@ -12,6 +12,10 @@ import androidx.fragment.app.Fragment;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentPartsBinding;
 import com.example.mysummary.model.colleges.Parts;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,7 +31,7 @@ public class PartsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         getRemotePart();
         initRecyclerViePart();
-
+        setAdMobBanner();
 
     }
 
@@ -71,6 +75,18 @@ public class PartsFragment extends Fragment {
     private int getID(){
         return PartsFragmentArgs.fromBundle(getArguments()).getId();
 
+
+    }
+    private void setAdMobBanner() {
+        MobileAds.initialize(getContext(), new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
+
+            }
+        });
+        // Banner
+        AdRequest adRequest = new AdRequest.Builder().build();
+        binding.adView.loadAd(adRequest);
 
     }
 

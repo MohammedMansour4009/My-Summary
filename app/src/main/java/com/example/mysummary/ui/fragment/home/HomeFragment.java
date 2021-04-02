@@ -75,14 +75,6 @@ public class HomeFragment extends Fragment {
         setListCategory();
         initRecyclerViewHome();
         setListImage();
-        binding.vpImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri uri=Uri.parse("https://hu.edu.jo/");
-                Intent intent=new Intent(Intent.ACTION_VIEW,uri);
-                startActivity(intent);
-            }
-        });
 
         initViewPager();
         setAdMobBanner();
@@ -204,7 +196,7 @@ public class HomeFragment extends Fragment {
     }
 
     private void videoFromAdMob() {
-        rewardedAd = new RewardedAd(getContext(), "ca-app-pub-3940256099942544/5224354917");
+        rewardedAd = new RewardedAd(getContext(), "ca-app-pub-8143854392517680/4992752240");
 
         RewardedAdLoadCallback adLoadCallback = new RewardedAdLoadCallback() {
             @Override

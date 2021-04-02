@@ -1,6 +1,10 @@
 apply plugin: 'com.android.application'
 
 apply plugin: "androidx.navigation.safeargs"
+
+apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'com.google.firebase.crashlytics'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -63,6 +67,14 @@ dependencies {
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
     implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3'
     implementation 'me.relex:circleindicator:2.1.6'
+
+    //firebase
+    implementation platform('com.google.firebase:firebase-bom:26.8.0')
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // Declare the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-crashlytics'
 
 
 }
