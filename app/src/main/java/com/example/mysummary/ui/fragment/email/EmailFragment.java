@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.mysummary.databinding.FragmentEmailBinding;
 
@@ -20,7 +21,6 @@ public class EmailFragment extends Fragment {
     public EmailFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,6 +35,7 @@ public class EmailFragment extends Fragment {
         binding.buttonSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getContext(), "أرسلها عن طريق ال Email", Toast.LENGTH_SHORT).show();
                 sendMail();
             }
         });
@@ -49,7 +50,7 @@ public class EmailFragment extends Fragment {
         intent.putExtra(Intent.EXTRA_EMAIL, recipients);
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         intent.putExtra(Intent.EXTRA_TEXT, message);
-        intent.setType("message/rfc822");
+        intent.setType("message/");
         startActivity(Intent.createChooser(intent, "Choose an email client"));
     }
 }

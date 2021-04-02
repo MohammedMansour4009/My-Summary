@@ -10,7 +10,21 @@
         android:id="@+id/WV"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:indeterminateOnly="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateDrawable="@drawable/progress_bar_circle"
+        tools:progress="100"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateDuration="1000"
+        android:indeterminateBehavior="repeat"
 
+
+        />
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"

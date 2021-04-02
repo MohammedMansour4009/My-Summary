@@ -8,7 +8,11 @@
         android:id="@+id/webFragment"
         android:name="com.example.mysummary.ui.fragment.home.HomeFragment"
         android:label="ملخصاتي HU"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_webFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mulaksat"
         android:name="com.example.mysummary.ui.fragment.mulakasat.MulaksatFragment"

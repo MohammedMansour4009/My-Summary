@@ -37,4 +37,6 @@ public class Category {
     public void setImage(int image) {
         this.image = image;
     }
+
+
 }

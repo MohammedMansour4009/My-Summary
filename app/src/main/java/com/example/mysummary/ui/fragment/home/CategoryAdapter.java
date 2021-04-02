@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
@@ -42,45 +44,56 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.carVie
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onBindViewHolder(@NonNull CategoryAdapter.carViewHolder holder, final int position) {// put new data ever time
-      Category  category = categoryList.get(position);
+        Category category = categoryList.get(position);
         holder.binding.setModel(category);
         holder.binding.ivCategory.setBackgroundResource(category.getImage());
-
-
         holder.bind(category);
-
-
-    }
-
-
-
-    @Override
-    public int getItemCount() {
-        return categoryList.size();
-    }
-
-    class carViewHolder extends RecyclerView.ViewHolder {//declare elements and but resources
-        RowItemInHomeBinding binding;
-        Category category;
-        public carViewHolder(@NonNull RowItemInHomeBinding binding) {
-            super(binding.getRoot());
-            this.binding = binding;
-
-            binding.getRoot().setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    listener.onItemClick(category);
+        holder.binding.tvNameCategory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavDirections action;
+                if(category.getId()==1) {
+                     action = HomeFragmentDirections.actionWebFragmentToWebViewFragment("https://etihadlibrary.azurewebsites.net/counting_gpa.aspx");
                 }
-            });
-        }
+                else if(category.getId()==2){
+                    action = HomeFragmentDirections.actionWebFragmentToWebViewFragment("http://www.mlms.hu.edu.jo/");
 
-        void bind(Category category) {
-            this.category = category;
-        }
-
+                }
+                else if(category.getId()==3){
+                 action = HomeFragmentDirections.actionWebFragmentToWebViewFragment("https://reg1.hu.edu.jo/");
+                }
+                Navigation.findNavController(holder.binding.getRoot());
+            }
+        });
     }
 
 
+            @Override
+            public int getItemCount() {
+                return categoryList.size();
+            }
+
+            class carViewHolder extends RecyclerView.ViewHolder {//declare elements and but resources
+                RowItemInHomeBinding binding;
+                Category category;
+
+                public carViewHolder(@NonNull RowItemInHomeBinding binding) {
+                    super(binding.getRoot());
+                    this.binding = binding;
+
+                    binding.getRoot().setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            listener.onItemClick(category);
+                        }
+                    });
+                }
+
+                void bind(Category category) {
+                    this.category = category;
+                }
+
+            }
 
 
-}
+        }

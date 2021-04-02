@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.RowChoisesBinding;
 import com.example.mysummary.model.choises.Choises;
+import com.example.mysummary.model.mawad.Mawad;
 
 import java.util.List;
 
@@ -59,6 +60,10 @@ public class ChoisesAdapter extends RecyclerView.Adapter<ChoisesAdapter.ChoisesH
             this.binding = binding;
 
         }
+    }
+    public void filterList(List<Choises> filteredList) {
+       choises = filteredList;
+        notifyDataSetChanged();
     }
 
 

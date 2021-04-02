@@ -354,9 +354,10 @@
     <string-array name="civil1">
         <item><![CDATA[https://www.facebook.com/civilittee.hu.1]]></item>
     </string-array>
-    <string-array name="civil1name">فريق الكلية</string-array>
+    <string-array name="civil1name"><item>فريق الكلية</item></string-array>
 <string-array name="civil2">
     <item><![CDATA[http://civilittee-hu.com/download]]></item>
 </string-array>
-<string-array name="civil2name">المكتبة الالكترونية</string-array>
+<string-array name="civil2name">
+    <item>المكتبة الالكترونية</item></string-array>
 </resources>

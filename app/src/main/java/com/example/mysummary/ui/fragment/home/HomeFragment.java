@@ -19,6 +19,8 @@ import androidx.annotation.Nullable;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager2.widget.CompositePageTransformer;
 import androidx.viewpager2.widget.MarginPageTransformer;
@@ -114,14 +116,12 @@ public class HomeFragment extends Fragment {
     private void setListCategory() {
      categoryList=new ArrayList<>();
      categoryList.add(new Category(1,"حساب المعدل",R.drawable.ic_calculater));
-     categoryList.add(new Category(2,"مودل",R.drawable.ic_person));
-     categoryList.add(new Category(3,"بوبة الطالب",R.drawable.ic_web));
+     categoryList.add(new Category(2,"مودل",R.drawable.ic_web));
+     categoryList.add(new Category(3,"بوبة الطالب",R.drawable.ic_person));
 
     }
 
     private void initRecyclerViewHome() {
-
-
         categoryAdapter = new CategoryAdapter(categoryList, new OnHomeClickListener() {
             @Override
             public void onItemClick(Category category) {
@@ -134,23 +134,7 @@ public class HomeFragment extends Fragment {
 
     }
 
-    private void goToBrowser(int position) {
-        switch (position) {
-            case 1:
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://etihadlibrary.azurewebsites.net/counting_gpa.aspx"));
-                startActivity(intent);
-                break;
-            case 2:
-                Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mlms.hu.edu.jo/"));
-                startActivity(intent1);
-                break;
-            case 3:
-                Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://reg1.hu.edu.jo/"));
-                startActivity(intent2);
-                break;
-
-        }
-    }
+ 
 
     private void setListImage() {
         imageList = new ArrayList<>();
@@ -229,7 +213,6 @@ public class HomeFragment extends Fragment {
                 public void onRewardedAdClosed() {
                     // Ad closed.
                     Log.d(TAG, "onRewardedAdClosed: ");
-                    goToBrowser(position);
                 }
 
                 @Override
@@ -248,12 +231,7 @@ public class HomeFragment extends Fragment {
             rewardedAd.show(activityContext, adCallback);
         } else {
             Log.d(TAG, "The rewarded ad wasn't loaded yet.");
-            goToBrowser(position);
         }
     }
-
-
-
-
 
 }
