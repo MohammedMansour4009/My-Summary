@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mysummary.R;
@@ -23,10 +24,13 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterH
 //    private int index=0;
     private listenr lr;
 
-    public ChapterAdapter(List<Url> chapters,listenr lr) {
+    public ChapterAdapter(List<Url> chapters ,listenr lr) {
         this.chapters = chapters;
-        this.lr=lr;
+
+      this.lr=lr;
     }
+
+
 
     @Override
     public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {

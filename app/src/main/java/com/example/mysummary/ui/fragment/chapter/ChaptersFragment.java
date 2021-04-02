@@ -1,24 +1,19 @@
 package com.example.mysummary.ui.fragment.chapter;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import com.example.mysummary.R;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
+
 import com.example.mysummary.databinding.FragmentChaptersBinding;
 import com.example.mysummary.model.home.UrlList;
-import com.example.mysummary.ui.fragment.Mawad.MawadFragmentArgs;
-import com.example.mysummary.ui.main.MainActivity;
-import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
@@ -28,13 +23,8 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.example.mysummary.model.home.Url;
 import com.example.mysummary.model.home.listenr;
-import com.google.android.gms.ads.rewarded.RewardItem;
-import com.google.android.gms.ads.rewarded.RewardedAd;
-import com.google.android.gms.ads.rewarded.RewardedAdCallback;
-import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
+
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
 public class ChaptersFragment extends Fragment {
@@ -60,6 +50,7 @@ public class ChaptersFragment extends Fragment {
     private ArrayList<Url> chapterMath;
     private ArrayList<Url> chapterSport;
     private ArrayList<Url> chapterDoctor;
+    private ArrayList<Url> globalList;
     private ChapterAdapter chapterAdapter;
     private UrlList urlList;
     private InterstitialAd mInterstitialAd;
@@ -86,6 +77,7 @@ public class ChaptersFragment extends Fragment {
     }
 
     private void initRecyclerViewChapter(List<Url> chapterList) {
+
         chapterAdapter = new ChapterAdapter(chapterList, new listenr() {
             @Override
             public void OnItemClick(int index) {
@@ -96,9 +88,11 @@ public class ChaptersFragment extends Fragment {
         binding.rvChapters.setAdapter(chapterAdapter);
     }
 
-    private void goToBrowser(int index, List<Url> chapterList) {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(chapterList.get(index).getUrl()));
-        startActivity(intent);
+    private void gitURL(int index, List<Url> chapterList) {
+
+        NavDirections navDirections=ChaptersFragmentDirections.actionChaptersFragmentToWebViewFragment(chapterList.get(index).getUrl());
+        Navigation.findNavController(binding.getRoot()).navigate(navDirections);
+
     }
 
 
@@ -263,7 +257,7 @@ public class ChaptersFragment extends Fragment {
 
         } else {
             Log.d("TAG", "The interstitial wasn't loaded yet.");
-            goToBrowser(index, chapterList);
+            gitURL(index, chapterList);
         }
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
@@ -294,7 +288,7 @@ public class ChaptersFragment extends Fragment {
             @Override
             public void onAdClosed() {
                 // Code to be executed when the interstitial ad is closed.
-                goToBrowser(index, chapterList);
+                gitURL(index,chapterList);
             }
         });
     }

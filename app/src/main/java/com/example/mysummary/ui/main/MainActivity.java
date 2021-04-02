@@ -22,7 +22,6 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.mysummary.NavGraphDirections;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.ActivityMainBinding;
-import com.example.mysummary.ui.fragment.email.EmailFragment;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.LoadAdError;
@@ -32,7 +31,7 @@ import com.google.android.gms.ads.rewarded.RewardedAdCallback;
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
+public class MainActivity extends BaseBindingActivity<ActivityMainBinding>  {
     private static final String TAG = "MainActivity";
     private NavController navController;
     private FragmentTransaction fragmentTransaction;
@@ -43,10 +42,12 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        navController = Navigation.findNavController(this, R.id.f_main);
         initNavController();
         initToolbar();
         setNavBottomAndDrawerNav();
         initVideoFromAdMob();
+
 
     }
 
@@ -178,6 +179,10 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding> {
         Uri uri = Uri.parse(Link);
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
+
+
+
+
     }
 
 }
