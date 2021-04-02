@@ -76,17 +76,18 @@
             app:destination="@id/mawadFragment" />
     </fragment>
     <fragment
-        android:id="@+id/emailFragment"
+        android:id="@+id/emailFragment2"
         android:name="com.example.mysummary.ui.fragment.email.EmailFragment"
         android:label="ملخصاتي HU"
         tools:layout="@layout/fragment_email" />
     <fragment
         android:id="@+id/webViewFragment"
         android:name="com.example.mysummary.ui.fragment.webView.WebViewFragment"
-        android:label="fragment_web_view"
-        tools:layout="@layout/fragment_web_view" >
+        android:label="ملخصاتي HU"
+        tools:layout="@layout/fragment_web_view">
         <argument
             android:name="URL"
             app:argType="string" />
     </fragment>
+    <action android:id="@+id/action_global_emailFragment2" app:destination="@id/emailFragment2" />
 </navigation>

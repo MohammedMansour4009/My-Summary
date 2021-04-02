@@ -1,7 +1,9 @@
 package com.example.mysummary.ui.fragment.home.Image;
 
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
+import android.net.Uri;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,6 +46,14 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.carViewHolde
     public void onBindViewHolder(@NonNull ImageAdapter.carViewHolder holder, final int position) {// put new data ever time
         InfoImage image = imageList.get(position);
         holder.binding.ivLogo.setBackgroundResource(image.getSrcImage());
+        holder.binding.ivLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri=Uri.parse("https://hu.edu.jo/");
+                Intent intent=new Intent(Intent.ACTION_VIEW,uri);
+               context.startActivity(intent);
+            }
+        });
 
     }
 

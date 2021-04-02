@@ -50,12 +50,6 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterH
     public void onBindViewHolder(@NonNull ChapterHolder holder, int position) {
         Url chapter=chapters.get(position);
         holder.binding.setModel(chapter);
-
-        
-
-
-
-
     }
 
     @Override

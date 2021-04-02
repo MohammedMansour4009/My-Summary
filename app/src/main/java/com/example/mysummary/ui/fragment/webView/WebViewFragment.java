@@ -2,6 +2,8 @@ package com.example.mysummary.ui.fragment.webView;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.KeyEvent;
@@ -18,16 +20,20 @@ private FragmentWebViewBinding binding;
 
 
 
+
+
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    iniWebView();
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        iniWebView();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding=FragmentWebViewBinding.inflate(getLayoutInflater());
-        return binding.getRoot();}
+        return binding.getRoot();
+
+    }
 
     private void iniWebView(){
         binding.WV.getSettings().setJavaScriptEnabled(true);

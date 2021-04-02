@@ -45,7 +45,9 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/toolbar"
                 app:layout_constraintVertical_bias="0.0"
-                app:navGraph="@navigation/nav_graph" />
+                app:navGraph="@navigation/nav_graph"
+
+                />
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_nav"
@@ -56,7 +58,6 @@
                 app:menu="@menu/bottom_menu"
                 app:itemIconTint="@color/color_of_selected"
                 app:itemTextColor="@color/color_of_selected"
-                app:labelVisibilityMode="unlabeled"
 
                 />
 

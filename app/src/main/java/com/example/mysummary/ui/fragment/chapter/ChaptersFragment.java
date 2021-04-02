@@ -89,6 +89,7 @@ public class ChaptersFragment extends Fragment {
     }
 
     private void gitURL(int index, List<Url> chapterList) {
+
         NavDirections navDirections=ChaptersFragmentDirections.actionChaptersFragmentToWebViewFragment(chapterList.get(index).getUrl());
         Navigation.findNavController(binding.getRoot()).navigate(navDirections);
 
@@ -232,7 +233,7 @@ public class ChaptersFragment extends Fragment {
 
         // Interstitial
         mInterstitialAd = new InterstitialAd(getContext());
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.setAdUnitId("ca-app-pub-8143854392517680/6114262224");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
 

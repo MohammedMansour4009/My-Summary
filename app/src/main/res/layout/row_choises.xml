@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
-   >
+    >
 
     <data>
 
@@ -11,45 +11,50 @@
             name="model"
             type="com.example.mysummary.model.choises.Choises" />
     </data>
-<androidx.cardview.widget.CardView
-    android:id="@+id/cv_e5teari"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:cardElevation="@dimen/shadow"
-    android:layout_marginHorizontal="@dimen/_5sdp"
-    android:layout_marginVertical="@dimen/_5sdp"
-    android:background="@drawable/design_corner_gray"
-    android:backgroundTint="@color/design_corner2"
-    app:cardCornerRadius="@dimen/_13sdp"
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_e5teari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:backgroundTint="@color/design_corner2"
+        app:cardCornerRadius="@dimen/_13sdp"
+        app:cardElevation="@dimen/shadow"
 
 
-    >
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/design_corner_gray"
+            android:padding="@dimen/_10sdp"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_nameChoises"
+                style="@style/Font_Arabic"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/_10sdp"
+                android:text="@{model.name}"
+                android:textSize="@dimen/_17sdp"
 
-                >
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
 
-                <TextView
-                    android:id="@+id/tv_nameChoises"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@{model.name}"
-                    style="@style/Font_Arabic"
-                    android:textSize="@dimen/tv_choises_sizeText"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:text="طالب وجامعة" />
+                tools:text="طالب وجامعة" />
 
-                <ImageView
-                    android:id="@+id/iv_choises"
-                    android:layout_width="@dimen/width_iv_choses"
-                    android:layout_height="@dimen/width_iv_choses"
-                    android:src="@drawable/ic_star"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/iv_choises"
+                android:layout_width="@dimen/width_iv_choses"
+                android:layout_height="@dimen/width_iv_choses"
+                android:src="@drawable/ic_star"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
 </layout>
