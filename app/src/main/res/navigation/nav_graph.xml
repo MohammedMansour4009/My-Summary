@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment2">
+    app:startDestination="@id/mulaksat">
     <fragment
-        android:id="@+id/homeFragment2"
+        android:id="@+id/webFragment"
         android:name="com.example.mysummary.ui.fragment.home.HomeFragment"
         android:label="ملخصاتي HU"
         tools:layout="@layout/fragment_home" />
@@ -50,6 +50,9 @@
         <argument
             android:name="idCollege"
             app:argType="integer" />
+        <action
+            android:id="@+id/action_chaptersFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/matirialChoisesFragmint2"
@@ -77,4 +80,13 @@
         android:name="com.example.mysummary.ui.fragment.email.EmailFragment"
         android:label="ملخصاتي HU"
         tools:layout="@layout/fragment_email" />
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.mysummary.ui.fragment.webView.WebViewFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view" >
+        <argument
+            android:name="URL"
+            app:argType="string" />
+    </fragment>
 </navigation>
