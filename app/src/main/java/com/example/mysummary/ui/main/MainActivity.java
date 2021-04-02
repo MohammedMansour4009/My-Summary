@@ -22,6 +22,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.mysummary.NavGraphDirections;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.ActivityMainBinding;
+import com.example.mysummary.model.category.Category;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.LoadAdError;
@@ -31,6 +32,8 @@ import com.google.android.gms.ads.rewarded.RewardedAdCallback;
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
 import com.google.android.material.navigation.NavigationView;
 
+import javax.inject.Inject;
+
 public class MainActivity extends BaseBindingActivity<ActivityMainBinding>  {
     private static final String TAG = "MainActivity";
     private NavController navController;
@@ -38,6 +41,8 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding>  {
     private RewardedAd rewardedAd;
     AppBarConfiguration appBarConfiguration;
 
+    @Inject
+    Category category;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -26,8 +26,7 @@ public class ChapterAdapter extends RecyclerView.Adapter<ChapterAdapter.ChapterH
 
     public ChapterAdapter(List<Url> chapters ,listenr lr) {
         this.chapters = chapters;
-
-      this.lr=lr;
+        this.lr=lr;
     }
 
 
