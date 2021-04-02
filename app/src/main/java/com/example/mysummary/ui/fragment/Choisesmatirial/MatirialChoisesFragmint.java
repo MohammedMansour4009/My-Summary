@@ -1,6 +1,8 @@
 package com.example.mysummary.ui.fragment.Choisesmatirial;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import com.example.mysummary.R;
 import com.example.mysummary.databinding.FragmentMatirialChoisesFragmintBinding;
 import com.example.mysummary.model.choises.Choises;
+import com.example.mysummary.model.mawad.Mawad;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
@@ -32,7 +35,6 @@ public class MatirialChoisesFragmint extends Fragment {
         getRemoteChoises();
         initRecyclerViewChoises();
         setAdMobBanner();
-//        Toast.makeText(getContext(), name.size()+"", Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -69,5 +71,34 @@ public class MatirialChoisesFragmint extends Fragment {
         binding.adView.loadAd(adRequest);
 
     }
+    private void searchOrder() {
+        binding.etSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable idoOrder) {
+                filter(idoOrder.toString());
+            }
+
+
+        });
+    }
+    private void filter(String idoOrder) {
+        List<Choises> filteredList = new ArrayList<>();
+        for (Choises item : choisesList) {
+            if (item.getName().toLowerCase().contains(idoOrder.toLowerCase())) {
+                filteredList.add(item);
+
+            }
+        }
+       choisesAdapter.filterList(filteredList);
+    }
 }

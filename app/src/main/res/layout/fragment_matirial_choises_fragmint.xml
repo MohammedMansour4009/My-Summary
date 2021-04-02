@@ -11,16 +11,36 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_search"
+            style="@style/Font_Arabic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/marginTop_et_search"
+            android:background="@drawable/searchshape"
+            android:drawableRight="@drawable/ic_search"
+            android:drawablePadding="@dimen/_10sdp"
+            android:elevation="@dimen/shadow"
+            android:hint="@string/choises"
+
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:paddingRight="@dimen/_40sdp"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="6dp"
+            android:paddingLeft="@dimen/_15sdp" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_matirialChoises"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:layout_marginTop="@dimen/_30sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toTopOf="@id/adView"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:listitem="@layout/row_choises"
-           />
+            app:layout_constraintTop_toBottomOf="@+id/et_search"
+            tools:listitem="@layout/row_choises" />
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adView"
