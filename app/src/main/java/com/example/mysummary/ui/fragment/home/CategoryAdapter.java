@@ -48,23 +48,13 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.carVie
         holder.binding.setModel(category);
         holder.binding.ivCategory.setBackgroundResource(category.getImage());
         holder.bind(category);
-        holder.binding.tvNameCategory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                NavDirections action;
-                if(category.getId()==1) {
-                     action = HomeFragmentDirections.actionWebFragmentToWebViewFragment("https://etihadlibrary.azurewebsites.net/counting_gpa.aspx");
-                }
-                else if(category.getId()==2){
-                    action = HomeFragmentDirections.actionWebFragmentToWebViewFragment("http://www.mlms.hu.edu.jo/");
-
-                }
-                else if(category.getId()==3){
-                 action = HomeFragmentDirections.actionWebFragmentToWebViewFragment("https://reg1.hu.edu.jo/");
-                }
-                Navigation.findNavController(holder.binding.getRoot());
-            }
-        });
+       holder.binding.lItemInHome.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               NavDirections action=HomeFragmentDirections.actionWebFragmentToWebViewFragment(category.getURL());
+               Navigation.findNavController(holder.binding.getRoot()).navigate(action);
+           }
+       });
     }
 
 
