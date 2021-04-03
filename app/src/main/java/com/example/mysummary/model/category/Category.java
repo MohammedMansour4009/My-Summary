@@ -4,8 +4,16 @@ public class Category {
     private int id;
     private  String  name;
     private int image;
+    private String URL;
 
     public Category() {
+    }
+
+    public Category(int id, String name, int image, String URL) {
+        this.id = id;
+        this.name = name;
+        this.image = image;
+        this.URL = URL;
     }
 
     public int getId() {
@@ -38,5 +46,11 @@ public class Category {
         this.image = image;
     }
 
+    public String getURL() {
+        return URL;
+    }
 
+    public void setURL(String URL) {
+        this.URL = URL;
+    }
 }

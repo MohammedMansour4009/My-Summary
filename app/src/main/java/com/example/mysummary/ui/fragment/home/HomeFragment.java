@@ -115,9 +115,9 @@ public class HomeFragment extends Fragment {
 
     private void setListCategory() {
      categoryList=new ArrayList<>();
-     categoryList.add(new Category(1,"حساب المعدل",R.drawable.ic_calculater));
-     categoryList.add(new Category(2,"مودل",R.drawable.ic_web));
-     categoryList.add(new Category(3,"بوبة الطالب",R.drawable.ic_person));
+     categoryList.add(new Category(1,"حساب المعدل",R.drawable.ic_calculater,"https://etihadlibrary.azurewebsites.net/counting_gpa.aspx"));
+     categoryList.add(new Category(2,"مودل",R.drawable.ic_web,"http://www.mlms.hu.edu.jo/"));
+     categoryList.add(new Category(3,"بوبة الطالب",R.drawable.ic_person,"https://reg1.hu.edu.jo/"));
 
     }
 

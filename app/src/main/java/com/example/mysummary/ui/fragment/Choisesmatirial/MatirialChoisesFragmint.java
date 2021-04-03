@@ -34,6 +34,7 @@ public class MatirialChoisesFragmint extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         getRemoteChoises();
         initRecyclerViewChoises();
+        searchOrder();
         setAdMobBanner();
     }
 
