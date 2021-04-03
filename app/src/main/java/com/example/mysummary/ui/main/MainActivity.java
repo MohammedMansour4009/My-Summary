@@ -108,7 +108,7 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding>  {
 
 
     private void initVideoFromAdMob()  {
-            rewardedAd = new RewardedAd(binding.getRoot().getContext(), "ca-app-pub-3940256099942544/5224354917");
+            rewardedAd = new RewardedAd(binding.getRoot().getContext(), "ca-app-pub-8143854392517680/4992752240");
 
         RewardedAdLoadCallback adLoadCallback = new RewardedAdLoadCallback() {
             @Override

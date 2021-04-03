@@ -13,16 +13,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
 import com.example.mysummary.databinding.FragmentWebViewBinding;
 
 
-
-public class WebViewFragment extends Fragment  {
-private FragmentWebViewBinding binding;
-
-
-
-
+public class WebViewFragment extends Fragment {
+    private FragmentWebViewBinding binding;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -32,19 +28,19 @@ private FragmentWebViewBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding=FragmentWebViewBinding.inflate(getLayoutInflater());
+        binding = FragmentWebViewBinding.inflate(getLayoutInflater());
         return binding.getRoot();
 
     }
 
-    private void iniWebView(){
+    private void iniWebView() {
         binding.WV.getSettings().setJavaScriptEnabled(true);
-        binding.WV.setWebViewClient(new WebViewClient(){
+        binding.WV.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 super.onPageStarted(view, url, favicon);
                 //when page Load
-                binding.progressBar.setVisibility(view.VISIBLE);
+                binding.progressBar.setVisibility(view.GONE);
             }
 
             @Override
@@ -59,31 +55,29 @@ private FragmentWebViewBinding binding;
         binding.WV.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if(event.getAction()== KeyEvent.ACTION_DOWN){
-                    if(keyCode==KeyEvent.KEYCODE_BACK)
-                    {
-                        if(binding.WV !=null){
-                            if(binding.WV.canGoBack()){
+                if (event.getAction() == KeyEvent.ACTION_DOWN) {
+                    if (keyCode == KeyEvent.KEYCODE_BACK) {
+                        if (binding.WV != null) {
+                            if (binding.WV.canGoBack()) {
 
                                 binding.WV.goBack();
-                            }
-                            else
+                            } else
                                 getActivity().onBackPressed();
 
                         }
                     }
 
                 }
-                return  true;
+                return true;
             }
         });
 
 
-
     }
-    private String getURL(){
 
-    return WebViewFragmentArgs.fromBundle(getArguments()).getURL();
+    private String getURL() {
+
+        return WebViewFragmentArgs.fromBundle(getArguments()).getURL();
     }
 
 }
