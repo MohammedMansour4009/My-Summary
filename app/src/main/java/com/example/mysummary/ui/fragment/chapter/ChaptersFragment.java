@@ -1,5 +1,7 @@
 package com.example.mysummary.ui.fragment.chapter;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -89,10 +91,17 @@ public class ChaptersFragment extends Fragment {
     }
 
     private void gitURL(int index, List<Url> chapterList) {
+        if(getIdColleges()==101||getIdColleges()==102)
+        {
+            Intent intent= new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse(chapterList.get(index).getUrl()));
+            startActivity(intent);
 
-        NavDirections navDirections=ChaptersFragmentDirections.actionChaptersFragmentToWebViewFragment(chapterList.get(index).getUrl());
-        Navigation.findNavController(binding.getRoot()).navigate(navDirections);
-
+        }
+        else {
+            NavDirections navDirections = ChaptersFragmentDirections.actionChaptersFragmentToWebViewFragment(chapterList.get(index).getUrl());
+            Navigation.findNavController(binding.getRoot()).navigate(navDirections);
+        }
     }
 
 
